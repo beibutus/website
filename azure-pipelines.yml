@@ -14,11 +14,10 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
-- task: AzureRmWebAppDeployment@4
+
+- task: AzureRmWebAppDeployment@3
+  displayName: 'Azure App Service Deploy'
   inputs:
-    ConnectionType: 'AzureRM'
     azureSubscription: 'easylang-app-index - Azure'
-    appType: 'webAppContainer'
     WebAppName: 'easylang-app-index'
-    DockerNamespace: '1'
-    DockerRepository: '1'
+    Package: '$(System.DefaultWorkingDirectory)/build'
