@@ -1,0 +1,62 @@
+@import "../../../styles/variables";
+.Header {
+    width: 100%;
+    height: 100%;
+    background-color: $mainColor;
+    background-image: url(../../../assets/images/BlogTop.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: cover;
+    margin-top: -100px;
+    padding-top: 100px;
+    position: relative;
+    h1 {
+        a {
+            color: inherit;
+            &:hover {
+                color: inherit;
+            }
+        }
+    }
+    &-content {
+        text-align: left;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+    &-title {
+        font-size: 55px;
+        font-weight: bold;
+        color: $bgColor;
+        margin: 20px 0;
+    }
+    &-search {
+        position: relative;
+        i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: transparentize($bgColor, 0.7);
+        }
+        input {
+            color: $bgColor;
+            border-radius: 50px;
+            border: none;
+            background: transparentize($bgColor, 0.7);
+            max-width: 300px;
+            height: 40px;
+            font-size: 15px;
+            padding: 0 20px 0 40px;
+            &::placeholder {
+                color: transparentize($bgColor, 0.7);
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import "../../../styles/variables";
+.Read-more-btn {
+    background-color: lighten($mainColor, 50%);
+    border: none;
+    border-radius: 25px;
+    padding: 6px 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: $mainColor;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    outline: none;
+    z-index: 1;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+        background-color: lighten($mainColor, 50%);
+        color: lighten($mainColor, 10%);
+        cursor: pointer;
+    }
+    &.hide {
+        background: rgba(255, 255, 255, 0);
+        :hover {
+            background: rgba(255, 255, 255, 0);
+            color: lighten($mainColor, 50%);
+        }
+    }
+}
