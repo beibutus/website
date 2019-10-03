@@ -17,4 +17,4 @@ steps:
   inputs:
     azureSubscription: 'easylang-app-index - Azure'
     WebAppName: 'easylang-app-index'
-    Package: 'build'
+    Package: '$(System.DefaultWorkingDirectory)/build'
