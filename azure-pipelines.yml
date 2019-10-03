@@ -14,8 +14,11 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
-
-- task: PublishBuildArtifacts@1
+- task: AzureRmWebAppDeployment@4
   inputs:
-    PathtoPublish: '$(build.artifactstagingdirectory)'
-    ArtifactName: 'drop'
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'easylang-app-index - Azure'
+    appType: 'webAppContainer'
+    WebAppName: 'easylang-app-index'
+    DockerNamespace: '1'
+    DockerRepository: '1'
