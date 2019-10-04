@@ -66,7 +66,7 @@ export default class Home extends React.Component {
             this.setState({
                 currentSectionId: curSection
             });
-            navigate(curSection ? "/#" + curSection : "/");
+            // navigate(curSection ? "/#" + curSection : "/");
         }
     }
     calcMobileShow = () => {

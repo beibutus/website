@@ -1,33 +1,20 @@
+@media (min-width: 1550px) {
+    .Home .container {
+        margin: 0 20%;
+    }
+}
 @media (max-width: 1024px) {
     .Home {
-        h1.hero-title {
-            font-size: 2.8rem;
-        }
-
-        h2 {
-            font-size: 2rem;
-        }
-
-        p,
-        p.subtitle {
-            font-size: 1.4rem;
-        }
-
         .button-started {
             width: 220px;
         }
 
         .button-started .get-started-button2 {
             padding: 10px 0 !important;
-            font-size: 1rem;
         }
 
         .button-group {
             width: 100%;
-        }
-
-        .blog a {
-            font-size: 1.1rem;
         }
 
         .sources-wrapper,
@@ -45,34 +32,8 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1240px) {
-    .Home {
-        p,
-        p.subtitle {
-            font-size: 1.2rem;
-        }
-    }
-}
-
 @media (max-width: 768px) {
     .Home {
-        h1.hero-title {
-            font-size: 2.3rem;
-        }
-
-        h2 {
-            font-size: 1.8rem;
-        }
-
-        h2 > sup {
-            font-size: 0.7rem;
-        }
-
-        p,
-        p.subtitle {
-            font-size: 1rem;
-        }
-
         .app-download-wrapper {
             flex-wrap: wrap;
             justify-content: center;
@@ -110,9 +71,9 @@
             margin-top: 0;
         }
 
-        .blog a {
-            font-size: 1.1rem;
-        }
+        // .blog a {
+        //     font-size: 1.1rem;
+        // }
 
         .sources-title {
             flex-basis: 100%;
@@ -129,31 +90,12 @@
 
 @media (max-width: 610px) {
     .Home {
-        h1.hero-title {
-            font-size: 1.1rem;
-            line-height: 2rem;
-        }
-
-        h2 {
-            font-size: 1rem;
-        }
-
-        h3 {
-            font-size: 0.9rem;
-        }
-
-        p,
-        a {
-            font-size: 0.9rem;
-        }
-
         .wrapper-hero {
             padding: 4% 0 25%;
         }
 
         .button-started .get-started-button2,
         .button-started .get-started-button {
-            font-size: 0.5rem;
             margin: 0 auto;
         }
 
@@ -161,22 +103,13 @@
             margin: 0 5%;
         }
 
-        .image-carousel-caption {
-            font-size: 0.7rem;
-        }
-
         .blog a {
-            font-size: 0.7rem;
             letter-spacing: 2px;
             padding: 2% 0;
         }
 
         .sources-block {
             flex-basis: 95%;
-        }
-
-        .sources-paragraph p {
-            font-size: 0.8rem;
         }
 
         .call-to-action {
