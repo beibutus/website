@@ -10,7 +10,7 @@
         }
 
         .button-started .get-started-button2 {
-            padding: 10px 0 !important;
+            padding: 10px 0;
         }
 
         .button-group {
@@ -77,8 +77,8 @@
 
         .sources-title {
             flex-basis: 100%;
-            text-align: center;
-            padding-left: 0;
+            padding: 0;
+            padding-bottom: 3%;
         }
 
         .sources-block {
@@ -90,26 +90,63 @@
 
 @media (max-width: 610px) {
     .Home {
+        h1.hero-title {
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 0.9rem;
+        }
+
+        p,
+        a {
+            font-size: 0.9rem;
+        }
         .wrapper-hero {
             padding: 4% 0 25%;
         }
 
         .button-started .get-started-button2,
         .button-started .get-started-button {
+            font-size: 1rem;
             margin: 0 auto;
+            padding: 3%;
         }
 
         .slider {
             margin: 0 5%;
         }
 
+        .image-carousel-caption {
+            font-size: 0.7rem;
+        }
+
+        .blog-button{
+            background-size: 90%;
+        }
         .blog a {
+            width: 60%;
+            font-size: 1rem;
             letter-spacing: 2px;
             padding: 2% 0;
         }
 
+        .subtitle{
+            font-size: 0.9rem;
+            margin: 5%;
+        }
+
         .sources-block {
             flex-basis: 95%;
+        }
+
+        .sources-paragraph p {
+            font-size: 0.8rem;
         }
 
         .call-to-action {

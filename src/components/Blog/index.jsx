@@ -16,9 +16,6 @@ export default class Blog extends React.Component {
             findArticleText: ""
         };
     }
-    componentDidMount(){
-        window.scrollTo({top: 0});
-    }
     setOpenArticle = id => {
         this.setState({
             openArticle: this.state.openArticle !== id ? id : undefined

@@ -5,6 +5,7 @@ import Blog from "../Blog";
 import Navbar from "../Navbar";
 import Home from "../Home";
 import BtnTop from "../BtnTop";
+import ScrollToTop from "../ScrollToTop";
 import languageEn from "../../assets/languages/en.json";
 import languageRu from "../../assets/languages/ru.json";
 import languageCn from "../../assets/languages/cn.json";
@@ -62,13 +63,15 @@ class App extends React.Component {
                         handleLanguage={this.handleLanguage}
                         text={this.langStore[this.state.language]}
                     ></Navbar>
-                    <Router>
-                        <Home
-                            path="/"
-                            text={this.langStore[this.state.language]}
-                        ></Home>
-                        <Blog path="/blog"></Blog>
-                        <NotFound default></NotFound>
+                    <Router primary={false}>
+                        <ScrollToTop path="/">
+                            <Home
+                                path="/"
+                                text={this.langStore[this.state.language]}
+                            ></Home>
+                            <Blog path="/blog"></Blog>
+                            <NotFound default></NotFound>
+                        </ScrollToTop>
                     </Router>
                     <BtnTop></BtnTop>
                 </div>

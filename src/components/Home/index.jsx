@@ -114,7 +114,6 @@ export default class Home extends React.Component {
         window.scrollTo({ top: this.sections[id].top, behavior: "smooth" });
     };
     componentDidMount() {
-        window.scrollTo({ top: 0 });
         window.addEventListener("scroll", this.handleScroll);
         window.addEventListener("resize", this.getAnchorPoints);
         setTimeout(() => {
