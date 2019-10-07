@@ -120,6 +120,7 @@ select {
     display: flex;
     flex: 1 0 auto;
     justify-content: space-around;
+    margin-right: 50px;
 }
 
 .menu-block {
@@ -194,7 +195,6 @@ select {
         height: 40px;
         border-radius: 25px;
         top: 15px;
-        right: 15px;
         background-color: rgba(0, 0, 0, 0.3);
         transition: background-color 0.2s ease-in-out;
     }
@@ -265,7 +265,7 @@ select {
         position: fixed;
         justify-content: flex-start;
         flex-direction: column;
-        background-color: #222b34;
+        background-color: #1D4A84;
         width: 300px;
         max-width: 100%;
         height: 100%;

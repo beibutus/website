@@ -25,49 +25,27 @@ export default class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            currentSectionId: undefined,
             showMobileWow: false
         };
         this.sections = {
             toGetStarted: {
                 id: "to-get-started",
                 text: "ourApp",
-                ref: React.createRef(),
-                top: undefined
+                ref: React.createRef()
             },
             howItWork: {
                 id: "how-it-works",
                 text: "HowItWork",
-                ref: React.createRef(),
-                top: undefined
+                ref: React.createRef()
             },
             source: {
                 id: "learning-sources",
                 text: "learningSources",
-                ref: React.createRef(),
-                top: undefined
+                ref: React.createRef()
             }
         };
         this.offsetSection = 70;
         this.mobileWow = React.createRef();
-    }
-    calcCurSelection() {
-        const curPos = window.scrollY;
-        let curSection = undefined;
-        for (const key in this.sections) {
-            if (this.sections.hasOwnProperty(key)) {
-                const el = this.sections[key];
-                if (curPos >= el.top) {
-                    curSection = el.id;
-                }
-            }
-        }
-        if (this.state.currentSectionId !== curSection) {
-            this.setState({
-                currentSectionId: curSection
-            });
-            // navigate(curSection ? "/#" + curSection : "/");
-        }
     }
     calcMobileShow = () => {
         const viewPortHeight = Math.max(
@@ -77,55 +55,33 @@ export default class Home extends React.Component {
         let mobileRect = this.mobileWow.current.getBoundingClientRect();
         let bottomPhoneImg =
             mobileRect.top + mobileRect.height + window.scrollY;
-        if ((bottomPhoneImg < window.scrollY + viewPortHeight && !this.state.showMobileWow) ) {
+        if (
+            bottomPhoneImg < window.scrollY + viewPortHeight &&
+            !this.state.showMobileWow
+        ) {
             this.setState({ showMobileWow: true });
         }
     };
     handleScroll = () => {
-        this.calcCurSelection();
         this.calcMobileShow();
-    };
-    getAnchorPoints = () => {
-        const curScroll = window.scrollY;
-        for (const key in this.sections) {
-            if (this.sections.hasOwnProperty(key)) {
-                const el = this.sections[key];
-                el.top =
-                    Math.round(el.ref.current.getBoundingClientRect().top) +
-                    curScroll -
-                    this.offsetSection;
-            }
-        }
-        const viewPortHeight = Math.max(
-            document.documentElement.clientHeight,
-            window.innerHeight || 0
-        );
-
-        const bottom = document.body.offsetHeight;
-        let sectionKeys = Object.keys(this.sections);
-        let lastSection = this.sections[sectionKeys[sectionKeys.length - 1]];
-        if (viewPortHeight > bottom - lastSection.top) {
-            lastSection.top = bottom - viewPortHeight;
-        }
-        this.handleScroll();
     };
     anchorClick = (e, id) => {
         e.preventDefault();
-        window.scrollTo({ top: this.sections[id].top, behavior: "smooth" });
+        const curScroll = window.scrollY;
+        const top =
+            Math.round(this.sections[id].ref.current.getBoundingClientRect().top) +
+            curScroll -
+            this.offsetSection;
+        window.scrollTo({
+            top: top,
+            behavior: "smooth"
+        });
     };
     componentDidMount() {
         window.addEventListener("scroll", this.handleScroll);
-        window.addEventListener("resize", this.getAnchorPoints);
-        setTimeout(() => {
-            this.getAnchorPoints();
-        }, 500);
-    }
-    componentDidUpdate() {
-        this.getAnchorPoints();
     }
     componentWillUnmount() {
         window.removeEventListener("scroll", this.handleScroll);
-        window.removeEventListener("resize", this.getAnchorPoints);
     }
     render() {
         const slickSettings = {
@@ -145,27 +101,6 @@ export default class Home extends React.Component {
             slide3cn,
             slide4cn
         };
-        const anchorLinks = Object.keys(this.sections).map((k, index) => {
-            const { id, text } = this.sections[k];
-            const liClass = classNames("anchor-item", {
-                active: this.state.currentSectionId === id
-            });
-            return (
-                <li className={liClass} key={index}>
-                    <a
-                        href={"#" + id}
-                        onClick={e => {
-                            this.anchorClick(e, k);
-                        }}
-                    >
-                        <div className="anchor-item-number">{index + 1}</div>
-                        <div className="anchor-item-text">
-                            {this.props.text[text]}
-                        </div>
-                    </a>
-                </li>
-            );
-        });
         const mobileClasses = classNames("img-phone-front", {
             show: this.state.showMobileWow
         });
@@ -453,9 +388,6 @@ export default class Home extends React.Component {
                         </a>
                     </div>
                 </footer>
-                <div className="anchor">
-                    <ul className="anchor-links">{anchorLinks}</ul>
-                </div>
             </div>
         );
     }
