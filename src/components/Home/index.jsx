@@ -215,7 +215,7 @@ export default class Home extends React.Component {
                                     <div className="button-group button-group-2">
                                         <a
                                             className="button-install button-web"
-                                            href="http://easy4learn.com/tutor"
+                                            href="http://easy4learn.com"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
