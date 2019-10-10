@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.scss";
 import "./Home-media.scss";
-import { Link, navigate } from "@reach/router";
+import { Link } from "@reach/router";
 import ReactHtmlParser from "react-html-parser";
 import classNames from "classnames";
 import "slick-carousel/slick/slick.css";

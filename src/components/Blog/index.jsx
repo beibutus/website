@@ -9,18 +9,15 @@ export default class Blog extends React.Component {
     constructor(props) {
         super(props);
         (context => {
-            context.keys().forEach(key => this.articles.push(context(key)));
+            context
+                .keys()
+                .sort((a, b) => b.match(/[0-9]+/)[0] - a.match(/[0-9]+/)[0])
+                .forEach(key => this.articles.push(context(key)));
         })(require.context("../../articles/", false, /.html$/));
         this.state = {
-            openArticle: undefined,
             findArticleText: ""
         };
     }
-    setOpenArticle = id => {
-        this.setState({
-            openArticle: this.state.openArticle !== id ? id : undefined
-        });
-    };
     getArticleTitle(html) {
         const title = html.match(/<h1>([^<>]*)<\/h1>/);
         if (title) return title[1];
@@ -30,14 +27,7 @@ export default class Blog extends React.Component {
         const articles = this.articles.map((a, index) => {
             const title = this.getArticleTitle(a);
             return (
-                <Article
-                    articleHtml={a}
-                    title={title}
-                    key={index}
-                    id={index}
-                    openArticle={index === this.state.openArticle}
-                    setOpenArticle={this.setOpenArticle}
-                />
+                <Article articleHtml={a} title={title} key={index} id={index} />
             );
         });
         return articles;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Router, createHistory, LocationProvider } from "@reach/router";
+import { Router } from "@reach/router";
 import "./App.scss";
 import Blog from "../Blog";
 import Navbar from "../Navbar";
@@ -10,10 +10,6 @@ import languageEn from "../../assets/languages/en.json";
 import languageRu from "../../assets/languages/ru.json";
 import languageCn from "../../assets/languages/cn.json";
 import NotFound from "../NotFound";
-import createHashSource from "hash-source";
-
-let source = createHashSource();
-let history = createHistory(source);
 
 class App extends React.Component {
     constructor(props) {
@@ -55,27 +51,25 @@ class App extends React.Component {
     }
     render() {
         return (
-            <LocationProvider history={history}>
-                <div className="App">
-                    <Navbar
-                        curLang={this.state.language}
-                        langList={this.getLangList()}
-                        handleLanguage={this.handleLanguage}
-                        text={this.langStore[this.state.language]}
-                    ></Navbar>
-                    <Router primary={false}>
-                        <ScrollToTop path="/">
-                            <Home
-                                path="/"
-                                text={this.langStore[this.state.language]}
-                            ></Home>
-                            <Blog path="/blog"></Blog>
-                            <NotFound default></NotFound>
-                        </ScrollToTop>
-                    </Router>
-                    <BtnTop></BtnTop>
-                </div>
-            </LocationProvider>
+            <div className="App">
+                <Navbar
+                    curLang={this.state.language}
+                    langList={this.getLangList()}
+                    handleLanguage={this.handleLanguage}
+                    text={this.langStore[this.state.language]}
+                ></Navbar>
+                <Router primary={false}>
+                    <ScrollToTop path="/">
+                        <Home
+                            path="/"
+                            text={this.langStore[this.state.language]}
+                        ></Home>
+                        <Blog path="/blog"></Blog>
+                        <NotFound default></NotFound>
+                    </ScrollToTop>
+                </Router>
+                <BtnTop></BtnTop>
+            </div>
         );
     }
 }

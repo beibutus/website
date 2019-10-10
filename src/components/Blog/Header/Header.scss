@@ -5,12 +5,16 @@
     background-color: $mainColor;
     background-image: url(../../../assets/images/BlogTop.jpg);
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: bottom;
     background-size: cover;
     margin-top: -100px;
     padding-top: 100px;
     position: relative;
     h1 {
+        font-size: 3rem;
+        @media screen and (max-width: 610px){
+            font-size: 2.5rem;
+        }
         a {
             color: inherit;
             &:hover {
@@ -24,7 +28,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        padding: 10% 0 4% 10%;
+        padding: 2% 0 4% 4%;
     }
     &-title {
         font-size: 4rem;
@@ -34,6 +38,8 @@
     }
     &-search {
         position: relative;
+        width: 40%;
+        max-width: 300px;
         i {
             position: absolute;
             left: 15px;
@@ -46,8 +52,8 @@
             border-radius: 50px;
             border: none;
             background: transparentize($bgColor, 0.7);
-            max-width: 300px;
-            height: 40px;
+            width: 100%;
+            height: 2rem;
             font-size: 1rem;
             padding: 0 20px 0 40px;
             &::placeholder {
