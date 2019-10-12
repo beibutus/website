@@ -194,7 +194,7 @@ export default class Home extends React.Component {
                                     <div className="button-group button-group-1">
                                         <a
                                             className="button-install button-chrome"
-                                            href="https://github.com/easably/extension/releases/download/0.1.2/extension-master.zip"
+                                            href="https://github.com/easably/extension/releases/download/0.2.3/extension.zip"
                                         >
                                             {this.props.text.extension}
                                         </a>
@@ -226,7 +226,7 @@ export default class Home extends React.Component {
                                     <div className="button-group button-group-3">
                                         <a
                                             className="button-install button-android"
-                                            href="https://github.com/easably/context-tutor/releases/download/0.1.11/app-debug.apk"
+                                            href="https://github.com/easably/context-tutor/releases/download/0.2.8/EasyLang.apk"
                                         >
                                             Android
                                         </a>
