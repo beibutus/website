@@ -1,4 +1,4 @@
-# See on https://master.d1br7klqt663ax.amplifyapp.com
+# See on https://www.easably.com
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
