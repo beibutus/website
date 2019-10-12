@@ -20,6 +20,7 @@ $time-open-article: 0.2s;
     max-height: 5000rem;
     overflow: scroll;
     transition: all $time-open-article ease-in-out;
+    overflow: hidden;
 
     &::after {
         content: "";
@@ -42,7 +43,6 @@ $time-open-article: 0.2s;
 
     &.hide {
         max-height: 43rem;
-        overflow: hidden;
         &::after {
             height: multiply-px($footer-margin, 2);
             opacity: 1;
