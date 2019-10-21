@@ -109,6 +109,10 @@
         flex: 0 1 50%;
     }
 
+    .enjoyIt-heading {
+        text-align: left;
+    }
+
     .context-title {
         text-align: right;
     }
@@ -148,7 +152,7 @@
         width: 50%;
         left: -120%;
         transition: all 0.8s ease-in-out;
-        &.show{
+        &.show {
             left: 30%;
         }
     }
@@ -159,6 +163,10 @@
     .content-description {
         flex-basis: 50%;
         margin-left: 5%;
+        text-align: left;
+        h2{
+            font-size: 2.2rem;
+        }
     }
 
     h2 > span {
@@ -356,6 +364,7 @@
         border-radius: 25px;
         background: #45b8ff;
         color: white;
+        text-align: left;
     }
 
     .second-part .sources-paragraph {
