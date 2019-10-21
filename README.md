@@ -1,4 +1,4 @@
-# See on https://www.easably.com
+# See on https://easylang.app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
