@@ -58,7 +58,7 @@ class App extends React.Component {
                     handleLanguage={this.handleLanguage}
                     text={this.langStore[this.state.language]}
                 ></Navbar>
-                <Router primary={false}>
+                <Router primary={false} basepath="/">
                     <ScrollToTop path="/">
                         <Home
                             path="/"
