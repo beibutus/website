@@ -1,14 +1,12 @@
 @import "../../../styles/variables";
 .Header {
     width: 100%;
-    height: 100%;
     background-color: $mainColor;
     background-image: url(../../../assets/images/BlogTop.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
-    margin-top: -100px;
-    padding-top: 100px;
+    padding-top: 70px;
     position: relative;
     h1 {
         font-size: 3rem;
