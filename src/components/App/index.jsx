@@ -64,7 +64,7 @@ class App extends React.Component {
                             path="/"
                             text={this.langStore[this.state.language]}
                         ></Home>
-                        <Blog path="/blog"></Blog>
+                        <Blog path="blog/*"></Blog>
                         <NotFound default></NotFound>
                     </ScrollToTop>
                 </Router>

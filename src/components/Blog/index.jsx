@@ -3,6 +3,9 @@ import "./Blog.scss";
 import Header from "./Header";
 import Article from "./Article";
 import Footer from "../Footer";
+import ArticlesList from './ArticlesList'
+import FullArticle from './FullArticle'
+import {Router} from"@reach/router"
 
 export default class Blog extends React.Component {
     articles = [];
@@ -23,11 +26,14 @@ export default class Blog extends React.Component {
         if (title) return title[1];
         return "";
     }
-    generateArticleComponents() {
+    parseStringToPath(str){
+        return str.replace(/[^\w]/g,'-').replace(/[-]+/,'-').replace(/[-]$/,'');
+    }
+    generateArticleComponents(isFullview=false) {
         const articles = this.articles.map((a, index) => {
             const title = this.getArticleTitle(a);
             return (
-                <Article articleHtml={a} title={title} key={index} id={index} />
+                <Article articleHtml={a} title={title} key={index} id={index+'-'+this.parseStringToPath(title)} isFullview={isFullview}/>
             );
         });
         return articles;
@@ -49,9 +55,15 @@ export default class Blog extends React.Component {
                 <Header
                     findArticleText={this.state.findArticleText}
                     handleFindText={this.handleFindText}
+                    showSearch={this.props.location.pathname === '/blog' || this.props.location.pathname === '/blog/'}
                 ></Header>
                 <div className="content">
-                    <div className="container">{findedArticles}</div>
+                    <div className="container">
+                        <Router>
+                            <ArticlesList path="/" findedArticles={findedArticles}></ArticlesList>
+                            <FullArticle path=":id" articleComponents = {this.generateArticleComponents(true)}></FullArticle>
+                        </Router>
+                    </div>
                 </div>
                 <Footer></Footer>
             </div>
