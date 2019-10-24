@@ -69,7 +69,9 @@ export default class Home extends React.Component {
         e.preventDefault();
         const curScroll = window.scrollY;
         const top =
-            Math.round(this.sections[id].ref.current.getBoundingClientRect().top) +
+            Math.round(
+                this.sections[id].ref.current.getBoundingClientRect().top
+            ) +
             curScroll -
             this.offsetSection;
         window.scrollTo({
@@ -82,6 +84,9 @@ export default class Home extends React.Component {
     }
     componentWillUnmount() {
         window.removeEventListener("scroll", this.handleScroll);
+    }
+    getLangText(text) {
+        return ReactHtmlParser(this.props.text[text]);
     }
     render() {
         const slickSettings = {
@@ -110,10 +115,10 @@ export default class Home extends React.Component {
                     <div className="wrapper-hero">
                         <div>
                             <h1 className="hero-title">
-                                {this.props.text.headerTitle}
+                                {this.getLangText("headerTitle")}
                             </h1>
                             <p className="subtitle">
-                                {this.props.text.headerSubtitle}
+                                {this.getLangText("headerSubtitle")}
                             </p>
                         </div>
 
@@ -125,7 +130,7 @@ export default class Home extends React.Component {
                                     this.anchorClick(e, "toGetStarted");
                                 }}
                             >
-                                {this.props.text.buttonStarted}
+                                {this.getLangText("buttonStarted")}
                             </a>
                         </div>
                     </div>
@@ -135,12 +140,8 @@ export default class Home extends React.Component {
                     <section className="content content-enjoyLearning">
                         <div className="enjoyIt-wrapper">
                             <div className="enjoyIt-heading">
-                                <h2>{this.props.text.headPleasure}</h2>
-                                <p>
-                                    {ReactHtmlParser(
-                                        this.props.text.contentPleasure
-                                    )}
-                                </p>
+                                <h2>{this.getLangText('headPleasure')}</h2>
+                                <p>{this.getLangText("contentPleasure")}</p>
                             </div>
                             <div className="imgEnjoy">
                                 <img src={imgEnjoy} alt="Enjoy learning" />
@@ -151,9 +152,9 @@ export default class Home extends React.Component {
                     <section className="content content-context-memory">
                         <div className="context-title">
                             <h2 className="context-heading">
-                                {this.props.text.headMemory}
+                                {this.getLangText("headMemory")}
                             </h2>
-                            <p>{this.props.text.contentMemory}</p>
+                            <p>{this.getLangText("contentMemory")}</p>
                         </div>
                         <div className="img-context-puzzle">
                             <img src={puzzle} alt="Context puzzle" />
@@ -180,23 +181,15 @@ export default class Home extends React.Component {
                                 />
                             </div>
                             <div className="content-description">
-                                <h2>
-                                    {ReactHtmlParser(
-                                        this.props.text.headOurApp
-                                    )}
-                                </h2>
-                                <p>
-                                    {ReactHtmlParser(
-                                        this.props.text.contentOurApp
-                                    )}
-                                </p>
+                                <h2>{this.getLangText("headOurApp")}</h2>
+                                <p>{this.getLangText("contentOurApp")}</p>
                                 <div className="button-block">
                                     <div className="button-group button-group-1">
                                         <a
                                             className="button-install button-chrome"
                                             href="https://github.com/easably/extension/releases/download/0.2.3/extension.zip"
                                         >
-                                            {this.props.text.extension}
+                                            {this.getLangText("extension")}
                                         </a>
                                         <a
                                             href="https://github.com/easably/extension/blob/master/README.md"
@@ -207,7 +200,9 @@ export default class Home extends React.Component {
                                         >
                                             <i className="fa fa-cog"> </i>{" "}
                                             <span>
-                                                {this.props.text.extensionGuide}
+                                                {this.getLangText(
+                                                    "extensionGuide"
+                                                )}
                                             </span>
                                         </a>
                                     </div>
@@ -250,7 +245,7 @@ export default class Home extends React.Component {
                         ref={this.sections.howItWork.ref}
                     >
                         <div>
-                            <h2>{this.props.text.headHowItWorks}</h2>
+                            <h2>{this.getLangText("headHowItWorks")}</h2>
                             <div className="slider-wrapper">
                                 <div className="slider">
                                     <Slider
@@ -261,10 +256,9 @@ export default class Home extends React.Component {
                                             <figure className="slick-slide-inner">
                                                 <img src={slide1} alt="" />
                                                 <figcaption className="image-carousel-caption">
-                                                    {
-                                                        this.props.text
-                                                            .sliderCaptionFirst
-                                                    }
+                                                    {this.getLangText(
+                                                        "sliderCaptionFirst"
+                                                    )}
                                                 </figcaption>
                                             </figure>
                                         </div>
@@ -273,10 +267,9 @@ export default class Home extends React.Component {
                                             <figure className="slick-slide-inner">
                                                 <img src={slide2} alt="" />
                                                 <figcaption className="image-carousel-caption">
-                                                    {
-                                                        this.props.text
-                                                            .sliderCaptionSecond
-                                                    }
+                                                    {this.getLangText(
+                                                        "sliderCaptionSecond"
+                                                    )}
                                                 </figcaption>
                                             </figure>
                                         </div>
@@ -284,8 +277,9 @@ export default class Home extends React.Component {
                                             <img
                                                 src={
                                                     slideImg[
-                                                        this.props.text
-                                                            .slideThird
+                                                        this.getLangText(
+                                                            "slideThird"
+                                                        )
                                                     ]
                                                 }
                                                 alt=""
@@ -295,8 +289,9 @@ export default class Home extends React.Component {
                                             <img
                                                 src={
                                                     slideImg[
-                                                        this.props.text
-                                                            .slideFourth
+                                                        this.getLangText(
+                                                            "slideFourth"
+                                                        )
                                                     ]
                                                 }
                                                 alt=""
@@ -326,41 +321,41 @@ export default class Home extends React.Component {
                         >
                             <div className="sources-wrapper">
                                 <div className="sources-title">
-                                    <h2>{this.props.text.headSource}</h2>
-                                    <p>{this.props.text.contentSouce}</p>
+                                    <h2>{this.getLangText('headSource')}</h2>
+                                    <p>{this.getLangText('contentSouce')}</p>
                                 </div>
                                 <div className="sources-block">
                                     <div className="first-part">
                                         <div className="sources-paragraph">
-                                            <h3>{this.props.text.movie}</h3>
+                                            <h3>{this.getLangText('movie')}</h3>
                                             <p>
-                                                {this.props.text.movieParagraph}
+                                                {this.getLangText('movieParagraph')}
                                             </p>
                                         </div>
                                         <div className="sources-paragraph">
-                                            <h3>{this.props.text.news}</h3>
+                                            <h3>{this.getLangText('news')}</h3>
                                             <p>
-                                                {this.props.text.newsParagraph}
+                                                {this.getLangText('newsParagraph')}
                                             </p>
                                         </div>
                                         <div className="sources-paragraph">
-                                            <h3>{this.props.text.book}</h3>
+                                            <h3>{this.getLangText('book')}</h3>
                                             <p>
-                                                {this.props.text.bookParagraph}
+                                                {this.getLangText('bookParagraph')}
                                             </p>
                                         </div>
                                     </div>
                                     <div className="second-part">
                                         <div className="sources-paragraph">
-                                            <h3>{this.props.text.video}</h3>
+                                            <h3>{this.getLangText('video')}</h3>
                                             <p>
-                                                {this.props.text.videoParagraph}
+                                                {this.getLangText('videoParagraph')}
                                             </p>
                                         </div>
                                         <div className="sources-paragraph">
-                                            <h3>{this.props.text.music}</h3>
+                                            <h3>{this.getLangText('music')}</h3>
                                             <p>
-                                                {this.props.text.musicParagraph}
+                                                {this.getLangText('musicParagraph')}
                                             </p>
                                         </div>
                                     </div>
@@ -369,9 +364,9 @@ export default class Home extends React.Component {
                         </section>
                     </div>
                     <div className="blog">
-                        <h2>{this.props.text.blog}</h2>
+                        <h2>{this.getLangText('blog')}</h2>
                         <div className="blog-button">
-                            <Link to="/blog">{this.props.text.Blog}</Link>
+                            <Link to="/blog">{this.getLangText('Blog')}</Link>
                         </div>
                     </div>
                 </div>
@@ -384,7 +379,7 @@ export default class Home extends React.Component {
                                 this.anchorClick(e, "toGetStarted");
                             }}
                         >
-                            {this.props.text.getStarted}
+                            {this.getLangText('getStarted')}
                         </a>
                     </div>
                 </footer>
