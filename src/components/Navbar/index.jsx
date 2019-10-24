@@ -61,7 +61,7 @@ export default class Navbar extends React.Component {
             <nav className={navBarClass}>
                 <div className="sticky-bar">
                     <div className="logo">
-                        <Link to="/" className="logo-light">
+                        <Link to="./" className="logo-light">
                             EasyLang
                         </Link>
                     </div>
@@ -90,39 +90,9 @@ export default class Navbar extends React.Component {
                                             EasyLang
                                         </span>
                                     </li>
-                                    {/* <li>
-                                        <AnchorLink
-                                            offset="100"
-                                            href="#toGetStarted"
-                                            className="menu-nav__link"
-                                            onClick={this.closeMenu}
-                                        >
-                                            {this.props.text.ourApp}
-                                        </AnchorLink>
-                                    </li>
-                                    <li>
-                                        <AnchorLink
-                                            offset="100"
-                                            href="#howItWork"
-                                            className="menu-nav__link"
-                                            onClick={this.closeMenu}
-                                        >
-                                            {this.props.text.HowItWork}
-                                        </AnchorLink>
-                                    </li>
-                                    <li>
-                                        <AnchorLink
-                                            offset="100"
-                                            href="#source"
-                                            className="menu-nav__link"
-                                            onClick={this.closeMenu}
-                                        >
-                                            {this.props.text.learningSources}
-                                        </AnchorLink>
-                                    </li> */}
                                     <li>
                                         <Link
-                                            to="/"
+                                            to="./"
                                             className="menu-nav__link"
                                             onClick={this.closeMenu}
                                         >
@@ -131,7 +101,7 @@ export default class Navbar extends React.Component {
                                     </li>
                                     <li>
                                         <Link
-                                            to="/blog"
+                                            to="blog"
                                             className="menu-nav__link"
                                             onClick={this.closeMenu}
                                         >

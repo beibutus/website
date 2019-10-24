@@ -1,15 +1,10 @@
 import React from "react";
-import { Router } from "@reach/router";
+import { Router, navigate } from "@reach/router";
 import "./App.scss";
-import Blog from "../Blog";
-import Navbar from "../Navbar";
-import Home from "../Home";
-import BtnTop from "../BtnTop";
-import ScrollToTop from "../ScrollToTop";
 import languageEn from "../../assets/languages/en.json";
 import languageRu from "../../assets/languages/ru.json";
 import languageCn from "../../assets/languages/cn.json";
-import NotFound from "../NotFound";
+import Main from "../Main";
 
 class App extends React.Component {
     constructor(props) {
@@ -18,9 +13,6 @@ class App extends React.Component {
             en: languageEn,
             ru: languageRu,
             cn: languageCn
-        };
-        this.state = {
-            language: this.getUserLanguageFromInputList()
         };
     }
     getUserLanguageFromInputList() {
@@ -40,9 +32,23 @@ class App extends React.Component {
         );
     }
     handleLanguage = lang => {
-        this.setState({
-            language: lang
-        });
+        let path = window.location.pathname;
+        const langs = Object.keys(this.langStore)
+        if (langs.every(l=>{
+            const reg = new RegExp('^/'+l)
+            return path.search(reg) === -1
+        })){
+            navigate("/" + lang + (path === '/' ? '' : path));
+        }else{
+            let newPath = path.split('/');
+            newPath.shift();
+            newPath.shift();
+            newPath = newPath.join('/');
+            newPath = newPath ? '/'+newPath : '';
+            newPath = "/" + lang + newPath;
+            navigate(newPath);
+        }
+
     };
     getLangList() {
         return Object.keys(this.langStore).map(k => {
@@ -52,23 +58,26 @@ class App extends React.Component {
     render() {
         return (
             <div className="App">
-                <Navbar
-                    curLang={this.state.language}
-                    langList={this.getLangList()}
-                    handleLanguage={this.handleLanguage}
-                    text={this.langStore[this.state.language]}
-                ></Navbar>
-                <Router basepath="/">
-                    <ScrollToTop path="/">
-                        <Home
-                            path="/"
-                            text={this.langStore[this.state.language]}
-                        ></Home>
-                        <Blog path="blog/*"></Blog>
-                        <NotFound default></NotFound>
-                    </ScrollToTop>
+                <Router>
+                    {Object.keys(this.langStore).map(lang => (
+                        <Main
+                            path={`/${lang}/*`}
+                            language={lang}
+                            langList={this.getLangList()}
+                            handleLanguage={this.handleLanguage}
+                            text={this.langStore[lang]}
+                            key={lang}
+                        />
+                    ))}
+                    <Main
+                        path={`/*/`}
+                        language={this.getUserLanguageFromInputList()}
+                        langList={this.getLangList()}
+                        handleLanguage={this.handleLanguage}
+                        text={this.langStore[this.getUserLanguageFromInputList()]}
+                        key={this.getUserLanguageFromInputList()}
+                    />
                 </Router>
-                <BtnTop></BtnTop>
             </div>
         );
     }

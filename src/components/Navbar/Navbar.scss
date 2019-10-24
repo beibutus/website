@@ -87,8 +87,17 @@ select {
     font-size: 1.4rem;
     text-decoration: underline;
     padding: 10px;
+    padding-right: 15px;
     cursor: pointer;
     outline: none;
+    text-align-last: right;
+    &::after{
+        content:'';
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: red;
+    }
 }
 
 .lang option {

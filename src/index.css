@@ -26,7 +26,7 @@ code {
 }
 
 h2 {
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 500;
     word-wrap: break-word;
     word-break: keep-all;
@@ -40,7 +40,7 @@ h3 {
 
 p {
     margin: 2% 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: normal;
     line-height: 1.2;
     color: rgba(0, 0, 0, 0.72);

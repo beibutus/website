@@ -366,7 +366,7 @@ export default class Home extends React.Component {
                     <div className="blog">
                         <h2>{this.getLangText('blog')}</h2>
                         <div className="blog-button">
-                            <Link to="/blog">{this.getLangText('Blog')}</Link>
+                            <Link to="blog">{this.getLangText('Blog')}</Link>
                         </div>
                     </div>
                 </div>

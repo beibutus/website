@@ -18,6 +18,7 @@ export default class Blog extends React.Component {
                 .forEach(key => this.articles.push(context(key)));
         })(require.context("../../articles/", false, /.html$/));
         this.state = {
+            showSearch: true,
             findArticleText: ""
         };
     }
@@ -43,6 +44,9 @@ export default class Blog extends React.Component {
             findArticleText: text
         });
     };
+    changeStateShowSearch = (state = true)=> {
+        this.setState({showSearch:state})
+    }
     render() {
         const findedArticles = this.generateArticleComponents().filter(
             a =>
@@ -55,13 +59,13 @@ export default class Blog extends React.Component {
                 <Header
                     findArticleText={this.state.findArticleText}
                     handleFindText={this.handleFindText}
-                    showSearch={this.props.location.pathname === '/blog' || this.props.location.pathname === '/blog/'}
+                    showSearch={this.state.showSearch}
                 ></Header>
                 <div className="content">
                     <div className="container">
                         <Router>
-                            <ArticlesList path="/" findedArticles={findedArticles}></ArticlesList>
-                            <FullArticle path=":id" articleComponents = {this.generateArticleComponents(true)}></FullArticle>
+                            <ArticlesList path="/" findedArticles={findedArticles} changeStateShowSearch={this.changeStateShowSearch}></ArticlesList>
+                            <FullArticle path=":id" articleComponents = {this.generateArticleComponents(true)} changeStateShowSearch={this.changeStateShowSearch}></FullArticle>
                         </Router>
                     </div>
                 </div>
