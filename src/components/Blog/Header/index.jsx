@@ -4,7 +4,6 @@ import { Link } from "@reach/router";
 
 export default class Header extends React.Component {
     title = "EasyLang Blog";
-
     render() {
         let search;
         if(this.props.showSearch){
@@ -14,7 +13,7 @@ export default class Header extends React.Component {
                     <input
                         type="search"
                         placeholder="Search"
-                        value={this.props.findArticleText}
+                        defaultValue={this.props.parseQueryParam()}
                         onChange={e =>
                             this.props.handleFindText(e.target.value)
                         }

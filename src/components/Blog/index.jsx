@@ -5,7 +5,7 @@ import Article from "./Article";
 import Footer from "../Footer";
 import ArticlesList from './ArticlesList'
 import FullArticle from './FullArticle'
-import {Router} from"@reach/router"
+import {Router, navigate} from"@reach/router"
 
 export default class Blog extends React.Component {
     articles = [];
@@ -39,32 +39,40 @@ export default class Blog extends React.Component {
         });
         return articles;
     }
+    
     handleFindText = text => {
-        this.setState({
-            findArticleText: text
-        });
+        if (text){
+            navigate('?q='+text)
+        }else{
+            this.props.navigate('./')
+        }
     };
+
     changeStateShowSearch = (state = true)=> {
         this.setState({showSearch:state})
     }
+
+    parseQueryParam=()=>{
+        let searchText = '';
+        let match = this.props.location.search.match(/q=([^&]*)/);
+        if (match){
+            searchText = match[1];
+        }
+        return decodeURI(searchText);
+    }
     render() {
-        const findedArticles = this.generateArticleComponents().filter(
-            a =>
-                a.props.title
-                    .toUpperCase()
-                    .indexOf(this.state.findArticleText.toUpperCase()) !== -1
-        );
         return (
             <div className="Blog">
                 <Header
                     findArticleText={this.state.findArticleText}
                     handleFindText={this.handleFindText}
                     showSearch={this.state.showSearch}
+                    parseQueryParam={this.parseQueryParam}
                 ></Header>
                 <div className="content">
                     <div className="container">
                         <Router>
-                            <ArticlesList path="/" findedArticles={findedArticles} changeStateShowSearch={this.changeStateShowSearch}></ArticlesList>
+                            <ArticlesList path='/' articleComponents={this.generateArticleComponents(false)} changeStateShowSearch={this.changeStateShowSearch} parseQueryParam={this.parseQueryParam}></ArticlesList>
                             <FullArticle path=":id" articleComponents = {this.generateArticleComponents(true)} changeStateShowSearch={this.changeStateShowSearch}></FullArticle>
                         </Router>
                     </div>
