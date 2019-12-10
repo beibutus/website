@@ -186,13 +186,15 @@ export default class Home extends React.Component {
                                 <div className="button-block">
                                     <div className="button-group button-group-1">
                                         <a
-                                            className="button-install button-chrome"
-                                            href="https://github.com/easably/extension/releases/download/0.2.3/extension.zip"
+																						className="button-install button-chrome"
+																						target="_blank"
+																						rel="noopener noreferrer"
+                                            href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
                                         >
                                             {this.getLangText("extension")}
                                         </a>
                                         <a
-                                            href="https://github.com/easably/extension/blob/master/README.md"
+                                            href="https://support.google.com/chrome_webstore/answer/2664769"
                                             className="button-install button-guide"
                                             target="_blank"
                                             rel="noopener noreferrer"
@@ -221,7 +223,9 @@ export default class Home extends React.Component {
                                     <div className="button-group button-group-3">
                                         <a
                                             className="button-install button-android"
-                                            href="https://github.com/easably/context-tutor/releases/download/0.2.8/EasyLang.apk"
+																						href="https://github.com/easably/context-tutor/releases/latest/download/EasyLang.apk"
+																						target="_blank"
+                                            rel="noopener noreferrer"
                                         >
                                             Android
                                         </a>
