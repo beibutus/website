@@ -9,7 +9,7 @@ export default class Navbar extends React.Component {
         this.state = {
             openMenu: false,
             fixedBar: false
-        };
+				};
     }
     changeLocale = e => {
         this.props.handleLanguage(e.target.value);
@@ -65,18 +65,22 @@ export default class Navbar extends React.Component {
                             EasyLang
                         </Link>
                     </div>
-                    <div className="lang">
-                        <form>
-                            <select
-                                name="changeLang"
-                                id="getLang"
-                                value={this.props.curLang}
-                                onChange={this.changeLocale}
-                            >
-                                {langList}
-                            </select>
-                        </form>
-                    </div>
+										{
+											 this.props.noUseLangSelect || (
+												<div className="lang">
+														<form>
+																<select
+																		name="changeLang"
+																		id="getLang"
+																		value={this.props.curLang}
+																		onChange={this.changeLocale}
+																>
+																		{langList}
+																</select>
+														</form>
+												</div>
+											 )
+										}
                     <div className="menu-wrapper">
                         <div className="menu-block">
                             <div className={menuMainClass}>
@@ -90,7 +94,7 @@ export default class Navbar extends React.Component {
                                             EasyLang
                                         </span>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <Link
                                             to="./"
                                             className="menu-nav__link"
@@ -98,7 +102,7 @@ export default class Navbar extends React.Component {
                                         >
                                             {this.props.text.home}
                                         </Link>
-                                    </li>
+                                    </li> */}
                                     <li>
                                         <Link
                                             to="blog"

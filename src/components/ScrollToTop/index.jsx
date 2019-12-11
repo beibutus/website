@@ -1,7 +1,14 @@
-import React from 'react'
+import {useState,useEffect} from "react";
 
 export default ({ children, location }) => {
-//   React.useEffect(() => window.scrollTo({ top: 0, behavior: "smooth" }))
-  React.useEffect(() => window.scrollTo({ top: 0 }))
-  return children
-}
+	const [prevHref, changeHref] = useState()
+  useEffect(() => {
+		if (!prevHref || prevHref === location.href){
+			window.scrollTo({ top: 0, behavior: "smooth" })
+		}else{
+			window.scrollTo({ top: 0 });
+		}
+		changeHref(location.href)
+  },[location, prevHref]);
+  return children;
+};

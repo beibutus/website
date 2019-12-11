@@ -19,7 +19,7 @@ import slide3ru from "../../assets/images/home/slider/3ru.svg";
 import slide4ru from "../../assets/images/home/slider/4ru.svg";
 import slide3cn from "../../assets/images/home/slider/3cn.svg";
 import slide4cn from "../../assets/images/home/slider/4cn.svg";
-import extensionImg from "../../assets/images/home/extensionImg.png";
+// import extensionImg from "../../assets/images/home/extensionImg.png";
 
 export default class Home extends React.Component {
     constructor(props) {
@@ -124,7 +124,7 @@ export default class Home extends React.Component {
 
                         <div className="button-started">
                             <a
-                                className="get-started-button"
+                                className="get-started-button top"
                                 href="#toGetStarted"
                                 onClick={e => {
                                     this.anchorClick(e, "toGetStarted");
@@ -193,7 +193,7 @@ export default class Home extends React.Component {
                                         >
                                             {this.getLangText("extension")}
                                         </a>
-                                        <a
+                                        {/* <a
                                             href="https://support.google.com/chrome_webstore/answer/2664769"
                                             className="button-install button-guide"
                                             target="_blank"
@@ -206,7 +206,7 @@ export default class Home extends React.Component {
                                                     "extensionGuide"
                                                 )}
                                             </span>
-                                        </a>
+                                        </a> */}
                                     </div>
 
                                     <div className="button-group button-group-2">
@@ -222,21 +222,22 @@ export default class Home extends React.Component {
 
                                     <div className="button-group button-group-3">
                                         <a
-                                            className="button-install button-android"
-																						href="https://github.com/easably/context-tutor/releases/latest/download/EasyLang.apk"
-																						target="_blank"
+                                            className="button-install button-android lock"
+																						// href="https://github.com/easably/context-tutor/releases/latest/download/EasyLang.apk"
+																						// target="_blank"
                                             rel="noopener noreferrer"
                                         >
                                             Android
                                         </a>
                                         <a
-                                            className="button-install button-iOS"
-                                            href="https://testflight.apple.com/join/w0Dyxqef"
-                                            target="_blank"
+                                            className="button-install button-iOS lock"
+                                            // href="https://testflight.apple.com/join/w0Dyxqef"
+                                            // target="_blank"
                                             rel="noopener noreferrer"
                                         >
                                             iOS
                                         </a>
+																				<span className="button-group-comment">{this.getLangText('comingSoon')}</span>
                                     </div>
                                 </div>
                             </div>
@@ -305,7 +306,7 @@ export default class Home extends React.Component {
                                 </div>
                             </div>
 
-                            <div className="extension">
+                            {/* <div className="extension">
                                 <div className="extension-img">
                                     {" "}
                                     <img
@@ -313,7 +314,7 @@ export default class Home extends React.Component {
                                         alt="extension for Chrome"
                                     />
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </section>
 
@@ -326,16 +327,14 @@ export default class Home extends React.Component {
                             <div className="sources-wrapper">
                                 <div className="sources-title">
                                     <h2>{this.getLangText('headSource')}</h2>
-                                    <p>{this.getLangText('contentSouce')}</p>
+                                    <p>{this.getLangText('contentSource')}</p>
                                 </div>
+																<div className="blog">
+																	<p>{this.getLangText('blog')}</p>
+																	<Link to="blog" className="get-started-button blog-button">{this.getLangText('Blog')}</Link>
+																</div>
                                 <div className="sources-block">
                                     <div className="first-part">
-                                        <div className="sources-paragraph">
-                                            <h3>{this.getLangText('movie')}</h3>
-                                            <p>
-                                                {this.getLangText('movieParagraph')}
-                                            </p>
-                                        </div>
                                         <div className="sources-paragraph">
                                             <h3>{this.getLangText('news')}</h3>
                                             <p>
@@ -348,14 +347,6 @@ export default class Home extends React.Component {
                                                 {this.getLangText('bookParagraph')}
                                             </p>
                                         </div>
-                                    </div>
-                                    <div className="second-part">
-                                        <div className="sources-paragraph">
-                                            <h3>{this.getLangText('video')}</h3>
-                                            <p>
-                                                {this.getLangText('videoParagraph')}
-                                            </p>
-                                        </div>
                                         <div className="sources-paragraph">
                                             <h3>{this.getLangText('music')}</h3>
                                             <p>
@@ -363,21 +354,29 @@ export default class Home extends React.Component {
                                             </p>
                                         </div>
                                     </div>
+                                    <div className="second-part">
+                                        <div className="sources-paragraph">
+                                            <h3>{this.getLangText('movie')}</h3>
+                                            <p>
+                                                {this.getLangText('movieParagraph')}
+                                            </p>
+                                        </div>
+                                        <div className="sources-paragraph">
+                                            <h3>{this.getLangText('video')}</h3>
+                                            <p>
+                                                {this.getLangText('videoParagraph')}
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </section>
-                    </div>
-                    <div className="blog">
-                        <h2>{this.getLangText('blog')}</h2>
-                        <div className="blog-button">
-                            <Link to="blog">{this.getLangText('Blog')}</Link>
-                        </div>
                     </div>
                 </div>
                 <footer className="get-started-footer">
                     <div className="button-started get-started">
                         <a
-                            className="get-started-button2"
+                            className="get-started-button bottom"
                             href="#toGetStarted"
                             onClick={e => {
                                 this.anchorClick(e, "toGetStarted");
