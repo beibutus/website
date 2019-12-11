@@ -139,6 +139,9 @@
 							margin: 0 20%;
 							padding: 3%;
 						}
+						&.bottom{
+							padding: 5px 0;
+						}
         }
 
         .slider {
@@ -167,10 +170,6 @@
         .call-to-action {
             -webkit-background-size: 180%;
             background-size: 180%;
-        }
-
-        .get-started-footer {
-            padding-bottom: 1%;
         }
     }
 }
