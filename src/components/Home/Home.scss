@@ -1,7 +1,4 @@
 .Home {
-  background: url("../../assets/images/home/Illustration6(3).svg") bottom/cover
-    no-repeat;
-  background-size: 100%;
   .slick-slide {
     height: auto !important;
   }
@@ -50,6 +47,7 @@
     font-size: 1.5rem;
     font-weight: 100;
     margin-bottom: 3rem;
+    margin-top: 1%;
   }
 
   .button-started {
@@ -78,11 +76,14 @@
     }
     &.bottom {
       padding: 25px 55px;
-      font-size: 1.4rem;
-      margin: 0 auto;
+			font-size: 1.4rem;
+			transform: translateY(-50%);
+			margin: 0 auto;
+			width: 300px;
     }
     &.blog-button {
-      padding: 20px 20px;
+			padding: 20px 20px;
+			max-width: 360px;
     }
   }
 
@@ -113,11 +114,11 @@
   }
 
   .enjoyIt-heading {
-    text-align: left;
+    margin-right: 5%;
   }
 
   .context-title {
-    text-align: right;
+    margin-left: 5%;
   }
 
   .imgEnjoy img,
@@ -129,11 +130,6 @@
   .imgEnjoy,
   .img-context-puzzle {
     flex: 1 1 50%;
-  }
-
-  .enjoyIt-heading h2,
-  .context-title h2 {
-    margin-bottom: 5%;
   }
 
   .app-download-wrapper {
@@ -292,20 +288,14 @@
     margin-bottom: 2%;
   }
 
-
-
-
-
-
   .extension img {
     width: 100%;
-  }
-
-  .sources-block,
-	.sources-block .second-part,
-	.sources-block .first-part {
-    display: flex;
-  }
+	}
+	
+	.content-sources{
+		margin-bottom: 1%;
+		padding-bottom: 0;
+	}
 
   .sources-wrapper {
     justify-content: center;
@@ -322,45 +312,49 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    // flex-basis: 50%;
     padding: 20px 40px 20px 50px;
     grid-area: text;
     h2 {
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
   }
   .blog {
-    padding: 20px 40px 20px 50px;
-		grid-area: button;
-		p{
-			margin-bottom: 1.5rem;
-		}
+    padding: 20px 40px 0 50px;
+    grid-area: button;
+    p {
+      margin-bottom: 1.5rem;
+    }
   }
   .sources-block {
-    grid-area: stickers;
+		grid-area: stickers;
+		margin:-2%;
+		&_row{
+			width: 100%;
+			display: flex;
+		}
+		.sources-paragraph {
+			flex: 0 1 50%;
+			margin: 2%;
+			padding: 20px;
+			border-radius: 25px;
+			background: #45b8ff;
+			color: white;
+			p {
+				font-size: 1rem;
+				color: white;
+			}
+			&.disabled{
+				opacity: 0;
+			}
+		}
   }
 
-  .sources-block .first-part,
-  .sources-block .second-part {
-    flex-direction: column;
-    justify-content: center;
-    flex-basis: 50%;
-  }
 
-  .sources-paragraph {
-    margin: 6%;
-    padding: 8%;
-    border-radius: 25px;
-    background: #45b8ff;
-    color: white;
-  }
 
-  .sources-paragraph p {
-    font-size: 1rem;
-    color: white;
-  }
 
   .get-started-footer {
-    padding-bottom: 3%;
+		background: url("../../assets/images/home/Illustration6(3).svg") bottom/cover no-repeat;
+		height: 20vw;
+		padding-top: 14%;
   }
 }

@@ -1,16 +1,20 @@
 .Navbar {
     position: -webkit-sticky;
-    position: sticky;
+		position: sticky;
+		display: flex;
+		align-items:center;
     top: 0;
     z-index: 50;
+		min-height: 70px;
 }
 
 .sticky-bar {
     display: flex;
-    width: 100%;
+		width: 100%;
+		height: 100%;
     justify-content: space-between;
-    align-items: center;
-    min-height: 70px;
+		align-items: flex-end;
+		margin-bottom: 4px;
 }
 
 .fixed-bar {
@@ -71,7 +75,6 @@
     justify-content: flex-start;
     display: flex;
     align-items: center;
-    margin-bottom: -0.4rem;
 }
 
 select {
@@ -84,9 +87,10 @@ select {
         no-repeat;
     background-size: 10%;
     color: white;
-    font-size: 1.4rem;
+		font-size: 1.1rem;
+		letter-spacing: 0.7px;
     text-decoration: underline;
-    padding: 10px;
+    padding-left: 10px;
     padding-right: 15px;
     cursor: pointer;
     outline: none;
@@ -104,10 +108,6 @@ select {
     color: #215599;
 }
 
-.logo {
-    height: 100%;
-}
-
 .logo-light {
     font-size: 1.8rem;
     font-family: "Kodchasan";
@@ -115,9 +115,9 @@ select {
     color: white;
     display: flex;
     align-items: center;
-    height: 100%;
     padding: 0 50px;
-    margin-right: 20px;
+		margin-right: 20px;
+		margin-bottom: -4px;
 }
 
 /*menu*/
@@ -157,7 +157,7 @@ select {
 
 .menu-nav__link {
     font-weight: normal;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     padding-bottom: 5px;
     border-bottom: 0px solid rgba(255, 255, 255, 0);
     transition: border-bottom 0.1s ease-in-out;
@@ -184,7 +184,6 @@ select {
     }
     .sticky-bar {
         padding-right: 100px;
-        position: relative;
     }
 
     .menu-wrapper {
