@@ -7,14 +7,14 @@
     "learningSources": "sources for learning",
     "headerTitle": "Easy way to learn languages<br>The context you love is the best tutor!",
     "headerSubtitle": "Try our app and enjoy learning ",
-    "buttonStarted": "get started",
+    "buttonStarted": "Download Easylang",
     "headPleasure": "Learn languages with joy",
     "contentPleasure": "You can find lessons on favourite Youtube channel or Netflix show. Every article you read is full of new words and expressions. Fullfill your vocabulary with expressions that matter to you.",
     "headMemory": "A clue for your memory",
     "contentMemory": "Training is based on materials that you love and enjoy. We use context exactly from the video and articles you watched. Translation depends on context so you shouldn’t learn everything at once.",
     "headOurApp": "Try our <span>EasyLang</span><sup> BETA</sup>",
     "contentOurApp": "Easylang is a FREE extention for your browser and training app for web and mobile.",
-		"extension": "Chrome",
+		"extension": "Extension",
 		"extensionGuide": "Installation guide",
 		"comingSoon": "Coming soon",
     "headHowItWorks": "How it works?",
@@ -36,5 +36,5 @@
     "bookParagraph": "Read classic and modern literature in original",
     "movie": "movies",
     "movieParagraph": "Watch movies in original",
-    "getStarted": "get started"
+    "getStarted": "Download Easylang"
 }

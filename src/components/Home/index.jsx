@@ -19,6 +19,7 @@ import slide3ru from "../../assets/images/home/slider/3ru.svg";
 import slide4ru from "../../assets/images/home/slider/4ru.svg";
 import slide3cn from "../../assets/images/home/slider/3cn.svg";
 import slide4cn from "../../assets/images/home/slider/4cn.svg";
+import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 // import extensionImg from "../../assets/images/home/extensionImg.png";
 
 export default class Home extends React.Component {
@@ -118,12 +119,16 @@ export default class Home extends React.Component {
             <div className="button-started">
               <a
                 className="get-started-button top"
-                href="#toGetStarted"
-                onClick={e => {
-                  this.anchorClick(e, "toGetStarted");
-                }}
+								href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
+								target="_blank"
+								rel="noopener noreferrer"
               >
-                {this.getLangText("buttonStarted")}
+                <img
+                  src={chromeStoreSvg}
+                  alt="Chrome-store"
+                  className="icon get-started-button__icon"
+                />
+                <span>{this.getLangText("buttonStarted")}</span>
               </a>
             </div>
           </div>
@@ -184,6 +189,11 @@ export default class Home extends React.Component {
                       rel="noopener noreferrer"
                       href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
                     >
+                      <img
+                        src={chromeStoreSvg}
+                        alt="chrome-store"
+                        className="icon button-chrome-icon"
+                      />
                       {this.getLangText("extension")}
                     </a>
                     {/* <a
@@ -209,7 +219,7 @@ export default class Home extends React.Component {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Web
+                      Context-Tutor
                     </a>
                   </div>
 
@@ -345,15 +355,21 @@ export default class Home extends React.Component {
           </div>
         </div>
         <footer className="get-started-footer">
-          <a
-            className="get-started-button bottom"
-            href="#toGetStarted"
-            onClick={e => {
-              this.anchorClick(e, "toGetStarted");
-            }}
-          >
-            {this.getLangText("getStarted")}
-          </a>
+          <div className="button-started bottom">
+            <a
+              className="get-started-button bottom"
+              href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
+								target="_blank"
+								rel="noopener noreferrer"
+            >
+              <img
+                src={chromeStoreSvg}
+                alt="Chrome-store"
+                className="icon get-started-button__icon"
+              />
+              <span>{this.getLangText("getStarted")}</span>
+            </a>
+          </div>
         </footer>
       </div>
     );
