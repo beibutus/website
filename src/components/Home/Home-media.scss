@@ -95,6 +95,9 @@
 						margin: 0 15%;
 					}
 				}
+				.button-group{
+					padding-right: 20%;
+				}
     }
 }
 
@@ -156,10 +159,11 @@
 					}
 				}
 				.button-chrome{
-					padding-left: 40px;
+					&-wrapper{
+						padding-left: 2.1rem;
+					}
 					&-icon{
 						height: 2rem;
-						top: 50%;
 					}
 
 				}

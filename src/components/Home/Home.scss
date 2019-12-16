@@ -207,18 +207,19 @@
   .button-group {
     display: flex;
     width: 100%;
-    padding-right: 20%;
     margin-top: 4px;
     position: relative;
     align-items: center;
     &-comment {
       position: absolute;
-      right: 0;
-      top: 8px;
-      font-size: 1rem;
+			left: 100%;
+      top: 5px;
+      font-size: 0.9rem;
       color: #979797;
-      text-align: left;
-      width: 40%;
+			text-align: left;
+			width: fit-content;
+			margin-left: 5px;
+			font-weight: 100;
     }
   }
 
@@ -243,14 +244,14 @@
   }
 
   .button-install {
+		// font-size: 12px;
 		padding: 20px 20px;
-		// min-height: 58px;
-    flex: 0 1 50%;
+    flex: 0 0 53%;
     background-color: #56d3f1;
     border-radius: 50px;
     display: block;
 		transition: all 0.2s ease-in-out;
-		text-align: left;
+		text-align: center;
     &:hover {
       transform: scale(1.1);
     }
@@ -266,14 +267,16 @@
 	}
 	
 	.button-chrome{
-		// display: flex;
-		// align-items: center;
-		padding-left: 50px;
+		&-wrapper{
+			position: relative;
+			width: 100%;
+			padding-left: 40px;
+		}
 		&-icon{
 			position: absolute;
-			top: 45%;
+			top: 35%;
 			transform: translateY(-50%);
-			left: 10px;
+			left: 0;
 		}
 	}
 
@@ -292,10 +295,12 @@
   }
 
   .button-iOS {
+		position: relative;
     right: 30%;
     text-align: center;
     padding-left: 29%;
-    padding-right: 1%;
+		padding-right: 1%;
+		flex: 0 0 50%;
   }
 
   .button-guide {

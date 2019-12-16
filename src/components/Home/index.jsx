@@ -119,9 +119,9 @@ export default class Home extends React.Component {
             <div className="button-started">
               <a
                 className="get-started-button top"
-								href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
-								target="_blank"
-								rel="noopener noreferrer"
+                href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <img
                   src={chromeStoreSvg}
@@ -189,12 +189,14 @@ export default class Home extends React.Component {
                       rel="noopener noreferrer"
                       href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
                     >
-                      <img
-                        src={chromeStoreSvg}
-                        alt="chrome-store"
-                        className="icon button-chrome-icon"
-                      />
-                      {this.getLangText("extension")}
+                      <span className="button-chrome-wrapper">
+                        <img
+                          src={chromeStoreSvg}
+                          alt="chrome-store"
+                          className="icon button-chrome-icon"
+                        />
+                        {this.getLangText("extension")}
+                      </span>
                     </a>
                     {/* <a
                                             href="https://support.google.com/chrome_webstore/answer/2664769"
@@ -239,10 +241,10 @@ export default class Home extends React.Component {
                       rel="noopener noreferrer"
                     >
                       iOS
+                      <span className="button-group-comment">
+                        {this.getLangText("comingSoon")}
+                      </span>
                     </a>
-                    <span className="button-group-comment">
-                      {this.getLangText("comingSoon")}
-                    </span>
                   </div>
                 </div>
               </div>
@@ -359,8 +361,8 @@ export default class Home extends React.Component {
             <a
               className="get-started-button bottom"
               href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
-								target="_blank"
-								rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 src={chromeStoreSvg}
