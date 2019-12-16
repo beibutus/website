@@ -79,14 +79,14 @@
 		&.top,&.bottom{
 			display: flex;
 			align-items: center;
-			padding: 1% 4% 1% 2%;
+			padding: 0.5% 4% 0.5% 2%;
 			.icon{
 				margin-right: 2%;
-				padding-bottom: 5px;
+				margin-bottom: 4%;
 				flex: 0 0 auto;
+				height: 3rem;
 			}
 			span{
-				// margin-bottom: 4px;
 				flex: 0 0 auto;
 			}
 		}
@@ -244,14 +244,14 @@
   }
 
   .button-install {
-		// font-size: 12px;
 		padding: 20px 20px;
-    flex: 0 0 53%;
+    flex: 0 0 55%;
     background-color: #56d3f1;
     border-radius: 50px;
     display: block;
 		transition: all 0.2s ease-in-out;
 		text-align: center;
+		white-space: nowrap;
     &:hover {
       transform: scale(1.1);
     }
@@ -270,13 +270,14 @@
 		&-wrapper{
 			position: relative;
 			width: 100%;
-			padding-left: 40px;
+			padding-left: 3.2rem;
 		}
 		&-icon{
 			position: absolute;
-			top: 35%;
+			top: 30%;
 			transform: translateY(-50%);
 			left: 0;
+			height: 3rem;
 		}
 	}
 

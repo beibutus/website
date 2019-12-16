@@ -128,12 +128,6 @@
 						&.blog-button{
 							margin: 0 20%;
 						}
-						&.bottom, &.top{
-							// font-size: 1.2rem;
-							.icon{
-								height: 3rem;
-							}
-						}
         }
 
         .slider {
@@ -158,15 +152,7 @@
 						font-size: 0.8rem;
 					}
 				}
-				.button-chrome{
-					&-wrapper{
-						padding-left: 2.1rem;
-					}
-					&-icon{
-						height: 2rem;
-					}
 
-				}
         .call-to-action {
             -webkit-background-size: 180%;
             background-size: 180%;
