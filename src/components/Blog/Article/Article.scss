@@ -6,6 +6,11 @@ $time-open-article: 0.2s;
     @return $value1 * $value2;
 }
 
+.Artice-wrapper{
+	display: block;
+	color: inherit;
+}
+
 .Article {
     background: $article-background;
     border: 1px solid #e5e5e5;
@@ -144,13 +149,12 @@ $time-open-article: 0.2s;
         .grid {
             &-text {
                 height: 1rem;
-                p {
-                    text-overflow: ellipsis;
-                    overflow: hidden;
-                    height: 100%;
-                    margin: 0;
-                    line-height: 1rem;
-                }
+								text-overflow: ellipsis;
+								overflow: hidden;
+								height: 100%;
+								margin: 0;
+								line-height: 1rem;
+								text-align: left;
             }
             &-img {
                 margin: 1rem 0;

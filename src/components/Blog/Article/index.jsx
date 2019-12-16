@@ -4,7 +4,7 @@ import "./Article.scss";
 import { Link } from "@reach/router";
 
 export default class Article extends React.Component {
-    render() {
+	render() {
         let article;
         let readMoreBtn;
         
@@ -22,15 +22,16 @@ export default class Article extends React.Component {
             );
         } else {
             readMoreBtn = (
-                <Link to={this.props.id.toString()} className="Read-more-btn">
+                <div className="Read-more-btn">
                     Read more
-                </Link>
+                </div>
             );
-            const articleReact = ReactHtmlParser(this.props.articleHtml);
+						const articleReact = ReactHtmlParser(this.props.articleHtml);
             const articleTitle = articleReact.find(e => e.type === "h1");
             const articleImg = articleReact.find(e => e.type === "img");
-            const articleText = articleReact.find(e => e.type === "p");
+            const articleText = articleReact.find(e => e.type === "p").props.children[0];
             article = (
+							<Link to={this.props.id.toString()} className='Artice-wrapper'>
                 <div className="Article hide">
                     <div className="grid">
                         <div className="grid-title">{articleTitle}</div>
@@ -39,6 +40,7 @@ export default class Article extends React.Component {
                         <div className="grid-read-more">{readMoreBtn}</div>
                     </div>
                 </div>
+							</Link>
             );
         }
         return article;
