@@ -65,11 +65,12 @@
         .content-context-memory {
             flex-direction: column;
             margin-top: 0;
-        }
-
-        // .blog a {
-        //     font-size: 1.1rem;
-        // }
+				}
+				
+				.blog{
+					padding-left: 0;
+					padding-right: 0;
+				}
 
 				.sources-wrapper{
 					grid-template-areas:
@@ -92,7 +93,7 @@
 				}
 				.get-started-button{
 					&.blog-button{
-						margin: 0 15%;
+						margin: 0 auto;
 					}
 				}
 				.button-group{
@@ -156,6 +157,11 @@
         .call-to-action {
             -webkit-background-size: 180%;
             background-size: 180%;
-        }
+				}
+				
+				.get-started-footer{
+					height: 30vw;
+					padding-top: 21%;
+				}
     }
 }
