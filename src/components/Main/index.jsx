@@ -1,11 +1,11 @@
 import React from "react";
-import { Router } from "@reach/router";
+import { Router, Redirect } from "@reach/router";
 import Blog from "../Blog";
 import Navbar from "../Navbar";
 import Home from "../Home";
 // import BtnTop from "../BtnTop";
 import ScrollToTop from "../ScrollToTop";
-import NotFound from "../NotFound";
+// import NotFound from "../NotFound";
 import Helmet from "react-helmet";
 
 export default class App extends React.Component {
@@ -35,7 +35,7 @@ export default class App extends React.Component {
           <ScrollToTop path="/">
             <Home path="/" text={this.props.text}></Home>
             <Blog path="/blog/*"></Blog>
-            <NotFound default></NotFound>
+            <Redirect from ="/" to={this.props.uri} default noThrow></Redirect>
           </ScrollToTop>
         </Router>
         {/* <BtnTop></BtnTop> */}

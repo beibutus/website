@@ -227,17 +227,17 @@ export default class Home extends React.Component {
 
                   <div className="button-group button-group-3">
                     <a
-                      className="button-install button-android lock"
-                      // href="https://github.com/easably/context-tutor/releases/latest/download/EasyLang.apk"
-                      // target="_blank"
+                      className="button-install button-android disabled"
+                      href="https://github.com/easably/context-tutor/releases/latest/download/EasyLang.apk"
+                      target="_blank"
                       rel="noopener noreferrer"
                     >
                       Android
                     </a>
                     <a
-                      className="button-install button-iOS lock"
-                      // href="https://testflight.apple.com/join/w0Dyxqef"
-                      // target="_blank"
+                      className="button-install button-iOS disabled"
+                      href="https://testflight.apple.com/join/w0Dyxqef"
+                      target="_blank"
                       rel="noopener noreferrer"
                     >
                       iOS

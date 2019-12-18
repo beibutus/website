@@ -73,7 +73,7 @@ export default class Blog extends React.Component {
                     <div className="container">
                         <Router>
                             <ArticlesList path='/' articleComponents={this.generateArticleComponents(false)} changeStateShowSearch={this.changeStateShowSearch} parseQueryParam={this.parseQueryParam}></ArticlesList>
-                            <FullArticle path=":id" articleComponents = {this.generateArticleComponents(true)} changeStateShowSearch={this.changeStateShowSearch}></FullArticle>
+                            <FullArticle path=":id" articleComponents = {this.generateArticleComponents(true)} changeStateShowSearch={this.changeStateShowSearch} parentUri={this.props.uri}></FullArticle>
                         </Router>
                     </div>
                 </div>

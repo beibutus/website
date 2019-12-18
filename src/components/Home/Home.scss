@@ -255,8 +255,9 @@
     &:hover {
       transform: scale(1.1);
     }
-    &.lock {
-      background-color: #c4c4c4;
+    &.disabled {
+			background-color: #c4c4c4;
+			pointer-events: none;
       cursor: default;
       &:hover {
         transform: scale(1);
