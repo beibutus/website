@@ -116,7 +116,7 @@ export default class Home extends React.Component {
               <p className="subtitle">{this.getLangText("headerSubtitle")}</p>
             </div>
 
-            <div className="button-started">
+           <div className="button-started">
               <a
                 className="get-started-button top"
                 href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"

@@ -204,3 +204,78 @@ $time-open-article: 0.2s;
         }
     }
 }
+
+
+
+
+/* 13 - Article about extension */
+
+.extension-block {
+    margin-bottom: 50px;
+}
+
+.extension-header {
+    display: flex;
+}
+
+
+.first-step {
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    padding: 20px;
+    background: rgba(111, 133, 244, 0.2);
+    text-align: center;
+    font-size: 2.7rem;
+    margin-right: 10px;
+}
+
+
+.button-started {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    &.bottom{
+        margin: 0;
+        transform: translateY(-50%);
+    }
+}
+
+.get-started-button {
+display: block;
+width: auto;
+
+font-size: 1.4rem;
+text-transform: capitalize;
+color: #fff !important;
+
+background-color: #6F85F4;
+border: none;
+border-radius: 50px;
+transition: all 0.3s linear;
+&:hover {
+  background-color: #f26d6d;
+    }
+    &.top,&.bottom{
+        display: flex;
+        align-items: center;
+        padding: 2% 7%;
+        .icon{
+            padding-right: 7%;
+            margin-bottom: 4%;
+            flex: 0 0 auto;
+            height: 3rem;
+        }
+        span{
+            flex: 0 0 auto;
+        }
+    }
+&.bottom {
+        font-size: 1.4rem;
+}
+&.blog-button {
+        padding: 20px 20px;
+        max-width: 360px;
+}
+}
