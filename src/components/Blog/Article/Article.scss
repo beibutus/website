@@ -218,6 +218,10 @@ $time-open-article: 0.2s;
     display: flex;
 }
 
+.button-extension {
+    margin-left: 0 !important;
+}
+
 
 .step {
     border-radius: 50%;
@@ -237,15 +241,11 @@ $time-open-article: 0.2s;
     display: flex;
     justify-content: center;
     margin-top: 2%;
-    &.bottom{
-        margin: 0;
-        transform: translateY(-50%);
-    }
 }
 
 .get-started-button-extension {
     display: block;
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
     text-transform: capitalize;
     color: #fff !important;
     background-color: #6F85F4;
@@ -262,11 +262,11 @@ $time-open-article: 0.2s;
             .icon{
                 padding-right: 5%;
                 margin-bottom: 4%;
-                flex: 0 0 auto;
-                height: 3rem;
+               flex: 0 0 auto;
+                height: 2.5rem;
             }
             span{
-                flex: 0 0 auto;
+               flex: 0 0 auto;
             }
         }
     &.bottom {
