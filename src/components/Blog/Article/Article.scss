@@ -232,7 +232,7 @@ $time-open-article: 0.2s;
 }
 
 
-.button-started {
+.button-started-extension {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -243,7 +243,7 @@ $time-open-article: 0.2s;
     }
 }
 
-.get-started-button {
+.get-started-button-extension {
     display: block;
     font-size: 1.2rem;
     text-transform: capitalize;
@@ -272,10 +272,6 @@ $time-open-article: 0.2s;
     &.bottom {
             font-size: 1.2rem;
     }
-    &.blog-button {
-            //padding: 20px 20px;
-            //max-width: 360px;
-}
 }
 
 
@@ -299,8 +295,20 @@ $time-open-article: 0.2s;
     .icon {
         width: 20px;
     }
-    .get-started-button {
-        padding-right: 2% 50%;
+    .get-started-button-extension {
+        padding-right: 2% 5%;
+    }
+
+    .step {
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        padding: 7px;
+        background: rgba(111, 133, 244, 0.2);
+        text-align: center;
+        font-size: 1.2rem;
+        margin-right: 10px;
+        margin-top: 10px;
     }
 }
 
