@@ -65,22 +65,6 @@ export default class Navbar extends React.Component {
                             EasyLang
                         </Link>
                     </div>
-										{
-											 this.props.noUseLangSelect || (
-												<div className="lang">
-														<form>
-																<select
-																		name="changeLang"
-																		id="getLang"
-																		value={this.props.curLang}
-																		onChange={this.changeLocale}
-																>
-																		{langList}
-																</select>
-														</form>
-												</div>
-											 )
-										}
                     <div className="menu-wrapper">
                         <div className="menu-block">
                             <div className={menuMainClass}>
@@ -105,12 +89,57 @@ export default class Navbar extends React.Component {
                                     </li> */}
                                     <li>
                                         <Link
+                                            to="about"
+                                            className="menu-nav__link"
+                                            onClick={this.closeMenu}
+                                        >
+                                            {this.props.text.About}
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="products"
+                                            className="menu-nav__link"
+                                            onClick={this.closeMenu}
+                                        >
+                                            {this.props.text.Products}
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="download"
+                                            className="menu-nav__link"
+                                            onClick={this.closeMenu}
+                                        >
+                                            {this.props.text.Download}
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
                                             to="blog"
                                             className="menu-nav__link"
                                             onClick={this.closeMenu}
                                         >
                                             {this.props.text.ourBlog}
                                         </Link>
+                                    </li>
+                                    <li>
+                                    {
+										 this.props.noUseLangSelect || (
+											<div className="lang">
+												<form>
+													<select
+														name="changeLang"
+														id="getLang"
+														value={this.props.curLang}
+														onChange={this.changeLocale}
+													>
+														{langList}
+													</select>
+												</form>
+											</div>
+											)
+										}
                                     </li>
                                 </ul>
                             </div>

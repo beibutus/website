@@ -1,6 +1,9 @@
 import React from "react";
 import { Router, Redirect } from "@reach/router";
 import Blog from "../Blog";
+import About from '../About';
+import Products from '../Products';
+import Download from '../Download';
 import Navbar from "../Navbar";
 import Home from "../Home";
 // import BtnTop from "../BtnTop";
@@ -34,6 +37,9 @@ export default class App extends React.Component {
         <Router>
           <ScrollToTop path="/">
             <Home path="/" text={this.props.text}></Home>
+            <About path="/about/*"></About>
+            <Products path="/products/*"></Products>
+            <Download path="/download/*"></Download>
             <Blog path="/blog/*"></Blog>
             <Redirect from ="/" to={this.props.uri} default noThrow></Redirect>
           </ScrollToTop>
