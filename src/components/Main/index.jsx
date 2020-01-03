@@ -37,9 +37,9 @@ export default class App extends React.Component {
         <Router>
           <ScrollToTop path="/">
             <Home path="/" text={this.props.text}></Home>
-            <About path="/about/*"></About>
-            <Products path="/products/*"></Products>
-            <Download path="/download/*"></Download>
+            <About path="/about/*" text={this.props.text}></About>
+            <Products path="/products/*" text={this.props.text}></Products>
+            <Download path="/download/*" text={this.props.text}></Download>
             <Blog path="/blog/*"></Blog>
             <Redirect from ="/" to={this.props.uri} default noThrow></Redirect>
           </ScrollToTop>

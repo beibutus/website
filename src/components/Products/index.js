@@ -1,4 +1,5 @@
 import React from "react";
+import Header from '../Header';
 import "./Products.scss";
 
 
@@ -7,7 +8,8 @@ export default class Products extends React.Component {
     render() {
         return (
             <div className="Blog">
-                <h1>It's Page about our products</h1>
+                <Header text={this.props.text}/>
+                
             </div>
         );
     }
