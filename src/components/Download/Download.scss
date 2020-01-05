@@ -1,0 +1,29 @@
+@import "../../styles/variables";
+
+.Download {
+    background-color: #fff;
+    background-image: url("../../assets/images/bottom.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+    font-size: 1rem;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: -70px;
+    padding-bottom: 250px;
+    .container {
+        @media (min-width: 576px) {
+            max-width: 500px;
+        }
+        @media (min-width: 768px) {
+            max-width: 620px;
+        }
+        @media (min-width: 992px) {
+            max-width: 860px;
+        }
+        @media (min-width: 1200px) {
+            max-width: 1240px;
+        }
+    }
+}

@@ -51,5 +51,12 @@
     "AboutPageFourthParagraph": "We don't impose content on you - You choose it yourself. If you are not sure where to start, check out our recommendations. ",
     "ForBeginners": "for beginners",
     "ForAverages": "for intermediates",
-    "ForProfessionals": "for advanced"
+    "ForProfessionals": "for advanced",
+    "OurProducts": "Our products",
+    "ProductsPageTopText": "Мы помогаем изучать язык бесплатно, удобно, занимаяюсь любимым делом - за просмотром сериалов, читая книги,  или слушая музыку.  <br> Для того, чтобы начать Вам необходимо: <br>- поставить расширение для браузера <br>- создать аккаунт в тьюторе для работы над интересующим Вас контентом. ",
+    "ExtensionForBrowser": "Extension For Browser",
+    "ExtensionDescription": "- работает с google chrome <br>- переводит все что скажете",
+    "ContextTutor": "Context Tutor",
+    "ContextTutorDescription": "- помогает вспомнить пройденное <br>- помогает выучить новое",
+    "ProductsPageBottomText": "Остались вопросы? <br> Посмотрите наш <a href='/' style='color:inherit'><u>ролик</u></a> о том, как устанавливать продукты, или <a href='' style='color:inherit'><u>свяжитесь</u></a> с нами - мы обязательно поможем!"
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import Header from '../Header';
 import ReactHtmlParser from "react-html-parser";
 
