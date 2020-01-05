@@ -18,9 +18,8 @@ export default class Products extends React.Component {
 
     render() {
         return (
-            <div className="Blog">
+            <div className="Products">
                 <Header text={this.props.text}/>
-                <div class="Download">
                     <div class="container">
                         <div className="description-header-block">
                             <h1>{this.getLangText('OurProducts')}</h1>
@@ -67,7 +66,6 @@ export default class Products extends React.Component {
                             </p>
                         </div>
                     </div>
-                </div>
             </div>
         );
     }
