@@ -60,11 +60,11 @@ export default class Products extends React.Component {
                                 <img class="tutor-img" src={tutor_img} />
                             </div>
                         </div>
-                        <div class="description-bottom-block">
+                        {/*<div class="description-bottom-block">
                             <p>
                                 {this.getLangText('ProductsPageBottomText')}
                             </p>
-                        </div>
+                        </div>*/}
                     </div>
             </div>
         );

@@ -53,10 +53,10 @@
     "ForAverages": "for intermediates",
     "ForProfessionals": "for advanced",
     "OurProducts": "Our products",
-    "ProductsPageTopText": "Мы помогаем изучать язык бесплатно, удобно, занимаяюсь любимым делом - за просмотром сериалов, читая книги,  или слушая музыку.  <br> Для того, чтобы начать Вам необходимо: <br>- поставить расширение для браузера <br>- создать аккаунт в тьюторе для работы над интересующим Вас контентом. ",
+    "ProductsPageTopText": "We help to learn the language for free and comfortably, doing what you love - watching TV shows, reading books, or listening to music.  <br> In order to start you need: <br>- to install a browser extension <br>- to create an account in the tutor to work on the content you are interested in. ",
     "ExtensionForBrowser": "Extension For Browser",
-    "ExtensionDescription": "- работает с google chrome <br>- переводит все что скажете",
+    "ExtensionDescription": "- compatible with Google Chrome <br>- translates everything you need",
     "ContextTutor": "Context Tutor",
-    "ContextTutorDescription": "- помогает вспомнить пройденное <br>- помогает выучить новое",
-    "ProductsPageBottomText": "Остались вопросы? <br> Посмотрите наш <a href='/' style='color:inherit'><u>ролик</u></a> о том, как устанавливать продукты, или <a href='' style='color:inherit'><u>свяжитесь</u></a> с нами - мы обязательно поможем!"
+    "ContextTutorDescription": "- helps to review passed lessons <br>- helpes to learn new",
+    "ProductsPageBottomText": "Still have questions? <br> Watch our <a href='/' style='color:inherit'><u>video</u></a> how to install our products or <a href='' style='color:inherit'><u>contact</u></a> us - we will surely help you!"
 }
