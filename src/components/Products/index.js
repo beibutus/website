@@ -43,7 +43,7 @@ export default class Products extends React.Component {
                                 <img className="extension-img" src={extention_img} />
                                 <img className="extension-img" src={extention_img} />
                             </div>
-                            </div>
+                        </div>
                         <div className="product-block">
                             <div className="product-block-description">
                                 <div>

@@ -58,5 +58,7 @@
     "ExtensionDescription": "- работает с google chrome <br>- переводит все что скажете",
     "ContextTutor": "Тьютор",
     "ContextTutorDescription": "- помогает вспомнить пройденное <br>- помогает выучить новое",
-    "ProductsPageBottomText": "Остались вопросы? <br> Посмотрите наш <a href='' style='color:inherit'><u>ролик</u></a> о том, как устанавливать продукты, или <a href='/' style='color:inherit'><u>свяжитесь</u></a> с нами - мы обязательно поможем!"
+    "ProductsPageBottomText": "Остались вопросы? <br> Посмотрите наш <a href='' style='color:inherit'><u>ролик</u></a> о том, как устанавливать продукты, или <a href='/' style='color:inherit'><u>свяжитесь</u></a> с нами - мы обязательно поможем!",
+    "Add": "добавить",
+    "GetStarted": "начать работу"
 }

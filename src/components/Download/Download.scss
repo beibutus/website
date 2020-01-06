@@ -27,3 +27,63 @@
         }
     }
 }
+
+
+.download-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 130px;
+}
+
+.download-block {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description-download-text {
+    padding-top: 20px;
+}
+
+.download-block-description {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 20px;
+    margin: 30px 0;
+}
+
+
+.logo-download-small {
+    width: 15%;
+    margin-right: 30px;
+}
+
+.download-button-block {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.download-button {
+    color: black !important;
+    padding: 20px 100px;
+    background-color: #00b9ed;
+    border-radius: 10px;
+    border: 0 !important;
+    font-weight: 400;
+    text-align: center; 
+}
+
+.download-bottom-block {
+    margin: 60px 0;
+}
+
+
+
+@media (max-width: 768px) {
+    .download-container {
+        flex-direction: column;
+    }
+}

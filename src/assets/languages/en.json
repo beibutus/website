@@ -58,5 +58,7 @@
     "ExtensionDescription": "- compatible with Google Chrome <br>- translates everything you need",
     "ContextTutor": "Context Tutor",
     "ContextTutorDescription": "- helps to review passed lessons <br>- helpes to learn new",
-    "ProductsPageBottomText": "Still have questions? <br> Watch our <a href='/' style='color:inherit'><u>video</u></a> how to install our products or <a href='' style='color:inherit'><u>contact</u></a> us - we will surely help you!"
+    "ProductsPageBottomText": "Still have questions? <br> Watch our <a href='/' style='color:inherit'><u>video</u></a> how to install our products or <a href='' style='color:inherit'><u>contact</u></a> us - we will surely help you!",
+    "Add": "add",
+    "GetStarted": "get started"
 }
