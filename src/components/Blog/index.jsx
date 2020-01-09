@@ -5,7 +5,9 @@ import Article from "./Article";
 import Footer from "../Footer";
 import ArticlesList from './ArticlesList'
 import FullArticle from './FullArticle'
-import {Router, navigate} from"@reach/router"
+import {Router} from"@reach/router"
+
+const useHash = process.env.PUBLIC_URL.indexOf("github") !== -1 ? true : false;
 
 export default class Blog extends React.Component {
     articles = [];
@@ -42,7 +44,7 @@ export default class Blog extends React.Component {
     
     handleFindText = text => {
         if (text){
-            navigate('?q='+text)
+            this.props.navigate('?q='+text)
         }else{
             this.props.navigate('./')
         }
@@ -53,8 +55,9 @@ export default class Blog extends React.Component {
     }
 
     parseQueryParam=()=>{
-        let searchText = '';
-        let match = this.props.location.search.match(/q=([^&]*)/);
+				let searchText = '';
+				const search = useHash ? this.props.location.pathname : this.props.location.search;
+				let match = search.match(/\?q=([^&/]*)/);
         if (match){
             searchText = match[1];
         }
