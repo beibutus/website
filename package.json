@@ -1,7 +1,6 @@
 {
     "name": "portal",
     "version": "0.1.1",
-    "homepage": "https://easylang.app",
     "private": true,
     "dependencies": {
         "@babel/core": "7.6.0",
@@ -31,6 +30,7 @@
         "file-loader": "3.0.1",
         "fs-extra": "7.0.1",
         "gh-pages": "^2.1.1",
+        "hash-source": "^1.0.4",
         "html-webpack-plugin": "4.0.0-beta.5",
         "identity-obj-proxy": "3.0.0",
         "is-wsl": "^1.1.0",
@@ -70,9 +70,9 @@
     },
     "scripts": {
         "start": "node scripts/start.js",
-        "build": "node scripts/build.js",
-        "test": "node scripts/test.js",
-        "predeploy": "npm run build",
+        "build": "PUBLIC_URL=https://easylang.app node scripts/build.js",
+        "test": "node scripts/test.js ",
+        "predeploy": "PUBLIC_URL=https://easably.github.io/website node scripts/build.js",
         "deploy": "gh-pages -d build"
     },
     "eslintConfig": {

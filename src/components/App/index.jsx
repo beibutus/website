@@ -1,13 +1,15 @@
 import React from "react";
-import {
-  Router,
-  navigate
-} from "@reach/router";
+import { Router, createHistory, LocationProvider } from "@reach/router";
 import "./App.scss";
 import languageEn from "../../assets/languages/en.json";
 import languageRu from "../../assets/languages/ru.json";
 import languageCn from "../../assets/languages/cn.json";
 import Main from "../Main";
+import createHashSource from "hash-source";
+
+const useHash = process.env.PUBLIC_URL.indexOf("github") !== -1 ? true : false;
+const source = useHash && createHashSource();
+const history = createHistory(source || window);
 
 class App extends React.Component {
   constructor(props) {
@@ -34,25 +36,51 @@ class App extends React.Component {
       "en"
     );
   }
-  handleLanguage = lang => {
-    let path = window.location.pathname + window.location.search;
-    const langs = Object.keys(this.langStore);
-    if (
-      langs.every(l => {
-        const reg = new RegExp("^/" + l);
-        return path.search(reg) === -1;
-      })
-    ) {
-      navigate("/" + lang + (path === "/" ? "" : path));
-    } else {
-      let newPath = path.split("/");
-      newPath.shift();
-      newPath.shift();
-      newPath = newPath.join("/");
-      newPath = newPath ? "/" + newPath : "";
-      newPath = "/" + lang + newPath;
-      navigate(newPath);
-    }
+  // handleLanguage = lang => {
+  //   let path = window.location.pathname + window.location.search;
+  //   const langs = Object.keys(this.langStore);
+  //   if (
+  //     langs.every(l => {
+  //       const reg = new RegExp("^/" + l);
+  //       return path.search(reg) === -1;
+  //     })
+  //   ) {
+  //     navigate("/" + lang + (path === "/" ? "" : path));
+  //   } else {
+  //     let newPath = path.split("/");
+  //     newPath.shift();
+  //     newPath.shift();
+  //     newPath = newPath.join("/");
+  //     newPath = newPath ? "/" + newPath : "";
+  //     newPath = "/" + lang + newPath;
+  //     navigate(newPath);
+  //   }
+  // };
+  handleLanguage = navigate => {
+    return lang => {
+      const pathname = useHash ? window.location.hash : window.location.hash;
+			let path = pathname + window.location.pathname;
+      if (useHash) {
+        path = path.replace("#", "");
+      }
+      const langs = Object.keys(this.langStore);
+      if (
+        langs.every(l => {
+          const reg = new RegExp("^/" + l);
+          return path.search(reg) === -1;
+        })
+      ) {
+        navigate("/" + lang + (path === "/" ? "" : path));
+      } else {
+        let newPath = path.split("/");
+        newPath.shift();
+        newPath.shift();
+        newPath = newPath.join("/");
+        newPath = newPath ? "/" + newPath : "";
+        newPath = "/" + lang + newPath;
+        navigate(newPath);
+      }
+    };
   };
   getLangList() {
     return Object.keys(this.langStore).map(k => {
@@ -62,26 +90,32 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-          <Router>
-            {Object.keys(this.langStore).map(lang => (
+        <LocationProvider history={history}>
+          {context => (
+            <Router>
+              {Object.keys(this.langStore).map(lang => (
+                <Main
+                  path={`/${lang}/*`}
+                  language={lang}
+                  langList={this.getLangList()}
+                  handleLanguage={this.handleLanguage(context.navigate)}
+                  text={this.langStore[lang]}
+                  key={lang}
+                  location={history.location}
+                />
+              ))}
               <Main
-                path={`/${lang}/*`}
-                language={lang}
+                path={`/*/`}
+                language={this.getUserLanguageFromInputList()}
                 langList={this.getLangList()}
-                handleLanguage={this.handleLanguage}
-                text={this.langStore[lang]}
-                key={lang}
+                handleLanguage={this.handleLanguage(context.navigate)}
+                text={this.langStore[this.getUserLanguageFromInputList()]}
+                key={this.getUserLanguageFromInputList()}
+                location={history.location}
               />
-            ))}
-            <Main
-              path={`/*/`}
-              language={this.getUserLanguageFromInputList()}
-              langList={this.getLangList()}
-              handleLanguage={this.handleLanguage}
-              text={this.langStore[this.getUserLanguageFromInputList()]}
-              key={this.getUserLanguageFromInputList()}
-            />
-          </Router>
+            </Router>
+          )}
+        </LocationProvider>
       </div>
     );
   }

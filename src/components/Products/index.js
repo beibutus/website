@@ -20,7 +20,7 @@ export default class Products extends React.Component {
         return (
             <div className="Products">
                 <Header text={this.props.text}/>
-                    <div class="container">
+                    <div className="container">
                         <div className="description-header-block">
                             <h1>{this.getLangText('OurProducts')}</h1>
                             <p className="products-top-text">
@@ -30,7 +30,7 @@ export default class Products extends React.Component {
                         <div className="product-block">
                             <div className="product-block-description">
                                 <div>
-                                    <img className="logo-small" src={logo_small} />
+                                    <img className="logo-small" src={logo_small} alt="logo_small"/>
                                 </div>
                                 <div>
                                     <h1>{this.getLangText('ExtensionForBrowser')}</h1>
@@ -40,14 +40,14 @@ export default class Products extends React.Component {
                                 </div>
                             </div>
                             <div className="product-block-image">
-                                <img className="extension-img" src={extention_img} />
-                                <img className="extension-img" src={extention_img} />
+                                <img className="extension-img" src={extention_img} alt="extension_img" />
+                                <img className="extension-img" src={extention_img} alt="extension_img" />
                             </div>
                         </div>
                         <div className="product-block">
                             <div className="product-block-description">
                                 <div>
-                                    <img className="logo-small" src={logo_small} />
+                                    <img className="logo-small" src={logo_small} alt="logo_small"/>
                                 </div>
                                 <div>
                                     <h1>{this.getLangText('ContextTutor')}</h1>
@@ -56,8 +56,8 @@ export default class Products extends React.Component {
                                     </p>
                                 </div>
                             </div>
-                            <div class="product-block-image">
-                                <img class="tutor-img" src={tutor_img} />
+                            <div className="product-block-image">
+                                <img className="tutor-img" src={tutor_img} alt="contextTutor-img"/>
                             </div>
                         </div>
                         {/*<div class="description-bottom-block">

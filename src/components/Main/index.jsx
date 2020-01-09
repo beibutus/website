@@ -12,9 +12,9 @@ import ScrollToTop from "../ScrollToTop";
 import Helmet from "react-helmet";
 
 export default class App extends React.Component {
-	urlsWithoutChangingTheLanguage = [
-		/^\/([^/]+\/)*blog.*/g
-	]
+
+  urlsWithoutChangingTheLanguage = [/^\/([^/]+\/)*blog.*/g];
+  
   render() {
     if (typeof window.gtag === "function") {
       window.gtag("config", "UA-4027447-9", {
@@ -32,7 +32,9 @@ export default class App extends React.Component {
           langList={this.props.langList}
           handleLanguage={this.props.handleLanguage}
 					text={this.props.text}
-					noUseLangSelect={this.urlsWithoutChangingTheLanguage.some(u=>this.props.location.pathname.match(u) !== null)}
+					noUseLangSelect={this.urlsWithoutChangingTheLanguage.some(
+            u=>this.props.location.pathname.match(u) !== null
+          )}
         ></Navbar>
         <Router>
           <ScrollToTop path="/">
@@ -41,7 +43,7 @@ export default class App extends React.Component {
             <Products path="/products/*" text={this.props.text}></Products>
             <Download path="/download/*" text={this.props.text}></Download>
             <Blog path="/blog/*"></Blog>
-            <Redirect from ="/" to={this.props.uri} default noThrow></Redirect>
+            <Redirect from ="/" to='/' default noThrow></Redirect>
           </ScrollToTop>
         </Router>
         {/* <BtnTop></BtnTop> */}
