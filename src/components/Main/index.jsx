@@ -13,7 +13,7 @@ import Helmet from "react-helmet";
 
 export default class App extends React.Component {
 
-  urlsWithoutChangingTheLanguage = [/^\/([^/]+\/)*blog.*/g];
+  //urlsWithoutChangingTheLanguage = [/^\/([^/]+\/)*blog.*/g];
   
   render() {
     if (typeof window.gtag === "function") {
@@ -32,9 +32,9 @@ export default class App extends React.Component {
           langList={this.props.langList}
           handleLanguage={this.props.handleLanguage}
 					text={this.props.text}
-					noUseLangSelect={this.urlsWithoutChangingTheLanguage.some(
-            u=>this.props.location.pathname.match(u) !== null
-          )}
+				//	noUseLangSelect={this.urlsWithoutChangingTheLanguage.some(
+         //   u=>this.props.location.pathname.match(u) !== null
+        //  )}
         ></Navbar>
         <Router>
           <ScrollToTop path="/">
@@ -42,7 +42,7 @@ export default class App extends React.Component {
             <About path="/about/*" text={this.props.text}></About>
             <Products path="/products/*" text={this.props.text}></Products>
             <Download path="/download/*" text={this.props.text}></Download>
-            <Blog path="/blog/*"></Blog>
+            <Blog path="/blog/*" text={this.props.text}></Blog>
             <Redirect from ="/" to='/' default noThrow></Redirect>
           </ScrollToTop>
         </Router>

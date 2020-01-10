@@ -58,8 +58,9 @@ class App extends React.Component {
   // };
   handleLanguage = navigate => {
     return lang => {
-      const pathname = useHash ? window.location.hash : window.location.hash;
-			let path = pathname + window.location.pathname;
+      const pathname = useHash ? window.location.hash : window.location.pathname;
+      console.log(window.location);
+			let path = pathname + window.location.search;
       if (useHash) {
         path = path.replace("#", "");
       }
