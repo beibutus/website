@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import { Link } from "@reach/router";
 import Header from '../Header';
 import ReactHtmlParser from "react-html-parser";
 
 import "./About.scss";
 
 
-export default class About extends React.Component {
+export default class About extends Component {
 
     getLangText(text) {
         return ReactHtmlParser(this.props.text[text]);
@@ -32,21 +33,21 @@ export default class About extends React.Component {
                             <h1>{this.getLangText("AboutPageFourthHeader")}</h1>
                             <p>{this.getLangText("AboutPageFourthParagraph")}</p>
                             <div className="about-buttons">
-                                <a 
-                                    className="about-button"
-                                    href="/download">
-                                    {this.getLangText("ForBeginners")}
-                                </a>
-                                <a 
-                                    className="about-button"
-                                    href="/download">
-                                    {this.getLangText("ForAverages")}
-                                </a>
-                                <a 
-                                    className="about-button"
-                                    href="/download">
-                                    {this.getLangText("ForProfessionals")}
-                                </a>
+                                <Link
+                                    to="/download"
+                                    className="about-button">
+                                        {this.getLangText("ForBeginners")}
+                                </Link>
+                                <Link 
+                                    to="/download"
+                                    className="about-button">
+                                        {this.getLangText("ForAverages")}
+                                </Link>
+                                <Link 
+                                    to="/download"
+                                    className="about-button">
+                                        {this.getLangText("ForProfessionals")}
+                                </Link>
                             </div>
                         </div>
                     </div>
