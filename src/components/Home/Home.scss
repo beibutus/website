@@ -382,6 +382,66 @@
 		}
   }
 
+  
+  /* Download Products section*/
+
+  .download-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 0 !important;
+}
+
+.download-block {
+    padding: 20px 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description-download-text {
+    padding-top: 20px;
+}
+
+.download-block-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.downnload-logo {
+  flex: 0 0 25%;
+  margin-right: 20px;
+}
+
+.download-about {
+  flex: 0 0 75%;
+}
+
+.logo-download-small {
+    width: 85%;
+    margin-right: 40px;
+}
+
+.download-button-block {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.download-button {
+    color: #fff !important;
+    padding: 15px 80px;
+    background-color: #00b9ed;
+    border-radius: 10px;
+    border: 0 !important;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center; 
+}
+
+
+
 
   .get-started-footer {
 		background: url("../../assets/images/home/Illustration6(3).svg") bottom/cover no-repeat;

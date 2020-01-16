@@ -19,6 +19,7 @@ import slide3ru from "../../assets/images/home/slider/3ru.svg";
 import slide4ru from "../../assets/images/home/slider/4ru.svg";
 import slide3cn from "../../assets/images/home/slider/3cn.svg";
 import slide4cn from "../../assets/images/home/slider/4cn.svg";
+import logo_small from '../../assets/images/logo_small.svg';
 import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 // import extensionImg from "../../assets/images/home/extensionImg.png";
 
@@ -247,6 +248,58 @@ export default class Home extends React.Component {
                     </a>
                   </div>
                 </div>
+              </div>
+            </div>
+          </section>
+
+          <section
+            className="content content-howItWorks"
+            id={this.sections.howItWork.id}
+            ref={this.sections.howItWork.ref}
+          >
+            <div className="download-container">
+              <div className="download-block">
+                  <div className="download-block-description">
+                    <div className="download-logo">
+                      <img className="logo-download-small" src={logo_small} />
+                    </div>
+                    <div className="download-about">
+                    <h1>{this.getLangText('ExtensionForBrowser')}</h1>
+                      <p className="description-download-text">
+                          {this.getLangText('ExtensionDescription')}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="download-button-block">
+                      <a 
+                          className="download-button"
+                          href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
+                          target="_blank">
+                          {this.getLangText("Add")}
+                      </a>
+                  </div>
+              </div>
+
+              <div className="download-block">
+                  <div className="download-block-description">
+                    <div className="download-logo">
+                      <img className="logo-download-small" src={logo_small} />
+                    </div>
+                    <div className="download-about">
+                      <h1>{this.getLangText('ContextTutor')}</h1>
+                        <p className="description-download-text">
+                            {this.getLangText('ContextTutorDescription')}
+                        </p>
+                    </div>  
+                  </div>
+                  <div className="download-button-block">
+                      <a 
+                          className="download-button"
+                          href="https://easy4learn.com/register"
+                          target="_blank">
+                          {this.getLangText("GetStarted")}
+                      </a>
+                  </div>
               </div>
             </div>
           </section>

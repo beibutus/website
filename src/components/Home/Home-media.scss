@@ -90,15 +90,15 @@
         .sources-block {
             justify-content: center;
             flex-basis: 70%;
-				}
-				.get-started-button{
-					&.blog-button{
-						margin: 0 auto;
-					}
-				}
-				.button-group{
-					padding-right: 20%;
-				}
+		}
+		.get-started-button{
+			&.blog-button{
+				margin: 0 auto;
+			}
+		}
+		.button-group{
+			padding-right: 20%;
+        }
     }
 }
 
@@ -162,6 +162,15 @@
 				.get-started-footer{
 					height: 30vw;
 					padding-top: 21%;
-				}
+                }
+        .download-container {
+            flex-direction: column;
+        }
+        .download-button {
+            padding: 15px 50px;
+            font-size: 1.2rem;
+        }
     }
 }
+
+
