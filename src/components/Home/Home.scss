@@ -1,26 +1,33 @@
 .Home {
-  .slick-slide {
-    height: auto !important;
+
+  /* Feedback Section */
+
+  .slick-slide .feedback-item {
+    background-color: rgba(238, 238, 238, 0.67);
+    border-radius: 10px;
+    padding: 20px;
   }
 
-  .slider {
-    margin: 0 18%;
+  .slick-slide div {
+    padding: 0 8px;
+    box-sizing: border-box;
+   }
+
+  .feedback-item h3 {
+    text-decoration: underline;
   }
 
-  .slide img {
-    width: 100%;
+  .feedback-item p {
+    padding: 20px 0;
   }
 
-  .image-carousel-caption {
-    padding: 2% 0;
-    text-align: center;
-    font-size: 2rem;
+
+  .slick-next:before, .slick-prev:before {
+    color: black;
+    font-size: 25px;
+    color: #F0BB04;
   }
 
-  .slick-dots li button::before {
-    color: #00b9ed !important;
-    font-size: 20px !important;
-  }
 
   .hero {
     background: no-repeat bottom/cover url("../../assets/images/home/bcg3.svg");

@@ -29,6 +29,7 @@ export default class Home extends React.Component {
     this.state = {
       showMobileWow: false
     };
+
     this.sections = {
       toGetStarted: {
         id: "to-get-started",
@@ -46,6 +47,7 @@ export default class Home extends React.Component {
         ref: React.createRef()
       }
     };
+
     this.offsetSection = 70;
     this.mobileWow = React.createRef();
   }
@@ -66,6 +68,7 @@ export default class Home extends React.Component {
   handleScroll = () => {
     this.calcMobileShow();
   };
+
   anchorClick = (e, id) => {
     e.preventDefault();
     const curScroll = window.scrollY;
@@ -87,16 +90,43 @@ export default class Home extends React.Component {
   getLangText(text) {
     return ReactHtmlParser(this.props.text[text]);
   }
+
   render() {
     const slickSettings = {
-      slides_to_show: 1,
-      dots: true,
-      pause_on_hover: true,
-      autoplay: true,
+      dots: false,
       infinite: true,
-      speed: 900,
-      fade: true
-    };
+      speed: 800,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      centerPadding: '30px',
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: false,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    }
+
     const slideImg = {
       slide3en,
       slide4en,
@@ -305,57 +335,36 @@ export default class Home extends React.Component {
           </section>
 
           <section
-            className="content content-howItWorks"
-            id={this.sections.howItWork.id}
-            ref={this.sections.howItWork.ref}
+            className="content"
           >
             <div>
-              <h2>{this.getLangText("headHowItWorks")}</h2>
-              <div className="slider-wrapper">
-                <div className="slider">
-                  <Slider className="slides" {...slickSettings}>
-                    <div className="slide 1th">
-                      <figure className="slick-slide-inner">
-                        <img src={slide1} alt="" />
-                        <figcaption className="image-carousel-caption">
-                          {this.getLangText("sliderCaptionFirst")}
-                        </figcaption>
-                      </figure>
-                    </div>
-
-                    <div className="slide 2th">
-                      <figure className="slick-slide-inner">
-                        <img src={slide2} alt="" />
-                        <figcaption className="image-carousel-caption">
-                          {this.getLangText("sliderCaptionSecond")}
-                        </figcaption>
-                      </figure>
-                    </div>
-                    <div className="slide 3th">
-                      <img
-                        src={slideImg[this.getLangText("slideThird")]}
-                        alt=""
-                      />
-                    </div>
-                    <div className="slide 4th">
-                      <img
-                        src={slideImg[this.getLangText("slideFourth")]}
-                        alt=""
-                      />
-                    </div>
-                  </Slider>
+              <h2> Feedback </h2>
+              <Slider {...slickSettings}>
+                <div className="feedback-item">
+                  <h3>Петя Иванов</h3>
+                  <p>В моей отрасли важно узнавать новости быстро - теперь я могу не отставать от других!</p>
                 </div>
-              </div>
-
-              {/* <div className="extension">
-                                <div className="extension-img">
-                                    {" "}
-                                    <img
-                                        src={extensionImg}
-                                        alt="extension for Chrome"
-                                    />
-                                </div>
-                            </div> */}
+                <div className="feedback-item">
+                  <h3>Петя Иванов</h3>
+                  <p>В моей отрасли важно узнавать новости быстро - теперь я могу не отставать от других!</p>
+                </div>
+                <div className="feedback-item">
+                  <h3>Петя Иванов</h3>
+                  <p>В моей отрасли важно узнавать новости быстро - теперь я могу не отставать от других!</p>
+                </div>
+                <div className="feedback-item">
+                  <h3>Петя Иванов</h3>
+                  <p>В моей отрасли важно узнавать новости быстро - теперь я могу не отставать от других!</p>
+                </div>
+                <div className="feedback-item">
+                  <h3>Петя Иванов</h3>
+                  <p>В моей отрасли важно узнавать новости быстро - теперь я могу не отставать от других!</p>
+                </div>
+                <div className="feedback-item">
+                  <h3>Петя Иванов</h3>
+                  <p>В моей отрасли важно узнавать новости быстро - теперь я могу не отставать от других!</p>
+                </div>
+              </Slider>
             </div>
           </section>
 
