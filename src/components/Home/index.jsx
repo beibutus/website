@@ -11,15 +11,7 @@ import imgEnjoy from "../../assets/images/home/imgEnjoy.svg";
 import puzzle from "../../assets/images/home/puzzle.svg";
 import phoneBackground from "../../assets/images/home/phoneBackground.svg";
 import phone from "../../assets/images/home/phone.svg";
-import slide1 from "../../assets/images/home/slider/slide1.gif";
-import slide2 from "../../assets/images/home/slider/slide2.png";
-import slide3en from "../../assets/images/home/slider/3.png";
-import slide4en from "../../assets/images/home/slider/4.png";
-import slide3ru from "../../assets/images/home/slider/3ru.svg";
-import slide4ru from "../../assets/images/home/slider/4ru.svg";
-import slide3cn from "../../assets/images/home/slider/3cn.svg";
-import slide4cn from "../../assets/images/home/slider/4cn.svg";
-import logo_small from '../../assets/images/logo_small.svg';
+import logo_small from "../../assets/images/logo_small.svg";
 import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 // import extensionImg from "../../assets/images/home/extensionImg.png";
 
@@ -98,7 +90,7 @@ export default class Home extends React.Component {
       speed: 800,
       slidesToShow: 3,
       slidesToScroll: 3,
-      centerPadding: '30px',
+      centerPadding: "30px",
       responsive: [
         {
           breakpoint: 1024,
@@ -106,7 +98,7 @@ export default class Home extends React.Component {
             slidesToShow: 2,
             slidesToScroll: 2,
             infinite: true,
-            dots: false,
+            dots: false
           }
         },
         {
@@ -118,23 +110,15 @@ export default class Home extends React.Component {
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 580,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
           }
         }
       ]
-    }
-
-    const slideImg = {
-      slide3en,
-      slide4en,
-      slide3ru,
-      slide4ru,
-      slide3cn,
-      slide4cn
     };
+
     const mobileClasses = classNames("img-phone-front", {
       show: this.state.showMobileWow
     });
@@ -147,7 +131,7 @@ export default class Home extends React.Component {
               <p className="subtitle">{this.getLangText("headerSubtitle")}</p>
             </div>
 
-           <div className="button-started">
+            <div className="button-started">
               <a
                 className="get-started-button top"
                 href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
@@ -289,81 +273,95 @@ export default class Home extends React.Component {
           >
             <div className="download-container">
               <div className="download-block">
-                  <div className="download-block-description">
-                    <div className="download-logo">
-                      <img className="logo-download-small" src={logo_small} />
-                    </div>
-                    <div className="download-about">
-                    <h1>{this.getLangText('ExtensionForBrowser')}</h1>
-                      <p className="description-download-text">
-                          {this.getLangText('ExtensionDescription')}
-                      </p>
-                    </div>
+                <div className="download-block-description">
+                  <div className="download-logo">
+                    <img className="logo-download-small" src={logo_small} />
                   </div>
-                  <div className="download-button-block">
-                      <a 
-                          className="download-button"
-                          href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
-                          target="_blank">
-                          {this.getLangText("Add")}
-                      </a>
+                  <div className="download-about">
+                    <h1>{this.getLangText("ExtensionForBrowser")}</h1>
+                    <p className="description-download-text">
+                      {this.getLangText("ExtensionDescription")}
+                    </p>
                   </div>
+                </div>
+                <div className="download-button-block">
+                  <a
+                    className="download-button"
+                    href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
+                    target="_blank"
+                  >
+                    {this.getLangText("Add")}
+                  </a>
+                </div>
               </div>
 
               <div className="download-block">
-                  <div className="download-block-description">
-                    <div className="download-logo">
-                      <img className="logo-download-small" src={logo_small} />
-                    </div>
-                    <div className="download-about">
-                      <h1>{this.getLangText('ContextTutor')}</h1>
-                        <p className="description-download-text">
-                            {this.getLangText('ContextTutorDescription')}
-                        </p>
-                    </div>  
+                <div className="download-block-description">
+                  <div className="download-logo">
+                    <img className="logo-download-small" src={logo_small} />
                   </div>
-                  <div className="download-button-block">
-                      <a 
-                          className="download-button"
-                          href="https://easy4learn.com/register"
-                          target="_blank">
-                          {this.getLangText("GetStarted")}
-                      </a>
+                  <div className="download-about">
+                    <h1>{this.getLangText("ContextTutor")}</h1>
+                    <p className="description-download-text">
+                      {this.getLangText("ContextTutorDescription")}
+                    </p>
                   </div>
+                </div>
+                <div className="download-button-block">
+                  <a
+                    className="download-button"
+                    href="https://easy4learn.com/register"
+                    target="_blank"
+                  >
+                    {this.getLangText("GetStarted")}
+                  </a>
+                </div>
               </div>
             </div>
           </section>
 
-          <section
-            className="content"
-          >
+          <section className="content">
             <div>
-              <h2> Feedback </h2>
+              <h2 className="feedback-header">
+                {this.getLangText("feedbackTitle")}
+              </h2>
               <Slider {...slickSettings}>
-                <div className="feedback-item">
-                  <h3>Петя Иванов</h3>
-                  <p>В моей отрасли важно узнавать новости быстро - теперь я могу не отставать от других!</p>
-                </div>
-                <div className="feedback-item">
-                  <h3>Петя Иванов</h3>
-                  <p>В моей отрасли важно узнавать новости быстро - теперь я могу не отставать от других!</p>
-                </div>
-                <div className="feedback-item">
-                  <h3>Петя Иванов</h3>
-                  <p>В моей отрасли важно узнавать новости быстро - теперь я могу не отставать от других!</p>
-                </div>
-                <div className="feedback-item">
-                  <h3>Петя Иванов</h3>
-                  <p>В моей отрасли важно узнавать новости быстро - теперь я могу не отставать от других!</p>
-                </div>
-                <div className="feedback-item">
-                  <h3>Петя Иванов</h3>
-                  <p>В моей отрасли важно узнавать новости быстро - теперь я могу не отставать от других!</p>
-                </div>
-                <div className="feedback-item">
-                  <h3>Петя Иванов</h3>
-                  <p>В моей отрасли важно узнавать новости быстро - теперь я могу не отставать от других!</p>
-                </div>
+                <blockquote>
+                  <div className="feedback-item">
+                    <h3>{this.getLangText("feedbackFirstName")}</h3>
+                    <p>{this.getLangText("feedbackFirstText")}</p>
+                  </div>
+                </blockquote>
+                <blockquote>
+                  <div className="feedback-item">
+                    <h3>{this.getLangText("feedbackSecondName")}</h3>
+                    <p>{this.getLangText("feedbackSecondText")}</p>
+                  </div>
+                </blockquote>
+                <blockquote>
+                  <div className="feedback-item">
+                    <h3>{this.getLangText("feedbackThirdName")}</h3>
+                    <p>{this.getLangText("feedbackThirdText")}</p>
+                  </div>
+                </blockquote>
+                <blockquote>
+                  <div className="feedback-item">
+                    <h3>{this.getLangText("feedbackFourthName")}</h3>
+                    <p>{this.getLangText("feedbackFourthText")}</p>
+                  </div>
+                </blockquote>
+                <blockquote>
+                  <div className="feedback-item">
+                    <h3>{this.getLangText("feedbackFifthName")}</h3>
+                    <p>{this.getLangText("feedbackFifthText")}</p>
+                  </div>
+                </blockquote>
+                <blockquote>
+                  <div className="feedback-item">
+                    <h3>{this.getLangText("feedbackSixthName")}</h3>
+                    <p>{this.getLangText("feedbackSixthText")}</p>
+                  </div>
+                </blockquote>
               </Slider>
             </div>
           </section>
@@ -411,7 +409,7 @@ export default class Home extends React.Component {
                       <h3>{this.getLangText("music")}</h3>
                       <p>{this.getLangText("musicParagraph")}</p>
                     </div>
-                    <div className="sources-paragraph disabled"></div>
+                    <div className="sources-paragraph disabled" />
                   </div>
                 </div>
               </div>

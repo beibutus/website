@@ -2,31 +2,87 @@
 
   /* Feedback Section */
 
+  .slick-list {
+    margin: 0 10px;
+  }
+
   .slick-slide .feedback-item {
     background-color: rgba(238, 238, 238, 0.67);
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
+    z-index: -2;
+    height: 140px;
   }
 
   .slick-slide div {
-    padding: 0 8px;
+    padding: 10px 15px 20px 15px;
     box-sizing: border-box;
+    display: block;
+    width: 100%;
+    max-height: 200px !important;
+   }
+
+   .feedback-header {
+    color: #F0BB04;
+    padding: 25px 0;
    }
 
   .feedback-item h3 {
+    padding-left: 10px;
     text-decoration: underline;
   }
 
   .feedback-item p {
-    padding: 20px 0;
+    padding: 10px;
   }
-
 
   .slick-next:before, .slick-prev:before {
-    color: black;
-    font-size: 25px;
+    font-size: 35px;
     color: #F0BB04;
   }
+
+  .slick-next {
+    right: -10px;
+  }
+
+  blockquote {
+    font-weight: 100;
+    font-size: 2rem;
+    max-width: 500px;
+    line-height: 1.2;
+    position: relative;
+    margin: 1;
+    padding: 0.5rem;
+  }
+  
+  blockquote:before,
+  blockquote:after {
+    position: absolute;
+    color: rgba(240, 187, 4, 0.5);
+    font-size: 8rem;
+    width: 5rem;
+    height: 5rem;
+    font: {
+      family: Georgia;
+    }
+  }
+  
+  blockquote:before {
+    content: "\201C";
+    left: -1rem;
+    top: -2.5rem;
+  }
+  
+  blockquote:after {
+    content: "\201D";
+    right: -2.7rem;
+    top: 9.5rem;
+    z-index: 1;
+  }
+  
+  
+
+
 
 
   .hero {
@@ -446,8 +502,6 @@
     font-size: 1.5rem;
     text-align: center; 
 }
-
-
 
 
   .get-started-footer {
