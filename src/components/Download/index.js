@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import Header from '../Header';
 import ReactHtmlParser from "react-html-parser";
 
-import logo_small from '../../assets/images/logo_small.svg';
+import logo_tutor from "../../assets/images/logo_tutor.svg";
+import logo_extension from "../../assets/images/logo_extension.svg";
 
 import "./Download.scss";
 
@@ -26,7 +27,7 @@ export default class Download extends Component {
                                 <h1>{this.getLangText('ExtensionForBrowser')}</h1>
                             </div>
                             <div className="download-block-description">
-                                <img className="logo-download-small" src={logo_small} />
+                                <img className="logo-download-small" src={logo_extension} />
                                 <p className="description-download-text">
                                     {this.getLangText('ExtensionDescription')}
                                 </p>
@@ -46,7 +47,7 @@ export default class Download extends Component {
                                 <h1>{this.getLangText('ContextTutor')}</h1>
                             </div>
                             <div className="download-block-description">
-                                <img className="logo-download-small" src={logo_small} />
+                                <img className="logo-download-small" src={logo_tutor} />
                                 <p className="description-download-text">
                                     {this.getLangText('ContextTutorDescription')}
                                 </p>

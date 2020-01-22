@@ -4,7 +4,21 @@
 
   .first-block {
     background-color: #F3F0E0;
-    height: 40vh;
+    height: 50vh;
+  }
+
+  /* Second block Section */
+
+  .second-block {
+    background: linear-gradient(270deg, rgba(109, 223, 163, 0.97) 8.61%, #FFFFFF 64.73%);;
+    height: 50vh;
+  }
+
+  /* Third block Section */
+
+  .third-block {
+    background-color: #9ADDED;
+    height: 50vh;
   }
 
   /* Feedback Section */
@@ -118,7 +132,7 @@
     margin-top: 20px;
     color: #fff !important;
     padding: 10px 115px;
-    background-color: #215599;
+    background-color: #34D086;
     border-radius: 10px;
     border: 0 !important;
     font-weight: 400;
@@ -159,8 +173,8 @@
     font-weight: 100;
     margin-bottom: 3rem;
     margin-top: 1%;
-    margin-bottom: 0 !important;
   }
+
 
   .button-started {
 		width: 100%;
@@ -213,11 +227,11 @@
 
   /*content*/
   .container {
-    //margin: 0 6%;
+    margin: 0 6%;
   }
 
   .content {
-    //margin: 6% 0;
+    margin: 6% 0;
     position: relative;
   }
 

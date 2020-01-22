@@ -14,7 +14,8 @@ import phone from "../../assets/images/home/phone.svg";
 import blog_img_1 from "../../assets/images/home/home_blog_img_1.png";
 import blog_img_2 from "../../assets/images/home/home_blog_img_2.png";
 import blog_img_3 from "../../assets/images/home/home_blog_img_3.png";
-import logo_small from "../../assets/images/logo_small.svg";
+import logo_tutor from "../../assets/images/logo_tutor.svg";
+import logo_extension from "../../assets/images/logo_extension.svg";
 import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 // import extensionImg from "../../assets/images/home/extensionImg.png";
 
@@ -138,33 +139,18 @@ export default class Home extends React.Component {
         </header>
 
         <div className="first-block">
-          <p>Some Content</p>
+         
+        </div>
+
+        <div className="second-block">
+         
+        </div>
+
+        <div className="third-block">
+         
         </div>
 
         <div className="container">
-          <section className="content content-enjoyLearning">
-            <div className="enjoyIt-wrapper">
-              <div className="enjoyIt-heading">
-                <h2>{this.getLangText("headPleasure")}</h2>
-                <p>{this.getLangText("contentPleasure")}</p>
-              </div>
-              <div className="imgEnjoy">
-                <img src={imgEnjoy} alt="Enjoy learning" />
-              </div>
-            </div>
-          </section>
-
-          <section className="content content-context-memory">
-            <div className="context-title">
-              <h2 className="context-heading">
-                {this.getLangText("headMemory")}
-              </h2>
-              <p>{this.getLangText("contentMemory")}</p>
-            </div>
-            <div className="img-context-puzzle">
-              <img src={puzzle} alt="Context puzzle" />
-            </div>
-          </section>
 
           <section
             className="content content-ourApp"
@@ -267,7 +253,7 @@ export default class Home extends React.Component {
               <div className="download-block">
                 <div className="download-block-description">
                   <div className="download-logo">
-                    <img className="logo-download-small" src={logo_small} />
+                    <img className="logo-download-small" src={logo_extension} />
                   </div>
                   <div className="download-about">
                     <h1>{this.getLangText("ExtensionForBrowser")}</h1>
@@ -290,7 +276,7 @@ export default class Home extends React.Component {
               <div className="download-block">
                 <div className="download-block-description">
                   <div className="download-logo">
-                    <img className="logo-download-small" src={logo_small} />
+                    <img className="logo-download-small" src={logo_tutor} />
                   </div>
                   <div className="download-about">
                     <h1>{this.getLangText("ContextTutor")}</h1>

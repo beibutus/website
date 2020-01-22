@@ -2,7 +2,8 @@ import React from "react";
 import Header from '../Header';
 import ReactHtmlParser from "react-html-parser";
 
-import logo_small from '../../assets/images/logo_small.svg';
+import logo_tutor from "../../assets/images/logo_tutor.svg";
+import logo_extension from "../../assets/images/logo_extension.svg";
 import extention_img from '../../assets/images/extension-img.png';
 import tutor_img from '../../assets/images/tutor-img.png';
 
@@ -30,7 +31,7 @@ export default class Products extends React.Component {
                         <div className="product-block">
                             <div className="product-block-description">
                                 <div>
-                                    <img className="logo-small" src={logo_small} alt="logo_small"/>
+                                    <img className="logo-small" src={logo_extension} alt="logo_small"/>
                                 </div>
                                 <div>
                                     <h1>{this.getLangText('ExtensionForBrowser')}</h1>
@@ -47,7 +48,7 @@ export default class Products extends React.Component {
                         <div className="product-block">
                             <div className="product-block-description">
                                 <div>
-                                    <img className="logo-small" src={logo_small} alt="logo_small"/>
+                                    <img className="logo-small" src={logo_tutor} alt="logo_small"/>
                                 </div>
                                 <div>
                                     <h1>{this.getLangText('ContextTutor')}</h1>
