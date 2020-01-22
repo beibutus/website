@@ -11,6 +11,9 @@ import imgEnjoy from "../../assets/images/home/imgEnjoy.svg";
 import puzzle from "../../assets/images/home/puzzle.svg";
 import phoneBackground from "../../assets/images/home/phoneBackground.svg";
 import phone from "../../assets/images/home/phone.svg";
+import blog_img_1 from "../../assets/images/home/home_blog_img_1.png";
+import blog_img_2 from "../../assets/images/home/home_blog_img_2.png";
+import blog_img_3 from "../../assets/images/home/home_blog_img_3.png";
 import logo_small from "../../assets/images/logo_small.svg";
 import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 // import extensionImg from "../../assets/images/home/extensionImg.png";
@@ -122,6 +125,7 @@ export default class Home extends React.Component {
     const mobileClasses = classNames("img-phone-front", {
       show: this.state.showMobileWow
     });
+
     return (
       <div className="Home">
         <header className="hero">
@@ -130,24 +134,12 @@ export default class Home extends React.Component {
               <h1 className="hero-title">{this.getLangText("headerTitle")}</h1>
               <p className="subtitle">{this.getLangText("headerSubtitle")}</p>
             </div>
-
-            <div className="button-started">
-              <a
-                className="get-started-button top"
-                href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={chromeStoreSvg}
-                  alt="Chrome-store"
-                  className="icon get-started-button__icon"
-                />
-                <span>{this.getLangText("buttonStarted")}</span>
-              </a>
-            </div>
           </div>
         </header>
+
+        <div className="first-block">
+          <p>Some Content</p>
+        </div>
 
         <div className="container">
           <section className="content content-enjoyLearning">
@@ -359,80 +351,38 @@ export default class Home extends React.Component {
                 <blockquote>
                   <div className="feedback-item">
                     <h3>{this.getLangText("feedbackSixthName")}</h3>
-                    <p>{this.getLangText("feedbackSixthText")}</p>
+                    <p />
                   </div>
                 </blockquote>
               </Slider>
             </div>
           </section>
 
-          <div className="call-to-action">
-            <section
-              className="content content-sources"
-              id={this.sections.source.id}
-              ref={this.sections.source.ref}
-            >
-              <div className="sources-wrapper">
-                <div className="sources-title">
-                  <h2>{this.getLangText("headSource")}</h2>
-                  <p>{this.getLangText("contentSource")}</p>
-                </div>
-                <div className="blog">
-                  <p>{this.getLangText("blog")}</p>
-                  <Link to="blog" className="get-started-button blog-button">
-                    {this.getLangText("Blog")}
-                  </Link>
-                </div>
-                <div className="sources-block">
-                  <div className="sources-block_row">
-                    <div className="sources-paragraph">
-                      <h3>{this.getLangText("news")}</h3>
-                      <p>{this.getLangText("newsParagraph")}</p>
-                    </div>
-                    <div className="sources-paragraph">
-                      <h3>{this.getLangText("movie")}</h3>
-                      <p>{this.getLangText("movieParagraph")}</p>
-                    </div>
-                  </div>
-                  <div className="sources-block_row">
-                    <div className="sources-paragraph">
-                      <h3>{this.getLangText("book")}</h3>
-                      <p>{this.getLangText("bookParagraph")}</p>
-                    </div>
-                    <div className="sources-paragraph">
-                      <h3>{this.getLangText("video")}</h3>
-                      <p>{this.getLangText("videoParagraph")}</p>
-                    </div>
-                  </div>
-                  <div className="sources-block_row">
-                    <div className="sources-paragraph">
-                      <h3>{this.getLangText("music")}</h3>
-                      <p>{this.getLangText("musicParagraph")}</p>
-                    </div>
-                    <div className="sources-paragraph disabled" />
-                  </div>
-                </div>
+          <section className="content">
+            <h2 className="blog-header">{this.getLangText("blogTitle")}</h2>
+            <div className="blog-items">
+              <div className="blog-item">
+                <img src={blog_img_1} />
+                <p>{this.getLangText("blogFirstText")}</p>
               </div>
-            </section>
-          </div>
+              <div className="blog-item">
+                <img src={blog_img_2} />
+                <p>{this.getLangText("blogSecondText")}</p>
+              </div>
+              <div className="blog-item">
+                <img src={blog_img_3} />
+                <p>{this.getLangText("blogThirdText")}</p>
+              </div>
+            </div>
+            <div className="blog-button-block">
+              <Link to="/blog" className="blog-button">
+                {this.getLangText("allArticles")}
+              </Link>
+            </div>
+          </section>
         </div>
-        <footer className="get-started-footer">
-          <div className="button-started bottom">
-            <a
-              className="get-started-button bottom"
-              href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={chromeStoreSvg}
-                alt="Chrome-store"
-                className="icon get-started-button__icon"
-              />
-              <span>{this.getLangText("getStarted")}</span>
-            </a>
-          </div>
-        </footer>
+
+        <footer className="get-started-footer" />
       </div>
     );
   }

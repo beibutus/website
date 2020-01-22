@@ -1,5 +1,12 @@
 .Home {
 
+  /* First block Section */
+
+  .first-block {
+    background-color: #F3F0E0;
+    height: 40vh;
+  }
+
   /* Feedback Section */
 
   .slick-list {
@@ -81,8 +88,49 @@
   }
   
   
+  /* Blog Section */
+
+  .blog-header {
+    padding-bottom: 25px;
+  }
+
+  .blog-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .blog-item {
+    width: 28%;
+    height: 30%; 
+  }
+
+  .blog-item img {
+    width: 100%;
+    height: 60%;
+    padding-bottom: 5px;
+  }
 
 
+  .blog-button {
+    max-width: 30%;
+    max-height: 30%;
+    margin-top: 20px;
+    color: #fff !important;
+    padding: 10px 115px;
+    background-color: #215599;
+    border-radius: 10px;
+    border: 0 !important;
+    font-weight: 400;
+    text-align: center; 
+    font-size: 1.3rem;
+  }
+
+  
+  .blog-button-block {
+    margin-top: 30px;
+    float: right;
+  }
 
 
   .hero {
@@ -111,6 +159,7 @@
     font-weight: 100;
     margin-bottom: 3rem;
     margin-top: 1%;
+    margin-bottom: 0 !important;
   }
 
   .button-started {
@@ -164,11 +213,11 @@
 
   /*content*/
   .container {
-    margin: 0 6%;
+    //margin: 0 6%;
   }
 
   .content {
-    margin: 6% 0;
+    //margin: 6% 0;
     position: relative;
   }
 
