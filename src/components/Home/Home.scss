@@ -2,24 +2,167 @@
 
   /* First block Section */
 
-  .first-block {
-    background-color: #F3F0E0;
-    height: 50vh;
+  .first-block-container {
+    background: no-repeat bottom/cover url("../../assets/images/home/secondBlock.svg");
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    margin: -2% -1%;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    object-fit: cover;
   }
+
+  .first-block-text-container {
+    display: flex;
+    justify-items: column;
+    margin-left: 3%;
+  }
+
+  .first-column {
+    border: 1px solid black;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+  }
+
+  .first-column-top {
+    padding-top: 100px;
+  }
+
+  .first-column-bottom {
+    padding-top: 50px;
+  }
+
+
+
+  
+
+
+ 
+
 
   /* Second block Section */
 
-  .second-block {
-    background: linear-gradient(270deg, rgba(109, 223, 163, 0.97) 8.61%, #FFFFFF 64.73%);;
-    height: 50vh;
-  }
+    .second-block-container {
+      background: no-repeat bottom/cover url("../../assets/images/home/secondBlock_background.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+  
+    .wrapper-second-text {
+      padding: 5% 20% 10% 10%;
+    }
+    
+    .second-text {
+      color: #2c2c2c !important;
+      margin: 0 5% 0.5%;
+      font-size: 3.5rem;
+      font-weight: normal;
+      line-height: 4rem;
+    }
+  
+
 
   /* Third block Section */
 
-  .third-block {
-    background-color: #9ADDED;
-    height: 50vh;
+  .third-block-container {
+    background: no-repeat bottom/cover url("../../assets/images/home/thirdBlock_background.png");
+    margin-top: -12%;
+    margin-left: -5%;
+    position: relative;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
+
+  .wrapper-third-text {
+    padding: 8% 5% 6% 30%;
+    position: relative;
+  }
+  
+  .third-text {
+    margin: 12% 5%;
+    font-size: 2.3rem;
+    color: #2c2c2c;
+    font-weight: normal;
+    line-height: 3.2rem;
+  }
+
+  .third-text-center {
+    margin: 12% 25%;
+    font-size: 2.3rem;
+    color: #2c2c2c;
+    font-weight: normal;
+    line-height: 3.2rem;
+  }
+
+
+ /* Download Products section*/
+
+ .download-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding-bottom: 50px;
+  margin: 0 5% !important;
+}
+
+.download-block {
+  padding: 20px 0 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description-download-text {
+  padding-top: 20px;
+}
+
+.download-block-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
+.downnload-logo {
+flex: 0 0 25%;
+margin-right: 20px;
+}
+
+.download-about {
+flex: 0 0 75%;
+}
+
+.logo-download-small {
+  width: 85%;
+  margin-right: 40px;
+}
+
+.download-button-block {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.download-button {
+  color: #fff !important;
+  padding: 15px 80px;
+  background-color: #00b9ed;
+  border-radius: 10px;
+  border: 0 !important;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center; 
+}
+
+
+
 
   /* Feedback Section */
 
@@ -148,10 +291,11 @@
 
 
   .hero {
-    background: no-repeat bottom/cover url("../../assets/images/home/bcg3.svg");
+    background: no-repeat bottom/cover url("../../assets/images/home/home_header.svg");
     text-align: center;
     margin-top: -100px;
     padding-top: 100px;
+    height: 80vh;
   }
 
   .wrapper-hero {
@@ -508,67 +652,9 @@
 		}
   }
 
-  
-  /* Download Products section*/
-
-  .download-container {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    margin: 0 !important;
-}
-
-.download-block {
-    padding: 20px 0 !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.description-download-text {
-    padding-top: 20px;
-}
-
-.download-block-description {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 30px 0;
-}
-
-.downnload-logo {
-  flex: 0 0 25%;
-  margin-right: 20px;
-}
-
-.download-about {
-  flex: 0 0 75%;
-}
-
-.logo-download-small {
-    width: 85%;
-    margin-right: 40px;
-}
-
-.download-button-block {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.download-button {
-    color: #fff !important;
-    padding: 15px 80px;
-    background-color: #00b9ed;
-    border-radius: 10px;
-    border: 0 !important;
-    font-weight: 400;
-    font-size: 1.5rem;
-    text-align: center; 
-}
-
 
   .get-started-footer {
-		background: url("../../assets/images/home/Illustration6(3).svg") bottom/cover no-repeat;
+		background: url("../../assets/images/home/home_footer.svg") bottom/cover no-repeat;
 		height: 20vw;
 		padding-top: 14%;
   }

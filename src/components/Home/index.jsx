@@ -11,11 +11,13 @@ import imgEnjoy from "../../assets/images/home/imgEnjoy.svg";
 import puzzle from "../../assets/images/home/puzzle.svg";
 import phoneBackground from "../../assets/images/home/phoneBackground.svg";
 import phone from "../../assets/images/home/phone.svg";
+import firstBlock_background from "../../assets/images/home/firstBlock_background.svg";
 import blog_img_1 from "../../assets/images/home/home_blog_img_1.png";
 import blog_img_2 from "../../assets/images/home/home_blog_img_2.png";
 import blog_img_3 from "../../assets/images/home/home_blog_img_3.png";
 import logo_tutor from "../../assets/images/logo_tutor.svg";
 import logo_extension from "../../assets/images/logo_extension.svg";
+
 import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 // import extensionImg from "../../assets/images/home/extensionImg.png";
 
@@ -77,12 +79,12 @@ export default class Home extends React.Component {
       behavior: "smooth"
     });
   };
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
+  //componentDidMount() {
+  //  window.addEventListener("scroll", this.handleScroll);
+  // }
+  // componentWillUnmount() {
+  //  window.removeEventListener("scroll", this.handleScroll);
+  //}
   getLangText(text) {
     return ReactHtmlParser(this.props.text[text]);
   }
@@ -138,118 +140,61 @@ export default class Home extends React.Component {
           </div>
         </header>
 
-        <div className="first-block">
-         
-        </div>
-
-        <div className="second-block">
-         
-        </div>
-
-        <div className="third-block">
-         
-        </div>
-
-        <div className="container">
-
-          <section
-            className="content content-ourApp"
-            id={this.sections.toGetStarted.id}
-            ref={this.sections.toGetStarted.ref}
-          >
-            <div className="app-download-wrapper">
-              <div className="img-phone">
-                <img
-                  src={phoneBackground}
-                  className="img-phone-back"
-                  alt="Mobile background"
-                />
-                <img
-                  src={phone}
-                  className={mobileClasses}
-                  ref={this.mobileWow}
-                  alt="EasyLang app"
-                />
+        <div className="first-block-container">
+          {/* <div className="first-block-text-container">
+            <div className="first-column">
+                <p className="first-column-top">{this.getLangText("FirstBlockBookQuestion")}</p>
+                 <p className="first-column-top">{this.getLangText("FirstBlockBookQuestion")}</p>
+            </div>
+            <div className="second-column">
+              <div>
+                <p>{this.getLangText("FirstBlockBookQuestion")}</p>
               </div>
-              <div className="content-description">
-                <h2>{this.getLangText("headOurApp")}</h2>
-                <p>{this.getLangText("contentOurApp")}</p>
-                <div className="button-block">
-                  <div className="button-group button-group-1">
-                    <a
-                      className="button-install button-chrome"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
-                    >
-                      <span className="button-chrome-wrapper">
-                        <img
-                          src={chromeStoreSvg}
-                          alt="chrome-store"
-                          className="icon button-chrome-icon"
-                        />
-                        {this.getLangText("extension")}
-                      </span>
-                    </a>
-                    {/* <a
-                                            href="https://support.google.com/chrome_webstore/answer/2664769"
-                                            className="button-install button-guide"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            role="button"
-                                        >
-                                            <i className="fa fa-cog"> </i>{" "}
-                                            <span>
-                                                {this.getLangText(
-                                                    "extensionGuide"
-                                                )}
-                                            </span>
-                                        </a> */}
-                  </div>
-
-                  <div className="button-group button-group-2">
-                    <a
-                      className="button-install button-web"
-                      href="http://easy4learn.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Context-Tutor
-                    </a>
-                  </div>
-
-                  <div className="button-group button-group-3">
-                    <a
-                      className="button-install button-android disabled"
-                      href="https://github.com/easably/context-tutor/releases/latest/download/EasyLang.apk"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Android
-                    </a>
-                    <a
-                      className="button-install button-iOS disabled"
-                      href="https://testflight.apple.com/join/w0Dyxqef"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      iOS
-                      <span className="button-group-comment">
-                        {this.getLangText("comingSoon")}
-                      </span>
-                    </a>
-                  </div>
-                </div>
+              <div>
+                <p>{this.getLangText("FirstBlockMovieQuestion")}</p>
+              </div>
+              <div>
+                <p>{this.getLangText("FirstBlockNewsQuestion")}</p>
               </div>
             </div>
-          </section>
+            <div className="third-column">
+              <div>
+                <p>{this.getLangText("FirstBlockBookQuestion")}</p>
+              </div>
+            </div>
+            <div className="fourth-column">
+              <div>
+                <p>{this.getLangText("FirstBlockBookQuestion")}</p>
+              </div>
+              <div>
+                <p>{this.getLangText("FirstBlockMovieQuestion")}</p>
+              </div>
+              <div>
+                <p>{this.getLangText("FirstBlockNewsQuestion")}</p>
+              </div>
+            </div>
+            </div>     */}
+        </div>
 
-          <section
-            className="content content-howItWorks"
-            id={this.sections.howItWork.id}
-            ref={this.sections.howItWork.ref}
-          >
-            <div className="download-container">
+
+        <div className="second-block-container">
+          <div className="wrapper-second-text">
+            <div>
+              <h1 className="second-text">{this.getLangText("motivationText")}</h1>
+            </div>
+          </div>
+        </div>
+
+        <div className="third-block-container">
+          <div className="wrapper-third-text">
+            <div>
+              <h2 className="third-text">{this.getLangText("thirdBlockText_1")}</h2>
+              <h2 className="third-text">{this.getLangText("thirdBlockText_2")}</h2>
+              <h2 className="third-text">{this.getLangText("thirdBlockText_3")}</h2>
+            </div>
+          </div>
+
+          <div className="download-container">
               <div className="download-block">
                 <div className="download-block-description">
                   <div className="download-logo">
@@ -296,8 +241,11 @@ export default class Home extends React.Component {
                 </div>
               </div>
             </div>
-          </section>
+          
+        </div>
 
+
+        <div className="container">
           <section className="content">
             <div>
               <h2 className="feedback-header">
@@ -337,7 +285,7 @@ export default class Home extends React.Component {
                 <blockquote>
                   <div className="feedback-item">
                     <h3>{this.getLangText("feedbackSixthName")}</h3>
-                    <p />
+                    <p>{this.getLangText("feedbackSixthText")}</p>
                   </div>
                 </blockquote>
               </Slider>
