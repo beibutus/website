@@ -12,6 +12,7 @@ import puzzle from "../../assets/images/home/puzzle.svg";
 import phoneBackground from "../../assets/images/home/phoneBackground.svg";
 import phone from "../../assets/images/home/phone.svg";
 import firstBlock_background from "../../assets/images/home/firstBlock_background.svg";
+import secondBlock from "../../assets/images/home/secondBlock.svg";
 import blog_img_1 from "../../assets/images/home/home_blog_img_1.png";
 import blog_img_2 from "../../assets/images/home/home_blog_img_2.png";
 import blog_img_3 from "../../assets/images/home/home_blog_img_3.png";
@@ -141,39 +142,7 @@ export default class Home extends React.Component {
         </header>
 
         <div className="first-block-container">
-          {/* <div className="first-block-text-container">
-            <div className="first-column">
-                <p className="first-column-top">{this.getLangText("FirstBlockBookQuestion")}</p>
-                 <p className="first-column-top">{this.getLangText("FirstBlockBookQuestion")}</p>
-            </div>
-            <div className="second-column">
-              <div>
-                <p>{this.getLangText("FirstBlockBookQuestion")}</p>
-              </div>
-              <div>
-                <p>{this.getLangText("FirstBlockMovieQuestion")}</p>
-              </div>
-              <div>
-                <p>{this.getLangText("FirstBlockNewsQuestion")}</p>
-              </div>
-            </div>
-            <div className="third-column">
-              <div>
-                <p>{this.getLangText("FirstBlockBookQuestion")}</p>
-              </div>
-            </div>
-            <div className="fourth-column">
-              <div>
-                <p>{this.getLangText("FirstBlockBookQuestion")}</p>
-              </div>
-              <div>
-                <p>{this.getLangText("FirstBlockMovieQuestion")}</p>
-              </div>
-              <div>
-                <p>{this.getLangText("FirstBlockNewsQuestion")}</p>
-              </div>
-            </div>
-            </div>     */}
+          <img src={secondBlock} />
         </div>
 
 
@@ -245,75 +214,73 @@ export default class Home extends React.Component {
         </div>
 
 
-        <div className="container">
-          <section className="content">
-            <div>
-              <h2 className="feedback-header">
-                {this.getLangText("feedbackTitle")}
-              </h2>
-              <Slider {...slickSettings}>
-                <blockquote>
-                  <div className="feedback-item">
-                    <h3>{this.getLangText("feedbackFirstName")}</h3>
-                    <p>{this.getLangText("feedbackFirstText")}</p>
-                  </div>
-                </blockquote>
-                <blockquote>
-                  <div className="feedback-item">
-                    <h3>{this.getLangText("feedbackSecondName")}</h3>
-                    <p>{this.getLangText("feedbackSecondText")}</p>
-                  </div>
-                </blockquote>
-                <blockquote>
-                  <div className="feedback-item">
-                    <h3>{this.getLangText("feedbackThirdName")}</h3>
-                    <p>{this.getLangText("feedbackThirdText")}</p>
-                  </div>
-                </blockquote>
-                <blockquote>
-                  <div className="feedback-item">
-                    <h3>{this.getLangText("feedbackFourthName")}</h3>
-                    <p>{this.getLangText("feedbackFourthText")}</p>
-                  </div>
-                </blockquote>
-                <blockquote>
-                  <div className="feedback-item">
-                    <h3>{this.getLangText("feedbackFifthName")}</h3>
-                    <p>{this.getLangText("feedbackFifthText")}</p>
-                  </div>
-                </blockquote>
-                <blockquote>
-                  <div className="feedback-item">
-                    <h3>{this.getLangText("feedbackSixthName")}</h3>
-                    <p>{this.getLangText("feedbackSixthText")}</p>
-                  </div>
-                </blockquote>
-              </Slider>
-            </div>
-          </section>
+        <section className="content container">
+          <div className="feedback-container">
+            <h2 className="feedback-header">
+              {this.getLangText("feedbackTitle")}
+            </h2>
+            <Slider {...slickSettings}>
+              <blockquote>
+                <div className="feedback-item">
+                  <h3>{this.getLangText("feedbackFirstName")}</h3>
+                  <p>{this.getLangText("feedbackFirstText")}</p>
+                </div>
+              </blockquote>
+              <blockquote>
+                <div className="feedback-item">
+                  <h3>{this.getLangText("feedbackSecondName")}</h3>
+                  <p>{this.getLangText("feedbackSecondText")}</p>
+                </div>
+              </blockquote>
+              <blockquote>
+                <div className="feedback-item">
+                  <h3>{this.getLangText("feedbackThirdName")}</h3>
+                  <p>{this.getLangText("feedbackThirdText")}</p>
+                </div>
+              </blockquote>
+              <blockquote>
+                <div className="feedback-item">
+                  <h3>{this.getLangText("feedbackFourthName")}</h3>
+                  <p>{this.getLangText("feedbackFourthText")}</p>
+                </div>
+              </blockquote>
+              <blockquote>
+                <div className="feedback-item">
+                  <h3>{this.getLangText("feedbackFifthName")}</h3>
+                  <p>{this.getLangText("feedbackFifthText")}</p>
+                </div>
+              </blockquote>
+              <blockquote>
+                <div className="feedback-item">
+                  <h3>{this.getLangText("feedbackSixthName")}</h3>
+                  <p>{this.getLangText("feedbackSixthText")}</p>
+                </div>
+              </blockquote>
+            </Slider>
+          </div>
+        </section>
 
-          <section className="content">
+        <div className="blog-container">
+          <div className="blog-header">
             <h2 className="blog-header">{this.getLangText("blogTitle")}</h2>
-            <div className="blog-items">
-              <div className="blog-item">
-                <img src={blog_img_1} />
-                <p>{this.getLangText("blogFirstText")}</p>
-              </div>
-              <div className="blog-item">
-                <img src={blog_img_2} />
-                <p>{this.getLangText("blogSecondText")}</p>
-              </div>
-              <div className="blog-item">
-                <img src={blog_img_3} />
-                <p>{this.getLangText("blogThirdText")}</p>
-              </div>
+            <Link to="/blog" className="blog-button">
+              {this.getLangText("allArticles")}
+            </Link>
+          </div>
+          <div className="blog-items">
+            <div className="blog-item">
+              <img src={blog_img_1} />
+              <p>{this.getLangText("blogFirstText")}</p>
             </div>
-            <div className="blog-button-block">
-              <Link to="/blog" className="blog-button">
-                {this.getLangText("allArticles")}
-              </Link>
+            <div className="blog-item">
+              <img src={blog_img_2} />
+              <p>{this.getLangText("blogSecondText")}</p>
             </div>
-          </section>
+            <div className="blog-item">
+              <img src={blog_img_3} />
+              <p>{this.getLangText("blogThirdText")}</p>
+            </div>
+          </div>
         </div>
 
         <footer className="get-started-footer" />
