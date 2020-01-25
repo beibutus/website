@@ -19,20 +19,19 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: 50% 50%;
-      z-index: 99;
-      position: relative;
+      margin-top: -1%;
     }
   
     .wrapper-second-text {
-      padding: 5% 20% 10% 10%;
+      padding: 10% 5% 8% 12%;
     }
     
     .second-text {
       color: #2c2c2c !important;
-      margin: 0 5% 0.5%;
-      font-size: 3.5rem;
-      font-weight: normal;
-      line-height: 4rem;
+      padding-bottom: 5%;
+      font-size: 4rem;
+      font-weight: 300;
+      line-height: 4.5rem;
     }
   
 
@@ -41,26 +40,22 @@
 
   .third-block-container {
     background: no-repeat bottom/cover url("../../assets/images/home/thirdBlock_background.svg");
-    margin-top: -12%;
-    margin-left: -5%;
-    position: relative;
-    //z-index: -1;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
 
   .wrapper-third-text {
-    padding: 8% 5% 6% 30%;
+    padding: 1% 5% 15% 30%;
     position: relative;
   }
   
   .third-text {
-    margin: 12% 5%;
-    font-size: 2.3rem;
+    margin: 10% 5%;
+    font-size: 2.5rem;
     color: #2c2c2c;
     font-weight: normal;
-    line-height: 3.2rem;
+    line-height: 2.7rem;
   }
 
   .third-text-center {
@@ -83,7 +78,7 @@
 }
 
 .download-block {
-  padding: 20px 0 !important;
+  padding: 0 !important;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -97,7 +92,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 30px 0;
 }
 
 .downnload-logo {
@@ -120,10 +114,11 @@ flex: 0 0 75%;
 }
 
 .download-button {
+  background-color: #7BE6FF;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
   color: #fff !important;
   padding: 15px 80px;
-  background-color: #00b9ed;
-  border-radius: 10px;
   border: 0 !important;
   font-weight: 400;
   font-size: 1.5rem;
@@ -132,11 +127,11 @@ flex: 0 0 75%;
 
 
 
-
   /* Feedback Section */
 
   .feedback-container {
-    padding: 0 6%;
+    padding: 6%;
+    background-color: #C7F4FF;
   }
 
   .slick-list {
@@ -160,9 +155,10 @@ flex: 0 0 75%;
    }
 
    .feedback-header {
+    font-size: 3rem;
     text-align: center;
     color: #2c2c2c;
-    padding: 30px 0;
+    padding-bottom: 4%;
    }
 
   .feedback-item h3 {
@@ -229,9 +225,19 @@ flex: 0 0 75%;
   }
 
   .blog-header {
+    font-size: 3rem;
     padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .blog-button {
+    padding-top: 20px;
+    color: #34D086 !important;
+    font-weight: 400;
+    text-align: center; 
+    font-size: 1.7rem;
+    text-decoration: underline;
   }
 
   .blog-items {
@@ -245,21 +251,17 @@ flex: 0 0 75%;
     height: 30%; 
   }
 
+  .blog-item p {
+    text-decoration: underline;
+    color: #34D086 !important;
+  }
+
   .blog-item img {
     width: 100%;
     height: 60%;
     padding-bottom: 5px;
   }
 
-
-  .blog-button {
-    padding-top: 20px;
-    color: #34D086 !important;
-    font-weight: 400;
-    text-align: center; 
-    font-size: 1.3rem;
-    line-height: 1.5rem;
-  }
 
 
   /* Home Header Block */

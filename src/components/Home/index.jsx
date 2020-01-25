@@ -7,12 +7,7 @@ import classNames from "classnames";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import imgEnjoy from "../../assets/images/home/imgEnjoy.svg";
-import puzzle from "../../assets/images/home/puzzle.svg";
-import phoneBackground from "../../assets/images/home/phoneBackground.svg";
-import phone from "../../assets/images/home/phone.svg";
-import firstBlock_background from "../../assets/images/home/firstBlock_background.svg";
-import secondBlock from "../../assets/images/home/secondBlock.svg";
+import firstBlockImg from "../../assets/images/home/firstBlockImage.svg";
 import blog_img_1 from "../../assets/images/home/home_blog_img_1.png";
 import blog_img_2 from "../../assets/images/home/home_blog_img_2.png";
 import blog_img_3 from "../../assets/images/home/home_blog_img_3.png";
@@ -142,7 +137,7 @@ export default class Home extends React.Component {
         </header>
 
         <div className="first-block-container">
-          <img src={secondBlock} />
+          <img src={firstBlockImg} />
         </div>
 
 
@@ -213,8 +208,6 @@ export default class Home extends React.Component {
           
         </div>
 
-
-        <section className="content container">
           <div className="feedback-container">
             <h2 className="feedback-header">
               {this.getLangText("feedbackTitle")}
@@ -258,7 +251,6 @@ export default class Home extends React.Component {
               </blockquote>
             </Slider>
           </div>
-        </section>
 
         <div className="blog-container">
           <div className="blog-header">

@@ -173,11 +173,6 @@
         .wrapper-hero {
             padding: 2% 0 1%;
         }
-
-        .second-block-container {
-            padding: 4% 0;
-        }
-
         .get-started-button {
 						&.blog-button{
 							margin: 0 20%;
@@ -188,6 +183,11 @@
             margin: 0 5%;
         }
 
+        .feedback-header {
+            font-size: 2rem;
+        }
+
+
         .image-carousel-caption {
             font-size: 0.7rem;
         }
@@ -196,6 +196,17 @@
             font-size: 0.9rem;
             margin: 5%;
         }
+
+        .blog-header {
+            padding-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .blog-button {
+            padding: 0 20px;
+            font-size: 0.8rem;
+        }
+
 
         .sources-block {
             flex-basis: 95%;
@@ -222,10 +233,6 @@
         .download-button {
             padding: 15px 50px;
             font-size: 1.2rem;
-        }
-        .blog-button {
-            padding: 8px 20px;
-            font-size: 0.8rem;
         }
     }
 }
