@@ -150,10 +150,10 @@ export default class Home extends React.Component {
         </div>
 
         <div className="third-block-container">
-          <div className="wrapper-third-text">
-            <div>
+          <div className="">
+            <div className="wrapper-third-text">
               <h2 className="third-text">{this.getLangText("thirdBlockText_1")}</h2>
-              <h2 className="third-text">{this.getLangText("thirdBlockText_2")}</h2>
+              <h2 className="third-text-center">{this.getLangText("thirdBlockText_2")}</h2>
               <h2 className="third-text">{this.getLangText("thirdBlockText_3")}</h2>
             </div>
           </div>

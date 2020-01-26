@@ -46,12 +46,12 @@
   }
 
   .wrapper-third-text {
-    padding: 1% 5% 15% 30%;
+    padding: 1% 10% 10% 25%;
     position: relative;
   }
   
   .third-text {
-    margin: 10% 5%;
+    margin: 10% 0%;
     font-size: 2.5rem;
     color: #2c2c2c;
     font-weight: normal;
@@ -59,12 +59,13 @@
   }
 
   .third-text-center {
-    margin: 12% 25%;
-    font-size: 2.3rem;
+    margin: 10% 5%;
+    font-size: 2.5rem;
     color: #2c2c2c;
     font-weight: normal;
-    line-height: 3.2rem;
+    line-height: 2.7rem;
   }
+
 
 
  /* Download Products section*/
@@ -74,14 +75,14 @@
   justify-content: space-around;
   flex-direction: row;
   padding-bottom: 50px;
-  margin: 0 5% !important;
+  margin: 0% 2% !important;
 }
 
 .download-block {
   padding: 0 !important;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .description-download-text {
@@ -95,12 +96,12 @@
 }
 
 .downnload-logo {
-flex: 0 0 25%;
-margin-right: 20px;
+  flex: 0 0 25%;
+  margin-right: 20px;
 }
 
 .download-about {
-flex: 0 0 75%;
+  flex: 0 0 75%;
 }
 
 .logo-download-small {
@@ -130,20 +131,21 @@ flex: 0 0 75%;
   /* Feedback Section */
 
   .feedback-container {
-    padding: 6%;
+    padding: 6% 8%;
     background-color: #C7F4FF;
   }
 
   .slick-list {
-    margin: 0 10px;
+    margin: 0 20px;
   }
 
   .slick-slide .feedback-item {
     background-color: rgba(238, 238, 238, 0.67);
-    border-radius: 10px;
     padding: 10px;
     z-index: -2;
     height: 250px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 13px;
   }
 
   .slick-slide div {
@@ -221,7 +223,6 @@ flex: 0 0 75%;
   .blog-container {
     background: linear-gradient(177.45deg, rgba(199, 244, 255, 0.246) 9.71%, rgba(255, 255, 255, 0) 184.99%);
     padding: 7% 6%;
-    margin-bottom: 2%;
   }
 
   .blog-header {
@@ -633,7 +634,7 @@ flex: 0 0 75%;
 
   .get-started-footer {
 		background: url("../../assets/images/home/home_footer.svg") bottom/cover no-repeat;
-		height: 20vw;
+		height: 15vw;
 		padding-top: 14%;
   }
 }

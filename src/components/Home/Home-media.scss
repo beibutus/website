@@ -43,17 +43,29 @@
             line-height: 2rem;
         }
 
+        .wrapper-third-text {
+            padding: 5% 10% 0% 1%;
+            position: relative;
+          }
+
         .third-text {
-            padding: 0% 0 10% 0;
+            margin: 2% 3% 5% 20%;
             font-size: 1.5rem;
             color: #2c2c2c;
             font-weight: normal;
-            line-height: 3.2rem;
+            line-height: 2rem;
           }
 
-          .wrapper-third-text {
-            padding: 0% 5% 5% 30%;
-            position: relative;
+          .third-text-center {
+            margin: 2% 5% 6% 25%;
+            font-size: 1.5rem;
+            color: #2c2c2c;
+            font-weight: normal;
+            line-height: 2rem;
+          }
+
+          .download-about h1 {
+            font-size: 1.5rem;
           }
 
           .wrapper-hero {
@@ -144,17 +156,49 @@
             line-height: 1.3rem;
         }
 
-        .wrapper-third-text {
-            padding: 1% 5% 2% 10%;
-            //position: relative;
-          }
-
         .third-text {
-            margin: 1% 1%;
+            text-align: center;
+            margin: 2% 3% 5% 5%;
             font-size: 1rem;
             color: #2c2c2c;
             font-weight: normal;
-            line-height: 1.2rem;
+            line-height: 1.3rem;
+          }
+
+        .third-text-center {
+            text-align: center;
+            margin: 2% 3% 5% 5%;
+            font-size: 1rem;
+            color: #2c2c2c;
+            font-weight: normal;
+            line-height: 1.3rem;
+          }
+
+        .download-about h1 {
+            font-size: 1rem;
+          }
+
+          .download-button-block {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 25px;
+          }
+
+        .download-button {
+            background-color: #7BE6FF;
+            box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            color: #fff !important;
+            padding: 10px 40px;
+            border: 0 !important;
+            font-weight: 400;
+            font-size: 1rem;
+            text-align: center; 
+        }
+
+        .logo-download-small {
+            width: 70%;
+            margin-right: 30px;
           }
 
         h2 {
@@ -193,8 +237,8 @@
         }
 
         .subtitle{
-            font-size: 0.9rem;
-            margin: 5%;
+            font-size: 0.7rem;
+            margin-bottom: 5%;
         }
 
         .blog-header {
@@ -206,6 +250,10 @@
             padding: 0 20px;
             font-size: 0.8rem;
         }
+
+        .blog-item p {
+            font-size: 0.7rem;
+          }
 
 
         .sources-block {
@@ -224,15 +272,12 @@
 				}
 				
 				.get-started-footer{
-					height: 30vw;
-					padding-top: 21%;
+					height: 20vw;
+					padding-top: 0%;
                 }
         .download-container {
+            padding-left: 30px;
             flex-direction: column;
-        }
-        .download-button {
-            padding: 15px 50px;
-            font-size: 1.2rem;
         }
     }
 }
