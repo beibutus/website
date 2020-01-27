@@ -7,7 +7,10 @@ import classNames from "classnames";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import firstBlockImg from "../../assets/images/home/firstBlockImage.svg";
+import firstBlockImageRu from "../../assets/images/home/firstBlockImageRu.png";
+import firstBlockImageEn from "../../assets/images/home/firstBlockImageEn.png";
+import prevIcon from "../../assets/images/home/prevIcon.png";
+import nextIcon from "../../assets/images/home/nextIcon.png";
 import blog_img_1 from "../../assets/images/home/home_blog_img_1.png";
 import blog_img_2 from "../../assets/images/home/home_blog_img_2.png";
 import blog_img_3 from "../../assets/images/home/home_blog_img_3.png";
@@ -16,6 +19,32 @@ import logo_extension from "../../assets/images/logo_extension.svg";
 
 import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 // import extensionImg from "../../assets/images/home/extensionImg.png";
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className="slick-arrow slick-arrow-next"
+      style={{ ...style, display: "block"}}
+      onClick={onClick}
+    >
+    <img src={nextIcon} alt="arrow_left"/>
+    </div>
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className="slick-arrow"
+      style={{ ...style, display: "block"}}
+      onClick={onClick}
+    >
+    <img src={prevIcon} alt="arrow_right"/>
+    </div>
+  );
+}
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -91,6 +120,8 @@ export default class Home extends React.Component {
       infinite: true,
       speed: 800,
       slidesToShow: 3,
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
       slidesToScroll: 3,
       centerPadding: "30px",
       responsive: [
@@ -121,6 +152,11 @@ export default class Home extends React.Component {
       ]
     };
 
+    const firstBlockImg = {
+      firstBlockImageEn,
+      firstBlockImageRu,
+    };
+
     const mobileClasses = classNames("img-phone-front", {
       show: this.state.showMobileWow
     });
@@ -137,7 +173,7 @@ export default class Home extends React.Component {
         </header>
 
         <div className="first-block-container">
-          <img src={firstBlockImg} />
+          <img src={firstBlockImg[this.getLangText("firstBlockImage")]}/>
         </div>
 
 
@@ -204,6 +240,8 @@ export default class Home extends React.Component {
                   </a>
                 </div>
               </div>
+
+              
             </div>
           
         </div>
@@ -252,7 +290,7 @@ export default class Home extends React.Component {
             </Slider>
           </div>
 
-        <div className="blog-container">
+        {/* <div className="blog-container">
           <div className="blog-header">
             <h2 className="blog-header">{this.getLangText("blogTitle")}</h2>
             <Link to="/blog" className="blog-button">
@@ -273,7 +311,7 @@ export default class Home extends React.Component {
               <p>{this.getLangText("blogThirdText")}</p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <footer className="get-started-footer" />
       </div>

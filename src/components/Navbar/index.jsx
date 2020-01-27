@@ -114,7 +114,7 @@ export default class Navbar extends React.Component {
                                             {this.props.text.Download}
                                         </Link>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <Link
                                             to="blog"
                                             className="menu-nav__link"
@@ -122,7 +122,7 @@ export default class Navbar extends React.Component {
                                         >
                                             {this.props.text.ourBlog}
                                         </Link>
-                                    </li>
+                                    </li> */}
                                     <li>
                                     {
 										 this.props.noUseLangSelect || (

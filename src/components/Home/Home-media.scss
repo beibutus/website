@@ -2,7 +2,15 @@
     .Home .container {
         margin: 0 10%;
     }
+    blockquote:after {
+        top: 15rem !important;
+    }
+    .slick-arrow-next {
+        right: 2%;
+        cursor: pointer;
+    }
 }
+
 @media (max-width: 1024px) {
     .Home {
 
@@ -70,6 +78,9 @@
 
           .wrapper-hero {
             padding: 3% 0 5%;
+        }
+        .slick-arrow-next {
+            right: -1px;
         }
         
 
@@ -185,15 +196,31 @@
           }
 
         .download-button {
-            background-color: #7BE6FF;
+            background-color: #3ED5F8;
             box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
             border-radius: 15px;
-            color: #fff !important;
+            color: #142E50 !important;
             padding: 10px 40px;
             border: 0 !important;
             font-weight: 400;
             font-size: 1rem;
             text-align: center; 
+        }
+
+        .slick-arrow img {
+            height: 60px !important;
+        }
+
+        .slick-arrow-next {
+            right: 1px;
+        }
+
+        .slick-slide div {
+            padding: 10px 30px 20px 30px;
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            max-height: 350px !important;
         }
 
         .logo-download-small {
