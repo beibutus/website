@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "08b9777add37247ca955df49854fd5b0",
+    "revision": "6ad36669e013168358e2a80c4603dca1",
     "url": "https://easably.github.io/website/index.html"
   },
   {
-    "revision": "a51d380731063252a7ce",
+    "revision": "4f3d5036c27e83097f3f",
     "url": "https://easably.github.io/website/static/css/2.8c23d2df.chunk.css"
   },
   {
-    "revision": "c593d6ea95c88de5f6c1",
-    "url": "https://easably.github.io/website/static/css/main.3ac5fc47.chunk.css"
+    "revision": "df617b59978e13cfeb17",
+    "url": "https://easably.github.io/website/static/css/main.65747623.chunk.css"
   },
   {
-    "revision": "a51d380731063252a7ce",
-    "url": "https://easably.github.io/website/static/js/2.7240ce3c.chunk.js"
+    "revision": "4f3d5036c27e83097f3f",
+    "url": "https://easably.github.io/website/static/js/2.45e7b4de.chunk.js"
   },
   {
-    "revision": "c593d6ea95c88de5f6c1",
-    "url": "https://easably.github.io/website/static/js/main.8cd43052.chunk.js"
+    "revision": "df617b59978e13cfeb17",
+    "url": "https://easably.github.io/website/static/js/main.40425da6.chunk.js"
   },
   {
     "revision": "ac9b2f54810039bca563",
@@ -184,8 +184,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://easably.github.io/website/static/media/extension-img.a3bbaa1d.png"
   },
   {
+    "revision": "1d4c78ff3beeeda8e52a07a4f723e28a",
+    "url": "https://easably.github.io/website/static/media/firstBlockImageEn.1d4c78ff.svg"
+  },
+  {
     "revision": "4560abac373b0e35d346b5c37b1f9410",
-    "url": "https://easably.github.io/website/static/media/firstBlockImage.4560abac.svg"
+    "url": "https://easably.github.io/website/static/media/firstBlockImageRu.4560abac.svg"
   },
   {
     "revision": "fb40aa778d3a4b876fa9b662bf91a0a9",
