@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./Home.scss";
 import "./Home-media.scss";
 import { Link } from "@reach/router";
@@ -9,15 +9,13 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import firstBlockImageRu from "../../assets/images/home/firstBlockImageRu.png";
 import firstBlockImageEn from "../../assets/images/home/firstBlockImageEn.png";
+import thirdBlockNumbers from '../../assets/images/home/thirdBlockNumbers.svg';
 import prevIcon from "../../assets/images/home/prevIcon.png";
 import nextIcon from "../../assets/images/home/nextIcon.png";
-import blog_img_1 from "../../assets/images/home/home_blog_img_1.png";
-import blog_img_2 from "../../assets/images/home/home_blog_img_2.png";
-import blog_img_3 from "../../assets/images/home/home_blog_img_3.png";
 import logo_tutor from "../../assets/images/logo_tutor.svg";
 import logo_extension from "../../assets/images/logo_extension.svg";
 
-import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
+// import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 // import extensionImg from "../../assets/images/home/extensionImg.png";
 
 function SampleNextArrow(props) {
@@ -46,7 +44,7 @@ function SamplePrevArrow(props) {
   );
 }
 
-export default class Home extends React.Component {
+export default class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -186,13 +184,16 @@ export default class Home extends React.Component {
         </div>
 
         <div className="third-block-container">
-          <div className="">
             <div className="wrapper-third-text">
-              <h2 className="third-text">{this.getLangText("thirdBlockText_1")}</h2>
-              <h2 className="third-text-center">{this.getLangText("thirdBlockText_2")}</h2>
-              <h2 className="third-text">{this.getLangText("thirdBlockText_3")}</h2>
+              <div className="third-block-image">
+                <img src={thirdBlockNumbers}/>
+              </div>
+              <div>
+                <h2 className="third-text">{this.getLangText("thirdBlockText_1")}</h2>
+                <h2 className="third-text-center">{this.getLangText("thirdBlockText_2")}</h2>
+                <h2 className="third-text">{this.getLangText("thirdBlockText_3")}</h2>
+              </div>
             </div>
-          </div>
 
           <div className="download-container">
               <div className="download-block">

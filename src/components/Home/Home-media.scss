@@ -9,6 +9,22 @@
         right: 2%;
         cursor: pointer;
     }
+
+    .third-text {
+        margin: 8% 10% 5% -5% !important;
+        font-size: 2.5rem;
+        color: #2c2c2c;
+        font-weight: normal;
+        line-height: 2.8rem;
+      }
+    
+    .third-text-center {
+        margin: 8% 10% 5% 5% !important;
+        font-size: 2.5rem;
+        color: #2c2c2c;
+        font-weight: normal;
+        line-height: 2.8rem;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -51,27 +67,26 @@
             line-height: 2rem;
         }
 
-        .wrapper-third-text {
-            padding: 5% 10% 0% 1%;
-            position: relative;
-          }
+        .third-block-image img {
+            width: 80%;
+        }
 
         .third-text {
-            margin: 2% 3% 5% 20%;
-            font-size: 1.5rem;
+            margin: 10% 10% 11% -15%;
+            font-size: 1.3rem;
             color: #2c2c2c;
             font-weight: normal;
-            line-height: 2rem;
+            line-height: 1.6rem;
           }
-
+        
           .third-text-center {
-            margin: 2% 5% 6% 25%;
-            font-size: 1.5rem;
+            margin: 10% 10% 11% -5%;
+            font-size: 1.3rem;
             color: #2c2c2c;
             font-weight: normal;
-            line-height: 2rem;
+            line-height: 1.6rem;
           }
-
+        
           .download-about h1 {
             font-size: 1.5rem;
           }
@@ -167,27 +182,31 @@
             line-height: 1.3rem;
         }
 
-        .third-text {
-            text-align: center;
-            margin: 2% 3% 5% 5%;
-            font-size: 1rem;
-            color: #2c2c2c;
-            font-weight: normal;
-            line-height: 1.3rem;
-          }
+        .third-block-image img {
+            width: 100%;
+        }
 
-        .third-text-center {
-            text-align: center;
-            margin: 2% 3% 5% 5%;
-            font-size: 1rem;
+        .third-text {
+            margin: 15% 10% 11% -5%;
+            font-size: 0.9rem;
             color: #2c2c2c;
             font-weight: normal;
-            line-height: 1.3rem;
+            line-height: 1.2rem;
           }
+        
+          .third-text-center {
+            margin: 15% 10% 11% 5%;
+            font-size: 0.9rem;
+            color: #2c2c2c;
+            font-weight: normal;
+            line-height: 1.2rem;
+          }
+        
 
         .download-about h1 {
             font-size: 1rem;
           }
+
 
           .download-button-block {
             text-align: center;
