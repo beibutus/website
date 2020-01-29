@@ -196,7 +196,7 @@
   }
 
   blockquote {
-    font-weight: 100;
+    font-weight: 400;
     font-size: 2rem;
     max-width: 500px;
     line-height: 1.2;
@@ -208,7 +208,7 @@
   blockquote:before,
   blockquote:after {
     position: absolute;
-    color: rgba(240, 187, 4, 0.5);
+    color: #F0BB04;
     font-size: 8rem;
     width: 5rem;
     height: 5rem;

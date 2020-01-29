@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from '../Header';
+import { Link } from "@reach/router";
 import ReactHtmlParser from "react-html-parser";
 
 import logo_tutor from "../../assets/images/logo_tutor.svg";
@@ -70,6 +71,43 @@ export default class Download extends Component {
                     </div>*/}
 
                 </div>
+                <footer className="get-started-footer">
+            <div className="footer-links">
+              <ul>
+              <li>
+                                        <Link
+                                            to="about"
+                                            className="footer-link"
+                                            onClick={this.closeMenu}
+                                        >
+                                            {this.props.text.About}
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="products"
+                                            className="footer-link"
+                                            onClick={this.closeMenu}
+                                        >
+                                            {this.props.text.Products}
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="download"
+                                            className="footer-link"
+                                            onClick={this.closeMenu}
+                                        >
+                      {this.props.text.Download}
+                    </Link>
+                 </li>
+              </ul>
+            
+            </div>         
+            <div>
+              <p><a className="footer-mail" href="mailto:support@easylang.by">support@easylang.by</a></p>
+            </div>   
+        </footer>
             </div>
         );
     }

@@ -1,6 +1,7 @@
 import React from "react";
 import Header from '../Header';
 import ReactHtmlParser from "react-html-parser";
+import { Link } from "@reach/router";
 
 import logo_tutor from "../../assets/images/logo_tutor.svg";
 import logo_extension from "../../assets/images/logo_extension.svg";
@@ -67,6 +68,43 @@ export default class Products extends React.Component {
                             </p>
                         </div>*/}
                     </div>
+                    <footer className="get-started-footer">
+            <div className="footer-links">
+              <ul>
+              <li>
+                                        <Link
+                                            to="about"
+                                            className="footer-link"
+                                            onClick={this.closeMenu}
+                                        >
+                                            {this.props.text.About}
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="products"
+                                            className="footer-link"
+                                            onClick={this.closeMenu}
+                                        >
+                                            {this.props.text.Products}
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="download"
+                                            className="footer-link"
+                                            onClick={this.closeMenu}
+                                        >
+                      {this.props.text.Download}
+                    </Link>
+                 </li>
+              </ul>
+            
+            </div>         
+            <div>
+              <p><a className="footer-mail" href="mailto:support@easylang.by">support@easylang.by</a></p>
+            </div>   
+        </footer>
             </div>
         );
     }
