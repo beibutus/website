@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "@reach/router";
 import "./Navbar.scss";
 import classNames from "classnames";
+import logo from '../../assets/images/logo.svg'
 
 export default class Navbar extends React.Component {
     constructor(props) {
@@ -62,7 +63,7 @@ export default class Navbar extends React.Component {
                 <div className="sticky-bar">
                     <div className="logo">
                         <Link to="./" className="logo-light">
-                            EasyLang
+                            <img src={logo}/> 
                         </Link>
                     </div>
                     <div className="menu-wrapper">
@@ -75,7 +76,7 @@ export default class Navbar extends React.Component {
                                 <ul className="menu-main-list">
                                     <li>
                                         <span className="menu-logo">
-                                            EasyLang
+                                            <img src={logo}/> 
                                         </span>
                                     </li>
                                     {/* <li>

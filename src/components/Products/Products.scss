@@ -2,7 +2,7 @@
 
 .Products {
     background-color: #fff;
-    background-image: url("../../assets/images/bottom.jpg");
+    background-image: url("../../assets/images/home/home_footer.svg");
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: contain;
@@ -34,6 +34,7 @@
 }
 
 .products-top-text {
+    font-family: "Open sans", sans-serif !important;
     margin-top: 40px;
 }
 
@@ -45,6 +46,7 @@
 }
 
 .description-text {
+    font-family: "Open sans", sans-serif !important;
     padding-top: 35px;
 }
 
