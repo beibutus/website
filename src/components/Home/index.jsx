@@ -194,8 +194,9 @@ export default class Home extends Component {
                 <h2 className="third-text">{this.getLangText("thirdBlockText_3")}</h2>
               </div>
             </div>
+        </div>
 
-          <div className="download-container">
+        <div className="download-container">
               <div className="download-block">
                 <div className="download-block-description">
                   <div className="download-logo">
@@ -241,13 +242,9 @@ export default class Home extends Component {
                   </a>
                 </div>
               </div>
-
-              
             </div>
-          
-        </div>
 
-          <div className="feedback-container">
+        <div className="feedback-container">
             <h2 className="feedback-header">
               {this.getLangText("feedbackTitle")}
             </h2>
