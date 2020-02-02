@@ -99,16 +99,16 @@
 }
 
 .footer-links {
-padding-top: 7%;
-padding-left: 8%;
+    padding-top: 7%;
+    padding-left: 8%;
 }
 
 .footer-link {
-font-family: "Open sans", sans-serif !important;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 30px;
+    font-family: "Open sans", sans-serif !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 .footer-mail {
@@ -122,6 +122,10 @@ line-height: 30px;
 
     
 @media (max-width: 768px) {
+    .products-container {
+        margin-bottom: 50vh;
+        padding: 10px;
+    }
     .get-started-footer {
         height: 20vh;
         margin-top: -8%;
@@ -135,8 +139,10 @@ line-height: 30px;
     @media (max-width: 610px) {
         .products-container {
             flex-direction: column;
+            margin-bottom: 10%;
         }
         .product-block {
+            width: 70%;
             margin: 30px;
         }
         .product-description {
