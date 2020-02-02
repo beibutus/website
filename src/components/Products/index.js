@@ -3,10 +3,8 @@ import Header from '../Header';
 import ReactHtmlParser from "react-html-parser";
 import { Link } from "@reach/router";
 
-import logo_tutor from "../../assets/images/logo_tutor.svg";
-import logo_extension from "../../assets/images/logo_extension.svg";
-import extention_img from '../../assets/images/extension-img.png';
-import tutor_img from '../../assets/images/tutor-img.png';
+import productsFirstNumber from "../../assets/images/productsFirstNumber.svg";
+import productsSecondNumber from "../../assets/images/productsSecondNumber.svg";
 
 
 import "./Products.scss";
@@ -22,44 +20,55 @@ export default class Products extends React.Component {
         return (
             <div className="Products">
                 <Header text={this.props.text}/>
-                    <div className="container">
-                        <div className="description-header-block">
-                            <h1>{this.getLangText('OurProducts')}</h1>
-                            <p className="products-top-text">
-                                {this.getLangText('ProductsPageTopText')}
-                            </p>
+                        <div className="products-header-block">
+                            <h1>{this.getLangText('ProductsHeader')}</h1>
                         </div>
-                        <div className="product-block">
-                            <div className="product-block-description">
-                                <div>
-                                    <img className="logo-small" src={logo_extension} alt="logo_small"/>
+
+                        <div className="products-container">
+                            <div className="product-block">
+                                <div className="product-block-description">
+                                <div className="product-number">
+                                    <img className="product-number-img" src={productsFirstNumber} />
                                 </div>
-                                <div>
-                                    <h1>{this.getLangText('ExtensionForBrowser')}</h1>
-                                    <p className="description-text">
-                                        {this.getLangText('ExtensionDescription')}
+                                <div className="product-about">
+                                    <p className="product-description">{this.getLangText("ExtensionForBrowser")}.</p>
+                                    <p className="product-description">
+                                    {this.getLangText("ProductExtensionDescription")}
                                     </p>
                                 </div>
-                            </div>
-                            <div className="product-block-image">
-                                <img className="extension-img" src={extention_img} alt="extension_img" />
-                                <img className="extension-img" src={extention_img} alt="extension_img" />
-                            </div>
-                        </div>
-                        <div className="product-block">
-                            <div className="product-block-description">
-                                <div>
-                                    <img className="logo-small" src={logo_tutor} alt="logo_small"/>
                                 </div>
-                                <div>
-                                    <h1>{this.getLangText('ContextTutor')}</h1>
-                                    <p className="description-text">
-                                        {this.getLangText('ContextTutorDescription')}
+                                <div className="product-block-download">
+                                <a
+                                    className="product-download-button"
+                                    href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
+                                    target="_blank"
+                                >
+                                    {this.getLangText("Add")}
+                                </a>
+                                </div>
+                            </div>
+
+                            <div className="product-block">
+                                <div className="product-block-description">
+                                <div className="product-number">
+                                    <img className="product-number-img" src={productsSecondNumber} />
+                                </div>
+                                <div className="product-about">
+                                    <p className="product-description">{this.getLangText("ProductsTutor")}.</p>
+                                    <p className="product-description">
+                                    {this.getLangText("ProductTutorDescription")}
                                     </p>
                                 </div>
-                            </div>
-                            <div className="product-block-image">
-                                <img className="tutor-img" src={tutor_img} alt="contextTutor-img"/>
+                                </div>
+                                <div className="product-block-download">
+                                <a
+                                    className="product-download-button"
+                                    href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
+                                    target="_blank"
+                                >
+                                    {this.getLangText("GetStarted")}
+                                </a>
+                                </div>
                             </div>
                         </div>
                         {/*<div class="description-bottom-block">
@@ -67,11 +76,12 @@ export default class Products extends React.Component {
                                 {this.getLangText('ProductsPageBottomText')}
                             </p>
                         </div>*/}
-                    </div>
+                    
+
                     <footer className="get-started-footer">
-            <div className="footer-links">
-              <ul>
-              <li>
+                        <div className="footer-links">
+                    <ul>
+                             <li>
                                         <Link
                                             to="about"
                                             className="footer-link"

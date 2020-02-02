@@ -13,11 +13,6 @@ export default class Header extends React.Component {
     render() {
         return (
             <header className="Header">
-                <div className="Header-content container">
-                    <h1 className="Header-title">
-                        <Link to="">{this.getLangText('PagesHeader')}</Link>
-                    </h1>
-                </div>
             </header>
         );
     }
