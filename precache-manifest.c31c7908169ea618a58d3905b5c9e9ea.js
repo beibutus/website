@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7cf16ee468ed72300e84a62c60ef8a09",
+    "revision": "b59221aa7cd33d33d74730f71d127c40",
     "url": "https://easably.github.io/website/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://easably.github.io/website/static/css/2.8c23d2df.chunk.css"
   },
   {
-    "revision": "999ede43011a25acef03",
-    "url": "https://easably.github.io/website/static/css/main.a9b1c92a.chunk.css"
+    "revision": "63c45e4d6dd11f96bd3a",
+    "url": "https://easably.github.io/website/static/css/main.96b511e2.chunk.css"
   },
   {
     "revision": "3cfa96b65526f5bcd238",
     "url": "https://easably.github.io/website/static/js/2.4c711daf.chunk.js"
   },
   {
-    "revision": "999ede43011a25acef03",
+    "revision": "63c45e4d6dd11f96bd3a",
     "url": "https://easably.github.io/website/static/js/main.b4d1acf5.chunk.js"
   },
   {
