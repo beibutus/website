@@ -113,11 +113,12 @@ export default class Products extends React.Component {
                                     {this.props.text.Download}
                                 </Link>
                             </li>
+                            <li>
+                                <p>
+                                    <a className="footer-mail" href="mailto:support@easylang.by">support@easylang.by</a>
+                                </p>
+                            </li>
                         </ul>
-
-                    </div>
-                    <div>
-                        <p><a className="footer-mail" href="mailto:support@easylang.by">support@easylang.by</a></p>
                     </div>
                 </footer>
             </div>

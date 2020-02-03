@@ -53,6 +53,8 @@
   "feedbackFifthText": "It’s important in my industry to get news quickly - thanks to Easylang I can keep up with the others!",
   "feedbackSixthName": "Kristina",
   "feedbackSixthText": "Now I can help my child to do homework! It brings us great!",
+  "LogoDescription": "We support translation and repetition on the most popular sites. <br> Try EasyLang",
+  "TryProducts": "Try products",
   "blogTitle": "Also we have a Blog!",
   "blogFirstText": "30 useful words from Game of Thrones",
   "blogSecondText": "How to choose a book to learn language and not to lose?",
@@ -94,7 +96,7 @@
   "ExtensionDescription": "— works in Google Chrome <br>— translates everything you need",
   "ContextTutor": "Context-Tutor  BETA",
   "ContextTutorDescription": "— helps to refresh known words <br>— helps to learn new ones",
-  "ProductsPageBottomText": "Still have questions? <br> Watch our <a href='/' style='color:inherit'><u>video</u></a> how to install our products or <a href='' style='color:inherit'><u>contact</u></a> us - we will surely help you!",
+  "BottomInfoText": "Still have questions? <br> Watch our video how to install our products or <a href='mailto:support@easylang.by' style='font-family: Open Sans, sans-serif; color:#34D086'><u>contact</u></a> us - we will surely help you!",
   "Add": "Add",
   "GetStarted": "Start"
 }

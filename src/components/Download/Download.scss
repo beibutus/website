@@ -1,154 +1,218 @@
 @import "../../styles/variables";
 
 .Download {
-    background-color: #fff;
-    //background-image: url("../../assets/images/bottom.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: contain;
-    font-size: 1rem;
-    position: relative;
-    width: 100%;
-    margin-top: -70px;
-    .container {
-        @media (min-width: 576px) {
-            max-width: 500px;
-        }
-        @media (min-width: 768px) {
-            max-width: 620px;
-        }
-        @media (min-width: 992px) {
-            max-width: 860px;
-        }
-        @media (min-width: 1200px) {
-            max-width: 1240px;
-        }
+  background-color: #fff;
+  //background-image: url("../../assets/images/bottom.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  font-size: 1rem;
+  position: relative;
+  width: 100%;
+  margin-top: -70px;
+  .container {
+    @media (min-width: 576px) {
+      max-width: 500px;
     }
+    @media (min-width: 768px) {
+      max-width: 620px;
+    }
+    @media (min-width: 992px) {
+      max-width: 860px;
+    }
+    @media (min-width: 1200px) {
+      max-width: 1240px;
+    }
+  }
 }
 
+/* Download Products Section */
+
+.download-header {
+  margin: 5% 2% 0;
+  font-family: "Open sans", sans-serif !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #000;
+}
 
 .download-container {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    margin-top: 20px;
-    margin-bottom: 20%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }
 
 .download-block {
-    padding: 50px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .description-download-text {
-    font-family: "Open sans", sans-serif !important;
-    padding-top: 20px;
+  font-family: "Open sans", sans-serif !important;
+  padding-top: 20px;
 }
 
 .download-block-description {
-    display: flex;
-    justify-content: flex-start;
-    padding-right: 20px;
-    margin: 30px 0;
+  display: flex;
+  justify-content: flex-start;
+  // padding-right: 20px;
+  margin: 30px 0;
 }
 
-
 .logo-download-small {
-    width: 25%;
-    margin-right: 30px;
+  width: 25%;
+  margin-right: 30px;
 }
 
 .download-button-block {
-    text-align: center;
-    margin-top: 40px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .download-button {
-    color: black !important;
-    padding: 20px 100px;
-    background-color: #3ED5F8;
-    border-radius: 10px;
-    border: 0 !important;
-    font-weight: 400;
-    text-align: center; 
+  color: black !important;
+  padding: 15px 70px;
+  font-size: 1.5rem;
+  background-color: #3ed5f8;
+  border-radius: 10px;
+  border: 0 !important;
+  font-weight: 400;
+  text-align: center;
 }
 
-.download-bottom-block {
-    margin: 60px 0;
+/* Logo Section */
+
+.logo-section {
+  margin: 10% 7% 15%;
 }
+
+.logo-description {
+  font-family: "Open sans", sans-serif !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #000;
+}
+
+.logo-container {
+  margin: 5% 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.logo-container img {
+  width: 20%;
+  height: 20%;
+}
+
+.youtubeLogo {
+  margin-top: -5%;
+}
+
+/* Download Text Block */
+.download-bottom-block {
+  margin: 10% 0;
+}
+
+.download-bottom-block p {
+  font-family: "Open Sans", sans-serif !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #000;
+}
+
+/* Footer Section */
 
 .get-started-footer {
-    background: url("../../assets/images/home/home_footer.svg") bottom/cover no-repeat;
-height: 20vw;
-margin-top: -5%;
+  background: url("../../assets/images/home/home_footer.svg") bottom/cover no-repeat;
+  height: 20vw;
+  margin-top: -5%;
 }
 
 .footer-links {
-padding-top: 7%;
-padding-left: 8%;
+  padding-top: 7%;
+  padding-left: 8%;
 }
 
 .footer-link {
-font-family: "Open sans", sans-serif !important;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 30px;
+  font-family: "Open sans", sans-serif !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .footer-mail {
-font-family: "Open sans", sans-serif !important;
-color: #fff !important;
-text-decoration: underline;
-font-size: 18px;
-padding-top: 2%;
-padding-left: 60%;
+  font-family: "Open sans", sans-serif !important;
+  color: #fff !important;
+  text-decoration: underline;
+  font-size: 18px;
+  padding-top: 2%;
 }
 
-
+/* Responsive Section */
 
 @media (max-width: 768px) {
-    .download-container {
-        flex-direction: column;
-    }
-    .get-started-footer {
-        height: 20vh;
-        margin-top: -8%;
-    }
-    .footer-mail {
-        padding-left: 50%;
-      }
+  .logo-container img {
+    width: 25%;
+    height: 25%;
+  }
+  .download-container {
+    flex-direction: column;
+  }
+  .get-started-footer {
+    height: 20vh;
+    margin-top: -8%;
+  }
 }
-    
 
 @media (max-width: 610px) {
-        .get-started-footer {
-            height: 17vh;
-            margin-top: -7%;
-        }
+  .logo-description {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .download-button {
+    padding: 15px 50px;
+  }
+  .logo-container img {
+    width: 30%;
+    height: 30%;
+  }
+  .youtubeLogo {
+    margin-top: -8%;
+  }
+  .get-started-footer {
+    height: 17vh;
+    margin-top: -7%;
+  }
+  .footer-links {
+    padding-top: 7%;
+    padding-left: 8%;
+  }
 
-        .footer-links {
-            padding-top: 7%;
-            padding-left: 8%;
-          }
-        
-          .footer-link {
-            font-family: "Open sans", sans-serif !important;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 8px;
-            line-height: 8px;
-          }
-        
-          .footer-mail {
-            font-family: "Open sans", sans-serif !important;
-            color: #fff !important;
-            text-decoration: underline;
-            font-size: 0.8rem;
-            padding-top: 0%;
-            padding-left: 50%;
-          }
+  .footer-link {
+    font-family: "Open sans", sans-serif !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 8px;
+  }
+
+  .footer-mail {
+    font-family: "Open sans", sans-serif !important;
+    color: #fff !important;
+    text-decoration: underline;
+    font-size: 0.8rem;
+    padding-top: 0%;
+  }
 }
-

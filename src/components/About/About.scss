@@ -1,152 +1,154 @@
 @import "../../styles/variables";
 
 .About {
-    background-color: #fff;
-    //background-image: url("");
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: contain;
-    font-size: 1rem;
-    position: relative;
-    width: 100%;
-    margin-top: -70px;
-    .container {
-        @media (min-width: 576px) {
-            max-width: 540px;
-            
-        }
-        @media (min-width: 768px) {
-            max-width: 620px;
-            .get-started-footer {
-                height: 15vh;
-                margin-top: -7%;
-            }
-    
-            .footer-links {
-                padding-top: 7%;
-                padding-left: 8%;
-              }
-            
-              .footer-link {
-                font-family: "Open sans", sans-serif !important;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 8px;
-                line-height: 8px;
-              }
-            
-              .footer-mail {
-                font-family: "Open sans", sans-serif !important;
-                color: #fff !important;
-                text-decoration: underline;
-                font-size: 0.8rem;
-                padding-top: 0%;
-                padding-left: 50%;
-              }
-        }
-        @media (min-width: 992px) {
-            max-width: 860px;
-        }
-        @media (min-width: 1200px) {
-            max-width: 1240px;
-        }
+  background-color: #fff;
+  //background-image: url("");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  font-size: 1rem;
+  position: relative;
+  width: 100%;
+  margin-top: -70px;
+  .container {
+    @media (min-width: 576px) {
+      max-width: 540px;
     }
+    @media (min-width: 768px) {
+      max-width: 620px;
+      .get-started-footer {
+        height: 15vh;
+        margin-top: -7%;
+      }
+
+      .footer-links {
+        padding-top: 7%;
+        padding-left: 8%;
+      }
+
+      .footer-link {
+        font-family: "Open sans", sans-serif !important;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 8px;
+        line-height: 8px;
+      }
+
+      .footer-mail {
+        font-family: "Open sans", sans-serif !important;
+        color: #fff !important;
+        text-decoration: underline;
+        font-size: 0.8rem;
+        padding-top: 0%;
+        padding-left: 50%;
+      }
+    }
+    @media (min-width: 992px) {
+      max-width: 860px;
+    }
+    @media (min-width: 1200px) {
+      max-width: 1240px;
+    }
+  }
+}
+
+.about-container {
+    margin-bottom: 15%;
 }
 
 .about-block {
-    margin: 100px 0;
+  margin: 100px 0;
 }
 
 .about-block p {
-    font-weight: 400;
-    font-family: "Open sans", sans-serif !important;
+  font-weight: 400;
+  font-family: "Open sans", sans-serif !important;
 }
 
 .about-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .about-button {
-    color: black !important;
-    padding: 20px 100px;
-    background-color: #3ED5F8;
-    border-radius: 10px;
-    font-weight: 400;
-    margin: 5px;    
+  color: black !important;
+  font-size: 1.5rem;
+  padding: 20px 100px;
+  background-color: #3ed5f8;
+  border-radius: 10px;
+  font-weight: 400;
+  margin: 5px;
 }
 
 .get-started-footer {
-    background: url("../../assets/images/home/home_footer.svg") bottom/cover no-repeat;
-height: 20vw;
-margin-top: -5%;
+  background: url("../../assets/images/home/home_footer.svg") bottom/cover no-repeat;
+  height: 20vw;
+  margin-top: -5%;
 }
 
 .footer-links {
-padding-top: 7%;
-padding-left: 8%;
+  padding-top: 7%;
+  padding-left: 8%;
 }
 
 .footer-link {
-font-family: "Open sans", sans-serif !important;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 30px;
+  font-family: "Open sans", sans-serif !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .footer-mail {
-font-family: "Open sans", sans-serif !important;
-color: #fff !important;
-text-decoration: underline;
-font-size: 18px;
-padding-top: 2%;
-padding-left: 60%;
+  font-family: "Open sans", sans-serif !important;
+  color: #fff !important;
+  text-decoration: underline;
+  font-size: 18px;
+  padding-top: 2%;
 }
 
 @media (max-width: 768px) {
-    .about-buttons {
-        flex-direction: column;
-        padding: 10px;
-    }
-    .get-started-footer {
-        height: 20vh;
-        margin-top: -8%;
-    }
-    .footer-mail {
-        padding-left: 50%;
-      }
+  .about-buttons {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .get-started-footer {
+    height: 20vh;
+    margin-top: -8%;
+  }
 }
 
 @media (max-width: 610px) {
-        .get-started-footer {
-            height: 17vh;
-            margin-top: -7%;
-        }
+  .get-started-footer {
+    height: 17vh;
+    margin-top: -7%;
+  }
 
-        .footer-links {
-            padding-top: 7%;
-            padding-left: 8%;
-          }
-        
-          .footer-link {
-            font-family: "Open sans", sans-serif !important;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 8px;
-            line-height: 8px;
-          }
-        
-          .footer-mail {
-            font-family: "Open sans", sans-serif !important;
-            color: #fff !important;
-            text-decoration: underline;
-            font-size: 0.8rem;
-            padding-top: 0%;
-            padding-left: 50%;
-          }
+  .footer-links {
+    padding-top: 7%;
+    padding-left: 8%;
+  }
+
+  .about-button {
+    color: black !important;
+    padding: 15px 10px;
+    margin: 10px;
+  }
+
+  .footer-link {
+    font-family: "Open sans", sans-serif !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 8px;
+  }
+
+  .footer-mail {
+    font-family: "Open sans", sans-serif !important;
+    color: #fff !important;
+    text-decoration: underline;
+    font-size: 0.8rem;
+    padding-top: 0%;
+  }
 }
-
-
-

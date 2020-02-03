@@ -5,6 +5,9 @@ import ReactHtmlParser from "react-html-parser";
 
 import logo_tutor from "../../assets/images/logo_tutor.svg";
 import logo_extension from "../../assets/images/logo_extension.svg";
+import tedLogo from "../../assets/images/tedLogo.png";
+import youtubeLogo from "../../assets/images/youtubeLogo.png";
+import cnnLogo from "../../assets/images/cnnLogo.png";
 
 import "./Download.scss";
 
@@ -18,8 +21,12 @@ export default class Download extends Component {
     render() {
         return (
             <div className="Download">
-                <Header text={this.props.text}/>
+                <Header text={this.props.text} />
                 <div className="container">
+
+                    <h1 className="download-header">
+                        {this.getLangText('TryProducts')}
+                    </h1>
 
                     <div className="download-container">
 
@@ -34,7 +41,7 @@ export default class Download extends Component {
                                 </p>
                             </div>
                             <div className="download-button-block">
-                                <a 
+                                <a
                                     className="download-button"
                                     href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
                                     target="_blank">
@@ -54,7 +61,7 @@ export default class Download extends Component {
                                 </p>
                             </div>
                             <div className="download-button-block">
-                                <a 
+                                <a
                                     className="download-button"
                                     href="https://easy4learn.com/register"
                                     target="_blank">
@@ -64,50 +71,65 @@ export default class Download extends Component {
                         </div>
                     </div>
 
-                   {/*<div class="download-bottom-block">
+                    {/*<div class="download-bottom-block">
                             <p>
                                 {this.getLangText('ProductsPageBottomText')}
                             </p>
                     </div>*/}
 
+                    <div className="logo-section">
+                        <h1 className="logo-description">{this.getLangText("LogoDescription")}</h1>
+                        <div className="logo-container">
+                            <img src={tedLogo} />
+                            <img className="youtubeLogo" src={youtubeLogo} />
+                            <img src={cnnLogo} />
+                        </div>
+                        <div class="download-bottom-block">
+                            <p>
+                                {this.getLangText('BottomInfoText')}
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <footer className="get-started-footer">
-            <div className="footer-links">
-              <ul>
-              <li>
-                                        <Link
-                                            to="about"
-                                            className="footer-link"
-                                            onClick={this.closeMenu}
-                                        >
-                                            {this.props.text.About}
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="products"
-                                            className="footer-link"
-                                            onClick={this.closeMenu}
-                                        >
-                                            {this.props.text.Products}
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="download"
-                                            className="footer-link"
-                                            onClick={this.closeMenu}
-                                        >
-                      {this.props.text.Download}
-                    </Link>
-                 </li>
-              </ul>
-            
-            </div>         
-            <div>
-              <p><a className="footer-mail" href="mailto:support@easylang.by">support@easylang.by</a></p>
-            </div>   
-        </footer>
+                    <div className="footer-links">
+                        <ul>
+                            <li>
+                                <Link
+                                    to="about"
+                                    className="footer-link"
+                                    onClick={this.closeMenu}
+                                >
+                                    {this.props.text.About}
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to="products"
+                                    className="footer-link"
+                                    onClick={this.closeMenu}
+                                >
+                                    {this.props.text.Products}
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to="download"
+                                    className="footer-link"
+                                    onClick={this.closeMenu}
+                                >
+                                    {this.props.text.Download}
+                                </Link>
+                            </li>
+                            <li>
+                                <p>
+                                    <a className="footer-mail" href="mailto:support@easylang.by">support@easylang.by</a>
+                                </p>
+                            </li>
+                        </ul>
+
+                    </div>
+                </footer>
             </div>
         );
     }

@@ -53,6 +53,8 @@
   "feedbackFifthText": "快速获取新闻在我的行业中很重要-感谢 Easylang，我可以跟上其他人的发展！",
   "feedbackSixthName": "克里斯蒂娜",
   "feedbackSixthText": "现在，我可以帮助我的孩子做作业！它汇集了伟大!",
+  "LogoDescription": "我们支持在最受欢迎的网站上进行翻译和重复. <br>试试 EasyLang",
+  "TryProducts": "试用产品",
   "blogTitle": "我们也有一个博客",
   "blogFirstText": "《权力的游戏》中的30个有用的单词",
   "blogSecondText": "如何选择一本书来学习语言而不是计算错误",
@@ -94,7 +96,7 @@
   "ExtensionDescription": "- 與穀歌瀏覽器一起使用 <br>- 翻譯你所說的一切",
   "ContextTutor": "Context Tutor BETA",
   "ContextTutorDescription": "- 有助於記住所涵蓋的材料 <br>- 幫助學習新事物",
-  "ProductsPageBottomText": "還有問題嗎？ <br> 看我們的 <a href='' style='color:inherit'><u>影片剪輯</u></a> 如何安裝產品 或 <a href='/' style='color:inherit'><u>聯繫方式</u></a> - 我們一定會幫助您！",
+  "BottomInfoText": "還有問題嗎？ <br> 看我們的 影片剪輯 如何安裝產品 或 <a href='mailto:support@easylang.by' style='font-family: Open Sans, sans-serif; color:#34D086'><u>聯繫方式</u></a> - 我們一定會幫助您！",
   "Add": "加",
   "GetStarted": "開始吧"
 }
