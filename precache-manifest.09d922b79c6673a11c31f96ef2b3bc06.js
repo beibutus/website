@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0b78e15b0d5e3101da11b732100fca25",
+    "revision": "3ce8c7581da1297dbbe648cd996f9387",
     "url": "https://easably.github.io/website/index.html"
   },
   {
