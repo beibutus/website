@@ -64,7 +64,7 @@ export default class Products extends React.Component {
                         <div className="product-block-download">
                             <a
                                 className="product-download-button"
-                                href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
+                                href="https://easy4learn.com/"
                                 target="_blank"
                             >
                                 {this.getLangText("GetStarted")}

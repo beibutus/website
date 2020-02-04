@@ -14,7 +14,10 @@ import prevIcon from "../../assets/images/home/prevIcon.png";
 import nextIcon from "../../assets/images/home/nextIcon.png";
 import logo_tutor from "../../assets/images/logo_tutor.svg";
 import logo_extension from "../../assets/images/logo_extension.svg";
-import appleDevices from "../../assets/images/appleDevices.png";
+import firstMobileImgEn from "../../assets/images/firstMobileImgEn.png";
+import secondMobileImgEn from "../../assets/images/secondMobileImgEn.png";
+import firstMobileImgRu from "../../assets/images/firstMobileImgRu.png";
+import secondMobileImgRu from "../../assets/images/secondMobileImgRu.png";
 
 // import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 // import extensionImg from "../../assets/images/home/extensionImg.png";
@@ -156,6 +159,14 @@ export default class Home extends Component {
       firstBlockImageRu,
     };
 
+    const mobileImg = {
+      firstMobileImgEn,
+      secondMobileImgEn,
+      firstMobileImgRu,
+      secondMobileImgRu
+    }
+
+
     const mobileClasses = classNames("img-phone-front", {
       show: this.state.showMobileWow
     });
@@ -173,10 +184,18 @@ export default class Home extends Component {
 
         <div className="first-block-container">
           <img src={firstBlockImg[this.getLangText("firstBlockImage")]} />
+          {/* <div className="desctop-first-block">
+            <img src={firstBlockImg[this.getLangText("firstBlockImage")]} />
+          </div>
+          <div className="mobile-first-block">
+            <h1>Mobile First Block</h1>
+          </div> */}
+
           {/* <figure>
             <picture>
-              <source media="(max-width: 400px)" srcSet={appleDevices} />
-              <img src={firstBlockImg[this.getLangText("firstBlockImage")]} alt="Camera lens"></img>
+              <source media="(max-width: 400px)" srcSet={`${firstMobileImgEn}, ${secondMobileImgEn} `} />
+              <source media="(max-width: 400px)" srcSet={mobileImg[this.getLangText('secondMobileImage')]} />
+              <img media="(min-width: 500px)" src={firstBlockImg[this.getLangText("firstBlockImage")]} alt="Camera lens"></img>
             </picture>
           </figure> */}
         </div>
