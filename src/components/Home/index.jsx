@@ -14,6 +14,7 @@ import prevIcon from "../../assets/images/home/prevIcon.png";
 import nextIcon from "../../assets/images/home/nextIcon.png";
 import logo_tutor from "../../assets/images/logo_tutor.svg";
 import logo_extension from "../../assets/images/logo_extension.svg";
+import appleDevices from "../../assets/images/appleDevices.png";
 
 // import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 // import extensionImg from "../../assets/images/home/extensionImg.png";
@@ -172,6 +173,12 @@ export default class Home extends Component {
 
         <div className="first-block-container">
           <img src={firstBlockImg[this.getLangText("firstBlockImage")]} />
+          {/* <figure>
+            <picture>
+              <source media="(max-width: 400px)" srcSet={appleDevices} />
+              <img src={firstBlockImg[this.getLangText("firstBlockImage")]} alt="Camera lens"></img>
+            </picture>
+          </figure> */}
         </div>
 
 
