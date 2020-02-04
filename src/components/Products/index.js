@@ -23,6 +23,8 @@ export default class Products extends React.Component {
                 <Header text={this.props.text} />
                 <div className="products-header-block">
                     <h1>{this.getLangText('ProductsHeader')}</h1>
+                    <p>{this.getLangText("ProductsTopHeader")}</p>
+                    <p>{this.getLangText("ProductsTopText")}</p>
                 </div>
 
                 <div className="products-container">
@@ -32,8 +34,8 @@ export default class Products extends React.Component {
                                 <img className="product-number-img" src={productsFirstNumber} />
                             </div>
                             <div className="product-about">
-                                <p className="product-description">{this.getLangText("ExtensionForBrowser")}.</p>
-                                <p className="product-description">
+                                <p className="product-description-header">{this.getLangText("ExtensionForBrowser")}.</p>
+                                <p className="product-description-text">
                                     {this.getLangText("ProductExtensionDescription")}
                                 </p>
                             </div>
@@ -55,8 +57,8 @@ export default class Products extends React.Component {
                                 <img className="product-number-img" src={productsSecondNumber} />
                             </div>
                             <div className="product-about">
-                                <p className="product-description">{this.getLangText("ProductsTutor")}.</p>
-                                <p className="product-description">
+                                <p className="product-description-header">{this.getLangText("ProductsTutor")}.</p>
+                                <p className="product-description-text">
                                     {this.getLangText("ProductTutorDescription")}
                                 </p>
                             </div>

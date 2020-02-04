@@ -28,11 +28,24 @@
 
 /* Download Products section*/
 
+.products-header-block {
+  margin-bottom: 5%;
+}
+
 .products-header-block h1 {
   font-family: "Open sans", sans-serif !important;
   font-style: normal;
   font-weight: 600;
+  font-size: 2.5rem;
   margin: 3% 10%;
+}
+
+.products-header-block p {
+  font-family: "Open sans", sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: 2% 10%;
 }
 
 .products-container {
@@ -56,13 +69,23 @@
   padding: 0 !important;
 }
 
-.product-description {
+.product-description-header {
+  font-family: "Open sans", sans-serif !important;
+  padding-top: 0 !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.3rem;
+}
+
+.product-description-text {
   font-family: "Open sans", sans-serif !important;
   padding-top: 0 !important;
   font-style: normal;
   font-weight: normal;
-  font-size: 2rem;
-  line-height: 2.3rem;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  margin-top: 10%;
 }
 
 .product-number {
@@ -80,11 +103,12 @@
 }
 
 .product-download-button {
-  background-color: #34d086 !important;
+  background-color:  #00C6F3 !important;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   color: #142e50 !important;
-  padding: 15px 100px;
+  float: right;
+  padding: 15px 50px;
   border: 0 !important;
   font-weight: 400;
   font-size: 1.5rem;
