@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "64e8ebead4dce63b05859b373dd39372",
+    "revision": "dca5434a8125f81e41eb8035259d3c0a",
     "url": "https://easably.github.io/website/index.html"
   },
   {
-    "revision": "ec49b7a1262062d54c7c",
+    "revision": "e98d8f38f48de20c520c",
     "url": "https://easably.github.io/website/static/css/2.8c23d2df.chunk.css"
   },
   {
-    "revision": "be9f20e2c71b7ca5095f",
+    "revision": "626612c853833c1dcbd6",
     "url": "https://easably.github.io/website/static/css/main.877c3612.chunk.css"
   },
   {
-    "revision": "ec49b7a1262062d54c7c",
-    "url": "https://easably.github.io/website/static/js/2.6a59e807.chunk.js"
+    "revision": "e98d8f38f48de20c520c",
+    "url": "https://easably.github.io/website/static/js/2.5e3d25a9.chunk.js"
   },
   {
-    "revision": "be9f20e2c71b7ca5095f",
-    "url": "https://easably.github.io/website/static/js/main.e4c91673.chunk.js"
+    "revision": "626612c853833c1dcbd6",
+    "url": "https://easably.github.io/website/static/js/main.b265ed72.chunk.js"
   },
   {
     "revision": "ac9b2f54810039bca563",
@@ -192,10 +192,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://easably.github.io/website/static/media/firstBlockImageRu.87558372.png"
   },
   {
-    "revision": "5b9eab2540d290ffc475b3ef43f48deb",
-    "url": "https://easably.github.io/website/static/media/firstMobileImgEn.5b9eab25.png"
-  },
-  {
     "revision": "653fc57244158a6971843b315b56d816",
     "url": "https://easably.github.io/website/static/media/home_footer.653fc572.svg"
   },
@@ -214,6 +210,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "75f65654ca4205d60a982aa4d87650b1",
     "url": "https://easably.github.io/website/static/media/logo_tutor.75f65654.svg"
+  },
+  {
+    "revision": "708be497562ee3b9a590a2cf5b09b1f4",
+    "url": "https://easably.github.io/website/static/media/mobileImgEn.708be497.svg"
+  },
+  {
+    "revision": "bdebdf0c69450ff2cab72d95165ca396",
+    "url": "https://easably.github.io/website/static/media/mobileImgRu.bdebdf0c.svg"
   },
   {
     "revision": "36c7177ea200b3474b7c5de25ba17c41",
