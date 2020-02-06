@@ -123,12 +123,12 @@ export default class Home extends React.Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
+                {/* <img
                   src={chromeStoreSvg}
                   alt="Chrome-store"
                   className="icon get-started-button__icon"
-                />
-                <span>{this.getLangText("buttonStarted")}</span>
+                /> */}
+                <span>{this.getLangText("StartLearning")}</span>
               </a>
             </div>
           </div>
@@ -214,7 +214,7 @@ export default class Home extends React.Component {
                                         </a> */}
                   </div>
 
-                  <div className="button-group button-group-2">
+                  {/* <div className="button-group button-group-2">
                     <a
                       className="button-install button-web"
                       href="http://easy4learn.com"
@@ -223,9 +223,9 @@ export default class Home extends React.Component {
                     >
                       Context-Tutor
                     </a>
-                  </div>
+                  </div> */}
 
-                  <div className="button-group button-group-3">
+                  {/* <div className="button-group button-group-3">
                     <a
                       className="button-install button-android disabled"
                       href="https://github.com/easably/context-tutor/releases/latest/download/EasyLang.apk"
@@ -245,13 +245,13 @@ export default class Home extends React.Component {
                         {this.getLangText("comingSoon")}
                       </span>
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
           </section>
 
-          <section
+          {/* <section
             className="content content-howItWorks"
             id={this.sections.howItWork.id}
             ref={this.sections.howItWork.ref}
@@ -294,7 +294,7 @@ export default class Home extends React.Component {
                 </div>
               </div>
 
-              {/* <div className="extension">
+               <div className="extension">
                                 <div className="extension-img">
                                     {" "}
                                     <img
@@ -302,9 +302,9 @@ export default class Home extends React.Component {
                                         alt="extension for Chrome"
                                     />
                                 </div>
-                            </div> */}
+                            </div> 
             </div>
-          </section>
+          </section> */}
 
           <div className="call-to-action">
             <section
@@ -317,12 +317,12 @@ export default class Home extends React.Component {
                   <h2>{this.getLangText("headSource")}</h2>
                   <p>{this.getLangText("contentSource")}</p>
                 </div>
-                <div className="blog">
+                {/* <div className="blog">
                   <p>{this.getLangText("blog")}</p>
                   <Link to="blog" className="get-started-button blog-button">
                     {this.getLangText("Blog")}
                   </Link>
-                </div>
+                </div> */}
                 <div className="sources-block">
                   <div className="sources-block_row">
                     <div className="sources-paragraph">
@@ -364,12 +364,12 @@ export default class Home extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
+              {/* <img
                 src={chromeStoreSvg}
                 alt="Chrome-store"
                 className="icon get-started-button__icon"
-              />
-              <span>{this.getLangText("getStarted")}</span>
+              /> */}
+              <span>{this.getLangText("StartLearning")}</span>
             </a>
           </div>
         </footer>

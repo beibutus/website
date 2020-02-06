@@ -103,7 +103,7 @@ export default class Navbar extends React.Component {
                                             {this.props.text.home}
                                         </Link>
                                     </li> */}
-                                    <li>
+                                    {/* <li>
                                         <Link
                                             to="blog"
                                             className="menu-nav__link"
@@ -111,7 +111,7 @@ export default class Navbar extends React.Component {
                                         >
                                             {this.props.text.ourBlog}
                                         </Link>
-                                    </li>
+                                    </li> */}
                                 </ul>
                             </div>
                         </div>

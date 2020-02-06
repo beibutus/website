@@ -34,7 +34,7 @@ export default class App extends React.Component {
         <Router>
           <ScrollToTop path="/">
             <Home path="/" text={this.props.text}></Home>
-            <Blog path="/blog/*"></Blog>
+            {/* <Blog path="/blog/*"></Blog> */}
             <Redirect from="/" to="/" default noThrow></Redirect>
           </ScrollToTop>
         </Router>
