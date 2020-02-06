@@ -31,7 +31,7 @@ export default class Products extends React.Component {
                     <div className="product-block">
                         <div className="product-block-description">
                             <div className="product-number">
-                                <img className="product-number-img" src={productsFirstNumber} />
+                                <img className="product-number-img" src={productsFirstNumber} alt="first number"/>
                             </div>
                             <div className="product-about">
                                 <p className="product-description-header">{this.getLangText("ExtensionForBrowser")}.</p>
@@ -54,7 +54,7 @@ export default class Products extends React.Component {
                     <div className="product-block">
                         <div className="product-block-description">
                             <div className="product-number">
-                                <img className="product-number-img" src={productsSecondNumber} />
+                                <img className="product-number-img" src={productsSecondNumber} alt="second number"/>
                             </div>
                             <div className="product-about">
                                 <p className="product-description-header">{this.getLangText("ProductsTutor")}.</p>
@@ -76,7 +76,7 @@ export default class Products extends React.Component {
                 </div>
 
                 <div className="devices">
-                    <img src={appleDevices} />
+                    <img src={appleDevices} alt="apple devices"/>
                 </div>
                 {/*<div class="description-bottom-block">
                             <p>

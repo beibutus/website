@@ -35,7 +35,7 @@ export default class Download extends Component {
                                 <h1>{this.getLangText('ExtensionForBrowser')}</h1>
                             </div>
                             <div className="download-block-description">
-                                <img className="logo-download-small" src={logo_extension} />
+                                <img className="logo-download-small" src={logo_extension} alt="extension logo"/>
                                 <p className="description-download-text">
                                     {this.getLangText('ExtensionDescription')}
                                 </p>
@@ -55,7 +55,7 @@ export default class Download extends Component {
                                 <h1>{this.getLangText('ContextTutor')}</h1>
                             </div>
                             <div className="download-block-description">
-                                <img className="logo-download-small" src={logo_tutor} />
+                                <img className="logo-download-small" src={logo_tutor} alt="context-tutor logo"/>
                                 <p className="description-download-text">
                                     {this.getLangText('ContextTutorDescription')}
                                 </p>
@@ -80,9 +80,9 @@ export default class Download extends Component {
                     <div className="logo-section">
                         <h1 className="logo-description">{this.getLangText("LogoDescription")}</h1>
                         <div className="logo-container">
-                            <img src={tedLogo} />
-                            <img className="youtubeLogo" src={youtubeLogo} />
-                            <img src={cnnLogo} />
+                            <img src={tedLogo} alt="TED logo"/>
+                            <img className="youtubeLogo" src={youtubeLogo} alt="youtube logo"/>
+                            <img src={cnnLogo} alt="CNN logo"/>
                         </div>
                         <div class="download-bottom-block">
                             <p>

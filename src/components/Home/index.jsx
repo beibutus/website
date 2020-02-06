@@ -14,10 +14,9 @@ import prevIcon from "../../assets/images/home/prevIcon.png";
 import nextIcon from "../../assets/images/home/nextIcon.png";
 import logo_tutor from "../../assets/images/logo_tutor.svg";
 import logo_extension from "../../assets/images/logo_extension.svg";
-import firstMobileImgEn from "../../assets/images/firstMobileImgEn.png";
-import secondMobileImgEn from "../../assets/images/secondMobileImgEn.png";
-import firstMobileImgRu from "../../assets/images/firstMobileImgRu.png";
-import secondMobileImgRu from "../../assets/images/secondMobileImgRu.png";
+import mobileImgEn from "../../assets/images/mobileImgEn.svg";
+import mobileImgRu from "../../assets/images/mobileImgRu.svg";
+
 
 // import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 // import extensionImg from "../../assets/images/home/extensionImg.png";
@@ -160,10 +159,8 @@ export default class Home extends Component {
     };
 
     const mobileImg = {
-      firstMobileImgEn,
-      secondMobileImgEn,
-      firstMobileImgRu,
-      secondMobileImgRu
+      mobileImgEn,
+      mobileImgRu
     }
 
 
@@ -183,7 +180,7 @@ export default class Home extends Component {
         </header>
 
         <div className="first-block-container">
-          <img src={firstBlockImg[this.getLangText("firstBlockImage")]} />
+          {/* <img src={firstBlockImg[this.getLangText("firstBlockImage")]} /> */}
           {/* <div className="desctop-first-block">
             <img src={firstBlockImg[this.getLangText("firstBlockImage")]} />
           </div>
@@ -191,13 +188,12 @@ export default class Home extends Component {
             <h1>Mobile First Block</h1>
           </div> */}
 
-          {/* <figure>
+          <figure>
             <picture>
-              <source media="(max-width: 400px)" srcSet={`${firstMobileImgEn}, ${secondMobileImgEn} `} />
-              <source media="(max-width: 400px)" srcSet={mobileImg[this.getLangText('secondMobileImage')]} />
-              <img media="(min-width: 500px)" src={firstBlockImg[this.getLangText("firstBlockImage")]} alt="Camera lens"></img>
+              <source media="(max-width: 400px)" srcSet={mobileImg[this.getLangText("mobileImage")]} alt="EasyLang Image"/>
+              <img src={firstBlockImg[this.getLangText("firstBlockImage")]} alt="EasyLang Image"></img>
             </picture>
-          </figure> */}
+          </figure>
         </div>
 
 
@@ -212,7 +208,7 @@ export default class Home extends Component {
         <div className="third-block-container">
           <div className="wrapper-third-text">
             <div className="third-block-image">
-              <img src={thirdBlockNumbers} />
+              <img src={thirdBlockNumbers} alt="numbers image"/>
             </div>
             <div>
               <h2 className="third-text">{this.getLangText("thirdBlockText_1")}</h2>
@@ -226,7 +222,7 @@ export default class Home extends Component {
           <div className="download-block">
             <div className="download-block-description">
               <div className="download-logo">
-                <img className="logo-download-small" src={logo_extension} />
+                <img className="logo-download-small" src={logo_extension} alt="extension logo"/>
               </div>
               <div className="download-about">
                 <h1>{this.getLangText("ExtensionForBrowser")}</h1>
@@ -249,7 +245,7 @@ export default class Home extends Component {
           <div className="download-block">
             <div className="download-block-description">
               <div className="download-logo">
-                <img className="logo-download-small" src={logo_tutor} />
+                <img className="logo-download-small" src={logo_tutor} alt="context-tutor logo"/>
               </div>
               <div className="download-about">
                 <h1>{this.getLangText("ContextTutor")}</h1>
