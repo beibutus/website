@@ -3,6 +3,7 @@ import { Router, Redirect } from "@reach/router";
 import Blog from "../Blog";
 import Navbar from "../Navbar";
 import Home from "../Home";
+import Description from "../Description";
 // import BtnTop from "../BtnTop";
 import ScrollToTop from "../ScrollToTop";
 // import NotFound from "../NotFound";
