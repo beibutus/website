@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import ReactHtmlParser from "react-html-parser";
 
-import './Description.css';
+import './Description.scss';
 
 import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 import number_1 from '../../assets/images/products/extension/number_1.png';
@@ -14,10 +15,16 @@ import image_3 from '../../assets/images/products/extension/image_3.png';
 
 
 export default class Description extends Component {
+
+    
+    getLangText(text) {
+        return ReactHtmlParser(this.props.text[text]);
+    }
+
     render() {
         return (
                 <div className="Description">
-
+                    
                     <div className="flex-parent extension-block">
 
                         <div className="flex-child">
@@ -124,5 +131,6 @@ export default class Description extends Component {
 
                 </div>
         )
+      
     }
 }
