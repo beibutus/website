@@ -9,7 +9,7 @@ export default class Navbar extends React.Component {
         this.state = {
             openMenu: false,
             fixedBar: false
-				};
+        };
     }
     changeLocale = e => {
         this.props.handleLanguage(e.target.value);
@@ -65,22 +65,22 @@ export default class Navbar extends React.Component {
                             EasyLang
                         </Link>
                     </div>
-										{
-											 this.props.noUseLangSelect || (
-												<div className="lang">
-														<form>
-																<select
-																		name="changeLang"
-																		id="getLang"
-																		value={this.props.curLang}
-																		onChange={this.changeLocale}
-																>
-																		{langList}
-																</select>
-														</form>
-												</div>
-											 )
-										}
+                    {
+                        this.props.noUseLangSelect || (
+                            <div className="lang">
+                                <form>
+                                    <select
+                                        name="changeLang"
+                                        id="getLang"
+                                        value={this.props.curLang}
+                                        onChange={this.changeLocale}
+                                    >
+                                        {langList}
+                                    </select>
+                                </form>
+                            </div>
+                        )
+                    }
                     <div className="menu-wrapper">
                         <div className="menu-block">
                             <div className={menuMainClass}>
@@ -93,6 +93,15 @@ export default class Navbar extends React.Component {
                                         <span className="menu-logo">
                                             EasyLang
                                         </span>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="products/description"
+                                            className="menu-nav__link"
+                                            onClick={this.closeMenu}
+                                        >
+                                            {this.props.text.products}
+                                        </Link>
                                     </li>
                                     {/* <li>
                                         <Link
