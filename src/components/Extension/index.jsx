@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactHtmlParser from "react-html-parser";
+import Header from '../Header';
 
 import './Extension.scss';
 
@@ -21,6 +22,8 @@ export default class Extension extends Component {
 
     render() {
         return (
+            <>
+            <Header text={this.props.text} />
                 <div className="Description">
                     
                     <div className="flex-parent extension-block">
@@ -128,7 +131,9 @@ export default class Extension extends Component {
                     </div>
 
                 </div>
+     </>
+
         )
-      
+     
     }
 }
