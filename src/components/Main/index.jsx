@@ -3,7 +3,7 @@ import { Router, Redirect } from "@reach/router";
 import Blog from "../Blog";
 import Navbar from "../Navbar";
 import Home from "../Home";
-import Description from "../Description";
+import Extension from "../Extension";
 // import BtnTop from "../BtnTop";
 import ScrollToTop from "../ScrollToTop";
 // import NotFound from "../NotFound";
@@ -35,7 +35,7 @@ export default class App extends React.Component {
         <Router>
           <ScrollToTop path="/">
             <Home path="/" text={this.props.text}></Home>
-            <Description path="/products/description/*" text={this.props.text}/>
+            <Extension path="/products/extension/*" text={this.props.text}/>
             {/* <Blog path="/blog/*"></Blog> */}
             <Redirect from="/" to="/" default noThrow></Redirect>
           </ScrollToTop>

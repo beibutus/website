@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactHtmlParser from "react-html-parser";
 
-import './Description.scss';
+import './Extension.scss';
 
 import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 import number_1 from '../../assets/images/products/extension/number_1.png';
@@ -13,10 +13,8 @@ import image_2 from '../../assets/images/products/extension/image_2.png';
 import image_3 from '../../assets/images/products/extension/image_3.png';
 
 
+export default class Extension extends Component {
 
-export default class Description extends Component {
-
-    
     getLangText(text) {
         return ReactHtmlParser(this.props.text[text]);
     }
