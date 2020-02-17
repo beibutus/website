@@ -1,4 +1,6 @@
 {
+  "HOME_PAGE": "HOME_PAGE",
+
     "name": "English",
     "home": "Home",
     "ourBlog": "blog",
@@ -38,5 +40,9 @@
     "bookParagraph": "Read classic and modern literature in original",
     "movie": "movies",
     "movieParagraph": "Watch movies in original",
-    "getStarted": "Add to Chrome"
+    "getStarted": "Add to Chrome",
+
+
+  "EXTENSION_PAGE": "EXTENSION_PAGE"
+
 }

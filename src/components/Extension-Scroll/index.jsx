@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import ReactHtmlParser from "react-html-parser";
 import Header from '../Header';
 
@@ -22,10 +22,10 @@ export default class Extension extends Component {
 
     render() {
         return (
-            <>
-            <Header text={this.props.text} />
+            <Fragment>
+                <Header text={this.props.text} />
                 <div className="Description">
-                    
+
                     <div className="flex-parent extension-block">
 
                         <div className="flex-child">
@@ -131,9 +131,8 @@ export default class Extension extends Component {
                     </div>
 
                 </div>
-     </>
-
+            </Fragment>
         )
-     
+
     }
 }

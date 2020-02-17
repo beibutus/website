@@ -4,13 +4,18 @@ import Blog from "../Blog";
 import Navbar from "../Navbar";
 import Home from "../Home";
 import Extension from "../Extension";
+import ExtensionScroll from "../Extension-Scroll";
+
 // import BtnTop from "../BtnTop";
 import ScrollToTop from "../ScrollToTop";
 // import NotFound from "../NotFound";
 import Helmet from "react-helmet";
 
 export default class App extends React.Component {
-  urlsWithoutChangingTheLanguage = [/^\/([^/]+\/)*blog.*/g];
+
+  // urlsWithoutChangingTheLanguage = [/^\/([^/]+\/)*blog.*/g];
+
+
   render() {
     if (typeof window.gtag === "function") {
       window.gtag("config", "UA-4027447-9", {
@@ -28,14 +33,15 @@ export default class App extends React.Component {
           langList={this.props.langList}
           handleLanguage={this.props.handleLanguage}
           text={this.props.text}
-          noUseLangSelect={this.urlsWithoutChangingTheLanguage.some(
-            u => this.props.location.pathname.match(u) !== null
-          )}
+          // noUseLangSelect={this.urlsWithoutChangingTheLanguage.some(
+          //   u => this.props.location.pathname.match(u) !== null
+          // )}
         ></Navbar>
         <Router>
           <ScrollToTop path="/">
             <Home path="/" text={this.props.text}></Home>
-            <Extension path="/products/extension/*" text={this.props.text}/>
+            <Extension path="/products/extension/*" text={this.props.text}></Extension>
+            {/* <ExtensionScroll path="/products/extensionScroll/*" /> */}
             {/* <Blog path="/blog/*"></Blog> */}
             <Redirect from="/" to="/" default noThrow></Redirect>
           </ScrollToTop>
