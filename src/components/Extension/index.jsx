@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import ReactHtmlParser from "react-html-parser";
 import Header from '../Header';
 
@@ -22,7 +22,7 @@ export default class Extension extends Component {
 
     render() {
         return (
-            <>
+            <Fragment>
             <Header text={this.props.text} />
                 <div className="Description">
                     
@@ -131,7 +131,7 @@ export default class Extension extends Component {
                     </div>
 
                 </div>
-     </>
+     </Fragment>
 
         )
      

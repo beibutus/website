@@ -96,11 +96,20 @@ export default class Navbar extends React.Component {
                                     </li>
                                     <li>
                                         <Link
-                                            to="products/extension"
+                                            to="products/"
                                             className="menu-nav__link"
                                             onClick={this.closeMenu}
                                         >
                                             {this.props.text.products}
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="products/extension"
+                                            className="menu-nav__link"
+                                            onClick={this.closeMenu}
+                                        >
+                                            {this.props.text.extension}
                                         </Link>
                                     </li>
                                     {/* <li>

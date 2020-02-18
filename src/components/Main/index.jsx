@@ -4,7 +4,10 @@ import Blog from "../Blog";
 import Navbar from "../Navbar";
 import Home from "../Home";
 import Extension from "../Extension";
+import Products from '../Products';
+import Privacy from '../Privacy';
 import ExtensionScroll from "../Extension-Scroll";
+import NotFound from '../NotFound';
 
 // import BtnTop from "../BtnTop";
 import ScrollToTop from "../ScrollToTop";
@@ -40,10 +43,13 @@ export default class App extends React.Component {
         <Router>
           <ScrollToTop path="/">
             <Home path="/" text={this.props.text}></Home>
-            <Extension path="/products/extension/*" text={this.props.text}></Extension>
+            <Products path="/products/" text={this.props.text}></Products>
+            <Extension path="/products/extension/" text={this.props.text}></Extension>
+            <Privacy path="/privacy" text={this.props.text}></Privacy>
             {/* <ExtensionScroll path="/products/extensionScroll/*" /> */}
             {/* <Blog path="/blog/*"></Blog> */}
-            <Redirect from="/" to="/" default noThrow></Redirect>
+            <NotFound path="*" text={this.props.text}></NotFound>
+            {/* <Redirect from="/" to="/" default noThrow></Redirect> */}
           </ScrollToTop>
         </Router>
         {/* <BtnTop></BtnTop> */}

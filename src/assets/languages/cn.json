@@ -5,6 +5,7 @@
       "home": "家",
       "ourBlog": "博客",
       "products": "Products",
+      "extension": "Chrome 扩展程序",
       "ourApp": "EasyLang应用",
       "HowItWork": "怎么运作",
       "learningSources": "学习的来源",
@@ -18,7 +19,6 @@
       "contentMemory": "EasyLang应用的训练基于您以前学过的材料.",
       "headOurApp": "<span> EasyLang.app </span> <sup> BETA </sup>",
       "contentOurApp": "EasyLang 是 <a class=\"openSoftware\" target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Free_and_open-source_software\" id=\"openSource\">自由及开放源代码软件</a> 开始免费试用",
-      "extension": "Chrome 扩展程序",
       "extensionGuide": "安装指南",
       "comingSoon": "快來了",
       "headHowItWorks": "我们的应用怎么运作?",
@@ -41,6 +41,25 @@
       "movie": "电影",
       "movieParagraph": "聆听您最喜爱电影的原文",
       "getStarted": "开始吧",
+      "HomePage": "Home Page",
+      "NotFound": "Not found",
+      "PrivacyPolicy": "Privacy Policy",
+
+
+    "PRODUCTS_PAGE": "PRODUCTS_PAGE",
+      "ProductsHeader": "两种产品出于一种目的",
+      "ProductsTopHeader": "我們幫助您免費學習該語言, 方便地, 做自己喜歡的事 - 看電視節目, 看書或聽音樂.",
+      "ProductsTopText": "為了開始, 您需要：<br>- 放置瀏覽器擴展 <br>- 在輔導老師中創建一個帳戶, 以處理您感興趣的內容.",
+      "ProductExtensionDescription": "- 翻译文字，帮助<br>在页面上进行培训",
+      "ProductTutorDescription": "- 保存单词和句子<br>沿途学习",
+      "ProductsTutor": "Тьютор",
+      "ExtensionForBrowser": "瀏覽器擴展",
+      "ExtensionDescription": "- 與穀歌瀏覽器一起使用 <br>- 翻譯你所說的一切",
+      "ContextTutor": "Context Tutor BETA",
+      "ContextTutorDescription": "- 有助於記住所涵蓋的材料 <br>- 幫助學習新事物",
+      "BottomInfoText": "還有問題嗎？ <br><a href='mailto:support@easylang.by' style='font-family: Open Sans, sans-serif; color:#1E4470'><u>聯繫方式</u></a> - 我們一定會幫助您！",
+      "Add": "加",
+      "GetStarted": "開始吧",
 
 
     "EXTENSION_PAGE": "EXTENSION_PAGE"

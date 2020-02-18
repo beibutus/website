@@ -5,6 +5,7 @@
     "home": "Home",
     "ourBlog": "blog",
     "products": "Products",
+    "extension": "Extension",
     "ourApp": "our app",
     "HowItWork": "how it works",
     "learningSources": "sources for learning",
@@ -18,7 +19,6 @@
     "contentMemory": "Training is based on materials that you love and enjoy. We use context exactly from the video and articles you watched. Translation depends on context so you shouldn’t learn everything at once.",
     "headOurApp": "Try our <span>EasyLang</span><sup> BETA</sup>",
     "contentOurApp": "Easylang is a FREE extention for your browser and training app for web and mobile.",
-		"extension": "Extension",
 		"extensionGuide": "Installation guide",
 		"comingSoon": "Coming soon",
     "headHowItWorks": "How it works?",
@@ -41,6 +41,25 @@
     "movie": "movies",
     "movieParagraph": "Watch movies in original",
     "getStarted": "Add to Chrome",
+    "HomePage": "Home Page",
+    "NotFound": "Not found",
+    "PrivacyPolicy": "Privacy Policy",
+
+  
+  "PRODUCTS_PAGE": "PRODUCTS_PAGE",
+    "ProductsHeader": "Two products for one purpose",
+    "ProductsTopHeader": "We help to learn the language for free and comfortably, doing what you love - watching TV shows, reading books, or listening to music.",
+    "ProductsTopText": "In order to start you need: <br>- set up extension for browser; <br>- create an account in tutor to work with content you like; ",
+    "ProductExtensionDescription": "- translates words, helps <br>to train right on the page",
+    "ProductTutorDescription": "- saves words and sentences <br> to learn them on the way",
+    "ProductsTutor": "Тьютор",
+    "ExtensionForBrowser": "Extension For Browser",
+    "ExtensionDescription": "— works in Google Chrome <br>— translates everything you need",
+    "ContextTutor": "Context-Tutor  BETA",
+    "ContextTutorDescription": "— easy mechanics of simulator <br>— lessons are based on your reading and viewing history <br>— we help your contextual memory <br>— suitable for learning terms",
+    "BottomInfoText": "Still have questions? <br><a href='mailto:support@easylang.by' style='font-family: Open Sans, sans-serif; color:#1E4470'><u>Сontact</u></a> us - we will surely help you!",
+    "Add": "Add",
+    "GetStarted": "Start",
 
 
   "EXTENSION_PAGE": "EXTENSION_PAGE"

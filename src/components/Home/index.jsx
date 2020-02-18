@@ -372,6 +372,11 @@ export default class Home extends React.Component {
               <span>{this.getLangText("StartLearning")}</span>
             </a>
           </div>
+          <div>
+            <Link to="/privacy">
+            <p className="privacy">{this.getLangText("PrivacyPolicy")}</p>
+            </Link>
+          </div>
         </footer>
       </div>
     );
