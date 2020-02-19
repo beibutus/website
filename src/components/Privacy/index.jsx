@@ -115,7 +115,7 @@ export default class Privacy extends Component {
 
                     <h2>Transfer Of Data</h2>
                     <p>Your information, including Personal Data, may be transferred to and maintained on computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction.</p>
-                    <p>If you are located outside France and choose to provide information to us, please note that we transfer the data, including Personal Data, to France and process it there.</p>
+                    <p>If you are located outside Belarus and choose to provide information to us, please note that we transfer the data, including Personal Data, to Belarus and process it there.</p>
                     <p>Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.</p>
                     <p>TAKTIL LTD Inc will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of your data and other personal information.</p>
 
@@ -148,7 +148,7 @@ export default class Privacy extends Component {
                             <p><strong>Google Analytics</strong></p>
                             <p>Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our Service. This data is shared with other Google services. Google may use the collected data to contextualize and personalize the ads of its own advertising network.</p>
                             <p>You can opt-out of having made your activity on the Service available to Google Analytics by switching off Google Analytics in EasyLang.app extension options page. This prevents the Google Analytics JavaScript (ga.js, analytics.js, and dc.js) from sharing information with Google Analytics about visits activity.</p>
-                            <p>For more information on the privacy practices of Google, please visit the Google Privacy &amp; Terms web page: <a href="https://policies.google.com/privacy?hl=en">https://policies.google.com/privacy?hl=en</a></p>
+                            <p>For more information on the privacy practices of Google, please visit the Google Privacy &amp; Terms web page: <a href="https://policies.google.com/privacy?hl=en" className="google-link"  target="_blank">https://policies.google.com/privacy?hl=en</a></p>
                         </li>
                     </ul>
 
