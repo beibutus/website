@@ -6,6 +6,7 @@ import Products from '../Products';
 import Download from '../Download';
 import Navbar from "../Navbar";
 import Home from "../Home";
+import Privacy from '../Privacy';
 // import BtnTop from "../BtnTop";
 import ScrollToTop from "../ScrollToTop";
 // import NotFound from "../NotFound";
@@ -39,6 +40,7 @@ export default class App extends React.Component {
         <Router>
           <ScrollToTop path="/">
             <Home path="/" text={this.props.text}></Home>
+            <Privacy path="/privacy/*" text={this.props.text}></Privacy>
             <About path="/about/*" text={this.props.text}></About>
             <Products path="/products/*" text={this.props.text}></Products>
             <Download path="/download/*" text={this.props.text}></Download>

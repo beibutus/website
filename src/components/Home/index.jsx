@@ -364,6 +364,15 @@ export default class Home extends Component {
                 </Link>
               </li>
               <li>
+                <Link
+                  to="privacy"
+                  className="footer-link"
+                  onClick={this.closeMenu}
+                >
+                  {this.props.text.PrivacyPolicy}
+                </Link>
+              </li>
+              <li>
                 <p>
                   <a className="footer-mail" href="mailto:support@easylang.by">support@easylang.by</a>
                 </p>

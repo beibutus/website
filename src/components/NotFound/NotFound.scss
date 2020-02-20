@@ -4,9 +4,19 @@
     height: 100%;
     width: 100%;
     top: 0;
-    background-color: $textColor;
-    color: $bgColor;
+    // background-color: $textColor;
+    color: black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .button-homepage {
+        margin-top: 20px;
+        border-radius: 34.5px;
+        background-color: #1E4470;
+        padding: 15px 25px;
+    }
 }
+
+
