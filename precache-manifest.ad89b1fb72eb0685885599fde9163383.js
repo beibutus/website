@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dca5434a8125f81e41eb8035259d3c0a",
+    "revision": "e7db3b8545084115c764bc3548444af2",
     "url": "https://easably.github.io/website/index.html"
   },
   {
-    "revision": "e98d8f38f48de20c520c",
+    "revision": "67dd5386014e1adda92c",
     "url": "https://easably.github.io/website/static/css/2.8c23d2df.chunk.css"
   },
   {
-    "revision": "626612c853833c1dcbd6",
-    "url": "https://easably.github.io/website/static/css/main.877c3612.chunk.css"
+    "revision": "2f95dc58af78d19bc299",
+    "url": "https://easably.github.io/website/static/css/main.98a280e0.chunk.css"
   },
   {
-    "revision": "e98d8f38f48de20c520c",
-    "url": "https://easably.github.io/website/static/js/2.5e3d25a9.chunk.js"
+    "revision": "67dd5386014e1adda92c",
+    "url": "https://easably.github.io/website/static/js/2.090d6ed9.chunk.js"
   },
   {
-    "revision": "626612c853833c1dcbd6",
-    "url": "https://easably.github.io/website/static/js/main.b265ed72.chunk.js"
+    "revision": "2f95dc58af78d19bc299",
+    "url": "https://easably.github.io/website/static/js/main.9b260839.chunk.js"
   },
   {
     "revision": "ac9b2f54810039bca563",
@@ -212,12 +212,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://easably.github.io/website/static/media/logo_tutor.75f65654.svg"
   },
   {
-    "revision": "708be497562ee3b9a590a2cf5b09b1f4",
-    "url": "https://easably.github.io/website/static/media/mobileImgEn.708be497.svg"
+    "revision": "a464755c6b0f844b1f5641cb7471063d",
+    "url": "https://easably.github.io/website/static/media/mobileImgEn.a464755c.svg"
   },
   {
-    "revision": "bdebdf0c69450ff2cab72d95165ca396",
-    "url": "https://easably.github.io/website/static/media/mobileImgRu.bdebdf0c.svg"
+    "revision": "fb8ddf290d1cecdbdf21365f072bb004",
+    "url": "https://easably.github.io/website/static/media/mobileImgRu.fb8ddf29.svg"
   },
   {
     "revision": "36c7177ea200b3474b7c5de25ba17c41",
