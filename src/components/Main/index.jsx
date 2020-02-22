@@ -1,12 +1,13 @@
 import React from "react";
-import { Router, Redirect } from "@reach/router";
-import Blog from "../Blog";
+import { Router } from "@reach/router";
+
 import About from '../About';
 import Products from '../Products';
 import Download from '../Download';
 import Navbar from "../Navbar";
 import Home from "../Home";
 import Privacy from '../Privacy';
+import NotFound from '../NotFound';
 // import BtnTop from "../BtnTop";
 import ScrollToTop from "../ScrollToTop";
 // import NotFound from "../NotFound";
@@ -40,12 +41,13 @@ export default class App extends React.Component {
         <Router>
           <ScrollToTop path="/">
             <Home path="/" text={this.props.text}></Home>
-            <Privacy path="/privacy/*" text={this.props.text}></Privacy>
-            <About path="/about/*" text={this.props.text}></About>
-            <Products path="/products/*" text={this.props.text}></Products>
-            <Download path="/download/*" text={this.props.text}></Download>
-            <Blog path="/blog/*" text={this.props.text}></Blog>
-            <Redirect from ="/" to='/' default noThrow></Redirect>
+            <Privacy path="/privacy/" text={this.props.text}></Privacy>
+            <About path="/about/" text={this.props.text}></About>
+            <Products path="/products/" text={this.props.text}></Products>
+            <Download path="/download/" text={this.props.text}></Download>
+            {/* <Blog path="/blog/" text={this.props.text}></Blog>
+            <Redirect from ="/" to='/' default noThrow></Redirect> */}
+            <NotFound path="*" text={this.props.text}></NotFound>
           </ScrollToTop>
         </Router>
         {/* <BtnTop></BtnTop> */}

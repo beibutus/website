@@ -1,9 +1,12 @@
 @import "../../styles/variables";
+
+
 .NotFound {
+    margin: 20% 0;
     position: absolute;
     height: 100%;
     width: 100%;
-    top: 0;
+    top: 50;
     // background-color: $textColor;
     color: black;
     display: flex;
@@ -14,9 +17,122 @@
     .button-homepage {
         margin-top: 20px;
         border-radius: 34.5px;
-        background-color: #1E4470;
+        background: linear-gradient(0.12deg, #6ddaa1 -8.74%, rgba(126, 190, 116, 0.37) 18.58%),
+        linear-gradient(178.86deg, #6ddaa1 -39.19%, rgba(126, 190, 116, 0.83) 40.03%), #6ddaa1;
         padding: 15px 25px;
     }
 }
 
+.About {
+  background-color: #fff;
+  //background-image: url("");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  font-size: 1rem;
+  position: relative;
+  width: 100%;
+  margin-top: -70px;
+  .container {
+    @media (min-width: 576px) {
+      max-width: 540px;
+    }
+    @media (min-width: 768px) {
+      max-width: 620px;
+      .get-started-footer {
+        height: 15vh;
+        margin-top: -7%;
+      }
 
+      .footer-links {
+        padding-top: 7%;
+        padding-left: 8%;
+      }
+
+      .footer-link {
+        font-family: "Open sans", sans-serif !important;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 8px;
+        line-height: 8px;
+      }
+
+      .footer-mail {
+        font-family: "Open sans", sans-serif !important;
+        color: #fff !important;
+        text-decoration: underline;
+        font-size: 0.8rem;
+        padding-top: 0%;
+        padding-left: 50%;
+      }
+    }
+    @media (min-width: 992px) {
+      max-width: 860px;
+    }
+    @media (min-width: 1200px) {
+      max-width: 1240px;
+    }
+  }
+}
+
+.get-started-footer {
+  background: url("../../assets/images/home/home_footer.svg") bottom/cover no-repeat;
+  height: 20vw;
+  margin-top: -5%;
+}
+
+.footer-links {
+  padding-top: 7%;
+  padding-left: 8%;
+}
+
+.footer-link {
+  font-family: "Open sans", sans-serif !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.footer-mail {
+  font-family: "Open sans", sans-serif !important;
+  color: #fff !important;
+  text-decoration: underline;
+  font-size: 18px;
+  padding-top: 2%;
+}
+
+@media (max-width: 768px) {
+  .get-started-footer {
+    height: 20vh;
+    margin-top: -8%;
+  }
+}
+
+@media (max-width: 610px) {
+  .get-started-footer {
+    height: 17vh;
+    margin-top: -7%;
+  }
+
+  .footer-links {
+    padding-top: 7%;
+    padding-left: 8%;
+  }
+
+  .footer-link {
+    font-family: "Open sans", sans-serif !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 8px;
+  }
+
+  .footer-mail {
+    font-family: "Open sans", sans-serif !important;
+    color: #fff !important;
+    text-decoration: underline;
+    font-size: 0.8rem;
+    padding-top: 0%;
+  }
+}
