@@ -1,91 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e7db3b8545084115c764bc3548444af2",
+    "revision": "f3feac351db140447b1dca88acaf76cf",
     "url": "https://easably.github.io/website/index.html"
   },
   {
-    "revision": "67dd5386014e1adda92c",
+    "revision": "422f7a95355b4bf84c55",
     "url": "https://easably.github.io/website/static/css/2.8c23d2df.chunk.css"
   },
   {
-    "revision": "2f95dc58af78d19bc299",
-    "url": "https://easably.github.io/website/static/css/main.98a280e0.chunk.css"
+    "revision": "b64ed4b54bd33258742b",
+    "url": "https://easably.github.io/website/static/css/main.17bac0af.chunk.css"
   },
   {
-    "revision": "67dd5386014e1adda92c",
-    "url": "https://easably.github.io/website/static/js/2.090d6ed9.chunk.js"
+    "revision": "422f7a95355b4bf84c55",
+    "url": "https://easably.github.io/website/static/js/2.1d468e18.chunk.js"
   },
   {
-    "revision": "2f95dc58af78d19bc299",
-    "url": "https://easably.github.io/website/static/js/main.9b260839.chunk.js"
+    "revision": "b64ed4b54bd33258742b",
+    "url": "https://easably.github.io/website/static/js/main.b0478ab3.chunk.js"
   },
   {
     "revision": "ac9b2f54810039bca563",
     "url": "https://easably.github.io/website/static/js/runtime-main.381afb63.js"
-  },
-  {
-    "revision": "8f1931a3a41bcf018cca4a390ecd9641",
-    "url": "https://easably.github.io/website/static/media/1-1.8f1931a3.jpg"
-  },
-  {
-    "revision": "ca845c9d5571fcac7c6006face003574",
-    "url": "https://easably.github.io/website/static/media/1-2.ca845c9d.jpg"
-  },
-  {
-    "revision": "6e58c5459b679d114bae2459c660d2c1",
-    "url": "https://easably.github.io/website/static/media/1-3.6e58c545.jpg"
-  },
-  {
-    "revision": "9fab5ccee444cea08615614c788fbbe8",
-    "url": "https://easably.github.io/website/static/media/1-4.9fab5cce.jpg"
-  },
-  {
-    "revision": "eb9993dca85bceb40f108d33c47e66c3",
-    "url": "https://easably.github.io/website/static/media/10-1.eb9993dc.png"
-  },
-  {
-    "revision": "982ccec171708806d40b129e960cfaf4",
-    "url": "https://easably.github.io/website/static/media/10-2.982ccec1.png"
-  },
-  {
-    "revision": "40261ebe8121d58e4b61d931780fbdd7",
-    "url": "https://easably.github.io/website/static/media/11-1.40261ebe.png"
-  },
-  {
-    "revision": "6aa1be8a7d69a65df8758d83fddcde46",
-    "url": "https://easably.github.io/website/static/media/11-2.6aa1be8a.png"
-  },
-  {
-    "revision": "529b325c83bc2fb7004f1e41343631bf",
-    "url": "https://easably.github.io/website/static/media/12-1.529b325c.png"
-  },
-  {
-    "revision": "7084bcbc2102361f8b1e2f08c1a7065b",
-    "url": "https://easably.github.io/website/static/media/12-2.7084bcbc.png"
-  },
-  {
-    "revision": "b9ff6373ad9ed9454f9b71d79f5fef84",
-    "url": "https://easably.github.io/website/static/media/2-1.b9ff6373.jpg"
-  },
-  {
-    "revision": "33794f5aebefc9eb1dc76590cd2572bb",
-    "url": "https://easably.github.io/website/static/media/3-1.33794f5a.jpg"
-  },
-  {
-    "revision": "ade3c2dee389ce8a224faf04144ccefd",
-    "url": "https://easably.github.io/website/static/media/4-1.ade3c2de.png"
-  },
-  {
-    "revision": "55cf3053187a51879387c715534a247e",
-    "url": "https://easably.github.io/website/static/media/5-1.55cf3053.jpg"
-  },
-  {
-    "revision": "7945462cefbbeaa2a0a7c6c43ac5624a",
-    "url": "https://easably.github.io/website/static/media/6-1.7945462c.png"
-  },
-  {
-    "revision": "c4c479781c604d232988c50e265c4404",
-    "url": "https://easably.github.io/website/static/media/7-1.c4c47978.png"
   },
   {
     "revision": "87f857d334473f43eee922ab885b39b2",
@@ -124,14 +60,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://easably.github.io/website/static/media/appleDevices.2bcbb740.png"
   },
   {
-    "revision": "3900c654d346498ef38ea41cd638e14d",
-    "url": "https://easably.github.io/website/static/media/bottom.3900c654.jpg"
-  },
-  {
-    "revision": "83bc0300d92a3fdd68fcc58c24d70a7e",
-    "url": "https://easably.github.io/website/static/media/chromeStore.83bc0300.svg"
-  },
-  {
     "revision": "40b2cdd460a3a4ca07ab726d2ea13020",
     "url": "https://easably.github.io/website/static/media/comfortaa.40b2cdd4.woff"
   },
@@ -166,22 +94,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b08d31c0b6bebd03ecc1aa863e86cce0",
     "url": "https://easably.github.io/website/static/media/comfortaalight.b08d31c0.ttf"
-  },
-  {
-    "revision": "2b7913eab45e331ae1f7ce86f0690195",
-    "url": "https://easably.github.io/website/static/media/extension-img-1.2b7913ea.jpg"
-  },
-  {
-    "revision": "0b8993f50e7a2eb406776b88da30ad31",
-    "url": "https://easably.github.io/website/static/media/extension-img-2.0b8993f5.png"
-  },
-  {
-    "revision": "35dccabfcbb7001dc34a277213d19c5d",
-    "url": "https://easably.github.io/website/static/media/extension-img-iphone.35dccabf.png"
-  },
-  {
-    "revision": "f273eb8f71527c52f1f88bcc713806bc",
-    "url": "https://easably.github.io/website/static/media/extension-img-iphone2.f273eb8f.png"
   },
   {
     "revision": "51706d054e594f9b73dd245d0d8e64b8",
