@@ -1,6 +1,5 @@
 import React from "react";
 import "./Header.scss";
-import { Link } from "@reach/router";
 import ReactHtmlParser from "react-html-parser";
 
 

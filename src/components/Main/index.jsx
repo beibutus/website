@@ -46,7 +46,7 @@ export default class App extends React.Component {
             <Products path="/products/" text={this.props.text}></Products>
             <Extension path="/products/extension/" text={this.props.text}></Extension>
             <Privacy path="/privacy" text={this.props.text}></Privacy>
-            {/* <ExtensionScroll path="/products/extensionScroll/*" /> */}
+            <ExtensionScroll path="/products/extensionScroll/" text={this.props.text} />
             {/* <Blog path="/blog/*"></Blog> */}
             <NotFound path="*" text={this.props.text}></NotFound>
             {/* <Redirect from="/" to="/" default noThrow></Redirect> */}
