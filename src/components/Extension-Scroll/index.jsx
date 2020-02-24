@@ -10,9 +10,8 @@ import number_1 from '../../assets/images/products/extension/number_1.png';
 import number_2 from '../../assets/images/products/extension/number_2.png';
 import number_3 from '../../assets/images/products/extension/number_3.png';
 import number_4 from '../../assets/images/products/extension/number_4.png';
-import image_1 from '../../assets/images/products/extension/image_1.svg';
-import image_2 from '../../assets/images/products/extension/image_2.svg';
-import image_3 from '../../assets/images/products/extension/image_3.svg';
+
+import * as images from './images';
 
 
 export default class ExtensionScroll extends Component {
@@ -22,6 +21,13 @@ export default class ExtensionScroll extends Component {
     }
 
     render() {
+
+        const imagesToSCroll = [
+            images.extension_image_1, 
+            images.extension_image_2,
+            images.extension_image_3
+        ];
+
         return (
             <Fragment>
                 <Header text={this.props.text} />
@@ -74,7 +80,7 @@ export default class ExtensionScroll extends Component {
                             </div>
                         </div>
                         <div className="flex-child description-image left" id="c1">
-                            <img src={image_1} alt="context-tutor-image" />
+                            <img src={imagesToSCroll[0]} alt="context-tutor-image" />
                         </div>
                     </div>
 
@@ -90,7 +96,7 @@ export default class ExtensionScroll extends Component {
                             </div>
                         </div>
                         <div className="flex-child description-image left" id="c2">
-                            <img className="description-img" src={image_2} alt="Listening" />
+                            <img className="description-img" src={imagesToSCroll[1]} alt="Listening" />
                         </div>
                     </div>
 
@@ -108,7 +114,7 @@ export default class ExtensionScroll extends Component {
                             </div>
                         </div>
                         <div className="flex-child description-image left" id="c3">
-                            <img src={image_3} alt="Listening" />
+                            <img src={imagesToSCroll[2]} alt="ListeningMe" />
                         </div>
                     </div>
 
@@ -129,62 +135,61 @@ export default class ExtensionScroll extends Component {
     }
 }
 
-  // Function to images appear on scroll
+// Function to images appear on scroll
 
-  const scrollPageView = () => {
+const scrollPageView = () => {
     $(document).scroll(function () {
-      var pos = $(document).scrollTop();
-      console.log(pos);
-      if (pos > 300 && pos < 850) {
-        hideAll("c1");
-        $("#c1").fadeIn(1000);
-      }
-      if (pos > 850 && pos < 1300) {
-        // hideAll("c2");
-        $("#c2").fadeIn(1000);
-        $("#c3").fadeOut(1000);
-      }
-      if (pos > 1400 && pos < 1900) {
-        // hideAll("c3");
-        $("#c2").fadeOut(1000);
-        $("#c3").fadeIn(1000);
-      }
-      if (pos < 300) {
-        $("#c1").fadeOut(300);
-      }
+        var pos = $(document).scrollTop();
+        console.log(pos);
+        if (pos > 300 && pos < 850) {
+            hideAll("c1");
+            $("#c1").fadeIn(1000);
+        }
+        if (pos > 850 && pos < 1300) {
+            // hideAll("c2");
+            $("#c2").fadeIn(1000);
+            $("#c3").fadeOut(1000);
+        }
+        if (pos > 1400 && pos < 1900) {
+            // hideAll("c3");
+            $("#c2").fadeOut(1000);
+            $("#c3").fadeIn(1000);
+        }
+        if (pos < 300) {
+            $("#c1").fadeOut(300);
+        }
 
     });
 
     function hideAll(exceptMe) {
-      $(".left").each(function (i) {
-        if ($(this).attr("id") == exceptMe) return;
-        $(this).fadeOut();
-      });
+        $(".left").each(function (i) {
+            if ($(this).attr("id") == exceptMe) return;
+            $(this).fadeOut();
+        });
     }
-  }
+}
 
 
-  const defaultPageView = () => {
+const defaultPageView = () => {
     $("div").removeClass("left content");
-    $("div").removeAttr('id','c1');
-    $("div").removeAttr('id','c2');
-    $("div").removeAttr('id','c3');
-  };
+    $("div").removeAttr('id', 'c1');
+    $("div").removeAttr('id', 'c2');
+    $("div").removeAttr('id', 'c3');
+};
 
 
 const toScroll = (scrollSize) => {
     if (scrollSize.matches) { // If media query matches
-      return scrollPageView();
+        return scrollPageView();
     } else {
-      return defaultPageView();
+        return defaultPageView();
     }
-  }
+}
 
-  var scrollSize = window.matchMedia("(min-width: 800px)");
-  toScroll(scrollSize); // Call listener function at run time
-  scrollSize.addListener(toScroll); // Attach listener function on state changes
-
-
+var scrollSize = window.matchMedia("(min-width: 800px)");
+toScroll(scrollSize); // Call listener function at run time
+scrollSize.addListener(toScroll); // Attach listener function on state changes
 
 
-  
+
+
