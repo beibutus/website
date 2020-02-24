@@ -11,7 +11,8 @@ import number_2 from '../../assets/images/products/extension/number_2.png';
 import number_3 from '../../assets/images/products/extension/number_3.png';
 import number_4 from '../../assets/images/products/extension/number_4.png';
 
-import * as images from './images';
+import { imagesToScroll } from './imagesToScroll';
+
 
 
 export default class ExtensionScroll extends Component {
@@ -19,14 +20,9 @@ export default class ExtensionScroll extends Component {
     getLangText(text) {
         return ReactHtmlParser(this.props.text[text]);
     }
+    
 
     render() {
-
-        const imagesToSCroll = [
-            images.extension_image_1, 
-            images.extension_image_2,
-            images.extension_image_3
-        ];
 
         return (
             <Fragment>
@@ -80,7 +76,7 @@ export default class ExtensionScroll extends Component {
                             </div>
                         </div>
                         <div className="flex-child description-image left" id="c1">
-                            <img src={imagesToSCroll[0]} alt="context-tutor-image" />
+                            <img src={imagesToScroll[0]} alt="Extension_Image" />
                         </div>
                     </div>
 
@@ -96,7 +92,7 @@ export default class ExtensionScroll extends Component {
                             </div>
                         </div>
                         <div className="flex-child description-image left" id="c2">
-                            <img className="description-img" src={imagesToSCroll[1]} alt="Listening" />
+                            <img className="description-img" src={imagesToScroll[1]} alt="Extension_Image_To_Scroll" />
                         </div>
                     </div>
 
@@ -114,7 +110,7 @@ export default class ExtensionScroll extends Component {
                             </div>
                         </div>
                         <div className="flex-child description-image left" id="c3">
-                            <img src={imagesToSCroll[2]} alt="ListeningMe" />
+                            <img src={imagesToScroll[2]} alt="Extension_Image_To_Scroll" />
                         </div>
                     </div>
 
@@ -135,8 +131,8 @@ export default class ExtensionScroll extends Component {
     }
 }
 
-// Function to images appear on scroll
 
+// Function to images appear on scroll
 const scrollPageView = () => {
     $(document).scroll(function () {
         var pos = $(document).scrollTop();
