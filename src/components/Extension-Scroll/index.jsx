@@ -22,8 +22,7 @@ export default class ExtensionScroll extends Component {
         return ReactHtmlParser(this.props.text[text]);
     }
 
-    render() {
-
+    componentDidMount() {
         // Function to images appear on scroll
         const scrollPageView = () => {
             $(document).scroll(function () {
@@ -72,9 +71,16 @@ export default class ExtensionScroll extends Component {
             }
         }
 
-        var scrollSize = window.matchMedia("(min-width: 800px)");
+        var scrollSize = window.matchMedia("(min-width: 600px)");
         toScroll(scrollSize); // Call listener function at run time
-        scrollSize.addListener(toScroll); // Attach listener function on state changes
+    }
+
+    componentWillUnmount() {
+        this.scrollSize.addListener(this.toScroll); // Attach listener function on state changes
+    }
+
+    
+    render() {
 
         return (
             <Fragment>

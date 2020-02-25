@@ -12,7 +12,6 @@ import number_3 from '../../assets/images/products/extension/number_3.png';
 import number_4 from '../../assets/images/products/extension/number_4.png';
 import extension_image_1 from '../../assets/images/products/extension/image_1.svg';
 
-
 import { playerImages } from '../../assets/images/products/scroll-pages/PlayerImages';
 
 
@@ -22,8 +21,7 @@ export default class PlayerScroll extends Component {
         return ReactHtmlParser(this.props.text[text]);
     }
 
-    render() {
-
+    componentDidMount() {
         // Function to images appear on scroll
         const scrollPageView = () => {
             $(document).scroll(function () {
@@ -75,7 +73,13 @@ export default class PlayerScroll extends Component {
 
         var scrollSize = window.matchMedia("(min-width: 800px)");
         toScroll(scrollSize); // Call listener function at run time
-        scrollSize.addListener(toScroll); // Attach listener function on state changes
+    }
+
+    componentWillUnmount() {
+        this.scrollSize.addListener(this.toScroll); // Attach listener function on state changes
+    }
+
+    render() {
 
         return (
             <Fragment>
@@ -145,11 +149,13 @@ export default class PlayerScroll extends Component {
                             </div>
                         </div>
                         <div className="flex-child description-image left" id="c2">
-                            <img className="description-img" 
-                                 src={playerImages[0].src} 
-                                 alt="Extension_Image_To_Scroll" 
-                                 style={{ marginTop: playerImages[0].top, 
-                                          marginLeft: playerImages[0].left }} />
+                            <img className="description-img"
+                                src={playerImages[0].src}
+                                alt="Extension_Image_To_Scroll"
+                                style={{
+                                    marginTop: playerImages[0].top,
+                                    marginLeft: playerImages[0].left
+                                }} />
                         </div>
                     </div>
 
@@ -167,10 +173,12 @@ export default class PlayerScroll extends Component {
                             </div>
                         </div>
                         <div className="flex-child description-image left" id="c3">
-                            <img src={playerImages[1].src}  
-                                 alt="Extension_Image_To_Scroll"
-                                 style={{ marginTop: playerImages[1].top, 
-                                          marginLeft: playerImages[1].left }} />
+                            <img src={playerImages[1].src}
+                                alt="Extension_Image_To_Scroll"
+                                style={{
+                                    marginTop: playerImages[1].top,
+                                    marginLeft: playerImages[1].left
+                                }} />
                         </div>
                     </div>
 
