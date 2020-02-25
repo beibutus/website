@@ -3,7 +3,7 @@ import ReactHtmlParser from "react-html-parser";
 import Header from '../Header';
 import $ from 'jquery';
 
-import './Extension-scroll.scss';
+import './Player-scroll.scss';
 
 import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 import number_1 from '../../assets/images/products/extension/number_1.png';
@@ -13,10 +13,10 @@ import number_4 from '../../assets/images/products/extension/number_4.png';
 import extension_image_1 from '../../assets/images/products/extension/image_1.svg';
 
 
-import { extensionImages } from '../../assets/images/products/scroll-pages/ExtensionImages';
+import { playerImages } from '../../assets/images/products/scroll-pages/PlayerImages';
 
 
-export default class ExtensionScroll extends Component {
+export default class PlayerScroll extends Component {
 
     getLangText(text) {
         return ReactHtmlParser(this.props.text[text]);
@@ -45,6 +45,7 @@ export default class ExtensionScroll extends Component {
                 if (pos < 300) {
                     $("#c1").fadeOut(300);
                 }
+
             });
 
             function hideAll(exceptMe) {
@@ -144,9 +145,11 @@ export default class ExtensionScroll extends Component {
                             </div>
                         </div>
                         <div className="flex-child description-image left" id="c2">
-                            <img style={{ marginTop: extensionImages[0].top, marginLeft: extensionImages[0].left }} 
-                                className="description-img" src={extensionImages[0].src} 
-                                alt="Extension_Image_To_Scroll" />
+                            <img className="description-img" 
+                                 src={playerImages[0].src} 
+                                 alt="Extension_Image_To_Scroll" 
+                                 style={{ marginTop: playerImages[0].top, 
+                                          marginLeft: playerImages[0].left }} />
                         </div>
                     </div>
 
@@ -164,9 +167,10 @@ export default class ExtensionScroll extends Component {
                             </div>
                         </div>
                         <div className="flex-child description-image left" id="c3">
-                            <img src={extensionImages[1].src}  
-                            alt="Extension_Image_To_Scroll"
-                            style={{ marginTop: extensionImages[1].top, marginLeft: extensionImages[1].left }} />
+                            <img src={playerImages[1].src}  
+                                 alt="Extension_Image_To_Scroll"
+                                 style={{ marginTop: playerImages[1].top, 
+                                          marginLeft: playerImages[1].left }} />
                         </div>
                     </div>
 

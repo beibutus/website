@@ -7,6 +7,7 @@ import Extension from "../Extension";
 import Products from '../Products';
 import Privacy from '../Privacy';
 import ExtensionScroll from "../Extension-Scroll";
+import PlayerScroll from "../PlayerScroll";
 import NotFound from '../NotFound';
 
 // import BtnTop from "../BtnTop";
@@ -16,7 +17,7 @@ import Helmet from "react-helmet";
 
 export default class App extends React.Component {
 
-  // urlsWithoutChangingTheLanguage = [/^\/([^/]+\/)*blog.*/g];
+  urlsWithoutChangingTheLanguage = [/^\/([^/]+\/)*privacy.*/g];
 
 
   render() {
@@ -36,9 +37,9 @@ export default class App extends React.Component {
           langList={this.props.langList}
           handleLanguage={this.props.handleLanguage}
           text={this.props.text}
-          // noUseLangSelect={this.urlsWithoutChangingTheLanguage.some(
-          //   u => this.props.location.pathname.match(u) !== null
-          // )}
+          noUseLangSelect={this.urlsWithoutChangingTheLanguage.some(
+            u => this.props.location.pathname.match(u) !== null
+          )}
         ></Navbar>
         <Router>
           <ScrollToTop path="/">
@@ -47,6 +48,7 @@ export default class App extends React.Component {
             <Extension path="/products/extension/" text={this.props.text}></Extension>
             <Privacy path="/privacy" text={this.props.text}></Privacy>
             <ExtensionScroll path="/products/extensionScroll/" text={this.props.text} />
+            <PlayerScroll path="/products/playerScroll/" text={this.props.text} />
             {/* <Blog path="/blog/*"></Blog> */}
             <NotFound path="*" text={this.props.text}></NotFound>
             {/* <Redirect from="/" to="/" default noThrow></Redirect> */}
