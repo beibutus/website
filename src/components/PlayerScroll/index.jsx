@@ -15,6 +15,10 @@ import extension_image_1 from '../../assets/images/products/extension/image_1.sv
 import { playerImages } from '../../assets/images/products/scroll-pages/PlayerImages';
 
 
+
+const scrollSize = window.matchMedia("(min-width: 800px)");
+
+
 export default class PlayerScroll extends Component {
 
     getLangText(text) {
@@ -71,12 +75,13 @@ export default class PlayerScroll extends Component {
             }
         }
 
-        var scrollSize = window.matchMedia("(min-width: 800px)");
+
         toScroll(scrollSize); // Call listener function at run time
+        scrollSize.addListener(toScroll); // Attach listener function on state changes
     }
 
     componentWillUnmount() {
-        this.scrollSize.addListener(this.toScroll); // Attach listener function on state changes
+        scrollSize.removeListener(this.toScroll); // Attach listener function on state changes
     }
 
     render() {

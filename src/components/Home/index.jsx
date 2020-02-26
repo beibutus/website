@@ -117,9 +117,9 @@ export default class Home extends React.Component {
             </div>
 
            <div className="button-started">
-              <a
+              <Link
                 className="get-started-button top"
-                href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
+                to="/products"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -129,7 +129,7 @@ export default class Home extends React.Component {
                   className="icon get-started-button__icon"
                 /> */}
                 <span>{this.getLangText("StartLearning")}</span>
-              </a>
+              </Link>
             </div>
           </div>
         </header>
@@ -195,7 +195,7 @@ export default class Home extends React.Component {
                           alt="chrome-store"
                           className="icon button-chrome-icon"
                         />
-                        {this.getLangText("extension")}
+                        {this.getLangText("AddToChromeButton")}
                       </span>
                     </a>
                     {/* <a
@@ -358,9 +358,9 @@ export default class Home extends React.Component {
         </div>
         <footer className="get-started-footer">
           <div className="button-started bottom">
-            <a
+            <Link
               className="get-started-button bottom"
-              href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
+              to="/products"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -370,7 +370,7 @@ export default class Home extends React.Component {
                 className="icon get-started-button__icon"
               /> */}
               <span>{this.getLangText("StartLearning")}</span>
-            </a>
+            </Link>
           </div>
           <div>
             <Link to="/privacy">
