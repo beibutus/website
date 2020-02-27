@@ -8,37 +8,28 @@ import player_image_2 from '../player/image_2.svg';
 // create an array of objects (image src + coordinates to display)
 export const playerImages = [
 
-	{
+	{	
+		id: 1,
 		src: player_image_1,
-		top: '40px',
-		left: '10px',
+		top: 40,
+		left: 10,
+		right: null,
+		bottom: null,
 	},
 
 	{   
+		id: 2,
 		src: player_image_2, 
-		top: '80px',
-		left: '50px',
+		top: 80,
+		left: 50,
+		right: null,
+		bottom: null,
 	}
 ];
 
-playerImages.map((img) => {
-	console.log(img)
-})
 
 
-// // Определение координаты элемента по горизонтали 
-// function pageX(elem) {
-// 	return elem.offsetParent ?
-// 		elem.offsetLeft + pageX(elem.offsetParent) :
-// 		elem.offsetLeft;
-// }
 
-// // Определение координаты элемента по вертикали
-// function pageY(elem) {
-// 	return elem.offsetParent ?
-// 		elem.offsetTop + pageY(elem.offsetParent) :
-// 		elem.offsetTop;
-// }
 
 
 

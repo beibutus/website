@@ -78,7 +78,7 @@ export default class ExtensionScroll extends Component {
         toScroll(scrollSize); // Call listener function at run time
         scrollSize.addListener(toScroll); // Attach listener function on state changes
     }
-    
+
 
     componentWillUnmount() {
         scrollSize.removeListener(this.toScroll); // Attach listener function on state changes
@@ -155,7 +155,7 @@ export default class ExtensionScroll extends Component {
                             </div>
                         </div>
                         <div className="flex-child description-image left" id="c2">
-                            <img style={{ marginTop: extensionImages[0].top, marginLeft: extensionImages[0].left }}
+                            <img style={{ marginTop: extensionImages[0].top + "px", marginLeft: extensionImages[0].left + "px"}}
                                 className="description-img" src={extensionImages[0].src}
                                 alt="Extension_Image_To_Scroll" />
                         </div>
@@ -177,7 +177,7 @@ export default class ExtensionScroll extends Component {
                         <div className="flex-child description-image left" id="c3">
                             <img src={extensionImages[1].src}
                                 alt="Extension_Image_To_Scroll"
-                                style={{ marginTop: extensionImages[1].top, marginLeft: extensionImages[1].left }} />
+                                style={{ marginTop: extensionImages[1].top + "px", marginLeft: extensionImages[1].left + "px"}} />
                         </div>
                     </div>
 

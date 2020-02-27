@@ -9,36 +9,28 @@ import extension_image_3 from '../extension/image_3.svg';
 export const extensionImages = [
 
 	{
+		id: 1,
 		src: extension_image_2,
-		top: '80px',
-		left: '30px',
+		top: 30,
+		left: 30,
+		right: null,
+		bottom: null,
 	},
 
 	{   
+		id: 2,
 		src: extension_image_3, 
-		top: '30px',
-		left: '5px',
+		top:  30,
+		left: 5,
+		right: null,
+		bottom: null,
 	}
 ];
 
-extensionImages.map((img) => {
-	console.log(img)
-})
 
 
-// // Определение координаты элемента по горизонтали 
-// function pageX(elem) {
-// 	return elem.offsetParent ?
-// 		elem.offsetLeft + pageX(elem.offsetParent) :
-// 		elem.offsetLeft;
-// }
 
-// // Определение координаты элемента по вертикали
-// function pageY(elem) {
-// 	return elem.offsetParent ?
-// 		elem.offsetTop + pageY(elem.offsetParent) :
-// 		elem.offsetTop;
-// }
+
 
 
 
