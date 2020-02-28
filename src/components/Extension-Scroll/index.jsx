@@ -10,7 +10,8 @@ import number_1 from '../../assets/images/products/extension/number_1.png';
 import number_2 from '../../assets/images/products/extension/number_2.png';
 import number_3 from '../../assets/images/products/extension/number_3.png';
 import number_4 from '../../assets/images/products/extension/number_4.png';
-import extension_image_1 from '../../assets/images/products/extension/image_1.svg';
+import extension_image_1 from '../../assets/images/products/extension/1_1.png';
+import appleDevices from "../../assets/images/products/appleDevices.png";
 
 
 import { extensionImages } from '../../assets/images/products/scroll-pages/ExtensionImages';
@@ -45,6 +46,11 @@ export default class ExtensionScroll extends Component {
                     $("#c2").fadeOut(700);
                     $("#c3").fadeIn(700);
                 }
+                if (pos > 1900 && pos < 2400) {
+                    // hideAll("c3");
+                    $("#c3").fadeOut(700);
+                    $("#c4").fadeIn(700);
+                }
                 if (pos < 300) {
                     $("#c1").fadeOut(300);
                 }
@@ -64,6 +70,7 @@ export default class ExtensionScroll extends Component {
             $("div").removeAttr('id', 'c1');
             $("div").removeAttr('id', 'c2');
             $("div").removeAttr('id', 'c3');
+            $("div").removeAttr('id', 'c4');
         };
 
 
@@ -155,31 +162,54 @@ export default class ExtensionScroll extends Component {
                             </div>
                         </div>
                         <div className="flex-child description-image left" id="c2">
-                            <img style={{ marginTop: extensionImages[0].top + "px", marginLeft: extensionImages[0].left + "px"}}
-                                className="description-img" src={extensionImages[0].src}
+                            <img style={{ marginTop: extensionImages[3].top + "px", marginLeft: extensionImages[3].left + "px" }}
+                                className="description-img" src={extensionImages[3].src}
                                 alt="Extension_Image_To_Scroll" />
                         </div>
                     </div>
 
                     <div className="flex-parent extension-block">
-                        <div className="flex-child">
+                        <div className="flex-child content">
                             <div className="extension-header">
-                                <div className="point"><img src={number_4} /></div>
+                                <div className="point"><img src={number_3} /></div>
                                 <div>
-                                    <h2>{this.getLangText("ExtensionFourthHeader")}</h2>
+                                    <h2>{this.getLangText("ExtensionThirddHeader")}</h2>
 
-                                    <p>{this.getLangText("ExtensionFourthText_1")}</p>
-                                    <p>{this.getLangText("ExtensionFourthText_2")}</p>
-                                    <p>{this.getLangText("ExtensionFourthText_3")}</p>
+                                    <p>{this.getLangText("ExtensionThirdText")}</p>
                                 </div>
                             </div>
                         </div>
                         <div className="flex-child description-image left" id="c3">
-                            <img src={extensionImages[1].src}
-                                alt="Extension_Image_To_Scroll"
-                                style={{ marginTop: extensionImages[1].top + "px", marginLeft: extensionImages[1].left + "px"}} />
+                            <img style={{ marginTop: extensionImages[4].top + "px", marginLeft: extensionImages[4].left + "px" }}
+                                className="description-img" src={extensionImages[4].src}
+                                alt="Extension_Image_To_Scroll" />
                         </div>
                     </div>
+
+                    <div className="flex-parent extension-block">
+                        <div className="flex-child content">
+                            <div className="extension-header">
+                                <div className="point"><img src={number_3} /></div>
+                                <div>
+                                    <h2>{this.getLangText("ExtensionThirddHeader")}</h2>
+
+                                    <p>{this.getLangText("ExtensionThirdText")}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex-child description-image left" id="c4">
+                            <img style={{ marginTop: extensionImages[11].top + "px", marginLeft: extensionImages[11].left + "px" }}
+                                className="description-img" src={extensionImages[11].src}
+                                alt="Extension_Image_To_Scroll" />
+                        </div>
+                    </div>
+
+
+
+
+                    {/* <div className="devices">
+                        <img src={appleDevices} alt="apple devices" />
+                    </div> */}
 
                     <div className="flex-child button-extension footer-button">
                         <div className="button-started-extension">

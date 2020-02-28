@@ -12,6 +12,7 @@ import number_3 from '../../assets/images/products/extension/number_3.png';
 import number_4 from '../../assets/images/products/extension/number_4.png';
 import extension_image_1 from '../../assets/images/products/extension/image_1.svg';
 
+
 import { playerImages } from '../../assets/images/products/scroll-pages/PlayerImages';
 
 
@@ -86,34 +87,34 @@ export default class PlayerScroll extends Component {
 
     render() {
 
-        const ScrollBlock = playerImages.map( (img) => {
+        const ScrollBlock = playerImages.map((img) => {
             console.log(img);
             return (
                 <div className="flex-parent extension-block" key={img.id}>
-                <div className="flex-child">
-                    <div className="extension-header">
-                        <div className="point"><img src={number_4} /></div>
-                        <div>
-                            <h2>{this.getLangText("ExtensionFourthHeader")}</h2>
+                    <div className="flex-child">
+                        <div className="extension-header">
+                            <div className="point"><img src={number_4} /></div>
+                            <div>
+                                <h2>{this.getLangText("ExtensionFourthHeader")}</h2>
 
-                            <p>{this.getLangText("ExtensionFourthText_1")}</p>
-                            <p>{this.getLangText("ExtensionFourthText_2")}</p>
-                            <p>{this.getLangText("ExtensionFourthText_3")}</p>
+                                <p>{this.getLangText("ExtensionFourthText_1")}</p>
+                                <p>{this.getLangText("ExtensionFourthText_2")}</p>
+                                <p>{this.getLangText("ExtensionFourthText_3")}</p>
+                            </div>
                         </div>
                     </div>
+                    <div className="flex-child description-image left" id="c3">
+                        <img src={img.src}
+                            alt="Extension_Image_To_Scroll"
+                            style={{
+                                marginTop: img.top,
+                                marginLeft: img.left
+                            }} />
+                    </div>
                 </div>
-                <div className="flex-child description-image left" id="c3">
-                    <img src={img.src}
-                        alt="Extension_Image_To_Scroll"
-                        style={{
-                            marginTop: img.top,
-                            marginLeft: img.left
-                        }} />
-                </div>
-            </div>
             )
         });
-        
+
 
         return (
             <Fragment>
