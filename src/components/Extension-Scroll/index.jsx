@@ -16,8 +16,6 @@ import appleDevices from "../../assets/images/products/appleDevices.png";
 
 import { extensionImages } from '../../assets/images/products/scroll-pages/ExtensionImages';
 
-
-
 const scrollSize = window.matchMedia("(min-width: 600px)");
 
 
@@ -45,6 +43,7 @@ export default class ExtensionScroll extends Component {
                     // hideAll("c3");
                     $("#c2").fadeOut(700);
                     $("#c3").fadeIn(700);
+                    $("#c4").fadeOut(700);
                 }
                 if (pos > 1900 && pos < 2400) {
                     // hideAll("c3");
@@ -162,7 +161,7 @@ export default class ExtensionScroll extends Component {
                             </div>
                         </div>
                         <div className="flex-child description-image left" id="c2">
-                            <img style={{ marginTop: extensionImages[3].top + "px", marginLeft: extensionImages[3].left + "px" }}
+                            <img style={{ marginTop: extensionImages[3].top + "%", marginLeft: extensionImages[3].left + "%" }}
                                 className="description-img" src={extensionImages[3].src}
                                 alt="Extension_Image_To_Scroll" />
                         </div>
@@ -171,16 +170,18 @@ export default class ExtensionScroll extends Component {
                     <div className="flex-parent extension-block">
                         <div className="flex-child content">
                             <div className="extension-header">
-                                <div className="point"><img src={number_3} /></div>
+                                <div className="point"><img src={number_4} /></div>
                                 <div>
-                                    <h2>{this.getLangText("ExtensionThirddHeader")}</h2>
+                                    <h2>{this.getLangText("ExtensionFourthHeader")}</h2>
 
-                                    <p>{this.getLangText("ExtensionThirdText")}</p>
+                                    <p>{this.getLangText("ExtensionFourthText_1")}</p>
+                                    <p>{this.getLangText("ExtensionFourthText_2")}</p>
+                                    <p>{this.getLangText("ExtensionFourthText_3")}</p>
                                 </div>
                             </div>
                         </div>
                         <div className="flex-child description-image left" id="c3">
-                            <img style={{ marginTop: extensionImages[4].top + "px", marginLeft: extensionImages[4].left + "px" }}
+                            <img style={{ marginTop: extensionImages[4].top + "%", marginLeft: extensionImages[4].left + "%" }}
                                 className="description-img" src={extensionImages[4].src}
                                 alt="Extension_Image_To_Scroll" />
                         </div>
@@ -198,14 +199,11 @@ export default class ExtensionScroll extends Component {
                             </div>
                         </div>
                         <div className="flex-child description-image left" id="c4">
-                            <img style={{ marginTop: extensionImages[11].top + "px", marginLeft: extensionImages[11].left + "px" }}
+                            <img style={{ marginTop: extensionImages[11].top + "%", marginLeft: extensionImages[11].left + "%" }}
                                 className="description-img" src={extensionImages[11].src}
                                 alt="Extension_Image_To_Scroll" />
                         </div>
                     </div>
-
-
-
 
                     {/* <div className="devices">
                         <img src={appleDevices} alt="apple devices" />

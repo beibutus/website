@@ -10,7 +10,7 @@ import number_1 from '../../assets/images/products/extension/number_1.png';
 import number_2 from '../../assets/images/products/extension/number_2.png';
 import number_3 from '../../assets/images/products/extension/number_3.png';
 import number_4 from '../../assets/images/products/extension/number_4.png';
-import extension_image_1 from '../../assets/images/products/extension/image_1.svg';
+import player_background from '../../assets/images/products/player/player_background.png';
 
 
 import { playerImages } from '../../assets/images/products/scroll-pages/PlayerImages';
@@ -90,7 +90,7 @@ export default class PlayerScroll extends Component {
         const ScrollBlock = playerImages.map((img) => {
             console.log(img);
             return (
-                <div className="flex-parent extension-block" key={img.id}>
+                <div className="flex-parent extension-block content" key={img.id}>
                     <div className="flex-child">
                         <div className="extension-header">
                             <div className="point"><img src={number_4} /></div>
@@ -103,7 +103,7 @@ export default class PlayerScroll extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="flex-child description-image left" id="c3">
+                    <div className="flex-child description-image left" id={img.id}>
                         <img src={img.src}
                             alt="Extension_Image_To_Scroll"
                             style={{
@@ -168,11 +168,13 @@ export default class PlayerScroll extends Component {
                             </div>
                         </div>
                         <div className="flex-child description-image left" id="c1">
-                            <img src={extension_image_1} alt="Extension_Image" />
+                            <img src={player_background} alt="Extension_Image" />
                         </div>
                     </div>
 
-                    <div className="flex-parent extension-block">
+                    {ScrollBlock}
+
+                    {/* <div className="flex-parent extension-block">
                         <div className="flex-child content">
                             <div className="extension-header">
                                 <div className="point"><img src={number_3} /></div>
@@ -215,7 +217,7 @@ export default class PlayerScroll extends Component {
                                     marginLeft: playerImages[1].left + "px",
                                 }} />
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="flex-child button-extension footer-button">
                         <div className="button-started-extension">

@@ -47,8 +47,8 @@ export const extensionImages = [
 	{   
 		id: 4,
 		src: image_2_1, 
-		top:  50,
-		left: 200,
+		top:  15,
+		left: 60,
 		right: null,
 		bottom: null,
 	},
@@ -56,8 +56,8 @@ export const extensionImages = [
 	{   
 		id: 5,
 		src: image_2_2, 
-		top:  35,
-		left: 405,
+		top:  10,
+		left: 105,
 		right: null,
 		bottom: null,
 	},
@@ -119,8 +119,8 @@ export const extensionImages = [
 	{   
 		id: 12,
 		src: image_5_1, 
-		top:  30,
-		left: 5,
+		top:  null,
+		left: null,
 		right: null,
 		bottom: null,
 	},
