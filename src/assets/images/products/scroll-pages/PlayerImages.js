@@ -8,16 +8,14 @@ import player_image_3 from '../player/1_3.png';
 import player_image_4 from '../player/1_4.png';
 
 
-
-
 // create an array of objects (image src + coordinates to display)
 export const playerImages = [
 
 	{   
 		id: "c2",
 		src: player_image_1, 
-		top: 80,
-		left: 50,
+		top: 116,
+		left: 65,
 		right: null,
 		bottom: null,
 	},

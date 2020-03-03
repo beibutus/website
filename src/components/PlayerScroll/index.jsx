@@ -48,7 +48,6 @@ export default class PlayerScroll extends Component {
                 if (pos < 300) {
                     $("#c1").fadeOut(300);
                 }
-
             });
 
             function hideAll(exceptMe) {
@@ -66,7 +65,6 @@ export default class PlayerScroll extends Component {
             $("div").removeAttr('id', 'c2');
             $("div").removeAttr('id', 'c3');
         };
-
 
         const toScroll = (scrollSize) => {
             if (scrollSize.matches) { // If media query matches
@@ -122,14 +120,11 @@ export default class PlayerScroll extends Component {
                 <div className="Description-Scroll">
 
                     <div className="flex-parent extension-block">
-
-                        <div className="flex-child">
+                        <div>
                             <h2>{this.getLangText("ExtensionHeader")}</h2>
                             <p>
                                 {this.getLangText("ExtensionTopText")}
                             </p>
-                        </div>
-                        <div className="flex-child">
                         </div>
                     </div>
 

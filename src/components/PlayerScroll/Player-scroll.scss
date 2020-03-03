@@ -6,8 +6,8 @@ body {
 
 .left {
   position: fixed;
-  top: 200px;
-  left: 60%;
+  top: 170px;
+  left: 5%;
   display: none;
 }
 
@@ -114,7 +114,7 @@ body {
     .flex-child {
       flex: 1 2;
       max-width: 50%;
-      margin: 0 30px;
+      margin-left: 60%;
 
       &:first-child {
         margin-left: 0;

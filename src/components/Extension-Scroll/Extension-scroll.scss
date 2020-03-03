@@ -5,15 +5,15 @@ body {
 }
 
 #c1 img{
-  width: 100% !important;
+  width: 95% !important;
   padding-right: 10px;
 }
 
-#c2 {
-  width: 22%;
+#c2 img {
+  width: 30% !important;
 }
 
-#c3 {
+#c3 img {
   width: 25%;
 }
 
@@ -24,8 +24,8 @@ body {
 
 .left {
   position: fixed;
-  top: 200px;
-  left: 60%;
+  top: 170px;
+  right: 5%;
   display: none;
 }
 
@@ -41,6 +41,10 @@ body {
     font-family: "Open sans", sans-serif !important;
   }
 
+  .extension-header-top {
+    width: 50%;
+  }
+
   margin-bottom: 2vh;
   padding: 1% 8%;
   font-style: "Comfortaa", sans-serif !important;
@@ -50,7 +54,7 @@ body {
   padding-top: 40px;
 
   img {
-    width: 70%;
+    width: 60%;
     height: 100%;
   }
 }
@@ -131,12 +135,12 @@ body {
 
   .flex-parent {
     display: flex;
-    align-items: center;
+    align-items: right;
 
     .flex-child {
       flex: 1 2;
       max-width: 50%;
-      margin: 0 !important;
+      margin-left: 60%;
 
       &:first-child {
         margin-left: 0;
@@ -144,7 +148,6 @@ body {
 
       &:last-child {
         margin-right: 0;
-        max-width: 100% !important;
       }
     }
   }
