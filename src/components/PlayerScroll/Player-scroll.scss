@@ -4,10 +4,32 @@ body {
   margin: 0;
 }
 
+#player_image_1 img {
+  width: 100% !important;
+}
+
+#player_image_2 img {
+  width: 55% !important;
+}
+
+#player_image_3 img {
+  width: 85% !important;
+}
+
+#player_image_4 img {
+  width: 80% !important;
+  padding-right: 10px;
+}
+
+#player_image_5 img {
+  width: 60% !important;
+  padding-right: 10px;
+}
+
 .left {
   position: fixed;
   top: 170px;
-  left: 5%;
+  right: 50%;
   display: none;
 }
 
@@ -23,6 +45,10 @@ body {
     font-family: "Open sans", sans-serif !important;
   }
 
+  .extension-header-top {
+    width: 50%;
+  }
+
   margin-bottom: 2vh;
   padding: 1% 8%;
   font-style: "Comfortaa", sans-serif !important;
@@ -32,9 +58,14 @@ body {
   padding-top: 40px;
 
   img {
-    width: 70%;
+    width: 65%;
     height: 100%;
   }
+}
+
+.devices img {
+  width: 80%;
+  height: 60%;
 }
 
 .Description-Scroll {
@@ -108,8 +139,7 @@ body {
 
   .flex-parent {
     display: flex;
-    // justify-content: space-around;
-    align-items: center;
+    align-items: right;
 
     .flex-child {
       flex: 1 2;

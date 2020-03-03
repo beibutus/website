@@ -76,6 +76,11 @@
   "ExtensionFourthHeader": "Open lessons  and start training",
   "ExtensionFourthText_1": "The training is based on repeating the word, so we hide it from you in the context. Then you try to guess it. Don't worry! You can use hints if you can't remember a letter or a word.",
   "ExtensionFourthText_2": "After training you can see the statictics of your right and wrong answers and the whole picture of your progress.",
-  "ExtensionFourthText_3": ""
+  "ExtensionFourthText_3": "",
 
+  "PLAYER_PAGE": "PLAYER_PAGE",
+  "GetPlayerButton": "easyplayer.app",
+  "PlayerHeader": "Watch videos subtitle by subtitle <br /> to practice your audition",
+  "PlayerTopText": "Watch videos you like <br /> Add subtitles in any languages <br /> Don’t miss a phrase",
+  "PlayerFirstHeader": "Install EasyPlayer!"
 }

@@ -12,40 +12,40 @@ import player_image_4 from '../player/1_4.png';
 export const playerImages = [
 
 	{   
-		id: "c2",
+		id: 1,
 		src: player_image_1, 
-		top: 116,
-		left: 65,
+		top: 67,
+		left: 18.8,
 		right: null,
 		bottom: null,
 	},
 
 	{   
-		id: "c3",
+		id: 2,
 		src: player_image_2, 
-		top: 80,
-		left: 50,
+		top: 58,
+		left: -10,
 		right: null,
 		bottom: null,
 	},
 
-	// {   
-	// 	id: "c4",
-	// 	src: player_image_3, 
-	// 	top: 80,
-	// 	left: 50,
-	// 	right: null,
-	// 	bottom: null,
-	// },
+	{   
+		id: 3,
+		src: player_image_3, 
+		top: 100,
+		left: -15,
+		right: null,
+		bottom: null,
+	},
 
-	// {   
-	// 	id: "c5",
-	// 	src: player_image_4, 
-	// 	top: 80,
-	// 	left: 50,
-	// 	right: null,
-	// 	bottom: null,
-	// }
+	{   
+		id: 4,
+		src: player_image_4, 
+		top: 61.5,
+		left: 9,
+		right: null,
+		bottom: null,
+	}
 ];
 
 

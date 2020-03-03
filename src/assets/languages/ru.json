@@ -76,9 +76,11 @@
   "ExtensionFourthHeader": "Откройте Context Tutor в браузере или на мобильном",
   "ExtensionFourthText_1": "Нажмите на ссылку в расширении, чтобы перейти к урокам.",
   "ExtensionFourthText_2": "Изучение языка с Context Tutor основано на повторении слов, поэтому мы скрываем слова в выбранном контексте, а вы стараетесь вспомнить их значение и написание. Выполняя задание вы вводите каждую букву слова.",
-  "ExtensionFourthText_3": "Не волнуйтесь, если забыли что-то! Всегда можно воспользоваться подсказкой и открыть букву или слово."
-  
-  
-    
+  "ExtensionFourthText_3": "Не волнуйтесь, если забыли что-то! Всегда можно воспользоваться подсказкой и открыть букву или слово.",
 
+  "PLAYER_PAGE": "PLAYER_PAGE",
+  "GetPlayerButton": "easyplayer.app",
+  "PlayerHeader": "Watch videos subtitle by subtitle <br /> to practice your audition",
+  "PlayerTopText": "Watch videos you like <br /> Add subtitles in any languages <br /> Don’t miss a phrase",
+  "PlayerFirstHeader": "Install EasyPlayer!"
 }
