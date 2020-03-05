@@ -82,5 +82,19 @@
       "GetPlayerButton": "easyplayer.app",
       "PlayerHeader": "Watch videos subtitle by subtitle <br /> to practice your audition",
       "PlayerTopText": "Watch videos you like <br /> Add subtitles in any languages <br /> Don’t miss a phrase",
-      "PlayerFirstHeader": "Install EasyPlayer!"
+      "PlayerFirstHeader": "Install EasyPlayer!",
+      "PlayerSecondHeader": "Default Player Top Text",
+      "PlayerSecondText_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br /> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />",
+      "PlayerSecondText_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br /> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />",
+      "PlayerSecondText_3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "PlayerThirddHeader": "Default Player Top Text",
+      "PlayerThirdText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br /> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />",
+      "PlayerFourthHeader": "Default Player Top Text",
+      "PlayerFourthText_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "PlayerFourthText_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br /> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />",
+      "PlayerFourthText_3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br /> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />",
+      "PlayerFifthHeader": "Default Player Top Text",
+      "PlayerFifthText_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "PlayerSixthHeader": "Default Player Top Text",
+      "PlayerSixthText_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 }

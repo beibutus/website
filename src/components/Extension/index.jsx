@@ -41,7 +41,7 @@ export default class Extension extends Component {
                     <div className="flex-parent extension-block">
                         <div className="flex-child">
                             <div className="extension-header button-header">
-                                <div className="point"><img src={number_1} /></div>
+                                <div className="point"><img src={number_1} alt="Extension_image"/></div>
                                 <div>
                                     <h2>{this.getLangText("ExtensionFirstHeader")}</h2>
                                 </div>
@@ -62,7 +62,7 @@ export default class Extension extends Component {
                     <div className="flex-parent extension-block">
                         <div className="flex-child">
                             <div className="extension-header">
-                                <div className="point"><img src={number_2} /></div>
+                                <div className="point"><img src={number_2} alt="number_2"/></div>
                                 <div>
                                     <h2>{this.getLangText("ExtensionSecondHeader")}</h2>
 
@@ -73,14 +73,14 @@ export default class Extension extends Component {
                             </div>
                         </div>
                         <div className="flex-child description-image">
-                            <img src={image_1} alt="context-tutor-image" />
+                            <img src={image_1} alt="context-tutor-image" alt="Extension_image" />
                         </div>
                     </div>
 
                     <div className="flex-parent extension-block">
                         <div className="flex-child">
                             <div className="extension-header">
-                                <div className="point"><img src={number_3} /></div>
+                                <div className="point"><img src={number_3} alt="number_3" /></div>
                                 <div>
                                     <h2>{this.getLangText("ExtensionThirddHeader")}</h2>
 
@@ -96,7 +96,7 @@ export default class Extension extends Component {
                     <div className="flex-parent extension-block">
                         <div className="flex-child">
                             <div className="extension-header">
-                                <div className="point"><img src={number_4} /></div>
+                                <div className="point"><img src={number_4} alt="number_4" /></div>
                                 <div>
                                     <h2>{this.getLangText("ExtensionFourthHeader")}</h2>
 

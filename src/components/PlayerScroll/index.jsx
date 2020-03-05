@@ -5,7 +5,7 @@ import $ from 'jquery';
 
 import './Player-scroll.scss';
 
-import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
+import DownBtnSvg from "../../assets/images/home/arrow_download_btn.svg";
 import number_1 from '../../assets/images/products/extension/number_1.png';
 import number_2 from '../../assets/images/products/extension/number_2.png';
 import number_3 from '../../assets/images/products/extension/number_3.png';
@@ -22,24 +22,24 @@ const isMobile = () => {
     return check;
 }
 
-const throttle = (func, limit) => {
-    let inThrottle
-    return function() {
-      const args = arguments
-      const context = this
-      if (!inThrottle) {
-        func.apply(context, args)
-        inThrottle = true
-        setTimeout(() => inThrottle = false, limit)
-      }
-    }
-  }
+// const throttle = (func, limit) => {
+//     let inThrottle
+//     return function() {
+//       const args = arguments
+//       const context = this
+//       if (!inThrottle) {
+//         func.apply(context, args)
+//         inThrottle = true
+//         setTimeout(() => inThrottle = false, limit)
+//       }
+//     }
+//   }
 
 export default class PlayerScroll extends Component {
 
     componentDidMount() {
         if (!isMobile()) {
-            $(document).scroll(throttle(this.scrollPageView, 300));
+            $(document).scroll(this.scrollPageView);
         }
     }
 
@@ -117,7 +117,7 @@ export default class PlayerScroll extends Component {
                                 <a className="get-started-button-extension top"
                                     href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
                                     target="_blank" rel="noopener noreferrer">
-                                    {/* <img src={chromeStoreSvg} alt="Chrome-store" className="icon get-started-button__icon" /> */}
+                                    <img src={DownBtnSvg} alt="Get_Player" className="icon get-started-button__icon" /> 
                                     <span className="tag">{this.getLangText("GetPlayerButton")}</span>
                                 </a>
                             </div>
@@ -132,11 +132,11 @@ export default class PlayerScroll extends Component {
                             <div className="extension-header">
                                 <div className="point"><img src={number_2} /></div>
                                 <div>
-                                    <h2>{this.getLangText("ExtensionSecondHeader")}</h2>
+                                    <h2>{this.getLangText("PlayerSecondHeader")}</h2>
 
-                                    <p>{this.getLangText("ExtensionSecondText_1")}</p>
-                                    <p>{this.getLangText("ExtensionSecondText_2")}</p>
-                                    <p>{this.getLangText("ExtensionSecondText_3")}</p>
+                                    <p>{this.getLangText("PlayerSecondText_1")}</p>
+                                    <p>{this.getLangText("PlayerSecondText_2")}</p>
+                                    <p>{this.getLangText("PlayerSecondText_3")}</p>
                                 </div>
                             </div>
                         </div>
@@ -152,9 +152,9 @@ export default class PlayerScroll extends Component {
                             <div className="extension-header">
                                 <div className="point"><img src={number_3} /></div>
                                 <div>
-                                    <h2>{this.getLangText("ExtensionThirddHeader")}</h2>
+                                    <h2>{this.getLangText("PlayerThirddHeader")}</h2>
 
-                                    <p>{this.getLangText("ExtensionThirdText")}</p>
+                                    <p>{this.getLangText("PlayerThirdText")}</p>
                                 </div>
                             </div>
                         </div>
@@ -170,11 +170,11 @@ export default class PlayerScroll extends Component {
                             <div className="extension-header">
                                 <div className="point"><img src={number_4} /></div>
                                 <div>
-                                    <h2>{this.getLangText("ExtensionFourthHeader")}</h2>
+                                    <h2>{this.getLangText("PlayerFourthHeader")}</h2>
 
-                                    <p>{this.getLangText("ExtensionFourthText_1")}</p>
-                                    <p>{this.getLangText("ExtensionFourthText_2")}</p>
-                                    <p>{this.getLangText("ExtensionFourthText_3")}</p>
+                                    <p>{this.getLangText("PlayerFourthText_1")}</p>
+                                    <p>{this.getLangText("PlayerFourthText_2")}</p>
+                                    <p>{this.getLangText("PlayerFourthText_3")}</p>
                                 </div>
                             </div>
                         </div>
@@ -190,9 +190,8 @@ export default class PlayerScroll extends Component {
                             <div className="extension-header">
                                 <div className="point"><img src={number_3} /></div>
                                 <div>
-                                    <h2>{this.getLangText("ExtensionThirddHeader")}</h2>
-
-                                    <p>{this.getLangText("ExtensionThirdText")}</p>
+                                    <h2>{this.getLangText("PlayerFifthHeader")}</h2>
+                                    <p>{this.getLangText("PlayerFifthText_1")}</p>
                                 </div>
                             </div>
                         </div>
@@ -208,9 +207,8 @@ export default class PlayerScroll extends Component {
                             <div className="extension-header">
                                 <div className="point"><img src={number_4} /></div>
                                 <div>
-                                    <h2>{this.getLangText("ExtensionThirddHeader")}</h2>
-
-                                    <p>{this.getLangText("ExtensionThirdText")}</p>
+                                    <h2>{this.getLangText("PlayerSixthHeader")}</h2>
+                                    <p>{this.getLangText("PlayerSixthText_1")}</p>
                                 </div>
                             </div>
                         </div>
@@ -221,7 +219,7 @@ export default class PlayerScroll extends Component {
                             <a className="get-started-button-extension-bottom top"
                                 href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl" target="_blank"
                                 rel="noopener noreferrer">
-                                <img src={chromeStoreSvg} alt="Chrome-store" className="icon get-started-button__icon" />
+                                <img src={DownBtnSvg} alt="Get_Player" className="icon down get-started-button__icon" />
                                 <span className="tag">{this.getLangText("GetPlayerButton")}</span>
                             </a>
                         </div>

@@ -9,16 +9,15 @@ body {
 }
 
 #player_image_2 img {
-  width: 55% !important;
+  width: 52% !important;
 }
 
 #player_image_3 img {
-  width: 85% !important;
+  width: 50% !important;
 }
 
 #player_image_4 img {
-  width: 80% !important;
-  padding-right: 10px;
+  width: 25% !important;
 }
 
 #player_image_5 img {
@@ -31,6 +30,7 @@ body {
   top: 170px;
   right: 50%;
   display: none;
+  width: 100% !important;
 }
 
 .content {
@@ -241,7 +241,7 @@ body {
     }
 
     &.top .icon, &.bottom .icon {
-      padding-right: 5%;
+      padding-right: 10%;
       margin-bottom: 4%;
       flex: 0 0 auto;
       height: 2.5rem;

@@ -27,6 +27,7 @@ body {
   top: 170px;
   right: 50%;
   display: none;
+  width: 100% !important;
 }
 
 .content {
@@ -141,6 +142,10 @@ body {
       flex: 1 2;
       max-width: 50%;
       margin-left: 60%;
+
+      .flex-child .left {
+        width: 100% !important;
+      }
 
       &:first-child {
         margin-left: 0;
@@ -356,14 +361,14 @@ body {
     .flex-parent {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
+      // justify-content: space-around;
+      // align-items: center;
 
-      .flex-child {
-        flex: 1 1 auto;
-        min-width: 100%;
-        margin: 0 30px;
-      }
+      // .flex-child {
+      //   flex: 1 1 auto;
+      //   min-width: 100%;
+      //   margin: 0 30px;
+      // }
     }
 
     .point {
@@ -377,8 +382,8 @@ body {
       }
     }
 
-    .Description-Scroll-img {
-      width: 80%;
-    }
+    // .Description-Scroll-img {
+    //   width: 80%;
+    // }
   }
 }

@@ -22,24 +22,24 @@ const isMobile = () => {
     return check;
 }
 
-const throttle = (func, limit) => {
-    let inThrottle
-    return function() {
-      const args = arguments
-      const context = this
-      if (!inThrottle) {
-        func.apply(context, args)
-        inThrottle = true
-        setTimeout(() => inThrottle = false, limit)
-      }
-    }
-  }
+// const throttle = (func, limit) => {
+//     let inThrottle
+//     return function() {
+//       const args = arguments
+//       const context = this
+//       if (!inThrottle) {
+//         func.apply(context, args)
+//         inThrottle = true
+//         setTimeout(() => inThrottle = false, limit)
+//       }
+//     }
+//   }
 
 export default class ExtensionScroll extends Component {
 
     componentDidMount() {
         if (!isMobile()) {
-            $(document).scroll(throttle(this.scrollPageView, 300));
+            $(document).scroll(this.scrollPageView);
         }
     }
 
