@@ -50,8 +50,7 @@ export default class Extension extends Component {
                         <div className="flex-child button-extension">
                             <div className="button-started-extension">
                                 <a className="get-started-button-extension top"
-                                    href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
-                                    target="_blank" rel="noopener noreferrer">
+                                    onClick={e => alert("Sorry, Coming Soon!")}>
                                     <img src={chromeStoreSvg} alt="Chrome-store" className="icon get-started-button__icon" />
                                     <span className="tag">{this.getLangText("AddToChromeButton")}</span>
                                 </a>
@@ -114,8 +113,7 @@ export default class Extension extends Component {
                     <div className="flex-child button-extension">
                         <div className="button-started-extension">
                             <a className="get-started-button-extension-bottom top"
-                                href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl" target="_blank"
-                                rel="noopener noreferrer">
+                                onClick={e => alert("Sorry, Coming Soon!")}>
                                 <img src={chromeStoreSvg} alt="Chrome-store" className="icon get-started-button__icon" />
                                 <span className="tag">{this.getLangText("AddToChromeButton")}</span>
                             </a>

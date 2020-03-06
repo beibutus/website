@@ -185,9 +185,7 @@ export default class Home extends React.Component {
                   <div className="button-group button-group-1">
                     <a
                       className="button-install button-chrome"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
+                      onClick={e => alert("Sorry, Coming Soon!")}
                     >
                       <span className="button-chrome-wrapper">
                         <img

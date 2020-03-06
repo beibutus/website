@@ -46,9 +46,7 @@ export default class Products extends React.Component {
                         <div className="product-block-download">
                             <a
                                 className="product-download-button"
-                                href="https://chrome.google.com/webstore/detail/easylangapp/enhklinppkbachhbnjjpdccklacpidfl"
-                                target="_blank"
-                            >
+                                onClick={e => alert("Sorry, Coming Soon!")}>
                                 {this.getLangText("Add")}
                             </a>
                         </div>
