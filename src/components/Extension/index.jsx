@@ -5,10 +5,10 @@ import Header from '../Header';
 import './Extension.scss';
 
 import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
-import number_1 from '../../assets/images/products/extension/number_1.png';
-import number_2 from '../../assets/images/products/extension/number_2.png';
-import number_3 from '../../assets/images/products/extension/number_3.png';
-import number_4 from '../../assets/images/products/extension/number_4.png';
+import number_1 from '../../assets/images/products/number_1.png';
+import number_2 from '../../assets/images/products/number_2.png';
+import number_3 from '../../assets/images/products/number_3.png';
+import number_4 from '../../assets/images/products/number_4.png';
 import image_1 from '../../assets/images/products/extension/image_1.svg';
 import image_2 from '../../assets/images/products/extension/image_2.svg';
 import image_3 from '../../assets/images/products/extension/image_3.svg';

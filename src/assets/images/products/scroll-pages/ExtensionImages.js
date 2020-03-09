@@ -14,7 +14,7 @@ import image_4_2 from '../extension/4_2.png';
 import image_4_3 from '../extension/4_3.png';
 import image_5_1 from '../extension/5_1.png';
 
-// create an array of objects (image src + coordinates to display)
+//An array of objects to scroll (image src + coordinates to display)
 export const extensionImages = [
 
 	{
@@ -29,8 +29,8 @@ export const extensionImages = [
 	{   
 		id: 2,
 		src: image_1_2, 
-		top:  30,
-		left: 5,
+		top:  7.6,
+		left: 33.6,
 		right: null,
 		bottom: null,
 	},
@@ -38,8 +38,8 @@ export const extensionImages = [
 	{   
 		id: 3,
 		src: image_1_3, 
-		top:  30,
-		left: 5,
+		top: 7.6,
+		left: 33.6,
 		right: null,
 		bottom: null,
 	},
