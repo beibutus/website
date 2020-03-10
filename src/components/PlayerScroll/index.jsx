@@ -56,29 +56,29 @@ export default class PlayerScroll extends Component {
     scrollPageView = () => {
         const pos = $(document).scrollTop();
 
-        if (pos > 300 && pos < 850) {
+        if (pos > 200 && pos < 700) {
             this.hideAll("player_image_1");
-            $("#player_image_1").fadeIn(700);
+            $("#player_image_1").fadeIn(600);
         }
-        if (pos > 850 && pos < 1300) {
-            $("#player_image_2").fadeIn(700);
-            $("#player_image_3").fadeOut(700);
+        if (pos > 700 && pos < 1300) {
+            $("#player_image_2").fadeIn(600);
+            $("#player_image_3").fadeOut(600);
         }
-        if (pos > 1400 && pos < 1900) {
-            $("#player_image_2").fadeOut(700);
-            $("#player_image_3").fadeIn(700);
-            $("#player_image_4").fadeOut(700);
+        if (pos > 1300 && pos < 1900) {
+            $("#player_image_2").fadeOut(600);
+            $("#player_image_3").fadeIn(600);
+            $("#player_image_4").fadeOut(600);
         }
-        if (pos > 1900 && pos < 2400) {
-            $("#player_image_3").fadeOut(700);
-            $("#player_image_4").fadeIn(700);
-            $("#player_image_5").fadeOut(700);
+        if (pos > 1900 && pos < 2500) {
+            $("#player_image_3").fadeOut(600);
+            $("#player_image_4").fadeIn(600);
+            $("#player_image_5").fadeOut(600);
         }
-        if (pos > 2400 && pos < 2900) {
-            $("#player_image_4").fadeOut(700);
-            $("#player_image_5").fadeIn(700);
+        if (pos > 2500 && pos < 3100) {
+            $("#player_image_4").fadeOut(600);
+            $("#player_image_5").fadeIn(600);
         }
-        if (pos < 300) {
+        if (pos < 200) {
             $("#player_image_1").fadeOut(300);
         }
     }

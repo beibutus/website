@@ -35,7 +35,7 @@ export default class Products extends React.Component {
                                 <img className="product-number-img" src={productsFirstNumber} alt="first number" />
                             </div>
                             <div className="product-about">
-                                <Link to="/products/extension">
+                                <Link to="extension/">
                                     <p className="product-description-header .extension-link">{this.getLangText("ExtensionForBrowser")}</p>
                                 </Link>
                                 <p className="product-description-text">

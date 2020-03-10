@@ -6,13 +6,10 @@ import ReactHtmlParser from "react-html-parser";
 import classNames from "classnames";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import imgEnjoy from "../../assets/images/home/imgEnjoy.svg";
 import puzzle from "../../assets/images/home/puzzle.svg";
 import phoneBackground from "../../assets/images/home/phoneBackground.svg";
 import phone from "../../assets/images/home/phone.svg";
-import slide1 from "../../assets/images/home/slider/slide1.gif";
-import slide2 from "../../assets/images/home/slider/slide2.png";
 import slide3en from "../../assets/images/home/slider/3.png";
 import slide4en from "../../assets/images/home/slider/4.png";
 import slide3ru from "../../assets/images/home/slider/3ru.svg";
@@ -20,7 +17,7 @@ import slide4ru from "../../assets/images/home/slider/4ru.svg";
 import slide3cn from "../../assets/images/home/slider/3cn.svg";
 import slide4cn from "../../assets/images/home/slider/4cn.svg";
 import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
-// import extensionImg from "../../assets/images/home/extensionImg.png";
+
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -119,7 +116,7 @@ export default class Home extends React.Component {
             <div className="button-started">
               <Link
                 className="get-started-button top"
-                to="/products"
+                to="products/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -360,7 +357,7 @@ export default class Home extends React.Component {
           <div className="button-started bottom">
             <Link
               className="get-started-button bottom"
-              to="/products"
+              to="products/"
               target="_blank"
               rel="noopener noreferrer"
             >
