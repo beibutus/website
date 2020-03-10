@@ -215,7 +215,7 @@ export default class PlayerScroll extends Component {
                         </div>
                     </div>
 
-                    <div className="flex-child button-extension footer-button">
+                    {/* <div className="flex-child button-extension footer-button">
                         <div className="button-started-extension">
                             <a className="get-started-button-extension-bottom top"
                                 onClick={e => alert("Sorry, Coming Soon!")}>
@@ -223,7 +223,7 @@ export default class PlayerScroll extends Component {
                                 <span className="tag">{this.getLangText("GetPlayerButton")}</span>
                             </a>
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
             </Fragment>

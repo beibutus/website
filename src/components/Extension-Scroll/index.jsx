@@ -57,34 +57,36 @@ export default class ExtensionScroll extends Component {
     scrollPageView = () => {
         const pos = $(document).scrollTop();
 
-        if (pos > 300 && pos < 850) {
+        console.log(pos);
+
+        if (pos > 150 && pos < 700) {
             this.hideAll("ext_img_1");
-            $("#ext_img_1").fadeIn(700);
+            $("#ext_img_1").fadeIn(600);
         }
-        if (pos > 850 && pos < 1300) {
-            $("#ext_img_2").fadeIn(700);
-            $("#ext_img_3").fadeOut(700);
+        if (pos > 700 && pos < 1300) {
+            $("#ext_img_2").fadeIn(600);
+            $("#ext_img_3").fadeOut(600);
         }
-        if (pos > 1400 && pos < 1900) {
-            $("#ext_img_2").fadeOut(700);
-            $("#ext_img_3").fadeIn(700);
-            $("#ext_img_4").fadeOut(700);
+        if (pos > 1300 && pos < 1900) {
+            $("#ext_img_2").fadeOut(600);
+            $("#ext_img_3").fadeIn(600);
+            $("#ext_img_4").fadeOut(600);
         }
-        if (pos > 1900 && pos < 2400) {
-            $("#ext_img_3").fadeOut(700);
-            $("#ext_img_4").fadeIn(700);
-            $("#ext_img_5").fadeOut(700);
+        if (pos > 1900 && pos < 2500) {
+            $("#ext_img_3").fadeOut(600);
+            $("#ext_img_4").fadeIn(600);
+            $("#ext_img_5").fadeOut(600);
         }
-        if (pos > 2400 && pos < 2900) {
-            $("#ext_img_4").fadeOut(700);
-            $("#ext_img_5").fadeIn(700);
-            $("#ext_img_6").fadeOut(700);
+        if (pos > 2500 && pos < 3100) {
+            $("#ext_img_4").fadeOut(600);
+            $("#ext_img_5").fadeIn(600);
+            $("#ext_img_6").fadeOut(600);
         }
-        if (pos > 2900 && pos < 3400) {
-            $("#ext_img_5").fadeOut(700);
-            $("#ext_img_6").fadeIn(700);
+        if (pos > 3100 && pos < 3700) {
+            $("#ext_img_5").fadeOut(600);
+            $("#ext_img_6").fadeIn(600);
         }
-        if (pos < 300) {
+        if (pos < 150) {
             $("#ext_img_1").fadeOut(300);
         }
     }
@@ -124,7 +126,8 @@ export default class ExtensionScroll extends Component {
                         <div className="flex-child button-extension">
                             <div className="button-started-extension">
                                 <a className="get-started-button-extension top"
-                                    onClick={e => alert("Sorry, Coming Soon!")}>
+                                    href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
+                                    target="_blank" rel="noopener noreferrer">
                                     <img src={chromeStoreSvg} alt="Chrome-store" className="icon get-started-button__icon" />
                                     <span className="tag">{this.getLangText("AddToChromeButton")}</span>
                                 </a>
@@ -140,9 +143,9 @@ export default class ExtensionScroll extends Component {
                             <div className="extension-header">
                                 <div className="point"><img src={number_2} alt="number_2" /></div>
                                 <div>
-                                <h2>{this.getLangText("ExtensionThirddHeader")}</h2>
+                                    <h2>{this.getLangText("ExtensionThirddHeader")}</h2>
 
-                                <p>{this.getLangText("ExtensionThirdText")}</p>
+                                    <p>{this.getLangText("ExtensionThirdText")}</p>
                                 </div>
                             </div>
                         </div>
@@ -241,16 +244,17 @@ export default class ExtensionScroll extends Component {
                             </div>
                         </div>
                     </div>
-
+                    {/* 
                     <div className="flex-child button-extension footer-button">
                         <div className="button-started-extension">
-                            <a className="get-started-button-extension-bottom top"
-                                onClick={e => alert("Sorry, Coming Soon!")}>
-                                <img src={chromeStoreSvg} alt="Chrome-store" className="icon get-started-button__icon" />
-                                <span className="tag">{this.getLangText("AddToChromeButton")}</span>
-                            </a>
+                                <a className="get-started-button-extension top"
+                                    href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <img src={chromeStoreSvg} alt="Chrome-store" className="icon get-started-button__icon" />
+                                    <span className="tag">{this.getLangText("AddToChromeButton")}</span>
+                                </a>
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
             </Fragment>

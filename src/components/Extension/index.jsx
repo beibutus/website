@@ -41,7 +41,7 @@ export default class Extension extends Component {
                     <div className="flex-parent extension-block">
                         <div className="flex-child">
                             <div className="extension-header button-header">
-                                <div className="point"><img src={number_1} alt="Extension_image"/></div>
+                                <div className="point"><img src={number_1} alt="Extension_image" /></div>
                                 <div>
                                     <h2>{this.getLangText("ExtensionFirstHeader")}</h2>
                                 </div>
@@ -49,8 +49,9 @@ export default class Extension extends Component {
                         </div>
                         <div className="flex-child button-extension">
                             <div className="button-started-extension">
-                                <a className="get-started-button-extension top"
-                                    onClick={e => alert("Sorry, Coming Soon!")}>
+                            <a className="get-started-button-extension top"
+                                    href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
+                                    target="_blank" rel="noopener noreferrer">
                                     <img src={chromeStoreSvg} alt="Chrome-store" className="icon get-started-button__icon" />
                                     <span className="tag">{this.getLangText("AddToChromeButton")}</span>
                                 </a>
@@ -61,7 +62,7 @@ export default class Extension extends Component {
                     <div className="flex-parent extension-block">
                         <div className="flex-child">
                             <div className="extension-header">
-                                <div className="point"><img src={number_2} alt="number_2"/></div>
+                                <div className="point"><img src={number_2} alt="number_2" /></div>
                                 <div>
                                     <h2>{this.getLangText("ExtensionSecondHeader")}</h2>
 
@@ -113,7 +114,9 @@ export default class Extension extends Component {
                     <div className="flex-child button-extension">
                         <div className="button-started-extension">
                             <a className="get-started-button-extension-bottom top"
-                                onClick={e => alert("Sorry, Coming Soon!")}>
+                                href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb" 
+                                target="_blank"
+                                rel="noopener noreferrer">
                                 <img src={chromeStoreSvg} alt="Chrome-store" className="icon get-started-button__icon" />
                                 <span className="tag">{this.getLangText("AddToChromeButton")}</span>
                             </a>

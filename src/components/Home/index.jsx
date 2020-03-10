@@ -116,7 +116,7 @@ export default class Home extends React.Component {
               <p className="subtitle">{this.getLangText("headerSubtitle")}</p>
             </div>
 
-           <div className="button-started">
+            <div className="button-started">
               <Link
                 className="get-started-button top"
                 to="/products"
@@ -185,7 +185,9 @@ export default class Home extends React.Component {
                   <div className="button-group button-group-1">
                     <a
                       className="button-install button-chrome"
-                      onClick={e => alert("Sorry, Coming Soon!")}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
                     >
                       <span className="button-chrome-wrapper">
                         <img
@@ -372,7 +374,7 @@ export default class Home extends React.Component {
           </div>
           <div>
             <Link to="/privacy">
-            <p className="privacy">{this.getLangText("PrivacyPolicy")}</p>
+              <p className="privacy">{this.getLangText("PrivacyPolicy")}</p>
             </Link>
           </div>
         </footer>
