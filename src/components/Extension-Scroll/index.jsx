@@ -1,17 +1,14 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component, Fragment } from "react";
+import Fade from "react-reveal/Fade";
 import ReactHtmlParser from "react-html-parser";
-import Header from '../Header';
-import $ from 'jquery';
+import Header from "../Header";
 
-import './Extension-scroll.scss';
+import "./Extension-scroll.scss";
 
 import chromeStoreSvg from "../../assets/images/home/chromeStore.svg";
 
-
 // import { extensionImages } from '../../assets/images/products/scroll-pages/ExtensionImages';
-import { extensionImages } from '../../assets/images/products/scroll-pages/ExtensionImagesStatic';
-
-
+import { extensionImages } from "../../assets/images/products/scroll-pages/ExtensionImagesStatic";
 
 // const isMobile = () => {
 //     let check = false;
@@ -34,342 +31,288 @@ import { extensionImages } from '../../assets/images/products/scroll-pages/Exten
 
 export default class ExtensionScroll extends Component {
 
-    componentDidMount() {
-        $(document).scroll(this.scrollPageView);
+  state = {
+    bgImgId: 0,
+    imgId: 0,
+  }
+
+  imgTopOffset = 150;
+
+  content = [
+    {
+      header: <h2>ВЫБИРАЙТЕ ЛЮБОЙ МАТЕРИАЛ</h2>,
+      body: (
+        <>
+          <p>
+            Каждая новость в интернете может стать материалом <br /> для
+            изучения иностранного языка.
+          </p>
+          <p>Главное найти интересный именно для вас материал</p>
+        </>
+      ),
+      img: extensionImages[0].src
+    },
+    {
+      header: <h2>ВЫДЕЛЯЙТЕ СЛОВО</h2>,
+      body: (
+        <>
+        <p>
+          Можно выбрать для перевода часть слово или несколько слов. <br />
+          Еще мы можем быстро отправить предложение на перевод.
+        </p>
+        </>
+      ),
+      img: extensionImages[1].src
+    },
+    {
+      header: <h2>ПЕРЕВОДИТЕ ЕГО</h2>,
+      body: (
+        <>
+        <p>
+          Окно переводчика можно не закрывать. <br />
+          Мы просто держим с ним связь.
+        </p>
+        </>
+      ),
+      img: extensionImages[2].src
+    },
+    {
+      header: <h2>СОХРАНЯЙТЕ СЛОВО <br/> ДЛЯ ПОВТОРЕНИЯ</h2>,
+      body: (
+        <>
+        <p>
+          База данных в интернете сохранит слово <br />
+          для повторения на множестве устройств.
+        </p>
+        </>
+      ),
+      img: extensionImages[3].src
+    },
+    {
+      header: (
+        <h2>
+          В ОДНОМ СПИСКЕ <br /> ВСЯ ИСТОРИЯ ОБУЧЕНИЯ
+        </h2>
+      ),
+      body: (
+        <>
+        <p>
+          Вы читаете сотни страниц, <br />
+          и только часть из них станет материалом <br />
+          для обучения на иностранным языке.
+        </p>
+        </>
+      ),
+      img: extensionImages[4].src
+    },
+    {
+      header: <h2>ПОВТОРЯЙ СЛОВА ПРЯМО В СТАТЬЕ</h2>,
+      body: (
+        <>
+          <p>
+            Мы скроем слова для эффективного повтора. <br />
+            Если статья на иностранном языке была интересна для Вас, <br />
+            то и повторить иностранные слова будет интереснее <br />
+            прямо на ранее прочитанных новостях/статьях.
+          </p>
+        </>
+      ),
+      img: extensionImages[5].src
+    },
+    {
+      header: <h2>ОТКРОЙ ТРЕНАЖЕР</h2>,
+      body: (
+        <>
+          <p>
+            Игры для повтора слов можно вызвать прямо <br />
+            из вашей истории интернет чтения и просмотра видео.
+          </p>
+        </>
+      ),
+      img: extensionImages[6].src
+    },
+    {
+      header: <h2>ОДНА СТАТЬЯ - ОДИН УРОК</h2>,
+      body: (
+        <>
+        <p>
+          Ваши уроки будут удобно рассортированы по материалам
+          <br />
+          которые вы читали или будут сгруппированы по дням <br />
+          когда вы познакомились со словом на иностранном языке.
+        </p>
+        </>
+      ),
+      img: extensionImages[7].src
+    },
+    {
+      header: <h2>ПРОСТО ОТСКАНИРУЙТЕ</h2>,
+      body: (
+        <>
+        <p>
+          Чтобы из компьютера было бы легко перейти
+          <br />
+          на мобильные игры просто отсканируйте QR.
+        </p>
+        </>
+      ),
+      img: extensionImages[8].src
+    },
+    {
+      header: (
+        <h2>
+          И БУДЬ МОБИЛЬНЫМ! <br /> НЕ ТЕРЯЙ ВРЕМЯ!
+        </h2>
+      ),
+      body: (
+        <>
+        <p>
+          Теперь повторять материал можно <br /> в любом удобном для Вас месте.
+          <br />
+          <br />
+          А чтобы было не скучно мы создали <br /> несколько игр для процесса
+          повторения слов.
+        </p>
+        </>
+      ),
+      img: extensionImages[9].src
     }
+  ];
 
-    componentWillUnmount() {
-        $(document).off("scroll", this.scrollPageView);
-    }
+  componentDidMount() {
+    document.addEventListener("scroll", this.scrollPageView);
+  }
 
-    getLangText(text) {
-        return ReactHtmlParser(this.props.text[text]);
-    }
+  componentWillUnmount() {
+    document.removeEventListener("scroll", this.scrollPageView);
+  }
 
-    scrollPageView = () => {
+  getLangText(text) {
+    return ReactHtmlParser(this.props.text[text]);
+  }
 
-        const pos = $(document).scrollTop();
+  scrollPageView = _ => {
+    const pos = window.pageYOffset;
 
-        const fadeInValue = 300;
-        const fadeOutValue = 100;
+    this.content.forEach((content, i, arr) => {
+      const el = content.parentRef;
+      const nextEl = arr[i + 1] && arr[i + 1].parentRef;
+      if (
+        this.state.imgId !== i &&
+        (pos + 250) + this.imgTopOffset >= el.offsetTop &&
+        (nextEl ? (pos + 250) + this.imgTopOffset < nextEl.offsetTop : true)
+      ) {
+        this.setState(old => ({
+          bgImgId: old.imgId,
+          imgId: i
+        }));
+      }
+    });
+  };
 
-        if (pos > 300 && pos < 700) {
-            this.hideAll("ext_img_1")
-            $("#ext_img_1").fadeIn(fadeInValue);
-        }
-        if (pos > 700 && pos < 1300) {
-            this.hideAll("ext_img_2")
-            $("#ext_img_1").fadeOut(fadeOutValue);
-            $("#ext_img_2").fadeIn(fadeInValue);
-        }
-        if (pos > 1300 && pos < 1900) {
-            this.hideAll("ext_img_3")
-            $("#ext_img_2").fadeOut(fadeOutValue);
-            $("#ext_img_3").fadeIn(fadeInValue);
-        }
-        if (pos > 1900 && pos < 2500) {
-            this.hideAll("ext_img_4")
-            $("#ext_img_3").fadeOut(fadeOutValue);
-            $("#ext_img_4").fadeIn(fadeInValue);
-        }
-        if (pos > 2500 && pos < 3100) {
-            this.hideAll("ext_img_5")
-            $("#ext_img_4").fadeOut(fadeOutValue);
-            $("#ext_img_5").fadeIn(fadeInValue);
-        }
-        if (pos > 3100 && pos < 3700) {
-            this.hideAll("ext_img_6")
-            $("#ext_img_5").fadeOut(fadeOutValue);
-            $("#ext_img_6").fadeIn(fadeInValue);
-        }
-        if (pos > 3700 && pos < 4600) {
-            this.hideAll("ext_img_7")
-            $("#ext_img_6").fadeOut(fadeOutValue);
-            $("#ext_img_7").fadeIn(fadeInValue);
-        }
-        if (pos > 4600 && pos < 5100) {
-            this.hideAll("ext_img_8")
-            $("#ext_img_7").fadeOut(fadeInValue);
-            $("#ext_img_8").fadeIn(fadeOutValue);
-        }
-        if (pos > 5100 && pos < 5700) {
-            this.hideAll("ext_img_9")
-            $("#ext_img_8").fadeOut(fadeOutValue);
-            $("#ext_img_9").fadeIn(fadeInValue);
-        }
-        if (pos > 5700 && pos < 6100) {
-            this.hideAll("ext_img_10")
-            $("#ext_img_8").fadeOut(fadeOutValue);
-            $("#ext_img_10").fadeIn(fadeInValue);
-        }
-        if (pos < 300) {
-            $("#ext_img_1").fadeOut(fadeOutValue);
-        }
-    }
-
-    hideAll = (exceptMe) => {
-        $(".left").each(function (i) {
-            if ($(this).attr("id") === exceptMe) return;
-            $(this).fadeOut(this.fadeOutValue);
-        });
-    }
-
-
-    render() {
-
-        const scrollImages = extensionImages.map(img => (
-            <div className="flex-child left" id={img.id} key={img.id}>
-                <img
-                    className="description-img"
-                    src={img.src}
-                    alt="Extension_Image" />
+  render() {
+    return (
+      <Fragment>
+        <Header text={this.props.text} />
+        <div className="Description-Scroll">
+          <div className="flex-parent extension-block">
+            <div className="extension-header-top">
+              <h2>{this.getLangText("ExtensionHeader")}</h2>
+              <p>{this.getLangText("ExtensionTopText")}</p>
             </div>
-        ));
+          </div>
 
-        return (
-            <Fragment>
-                <Header text={this.props.text} />
-                <div className="Description-Scroll">
-
-                    <div className="flex-parent extension-block">
-                        <div className="extension-header-top">
-                            <h2>{this.getLangText("ExtensionHeader")}</h2>
-                            <p>
-                                {this.getLangText("ExtensionTopText")}
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="flex-parent extension-block">
-                        <div className="flex-child">
-                            <div className="extension-header button-header">
-                                <div>
-                                    <h2>{this.getLangText("ExtensionFirstHeader")}</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="flex-child button-extension">
-                            <div className="button-started-extension">
-                                <a className="get-started-button-extension top"
-                                    href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
-                                    target="_blank" rel="noopener noreferrer">
-                                    <img src={chromeStoreSvg} alt="Chrome-store" className="icon get-started-button__icon" />
-                                    <span className="tag">{this.getLangText("AddToChromeButton")}</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="flex-parent extension-block">
-
-                        {/* Scroll Images Block */}
-                        {scrollImages}
-
-                        <div className="flex-child content">
-                            <div className="extension-header">
-                                <div>
-                                    <h2>ВЫБИРАЙТЕ ЛЮБОЙ МАТЕРИАЛ</h2>
-
-                                    <p>Каждая новость в интернете может стать материалом <br/> для изучения иностранного языка.</p>
-                                    <p>Главное найти интересный именно для вас материал</p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="flex-parent extension-block">
-
-                        {/* Scroll Images Block */}
-                        {scrollImages}
-
-                        <div className="flex-child content">
-                            <div className="extension-header">
-                                <div>
-                                    <h2>ВЫДЕЛЯЙТЕ СЛОВО</h2>
-
-                                        <p>
-                                            Можно выбрать для перевода часть слово или несколько слов. <br/>
-                                            Еще мы можем быстро отправить предложение на перевод.
-                                        </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="flex-parent extension-block">
-
-                        {/* Scroll Images Block */}
-                        {scrollImages}
-
-                        <div className="flex-child content">
-                            <div className="extension-header">
-                                <div>
-                                    <h2>ПЕРЕВОДИТЕ ЕГО</h2>
-                                    <p>
-                                        Окно переводчика можно не закрывать. <br/>
-                                        Мы просто держим с ним связь.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="flex-parent extension-block">
-
-                        {/* Scroll Images Block */}
-                        {scrollImages}
-
-                        <div className="flex-child content">
-                            <div className="extension-header">
-                                <div>
-                                    <h2>СОХРАНЯЙТЕ СЛОВО ДЛЯ ПОВТОРЕНИЯ</h2>
-
-                                    <p>База данных в интернете сохранит слово <br/>
-                                     для повторения на множестве устройств.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="flex-parent extension-block">
-
-                        {/* Scroll Images Block */}
-                        {scrollImages}
-
-                        <div className="flex-child content">
-                            <div className="extension-header">
-                                <div>
-                                    <h2>В ОДНОМ СПИСКЕ <br/> ВСЯ ИСТОРИЯ ОБУЧЕНИЯ</h2>
-
-                                    <p>Вы читаете сотни страниц, <br/>
-                                    и только часть из них станет материалом <br/>
-                                    для обучения на иностранным языке.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="flex-parent extension-block">
-
-                        {/* Scroll Images Block */}
-                        {scrollImages}
-
-                        <div className="flex-child content">
-                            <div className="extension-header">
-                                <div>
-                                    <h2>ПОВТОРЯЙ СЛОВА ПРЯМО В СТАТЬЕ</h2>
-
-                                    <p>Мы скроем слова для эффективного повтора. <br/><br/>
-
-                                    Если статья на иностранном языке была интересна для Вас, <br/>
-                                    то и повторить иностранные слова будет интереснее <br/> 
-                                    прямо на ранее прочитанных новостях/статьях.
- 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="flex-parent extension-block">
-
-                        {/* Scroll Images Block */}
-                        {scrollImages}
-
-                        <div className="flex-child content">
-                            <div className="extension-header">
-                                <div>
-                                    <h2>ОТКРОЙ ТРЕНАЖЕР</h2>
-
-                                    <p>
-                                    Игры для повтора слов можно вызвать прямо <br/>
-                                     из вашей истории интернет чтения и просмотра видео.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="flex-parent extension-block">
-
-                        {/* Scroll Images Block */}
-                        {scrollImages}
-
-                        <div className="flex-child content">
-                            <div className="extension-header">
-                                <div>
-                                    <h2>ОДНА СТАТЬЯ - ОДИН УРОК</h2>
-                                    <p>
-                                    Ваши уроки будут удобно рассортированы по материалам<br/> 
-                                    которые вы читали или будут сгруппированы по дням <br/>
-                                     когда вы познакомились со словом на иностранном языке.
-
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="flex-parent extension-block">
-
-                        {/* Scroll Images Block */}
-                        {scrollImages}
-
-                        <div className="flex-child content">
-                            <div className="extension-header">
-                                <div>
-                                    <h2>ПРОСТО ОТСКАНИРУЙТЕ</h2>
-                                    <p>
-                                    Чтобы из компьютера было бы легко перейти<br/>
-                                     на мобильные игры просто отсканируйте QR.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="flex-parent extension-block">
-
-                        {/* Scroll Images Block */}
-                        {scrollImages}
-
-                        <div className="flex-child content">
-                            <div className="extension-header">
-                                <div>
-                                    <h2>И БУДЬ МОБИЛЬНЫМ! <br/> НЕ ТЕРЯЙ ВРЕМЯ!</h2>
-                                    <p>
-                                        Теперь повторять материал можно <br/> в любом удобном для Вас месте. <br/><br/>
-
-                                        А чтобы было не скучно мы создали <br/> несколько игр для процесса повторения слов.
-
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* 
-                    <div className="flex-child button-extension footer-button">
-                        <div className="button-started-extension">
-                                <a className="get-started-button-extension top"
-                                    href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
-                                    target="_blank" rel="noopener noreferrer">
-                                    <img src={chromeStoreSvg} alt="Chrome-store" className="icon get-started-button__icon" />
-                                    <span className="tag">{this.getLangText("AddToChromeButton")}</span>
-                                </a>
-                        </div>
-                    </div> */}
-
+          <div className="flex-parent extension-block">
+            <div className="flex-child">
+              <div className="extension-header button-header">
+                <div>
+                  <h2>{this.getLangText("ExtensionFirstHeader")}</h2>
                 </div>
-            </Fragment>
-        )
-    }
+              </div>
+            </div>
+            <div className="flex-child button-extension">
+              <div className="button-started-extension">
+                <a
+                  className="get-started-button-extension top"
+                  href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={chromeStoreSvg}
+                    alt="Chrome-store"
+                    className="icon get-started-button__icon"
+                  />
+                  <span className="tag">
+                    {this.getLangText("AddToChromeButton")}
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div style={{ display: "flex" }}>
+            <div style={{ flex: "0 0 50%", position: "relative" }}>
+              <div
+                style={{
+                  width: "100%",
+                  position: "sticky",
+                  left: 0,
+                  top: this.imgTopOffset
+                }}
+              >
+                <img
+                  className="description-img"
+                  style={{
+                    position: "absolute",
+                    left: 0,
+                    top: 0,
+                    width: "100%",
+                    zIndex: 1
+                  }}
+                  src={extensionImages[this.state.bgImgId].src}
+                />
+                <Fade spy={this.state.imgId}>
+                  <img
+                    className="description-img"
+                    style={{
+                      position: "absolute",
+                      left: 0,
+                      top: 0,
+                      width: "100%",
+                      zIndex: 2
+                    }}
+                    src={extensionImages[this.state.imgId].src}
+                    alt="Extension_Image"
+                  />
+                </Fade>
+              </div>
+            </div>
+            <div style={{ flex: "0 0 50%", marginLeft: "5%" }}>
+              {this.content.map((c, i) => {
+                return (
+                  <div
+                    className="extension-block"
+                    ref={ref => {
+                      c.parentRef = ref;
+                    }}
+                    key={i}
+                  >
+                    <div className="flex-child content">
+                      <div className="extension-header content">
+                        <div>
+                          {c.header}
+                          {c.body}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </Fragment>
+    );
+  }
 }
-
-
-
-
-
-

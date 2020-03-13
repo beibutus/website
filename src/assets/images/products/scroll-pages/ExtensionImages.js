@@ -15,7 +15,7 @@ import image_4_3 from '../extension/4_3.png';
 import image_5_1 from '../extension/5_1.png';
 
 //An array of objects to scroll (image src + coordinates to display)
-export const extensionImages = [
+export const extensionImagesStatic = [
 
 	{
 		id: 1,
