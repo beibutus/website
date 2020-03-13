@@ -27,7 +27,7 @@ body {
 
 .left {
   position: fixed;
-  top: 170px;
+  top: 140px;
   right: 50%;
   display: none;
   width: 100% !important;
@@ -46,7 +46,7 @@ body {
   }
 
   .extension-header-top {
-    width: 50%;
+    width: 80%;
   }
 
   margin-bottom: 2vh;
@@ -103,8 +103,8 @@ body {
   }
 
   h2 {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 2.3rem;
+    font-weight: 900;
   }
 
   h3 {
@@ -152,41 +152,6 @@ body {
 
       &:last-child {
         margin-right: 0;
-      }
-    }
-  }
-
-  .callouts {
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #f0f9ff;
-  }
-
-  time {
-    display: block;
-    width: 100%;
-    text-align: right;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-
-  &.hide {
-    .grid-text {
-      height: 1rem;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      height: 100%;
-      margin: 0;
-      line-height: 1rem;
-      text-align: left;
-    }
-
-    .grid-img {
-      margin: 1rem 0;
-
-      img {
-        width: 50%;
       }
     }
   }
@@ -287,48 +252,6 @@ body {
   }
 }
 
-@media (min-width: 610px) {
-  .Article.hide {
-    .grid {
-      display: grid;
-      grid-template-columns: auto minmax(40%, auto);
-      grid-auto-rows: 1fr auto 1rem auto 1fr;
-    }
-
-    .grid-title {
-      grid-row-start: 2;
-      grid-row-end: 3;
-
-      h1 {
-        text-align: left;
-      }
-    }
-
-    .grid-text {
-      grid-row-start: 3;
-      grid-row-end: 4;
-    }
-
-    .grid-img {
-      grid-row-start: 1;
-      grid-row-end: 6;
-      grid-column-start: 1;
-      grid-column-end: 2;
-      align-self: center;
-      margin: 0 2rem 0 0;
-
-      img {
-        width: 100%;
-      }
-    }
-
-    .grid-read-more {
-      grid-row-start: 4;
-      grid-row-end: 5;
-      justify-self: left;
-    }
-  }
-}
 
 /* 13 - Extension Description */
 
@@ -380,6 +303,19 @@ body {
       img {
         width: 60px;
       }
+    }
+
+    .left {
+      position: fixed;
+      top: 250px;
+      right: 0;
+      left: -8%;
+      display: none;
+      width: 90% !important;
+    }
+
+    .content {
+      height: 500px;
     }
 
     .Description-Scroll-img {
