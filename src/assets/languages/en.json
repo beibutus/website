@@ -64,6 +64,9 @@
 
   "EXTENSION_PAGE": "EXTENSION_PAGE",
   "AddToChromeButton": "Add to Chrome",
+  "GetStartedButton": "Free start",
+  "GetStartedText": "Handy extension <br/> in Google Chrome for learning language",
+  "GetStartedBottomText": "Translate words while reading an article or watching your favourite movie <br/> Add words to your personal lessons or train them in the text <br/> Repeat words in the exact context you found them <br/> Understand jokes and expressions <br/> Enrich your personal vocabulary <br/>Learn and repeat words with Easylang Tutor",
   "ExtensionHeader": "Read articles, watch movies and understand <br/> what your favourite songs are about",
   "ExtensionTopText": "Translate words while reading an article or watching your favourite movie <br/> Add words to your personal lessons or train them in the text <br/> Repeat words in the exact context you found them <br/> Understand jokes and expressions <br/> Enrich your personal vocabulary <br/> <strong>Learn and repeat words with Easylang Tutor</strong>",
   "ExtensionFirstHeader": "Add Easylang to your Chrome browser",

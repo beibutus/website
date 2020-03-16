@@ -1,13 +1,11 @@
 import React from "react";
 import { Router, Redirect } from "@reach/router";
-import Blog from "../Blog";
 import Navbar from "../Navbar";
 import Home from "../Home";
-import Extension from "../Extension";
 import Products from '../Products';
 import Privacy from '../Privacy';
-import ExtensionScroll from "../Extension-Scroll";
-import PlayerScroll from "../PlayerScroll";
+import Extension from "../Extension";
+import Player from "../Player";
 import NotFound from '../NotFound';
 
 // import BtnTop from "../BtnTop";
@@ -45,10 +43,9 @@ export default class App extends React.Component {
           <ScrollToTop path="/">
             <Home path="/" text={this.props.text}></Home>
             <Products path="/products/" text={this.props.text}></Products>
-            <Extension path="/products/extension/" text={this.props.text}></Extension>
             <Privacy path="/privacy" text={this.props.text}></Privacy>
-            <ExtensionScroll path="/products/extensionScroll/" text={this.props.text} />
-            <PlayerScroll path="/products/playerScroll/" text={this.props.text} />
+            <Extension path="/products/extension/" text={this.props.text} />
+            <Player path="/products/player/" text={this.props.text} />
             {/* <Blog path="/blog/*"></Blog> */}
             <NotFound path="*" text={this.props.text}></NotFound>
             {/* <Redirect from="/" to="/" default noThrow></Redirect> */}

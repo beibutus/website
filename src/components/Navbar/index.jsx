@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "@reach/router";
 import "./Navbar.scss";
 import classNames from "classnames";
+import ReactHtmlParser from "react-html-parser";
 
 export default class Navbar extends React.Component {
     constructor(props) {
@@ -24,6 +25,9 @@ export default class Navbar extends React.Component {
             openMenu: false
         });
     };
+    getLangText(text) {
+        return ReactHtmlParser(this.props.text[text]);
+    }
     componentDidMount() {
         window.addEventListener("scroll", this.handleScroll);
     }
@@ -94,7 +98,7 @@ export default class Navbar extends React.Component {
                                             EasyLang
                                         </span>
                                     </li>
-                                    <li>
+                                    <li className="menu-item">
                                         <Link
                                             to="products/"
                                             className="menu-nav__link"
@@ -103,14 +107,24 @@ export default class Navbar extends React.Component {
                                             {this.props.text.products}
                                         </Link>
                                     </li>
-                                    <li>
+                                    <li className="menu-item">
                                         <Link
-                                            to="products/extensionScroll"
+                                            to="products/extension"
                                             className="menu-nav__link"
                                             onClick={this.closeMenu}
                                         >
                                             {this.props.text.extension}
                                         </Link>
+                                    </li>
+                                    <li>
+                                        <a
+                                            className="menu-nav__link start-button"
+                                            href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            {this.getLangText("GetStartedButton")}
+                                        </a>
                                     </li>
                                     {/* <li>
                                         <Link

@@ -3,16 +3,15 @@ import Fade from "react-reveal/Fade";
 import ReactHtmlParser from "react-html-parser";
 import Header from "../Header";
 
-import "./Extension.scss";
+import "./Player.scss";
 
 // import { extensionImages } from '../../assets/images/products/scroll-pages/ExtensionImages';
-import { extensionImages } from "../../assets/images/products/scroll-pages/ExtensionImagesStatic";
-import Logo from '../../assets/images/newLogo.png';
+import { playerImages } from "../../assets/images/products/scroll-pages/PlayerImagesStatic";
 
-import { extensionContent } from "../../assets/scroll-content/extension";
+import { playerContent } from "../../assets/scroll-content/player";
 
 
-export default class Extension extends Component {
+export default class Player extends Component {
 
   state = {
     bgImgId: 0,
@@ -36,7 +35,7 @@ export default class Extension extends Component {
   scrollPageView = _ => {
     const pos = window.pageYOffset;
 
-    extensionContent.forEach((content, i, arr) => {
+    playerContent.forEach((content, i, arr) => {
       const el = content.parentRef;
       const nextEl = arr[i + 1] && arr[i + 1].parentRef;
       if (
@@ -60,22 +59,20 @@ export default class Extension extends Component {
         <header className="getStarted-header">
           <div className="wrapper-getStarted">
             <div>
-              <img src={Logo} className="getStarted-logo"></img>
-              <h1 className="getStarted-title">{this.getLangText("GetStartedText")}</h1>
+              <img className="getStarted-logo"></img>
+              <h1 className="getStarted-title">Easy Player!</h1>
             </div>
             <div className="getStarted-button">
               <a
                 className="started-button top"
-                href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
+                href="https://github.com/easably/platform-player-extension/releases/download/0.8.64/EasyLang.Player-Beta.0.8.64.exe"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-               <span>{this.getLangText("GetStartedButton")}</span>
+               <span>Download Easy Player!</span>
               </a>
             </div>
-            <div>
-              <p className="getStarted-subtitle">{this.getLangText("GetStartedBottomText")}</p>
-            </div>
+            <p className="getStarted-subtitle"></p>
           </div>
         </header>
 
@@ -84,7 +81,7 @@ export default class Extension extends Component {
           <div style={{ display: "flex" }}>
 
             <div style={{ flex: "0 0 50%", paddingLeft: "5%" }}>
-              {extensionContent.map((content, i) => {
+              {playerContent.map((content, i) => {
                 return (
                   <div
                     className="extension-block"
@@ -128,7 +125,7 @@ export default class Extension extends Component {
                     width: "100%",
                     zIndex: 1
                   }}
-                  src={extensionImages[this.state.bgImgId].src}
+                  src={playerImages[this.state.bgImgId].src}
                 />
                 <Fade spy={this.state.imgId}>
                   <img
@@ -140,7 +137,7 @@ export default class Extension extends Component {
                       width: "100%",
                       zIndex: 2
                     }}
-                    src={extensionImages[this.state.imgId].src}
+                    src={playerImages[this.state.imgId].src}
                     alt="Extension_Image"
                   />
                 </Fade>

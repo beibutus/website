@@ -73,10 +73,15 @@
     max-height: 80px;
 }
 
+.logo {
+    padding-bottom: 10px;
+}
+
 .lang {
     justify-content: flex-start;
     display: flex;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 select {
@@ -123,7 +128,6 @@ select {
 }
 
 /*menu*/
-
 .menu-wrapper {
     display: -webkit-flex;
     display: -moz-flex;
@@ -157,6 +161,10 @@ select {
     margin-right: 30px;
 }
 
+.menu-main-list .menu-item {
+    padding-top: 8px !important;
+}
+
 .menu-nav__link {
     font-weight: normal;
     font-size: 1.1rem;
@@ -164,6 +172,43 @@ select {
     border-bottom: 0px solid rgba(255, 255, 255, 0);
     transition: border-bottom 0.1s ease-in-out;
 }
+  
+  .start-button {
+    display: block;
+    width: auto;
+
+    border-bottom: 0 !important;
+    transition: unset !important;
+  
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff !important;
+    font-weight: bold;
+    font-style: normal;
+    padding: 5% 20px;
+  
+    background-color: #FF6A70;
+    border: none;
+    border-radius: 110px;
+    transition: all 0.3s linear;
+    &:hover {
+      background-color: #ffb43f;
+    }
+    &.top,&.bottom{
+      display: flex;
+      align-items: center;
+      padding: 5% 10px;
+    }
+    &.bottom {
+      font-size: 1.1rem;
+    }
+    &.blog-button {
+      padding: 20px 20px;
+      max-width: 360px;
+    }
+  }
+  
 
 .menu-nav__link:hover {
     border-bottom: 3px solid #03a9f4;
@@ -381,4 +426,40 @@ select {
     select{
         font-size: 1rem;
     }
+    .start-button {
+        display: block;
+        width: auto;
+    
+        border-bottom: 0 !important;
+        transition: unset !important;
+      
+        font-size: 1rem;
+        margin: 10px auto;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #fff !important;
+        font-weight: bold;
+        font-style: normal;
+        padding: 1px 25px;
+      
+        background-color: #FF6A70;
+        border: none;
+        border-radius: 110px;
+        transition: all 0.3s linear;
+        &:hover {
+          background-color: #ffb43f;
+        }
+        &.top,&.bottom{
+          display: flex;
+          align-items: center;
+          padding: 5% 10px;
+        }
+        &.bottom {
+          font-size: 1.1rem;
+        }
+        &.blog-button {
+          padding: 20px 20px;
+          max-width: 360px;
+        }
+      }
 }

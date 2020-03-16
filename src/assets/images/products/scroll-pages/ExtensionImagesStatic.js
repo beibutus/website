@@ -15,8 +15,7 @@ import image_10 from '../extension/10.png';
 
 //An array of objects to scroll (image src + coordinates to display)
 export const extensionImages = [
-
-	{
+    {
         src: image_1,
     },
 	{
