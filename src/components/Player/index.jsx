@@ -59,7 +59,7 @@ export default class Player extends Component {
         <header className="getStarted-header">
           <div className="wrapper-getStarted">
             <div>
-              <img className="getStarted-logo"></img>
+              <img className="getStarted-logo" alt="Logo_image"></img>
               <h1 className="getStarted-title">Easy Player!</h1>
             </div>
             <div className="getStarted-button">
@@ -126,6 +126,7 @@ export default class Player extends Component {
                     zIndex: 1
                   }}
                   src={playerImages[this.state.bgImgId].src}
+                  alt="Scrolled_item"
                 />
                 <Fade spy={this.state.imgId}>
                   <img
@@ -138,7 +139,7 @@ export default class Player extends Component {
                       zIndex: 2
                     }}
                     src={playerImages[this.state.imgId].src}
-                    alt="Extension_Image"
+                    alt="Scrolled_item"
                   />
                 </Fade>
               </div>

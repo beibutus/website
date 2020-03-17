@@ -3,7 +3,6 @@ import React from 'react';
 import { extensionImages } from "../images/products/scroll-pages/ExtensionImagesStatic";
 
 
-
 export const extensionContent = [
     {
       header: <h2>ВЫБИРАЙТЕ ЛЮБОЙ МАТЕРИАЛ</h2>,

@@ -132,7 +132,7 @@ export default class Home extends React.Component {
         </header>
 
         <div className="container">
-          <section className="content content-enjoyLearning">
+          <section className="content-home content-enjoyLearning">
             <div className="enjoyIt-wrapper">
               <div className="enjoyIt-heading">
                 <h2>{this.getLangText("headPleasure")}</h2>
@@ -144,7 +144,7 @@ export default class Home extends React.Component {
             </div>
           </section>
 
-          <section className="content content-context-memory">
+          <section className="content-home content-context-memory">
             <div className="context-title">
               <h2 className="context-heading">
                 {this.getLangText("headMemory")}
@@ -157,7 +157,7 @@ export default class Home extends React.Component {
           </section>
 
           <section
-            className="content content-ourApp"
+            className="content-home content-ourApp"
             id={this.sections.toGetStarted.id}
             ref={this.sections.toGetStarted.ref}
           >
@@ -249,7 +249,7 @@ export default class Home extends React.Component {
           </section>
 
           {/* <section
-            className="content content-howItWorks"
+            className="content-home content-howItWorks"
             id={this.sections.howItWork.id}
             ref={this.sections.howItWork.ref}
           >
@@ -305,7 +305,7 @@ export default class Home extends React.Component {
 
           <div className="call-to-action">
             <section
-              className="content content-sources"
+              className="content-home content-sources"
               id={this.sections.source.id}
               ref={this.sections.source.ref}
             >

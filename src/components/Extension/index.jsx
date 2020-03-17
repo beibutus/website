@@ -5,9 +5,9 @@ import Header from "../Header";
 
 import "./Extension.scss";
 
-// import { extensionImages } from '../../assets/images/products/scroll-pages/ExtensionImages';
 import { extensionImages } from "../../assets/images/products/scroll-pages/ExtensionImagesStatic";
-import Logo from '../../assets/images/newLogo.png';
+import Logo from "../../assets/images/newLogo.png";
+import devices_image from "../../assets/images/devices_image.png";
 
 import { extensionContent } from "../../assets/scroll-content/extension";
 
@@ -23,6 +23,7 @@ export default class Extension extends Component {
 
   componentDidMount() {
     document.addEventListener("scroll", this.scrollPageView);
+    console.log(this.imgTopOffset);
   }
 
   componentWillUnmount() {
@@ -33,16 +34,17 @@ export default class Extension extends Component {
     return ReactHtmlParser(this.props.text[text]);
   }
 
-  scrollPageView = _ => {
+  scrollPageView = () => {
     const pos = window.pageYOffset;
 
     extensionContent.forEach((content, i, arr) => {
       const el = content.parentRef;
-      const nextEl = arr[i + 1] && arr[i + 1].parentRef;
+      const nextItem = arr[i + 1] && arr[i + 1].parentRef;
+
       if (
         this.state.imgId !== i &&
         (pos + 250) + this.imgTopOffset >= el.offsetTop &&
-        (nextEl ? (pos + 250) + this.imgTopOffset < nextEl.offsetTop : true)
+        (nextItem ? (pos + 250) + this.imgTopOffset < nextItem.offsetTop : true)
       ) {
         this.setState(old => ({
           bgImgId: old.imgId,
@@ -54,13 +56,13 @@ export default class Extension extends Component {
 
   render() {
     return (
-      <Fragment>
+      <Fragment style={{ fontFamily: "Montserrat" }}>
         <Header text={this.props.text} />
 
         <header className="getStarted-header">
           <div className="wrapper-getStarted">
             <div>
-              <img src={Logo} className="getStarted-logo"></img>
+              <img src={Logo} className="getStarted-logo" alt="Logo_image"></img>
               <h1 className="getStarted-title">{this.getLangText("GetStartedText")}</h1>
             </div>
             <div className="getStarted-button">
@@ -70,7 +72,7 @@ export default class Extension extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-               <span>{this.getLangText("GetStartedButton")}</span>
+                <span>{this.getLangText("GetStartedButton")}</span>
               </a>
             </div>
             <div>
@@ -78,6 +80,10 @@ export default class Extension extends Component {
             </div>
           </div>
         </header>
+
+        <div className="scrolled-content-header">
+          <h1>{this.getLangText("ScrolledContentHeader")}</h1>
+        </div>
 
         <div className="Description-Scroll">
 
@@ -88,9 +94,7 @@ export default class Extension extends Component {
                 return (
                   <div
                     className="extension-block"
-                    ref={ref => {
-                      content.parentRef = ref;
-                    }}
+                    ref={ref => content.parentRef = ref}
                     key={i}
                   >
                     <div className="content">
@@ -120,36 +124,41 @@ export default class Extension extends Component {
                 }}
               >
                 <img
-                  className="description-img"
-                  style={{
-                    position: "absolute",
-                    left: 0,
-                    top: 0,
-                    width: "100%",
-                    zIndex: 1
-                  }}
+                  className="scrolled-item"
                   src={extensionImages[this.state.bgImgId].src}
+                  alt="Scrolled_Item"
                 />
                 <Fade spy={this.state.imgId}>
                   <img
-                    className="description-img"
-                    style={{
-                      position: "absolute",
-                      left: 0,
-                      top: 0,
-                      width: "100%",
-                      zIndex: 2
-                    }}
+                    className="scrolled-item"
+                    style={{ zIndex: 2 }}
                     src={extensionImages[this.state.imgId].src}
-                    alt="Extension_Image"
+                    alt="Scrolled_Item"
                   />
                 </Fade>
               </div>
             </div>
-
-
           </div>
         </div>
+
+        <div className="description-devices">
+          <img src={devices_image} alt="Devices_image" />
+        </div>
+
+        <footer className="getStarted-footer">
+          <div className="getStarted-button">
+            <a
+              className="started-button top"
+              style={{ marginTop: "-20px"}}
+              href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>{this.getLangText("GetStartedButton")}</span>
+            </a>
+          </div>
+        </footer>
+
       </Fragment>
     );
   }

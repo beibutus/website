@@ -6,7 +6,7 @@ import ReactHtmlParser from "react-html-parser";
 
 import productsFirstNumber from "../../assets/images/products/productsFirstNumber.svg";
 import productsSecondNumber from "../../assets/images/products/productsSecondNumber.svg";
-import appleDevices from "../../assets/images/products/appleDevices.png";
+import devices_image from "../../assets/images/devices_image.png";
 
 
 import "./Products.scss";
@@ -48,6 +48,7 @@ export default class Products extends React.Component {
                                 className="product-download-button"
                                 href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 {this.getLangText("Add")}
                             </a>
@@ -71,6 +72,7 @@ export default class Products extends React.Component {
                                 className="product-download-button"
                                 href="https://easy4learn.com/"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 {this.getLangText("GetStarted")}
                             </a>
@@ -79,7 +81,7 @@ export default class Products extends React.Component {
                 </div>
 
                 <div className="devices">
-                    <img src={appleDevices} alt="apple devices" />
+                    <img src={devices_image} alt="devices_image" />
                 </div>
                 <div className="description-bottom-block">
                     <p>
