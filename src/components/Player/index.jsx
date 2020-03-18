@@ -5,8 +5,9 @@ import Header from "../Header";
 
 import "./Player.scss";
 
-// import { extensionImages } from '../../assets/images/products/scroll-pages/ExtensionImages';
 import { playerImages } from "../../assets/images/products/scroll-pages/PlayerImagesStatic";
+import PlayerLogo from "../../assets/images/PlayerLogo.png";
+import devices_player_image from "../../assets/images/devices_player_image.png";
 
 import { playerContent } from "../../assets/scroll-content/player";
 
@@ -32,16 +33,17 @@ export default class Player extends Component {
     return ReactHtmlParser(this.props.text[text]);
   }
 
-  scrollPageView = _ => {
+  scrollPageView = () => {
     const pos = window.pageYOffset;
 
     playerContent.forEach((content, i, arr) => {
       const el = content.parentRef;
-      const nextEl = arr[i + 1] && arr[i + 1].parentRef;
+      const nextItem = arr[i + 1] && arr[i + 1].parentRef;
+
       if (
         this.state.imgId !== i &&
         (pos + 250) + this.imgTopOffset >= el.offsetTop &&
-        (nextEl ? (pos + 250) + this.imgTopOffset < nextEl.offsetTop : true)
+        (nextItem ? (pos + 250) + this.imgTopOffset < nextItem.offsetTop : true)
       ) {
         this.setState(old => ({
           bgImgId: old.imgId,
@@ -53,28 +55,42 @@ export default class Player extends Component {
 
   render() {
     return (
-      <Fragment>
+      <Fragment style={{ fontFamily: "Montserrat" }}>
         <Header text={this.props.text} />
 
         <header className="getStarted-header">
           <div className="wrapper-getStarted">
             <div>
-              <img className="getStarted-logo" alt="Logo_image"></img>
-              <h1 className="getStarted-title">Easy Player!</h1>
+              <img src={PlayerLogo} className="getStarted-logo" alt="Logo_image"></img>
+              <h1 className="getStarted-title">{this.getLangText("GetStartedPlayerText")}</h1>
             </div>
             <div className="getStarted-button">
               <a
                 className="started-button top"
-                href="https://github.com/easably/platform-player-extension/releases/download/0.8.64/EasyLang.Player-Beta.0.8.64.exe"
+                href="https://github.com/easably/platform-player-extension/releases/latest/download/EasyLang.Player-Beta-win.exe"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-               <span>Download Easy Player!</span>
+                <span>{this.getLangText("GetPlayerButton")}</span>
+              </a>
+              <a
+                className="started-button top"
+                href="https://github.com/easably/platform-player-extension/releases/latest/download/EasyLang.Player-Beta-win.exe"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>{this.getLangText("GetPlayerButton")}</span>
               </a>
             </div>
-            <p className="getStarted-subtitle"></p>
+            <div>
+              <p className="getStarted-subtitle">{this.getLangText("GetStartedBottomText")}</p>
+            </div>
           </div>
         </header>
+
+        <div className="scrolled-content-header">
+          <h1>{this.getLangText("ScrolledContentPlayerHeader")}</h1>
+        </div>
 
         <div className="Description-Scroll">
 
@@ -85,9 +101,7 @@ export default class Player extends Component {
                 return (
                   <div
                     className="extension-block"
-                    ref={ref => {
-                      content.parentRef = ref;
-                    }}
+                    ref={ref => content.parentRef = ref}
                     key={i}
                   >
                     <div className="content">
@@ -117,37 +131,41 @@ export default class Player extends Component {
                 }}
               >
                 <img
-                  className="description-img"
-                  style={{
-                    position: "absolute",
-                    left: 0,
-                    top: 0,
-                    width: "100%",
-                    zIndex: 1
-                  }}
+                  className="scrolled-item"
                   src={playerImages[this.state.bgImgId].src}
-                  alt="Scrolled_item"
+                  alt="Scrolled_Item"
                 />
                 <Fade spy={this.state.imgId}>
                   <img
-                    className="description-img"
-                    style={{
-                      position: "absolute",
-                      left: 0,
-                      top: 0,
-                      width: "100%",
-                      zIndex: 2
-                    }}
+                    className="scrolled-item"
+                    style={{ zIndex: 2 }}
                     src={playerImages[this.state.imgId].src}
-                    alt="Scrolled_item"
+                    alt="Scrolled_Item"
                   />
                 </Fade>
               </div>
             </div>
-
-
           </div>
         </div>
+
+        <div className="description-devices">
+          <img src={devices_player_image} alt="Devices_image" />
+        </div>
+
+        <footer className="getStarted-footer">
+          <div className="getStarted-button">
+            <a
+              className="started-button top"
+              style={{ marginTop: "-20px"}}
+              href="https://github.com/easably/platform-player-extension/releases/latest/download/EasyLang.Player-Beta-win.exe"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>{this.getLangText("GetPlayerButton")}</span>
+            </a>
+          </div>
+        </footer>
+
       </Fragment>
     );
   }

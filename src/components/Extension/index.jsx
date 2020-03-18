@@ -6,7 +6,7 @@ import Header from "../Header";
 import "./Extension.scss";
 
 import { extensionImages } from "../../assets/images/products/scroll-pages/ExtensionImagesStatic";
-import Logo from "../../assets/images/newLogo.png";
+import ExtensionLogo from "../../assets/images/ExtensionLogo.png";
 import devices_image from "../../assets/images/devices_image.png";
 
 import { extensionContent } from "../../assets/scroll-content/extension";
@@ -23,7 +23,6 @@ export default class Extension extends Component {
 
   componentDidMount() {
     document.addEventListener("scroll", this.scrollPageView);
-    console.log(this.imgTopOffset);
   }
 
   componentWillUnmount() {
@@ -62,7 +61,7 @@ export default class Extension extends Component {
         <header className="getStarted-header">
           <div className="wrapper-getStarted">
             <div>
-              <img src={Logo} className="getStarted-logo" alt="Logo_image"></img>
+              <img src={ExtensionLogo} className="getStarted-logo" alt="Logo_image"></img>
               <h1 className="getStarted-title">{this.getLangText("GetStartedText")}</h1>
             </div>
             <div className="getStarted-button">

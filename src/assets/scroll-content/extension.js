@@ -5,7 +5,7 @@ import { extensionImages } from "../images/products/scroll-pages/ExtensionImages
 
 export const extensionContent = [
     {
-      header: <h2>ВЫБИРАЙТЕ ЛЮБОЙ МАТЕРИАЛ</h2>,
+      header: <h2>Выбирайте <br/> любой материал</h2>,
       body: (
         <>
           <p>
@@ -18,19 +18,19 @@ export const extensionContent = [
       img: extensionImages[0].src
     },
     {
-      header: <h2>ВЫДЕЛЯЙТЕ СЛОВО</h2>,
+      header: <h2>Выделяйте слово</h2>,
       body: (
         <>
           <p>
-            Можно выбрать для перевода часть слово или несколько слов. <br />
-          Еще мы можем быстро отправить предложение на перевод.
+            Можно выбрать для перевода часть слово <br/> или несколько слов. <br />
+          Еще мы можем быстро отправить предложение <br/> на перевод.
         </p>
         </>
       ),
       img: extensionImages[1].src
     },
     {
-      header: <h2>ПЕРЕВОДИТЕ ЕГО</h2>,
+      header: <h2>Переводите его</h2>,
       body: (
         <>
           <p>
@@ -42,7 +42,7 @@ export const extensionContent = [
       img: extensionImages[2].src
     },
     {
-      header: <h2>СОХРАНЯЙТЕ СЛОВО <br /> ДЛЯ ПОВТОРЕНИЯ</h2>,
+      header: <h2>Сохраняйте слово <br /> для повторения</h2>,
       body: (
         <>
           <p>
@@ -56,7 +56,7 @@ export const extensionContent = [
     {
       header: (
         <h2>
-          В ОДНОМ СПИСКЕ <br /> ВСЯ ИСТОРИЯ ОБУЧЕНИЯ
+          В одном списке <br /> вся история обучения
         </h2>
       ),
       body: (
@@ -71,12 +71,12 @@ export const extensionContent = [
       img: extensionImages[4].src
     },
     {
-      header: <h2>ПОВТОРЯЙ СЛОВА ПРЯМО В СТАТЬЕ</h2>,
+      header: <h2>Повторяй слова <br/> прямо в статье</h2>,
       body: (
         <>
           <p>
             Мы скроем слова для эффективного повтора. <br />
-            Если статья на иностранном языке была интересна для Вас, <br />
+            Если статья на иностранном языке <br/> была интересна для Вас, <br />
             то и повторить иностранные слова будет интереснее <br />
             прямо на ранее прочитанных новостях/статьях.
           </p>
@@ -85,7 +85,7 @@ export const extensionContent = [
       img: extensionImages[5].src
     },
     {
-      header: <h2>ОТКРОЙ ТРЕНАЖЕР</h2>,
+      header: <h2>Открой тренажер</h2>,
       body: (
         <>
           <p>
@@ -97,7 +97,7 @@ export const extensionContent = [
       img: extensionImages[6].src
     },
     {
-      header: <h2>ОДНА СТАТЬЯ - ОДИН УРОК</h2>,
+      header: <h2>Одна статья - один урок</h2>,
       body: (
         <>
           <p>
@@ -111,7 +111,7 @@ export const extensionContent = [
       img: extensionImages[7].src
     },
     {
-      header: <h2>ПРОСТО ОТСКАНИРУЙТЕ</h2>,
+      header: <h2>Просто отсканируйте</h2>,
       body: (
         <>
           <p>
@@ -126,7 +126,7 @@ export const extensionContent = [
     {
       header: (
         <h2>
-          И БУДЬ МОБИЛЬНЫМ! <br /> НЕ ТЕРЯЙ ВРЕМЯ!
+          И будь мобильным! <br /> Не теряй время!
         </h2>
       ),
       body: (

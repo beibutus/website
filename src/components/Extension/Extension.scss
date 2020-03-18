@@ -18,6 +18,7 @@ body {
 
 .scrolled-content-header {
   font-family: "Montserrat", sans-serif !important;
+  text-transform: uppercase;
   color:  #232323;
   letter-spacing: 1.41px;
   font-style: normal;
@@ -35,6 +36,10 @@ body {
 }
 
 @media(max-width: "599px") {
+  .description-devices img {
+    width: 80%;
+    height: 60%;
+}
   .getStarted-logo {
     width: 60%;
   }
@@ -144,12 +149,13 @@ body {
 
   .content-header h2 {
     color: #232323 !important;
+    font-size: 36px !important;
   }
 
   .content-body p {
     color: rgba(46, 46, 46, 0.82) !important;
     opacity:  0.82;
-    font-size: 1rem !important;
+    font-size: 16px !important;
   }
 
   .scrolled-item {
@@ -356,6 +362,10 @@ body {
       font-size: 1.3rem !important;
     }
 
+    .extension-block p {
+      font-size: 0.9rem !important;
+    }
+
     .extension-block {
       margin-left: -30px;
     }
@@ -374,8 +384,8 @@ body {
     }
 
     .description-devices img {
-      width: 70%;
-      height: 50%;
+        width: 80%;
+        height: 60%;
     }
   }
   .scrolled-content-header {
