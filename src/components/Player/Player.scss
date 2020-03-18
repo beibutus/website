@@ -4,7 +4,7 @@ body {
 }
 
 /* Header of the page */
-.getStarted-header {
+.getStartedPlayer-header {
   background: no-repeat bottom/cover url("../../assets/images/bcgPlayerTop.png");
   text-align: center;
   margin-top: -100px;
@@ -104,6 +104,16 @@ body {
 
 .content {
   height: 350px !important;
+}
+
+.player-devices {
+  display: flex;
+  justify-content: center;
+}
+
+.player-devices img {
+  margin-top: 30px;
+  width: 50%;
 }
 
 .Description-Scroll {
@@ -313,6 +323,10 @@ body {
 }
 
 @media (max-width: 540px) {
+  .player-devices img {
+    width: 70%;
+    height: 50%;
+}
   .Description-Scroll {
     .tag {
       font-size: 0.8rem;

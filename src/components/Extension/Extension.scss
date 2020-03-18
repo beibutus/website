@@ -5,7 +5,7 @@ body {
 }
 
 /* Header of the page */
-.getStarted-header {
+.getStartedExt-header {
   background: no-repeat bottom/cover url("../../assets/images/bcgTop.png");
   text-align: center;
   margin-top: -100px;
@@ -37,8 +37,8 @@ body {
 
 @media(max-width: "599px") {
   .description-devices img {
-    width: 80%;
-    height: 60%;
+    width: 90% !important;
+    height: 80%;
 }
   .getStarted-logo {
     width: 60%;
@@ -381,11 +381,6 @@ body {
     .content {
       height: 380px !important;
       width: 95% !important;
-    }
-
-    .description-devices img {
-        width: 80%;
-        height: 60%;
     }
   }
   .scrolled-content-header {

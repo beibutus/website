@@ -58,21 +58,13 @@ export default class Player extends Component {
       <Fragment style={{ fontFamily: "Montserrat" }}>
         <Header text={this.props.text} />
 
-        <header className="getStarted-header">
+        <header className="getStartedPlayer-header">
           <div className="wrapper-getStarted">
             <div>
               <img src={PlayerLogo} className="getStarted-logo" alt="Logo_image"></img>
               <h1 className="getStarted-title">{this.getLangText("GetStartedPlayerText")}</h1>
             </div>
             <div className="getStarted-button">
-              <a
-                className="started-button top"
-                href="https://github.com/easably/platform-player-extension/releases/latest/download/EasyLang.Player-Beta-win.exe"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>{this.getLangText("GetPlayerButton")}</span>
-              </a>
               <a
                 className="started-button top"
                 href="https://github.com/easably/platform-player-extension/releases/latest/download/EasyLang.Player-Beta-win.exe"
@@ -148,7 +140,7 @@ export default class Player extends Component {
           </div>
         </div>
 
-        <div className="description-devices">
+        <div className="player-devices">
           <img src={devices_player_image} alt="Devices_image" />
         </div>
 

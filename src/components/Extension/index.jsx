@@ -58,7 +58,7 @@ export default class Extension extends Component {
       <Fragment style={{ fontFamily: "Montserrat" }}>
         <Header text={this.props.text} />
 
-        <header className="getStarted-header">
+        <header className="getStartedExt-header">
           <div className="wrapper-getStarted">
             <div>
               <img src={ExtensionLogo} className="getStarted-logo" alt="Logo_image"></img>
