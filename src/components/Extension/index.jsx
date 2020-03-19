@@ -139,7 +139,7 @@ export default class Extension extends Component {
 
           <div style={{ display: "flex" }}>
 
-            <div style={{ flex: "0 0 50%", paddingLeft: "5%" }}>
+            <div style={{ flex: "0 0 45%", paddingRight: "5%" }}>
               {this.extensionContent.map((content, i) => {
                 return (
                   <div
@@ -164,7 +164,7 @@ export default class Extension extends Component {
               })}
             </div>
 
-            <div style={{ flex: "0 0 50%", position: "relative" }}>
+            <div style={{ flex: "0 0 55%", position: "relative" }}>
               <div
                 style={{
                   width: "100%",

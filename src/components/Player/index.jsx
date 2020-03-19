@@ -23,7 +23,7 @@ export default class Player extends Component {
 
   componentDidMount() {
     document.addEventListener("scroll", this.scrollPageView);
-    
+
   }
 
   componentWillUnmount() {
@@ -65,14 +65,22 @@ export default class Player extends Component {
               <img src={PlayerLogo} className="getStarted-logo" alt="Logo_image"></img>
               <h1 className="getStarted-title">{this.getLangText("GetStartedPlayerText")}</h1>
             </div>
-            <div className="getStarted-button">
+            <div className="getStartedPlayer-button">
               <a
-                className="started-button top"
+                className="startedPlayer-button top"
+                href="https://github.com/easably/platform-player-extension/releases/latest/download/EasyLang.Player-Beta-mac.dmg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>{this.getLangText("GetPlayerButtonMac")}</span>
+              </a>
+              <a
+                className="startedPlayer-button top"
                 href="https://github.com/easably/platform-player-extension/releases/latest/download/EasyLang.Player-Beta-win.exe"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span>{this.getLangText("GetPlayerButton")}</span>
+                <span>{this.getLangText("GetPlayerButtonWindows")}</span>
               </a>
             </div>
             <div>
@@ -89,7 +97,7 @@ export default class Player extends Component {
 
           <div style={{ display: "flex" }}>
 
-            <div style={{ flex: "0 0 50%", paddingLeft: "5%" }}>
+            <div style={{ flex: "0 0 45%", paddingRight: "5%" }}>
               {playerContent.map((content, i) => {
                 return (
                   <div
@@ -114,7 +122,7 @@ export default class Player extends Component {
               })}
             </div>
 
-            <div style={{ flex: "0 0 50%", position: "relative" }}>
+            <div style={{ flex: "0 0 55%", position: "relative" }}>
               <div
                 style={{
                   width: "100%",
@@ -146,15 +154,22 @@ export default class Player extends Component {
         </div>
 
         <footer className="getStarted-footer">
-          <div className="getStarted-button">
+          <div className="getStartedPlayer-button">
             <a
-              className="started-button top"
-              style={{ marginTop: "-20px"}}
+              className="startedPlayer-button top"
+              href="https://github.com/easably/platform-player-extension/releases/latest/download/EasyLang.Player-Beta-mac.dmg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>{this.getLangText("GetPlayerButtonMac")}</span>
+            </a>
+            <a
+              className="startedPlayer-button top"
               href="https://github.com/easably/platform-player-extension/releases/latest/download/EasyLang.Player-Beta-win.exe"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>{this.getLangText("GetPlayerButton")}</span>
+              <span>{this.getLangText("GetPlayerButtonWindows")}</span>
             </a>
           </div>
         </footer>
