@@ -8,8 +8,8 @@ import "./Player.scss";
 import { playerImages } from "../../assets/images/products/scroll-pages/PlayerImagesStatic";
 import PlayerLogo from "../../assets/images/PlayerLogo.png";
 import devices_player_image from "../../assets/images/devices_player_image.png";
-
-import { playerContent } from "../../assets/scroll-content/player";
+import repeat from '../../assets/scroll-content/repeat.png';
+import subtitles from '../../assets/scroll-content/subtitles.png';
 
 
 export default class Player extends Component {
@@ -21,23 +21,81 @@ export default class Player extends Component {
 
   imgTopOffset = 150;
 
+  getLangText(text) {
+    return ReactHtmlParser(this.props.text[text]);
+  }
+
+  playerContent = [
+    {
+    header: <h2>{this.getLangText("FirstSlidePlayerHeader")}</h2>,
+      body: <p>{this.getLangText("FirstSlidePlayerBody")}</p>,
+      img: playerImages[0].src
+    },
+    {
+      header: <h2>{this.getLangText("SecondSlidePlayerHeader")}</h2>,
+      body: <p>{this.getLangText("SecondSlidePlayerBody")}</p>,
+      img: playerImages[1].src
+    },
+    {
+      header: <h2>{this.getLangText("ThirdSlidePlayerHeader")}</h2>,
+      body: <p>{this.getLangText("ThirdSlidePlayerBody")}</p>,
+      img: playerImages[2].src
+    },
+    {
+      header: <h2>{this.getLangText("FourthSlidePlayerHeader")}</h2>,
+      body: <p>{this.getLangText("FourthSlidePlayerBody")}</p>,
+      img: playerImages[3].src
+    },
+    {
+      header: <h2>{this.getLangText("FifthSlidePlayerHeader")}</h2>,
+      body: (
+        <>
+          <p>{this.getLangText("FifthSlidePlayerBody")}</p>
+          <img src={subtitles} alt="subtitles_image" style={{ width: "50%" }}/>
+        </>
+      ),
+      img: playerImages[4].src
+    },
+    {
+      header: <h2>{this.getLangText("SixthSlidePlayerHeader")}</h2>,
+      body: (
+              <>
+                <p>{this.getLangText("SixthSlidePlayerBody")}</p>
+                <img src={repeat} alt="subtitles_image" style={{ width: "50%", marginTop: "-16px" }}/>
+              </>
+      ),
+      img: playerImages[5].src
+    },
+    {
+      header: <h2>{this.getLangText("SeventhSlidePlayerHeader")}</h2>,
+      body: <p>{this.getLangText("SeventhSlidePlayerBody")}</p>,
+      img: playerImages[6].src
+    },
+    {
+      header: <h2>{this.getLangText("EightSlidePlayerHeader")}</h2>,
+      body: <p>{this.getLangText("EightSlidePlayerBody")}</p>,
+      img: playerImages[7].src
+    },
+    {
+      header: <h2>{this.getLangText("NinethSlidePlayerHeader")}</h2>,
+      body: <p>{this.getLangText("NinethSlidePlayerBody")}</p>,
+      img: playerImages[8].src
+    }
+  ];
+
+
   componentDidMount() {
     document.addEventListener("scroll", this.scrollPageView);
-
   }
 
   componentWillUnmount() {
     document.removeEventListener("scroll", this.scrollPageView);
   }
 
-  getLangText(text) {
-    return ReactHtmlParser(this.props.text[text]);
-  }
-
   scrollPageView = () => {
     const pos = window.pageYOffset;
 
-    playerContent.forEach((content, i, arr) => {
+    this.playerContent.forEach((content, i, arr) => {
       const el = content.parentRef;
       const nextItem = arr[i + 1] && arr[i + 1].parentRef;
 
@@ -98,7 +156,7 @@ export default class Player extends Component {
           <div style={{ display: "flex" }}>
 
             <div style={{ flex: "0 0 45%", paddingRight: "5%" }}>
-              {playerContent.map((content, i) => {
+              {this.playerContent.map((content, i) => {
                 return (
                   <div
                     className="extension-block"
