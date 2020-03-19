@@ -9,8 +9,6 @@ import { extensionImages } from "../../assets/images/products/scroll-pages/Exten
 import ExtensionLogo from "../../assets/images/ExtensionLogo.png";
 import devices_image from "../../assets/images/devices_image.png";
 
-import { extensionContent } from "../../assets/scroll-content/extension";
-
 
 export default class Extension extends Component {
 
@@ -21,6 +19,63 @@ export default class Extension extends Component {
 
   imgTopOffset = 150;
 
+  getLangText(text) {
+    return ReactHtmlParser(this.props.text[text]);
+  }
+
+  extensionContent = [
+    {
+    header: <h2>{this.getLangText("FirstSlideHeader")}</h2>,
+      body: <p>{this.getLangText("FirstSlideBody")}</p>,
+      img: extensionImages[0].src
+    },
+    {
+      header: <h2>{this.getLangText("SecondSlideHeader")}</h2>,
+      body: <p>{this.getLangText("SecondSlideBody")}</p>,
+      img: extensionImages[1].src
+    },
+    {
+      header: <h2>{this.getLangText("ThirdSlideHeader")}</h2>,
+      body: <p>{this.getLangText("ThirdSlideBody")}</p>,
+      img: extensionImages[2].src
+    },
+    {
+      header: <h2>{this.getLangText("FourthSlideHeader")}</h2>,
+      body: <p>{this.getLangText("FourthSlideBody")}</p>,
+      img: extensionImages[3].src
+    },
+    {
+      header: <h2>{this.getLangText("FifthSlideHeader")}</h2>,
+      body: <p>{this.getLangText("FifthSlideBody")}</p>,
+      img: extensionImages[4].src
+    },
+    {
+      header: <h2>{this.getLangText("SixthSlideHeader")}</h2>,
+      body: <p>{this.getLangText("SixthSlideBody")}</p>,
+      img: extensionImages[5].src
+    },
+    {
+      header: <h2>{this.getLangText("SeventhSlideHeader")}</h2>,
+      body: <p>{this.getLangText("SeventhSlideBody")}</p>,
+      img: extensionImages[6].src
+    },
+    {
+      header: <h2>{this.getLangText("EightSlideHeader")}</h2>,
+      body: <p>{this.getLangText("EightSlideBody")}</p>,
+      img: extensionImages[7].src
+    },
+    {
+      header: <h2>{this.getLangText("NinethSlideHeader")}</h2>,
+      body: <p>{this.getLangText("NinethSlideBody")}</p>,
+      img: extensionImages[8].src
+    },
+    {
+      header:  <h2>{this.getLangText("TenthSlideHeader")}</h2>,
+      body: <p>{this.getLangText("TenthSlideBody")}</p>,
+      img: extensionImages[9].src
+    }
+  ];
+
   componentDidMount() {
     document.addEventListener("scroll", this.scrollPageView);
   }
@@ -29,14 +84,10 @@ export default class Extension extends Component {
     document.removeEventListener("scroll", this.scrollPageView);
   }
 
-  getLangText(text) {
-    return ReactHtmlParser(this.props.text[text]);
-  }
-
   scrollPageView = () => {
     const pos = window.pageYOffset;
 
-    extensionContent.forEach((content, i, arr) => {
+    this.extensionContent.forEach((content, i, arr) => {
       const el = content.parentRef;
       const nextItem = arr[i + 1] && arr[i + 1].parentRef;
 
@@ -89,7 +140,7 @@ export default class Extension extends Component {
           <div style={{ display: "flex" }}>
 
             <div style={{ flex: "0 0 50%", paddingLeft: "5%" }}>
-              {extensionContent.map((content, i) => {
+              {this.extensionContent.map((content, i) => {
                 return (
                   <div
                     className="extension-block"

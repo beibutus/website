@@ -23,6 +23,7 @@ export default class Player extends Component {
 
   componentDidMount() {
     document.addEventListener("scroll", this.scrollPageView);
+    
   }
 
   componentWillUnmount() {

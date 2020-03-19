@@ -1,3 +1,5 @@
+
+
 {
   "HOME_PAGE": "HOME_PAGE",
 
@@ -64,44 +66,40 @@
 
 
   "EXTENSION_PAGE": "EXTENSION_PAGE",
-  "AddToChromeButton": "Добавить в Chrome",
   "GetStartedButton": "Начать бесплатно",
   "GetStartedText": "Удобное расширение <br/> в Google Chrome для изучения языка",
   "GetStartedBottomText": "Переводи слова прямо в тексте или фильме <br/> Собирай их в персональные уроки <br/> Повторяй слова в точном контексте <br /> Понимай шутки на иностранном языке <br/> Расширяй свой словарный запас <br /> Изучай и повторяй слова с Context Tutor",
   "ScrolledContentHeader": "Мощный инструмент <br/> для изучения языка",
-  "ExtensionHeader": "Читай статьи, смотри фильмы и узнавай, <br/> о чём твои любимые песни",
-  "ExtensionTopText": "Переводи слова прямо в тексте или фильме <br/> Собирай их в персональные уроки <br/> Повторяй слова в точном контексте <br /> Понимай шутки на иностранном языке <br/> Расширяй свой словарный запас <br /> <strong>Изучай и повторяй слова с Context Tutor</strong>",
-  "ExtensionFirstHeader": "Добавьте расширение в браузер Google Chrome",
-  "ExtensionSecondHeader": "Выделите слово или выражение",
-  "ExtensionSecondText_1": "Вы можете переводить выражение или целое предложение. После добавления слова (Add selected), Easyland спрячет его прямо в тексте. Вы можете постараться вспомнить его значение и написание или «подсмотреть» слово.",
-  "ExtensionSecondText_2": "Для изучения слова, мы сохраним 2-3 предложения из контекста. чтобы вы смогли вспомнить его значение.",
-  "ExtensionSecondText_3": "Уроки мы сохраним в Context Tutor.",
-  "ExtensionThirddHeader": "Вернитесь к любимым материалам",
-  "ExtensionThirdText": "Расширение для браузера сохраняет страницы, на которых вы ншли новые слова. Если вы захотите вернуться и перечитать статью — просто нажмите на ссылку.",
-  "ExtensionFourthHeader": "Откройте Context Tutor в браузере или на мобильном",
-  "ExtensionFourthText_1": "Нажмите на ссылку в расширении, чтобы перейти к урокам.",
-  "ExtensionFourthText_2": "Изучение языка с Context Tutor основано на повторении слов, поэтому мы скрываем слова в выбранном контексте, а вы стараетесь вспомнить их значение и написание. Выполняя задание вы вводите каждую букву слова.",
-  "ExtensionFourthText_3": "Не волнуйтесь, если забыли что-то! Всегда можно воспользоваться подсказкой и открыть букву или слово.",
+  "FirstSlideHeader": "Выбирайте <br/> любой материал",
+  "FirstSlideBody": "Каждая статья в интернете может стать <br/> стоящим материалом для изучения иностранного языка. <br/> <br/> Главное чтобы вы наслаждались этим материалом.",
+  "SecondSlideHeader": "Выделяйте слово",
+  "SecondSlideBody": "Можно выбрать для перевода слово, <br/> несколько слов или целое предложение. <br/><br/> Еще мы можем быстро отправить выделенную <br/> часть на перевод",
+  "ThirdSlideHeader": "Переводите его",
+  "ThirdSlideBody": "Вы можете держать окно переводчика открытым, <br/> мы с ним все время на связи.",
+  "FourthSlideHeader": "Сохраняйте слово <br /> для повторения",
+  "FourthSlideBody": "Если вы выберете функцию “Save to Tutor”, <br/> мы сохраним слово для комфортного повторения.",
+  "FifthSlideHeader": "В одном списке <br /> вся история обучения",
+  "FifthSlideBody": "Вы много читаете, но только часть из <br/> прочитанных страниц будет использована <br/> для обучения на иностранном языке.",
+  "SixthSlideHeader": "Повторяй слова <br/> прямо в статье",
+  "SixthSlideBody": "У Вас будет возможность вернуться на страницы <br/> которые заинтересовали Вас, где мы скроем слова <br/> для максимального эффекта. <br/><br/> У Вас также будет возможность их открыть <br/> если Вы захотите.",
+  "SeventhSlideHeader": "Открой тренажер",
+  "SeventhSlideBody": "Игры для повтора слов можно вызвать прямо <br/> из вашей Tutor истории.",
+  "EightSlideHeader": "Одна статья - один урок",
+  "EightSlideBody": "Ваши уроки будут удобно рассортированы <br/> по материалам которые вы читали  или будут <br/>сгруппированы по дням когда вы <br/> познакомились со словом на иностранном языке",
+  "NinethSlideHeader": "Просто отсканируйте",
+  "NinethSlideBody": "Чтобы из компьютера было легко перейти на <br/> мобильные игры - просто отсканируйте QR <br/> во вкладке “Open Tutor on mobile”.",
+  "TenthSlideHeader": "И будь мобильным! <br /> Не теряй время!",
+  "TenthSlideBody": "Теперь повторять материал можно везде, <br/> а с играми которые мы создали для Вас это будет <br/> намного интереснее!",
+
+
+
+  
 
   "PLAYER_PAGE": "PLAYER_PAGE",
   "GetPlayerButton": "Скачать бесплатно",
   "GetStartedPlayerText": "Удобная программа <br/> для изучения иностранного языка",
   "ScrolledContentPlayerHeader": "Еще один мощный инструмент <br/> для изучения языка",
   "PlayerHeader": "Watch videos subtitle by subtitle <br /> to practice your audition",
-  "PlayerTopText": "Watch videos you like <br /> Add subtitles in any languages <br /> Don’t miss a phrase",
-  "PlayerFirstHeader": "Install EasyPlayer!",
-  "PlayerSecondHeader": "Default Player Top Text",
-  "PlayerSecondText_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br /> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />",
-  "PlayerSecondText_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br /> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />",
-  "PlayerSecondText_3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-  "PlayerThirddHeader": "Default Player Top Text",
-  "PlayerThirdText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br /> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />",
-  "PlayerFourthHeader": "Default Player Top Text",
-  "PlayerFourthText_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-  "PlayerFourthText_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br /> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />",
-  "PlayerFourthText_3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br /> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />",
-  "PlayerFifthHeader": "Default Player Top Text",
-  "PlayerFifthText_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-  "PlayerSixthHeader": "Default Player Top Text",
-  "PlayerSixthText_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+  "PlayerTopText": "Watch videos you like <br /> Add subtitles in any languages <br /> Don’t miss a phrase"
+
 }
