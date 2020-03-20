@@ -1,0 +1,554 @@
+
+body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Header of the page */
+  .getStartedPlans-header {
+    background: no-repeat bottom/cover url("../../assets/images/Plans/bcgPlans.svg");
+    text-align: center;
+    margin-top: -100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .wrapper-getStartedPlans {
+    padding: 1% 0 4%;
+    font-family: "Montserrat", sans-serif !important;
+  }
+  
+  /*extension header styles*/
+  
+  .getStarted-logo {
+    text-align: center;
+    padding-top: 5%;
+  }
+  
+  .getStartedPlans-title {
+    text-transform: uppercase;
+    text-align: left;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1.41px;
+    margin: 3% 15% 2%;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 73px;
+  }
+  
+  .getStartedPlans-subtitle {
+    color:  #E6EAFF;
+    text-align: left;
+    margin: 0.5% 15% 0;
+    font-size: 40px;
+    opacity: 0.8;
+    line-height: 49px;
+    letter-spacing: 1.41px;
+    padding-top: 2%;
+  }
+
+  .plans-container {
+    color: #fff;
+    margin: 7% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .plans-item {
+    background-color: #fff;
+    border-radius: 60px;
+    box-shadow: 0px 4px 40px rgba(42, 82, 130, 0.12);
+    width: 530px;
+    height: 729px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2%;
+  }
+
+  .plans-item-center {
+    background-color: #fff;
+    border-radius: 60px;
+    box-shadow: 0px 4px 40px rgba(42, 82, 130, 0.12);
+    width: 560px;
+    height: 760px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2%;
+  }
+
+  .plans-content {
+    width: 90%;
+    height: 80%;
+    margin: 13% 0 5%;
+    align-items: center;
+  }
+
+  .plans-content h2 { 
+    color: #759CCB;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 1.41px;
+    text-transform: uppercase;
+  }
+
+  .plans-content h1 { 
+    padding-top: 20px;
+    color: #132E52;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 85px;
+    letter-spacing: 1.41px;
+    opacity: 0.8;
+  }
+
+  .plans-content p {
+    color: #132E52;
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 1.41px;
+    opacity: 0.6;
+  }
+
+  .advantages-block {
+    margin-top: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantages-item {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    padding: 5% 7%;
+    border-top: 1.9px solid #ECEFFF;
+  }
+
+  .advantages-item img {
+    width: 14px;
+    height: 14px;
+    margin-right: 4%;
+    margin-top: 4%;
+  }
+
+  .advantages-item p {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 1.41px;
+  }
+
+  .plans-button {
+    font-family: "Montserrat", sans-serif !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    &.bottom{
+      margin: 0;
+      transform: translateY(-50%);
+    }
+  }
+  
+  .plans-started-button {
+    display: block;
+    width: auto;
+  
+    font-size: 26px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 32px;
+  
+    background-color: #34D086;
+    border: none;
+    border-radius: 110px;
+    transition: all 0.3s linear;
+    &:hover {
+      background-color: #ffb43f;
+    }
+    &.top,&.bottom{
+      display: flex;
+      align-items: center;
+      padding: 3% 7%;
+    }
+    &.bottom {
+      font-size: 1.4rem;
+    }
+    &.blog-button {
+      padding: 20px 20px;
+      max-width: 360px;
+    }
+  }
+  
+  
+  .Description-Scroll {
+  
+    .extension-header-top {
+      width: 100%;
+    }
+  
+    .content-header h2 {
+      color: #232323 !important;
+      font-size: 36px !important;
+      margin-bottom: 9%;
+    }
+  
+    .content-body p {
+      color: rgba(46, 46, 46, 0.82) !important;
+      opacity:  0.82;
+      font-size: 15px !important;
+    }
+  
+    .scrolled-item {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+  
+    padding: 1% 8% 25% !important;
+    margin-bottom: 100px !important;
+  }
+  
+  .Description-Scroll-image {
+    padding-top: 40px;
+  
+    img {
+      width: 60%;
+      height: 100%;
+    }
+  }
+  
+  .Description-Scroll {
+    img {
+      display: block;
+      margin: 0 auto;
+  
+      /* max-width: 100%; */
+      max-height: 60rem;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      text-align: left;
+      line-height: 2rem;
+      margin: 25px 0;
+    }
+  
+    h1, h2, h3, h4, h5 {
+      margin: 25px 0;
+    }
+  
+    h3, h4, h5 {
+      text-align: left;
+      font-weight: bold;
+    }
+  
+    h1 {
+      margin: 0 0 10px;
+      font-size: 1.4rem;
+      text-align: center;
+      padding: 10px 0;
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+  
+    h2 {
+      font-size: 2.3rem;
+      font-weight: 900;
+    }
+  
+    h3 {
+      font-size: 1.2rem;
+    }
+  
+    h4 {
+      font-size: 1.1rem;
+    }
+  
+    ul {
+      text-align: left;
+    }
+  
+    li {
+      margin: 15px 0 0 35px;
+      list-style: initial;
+    }
+  
+    a {
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+  
+      &:hover {
+        color: red;
+      }
+    }
+  
+    .footer-button {
+      margin-top: 30%;
+    }
+  
+    .extension-block {
+      margin-bottom: 50px;
+    }
+  
+    .extension-header {
+      display: flex;
+    }
+  
+    .button-extension {
+      padding-top: 20px;
+      margin-left: 0 !important;
+      margin-bottom: 50px;
+    }
+  
+    .button-started-extension {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 2%;
+    }
+  
+    .get-started-button-extension {
+      display: block;
+      font-size: 1.2rem !important;
+      text-transform: capitalize;
+      color: #fff !important;
+      background: #1E4470 !important;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 34.5px;
+      padding: 2% 8% !important;
+      transition: all 0.3s linear;
+      width: fit-content;
+  
+      &:hover {
+        background-color: #f26d6d;
+      }
+  
+      &.top, &.bottom {
+        display: flex;
+        align-items: center;
+      }
+  
+      &.top .icon, &.bottom .icon {
+        padding-right: 5%;
+        margin-bottom: 4%;
+        flex: 0 0 auto;
+        height: 2.5rem;
+      }
+  
+      &.top span {
+        flex: 0 0 auto;
+      }
+  
+      &.bottom {
+        span {
+          flex: 0 0 auto;
+        }
+  
+        font-size: 1.2rem;
+      }
+    }
+  
+    .get-started-button-extension-bottom {
+      display: block;
+      font-size: 1.2rem !important;
+      text-transform: capitalize;
+      color: #fff !important;
+      background: #1E4470 !important;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 34.5px;
+      padding: 1% 4% !important;
+      transition: all 0.3s linear;
+      width: fit-content;
+  
+      &.top, &.bottom {
+        display: flex;
+        align-items: center;
+      }
+  
+      &.top .icon, &.bottom .icon {
+        padding-right: 5%;
+        margin-bottom: 4%;
+        flex: 0 0 auto;
+        height: 2.5rem;
+      }
+    }
+  }
+  
+  /* 13 - Extension Description */
+  
+  /* Get Extension top button */
+  
+  /* Get Extension bottom button */
+  
+  .Description-Scroll .get-started-button-extension-bottom.top span, .Description-Scroll .get-started-button-extension-bottom.bottom span {
+    flex: 0 0 auto;
+  }
+  
+  .iphone-wrapper {
+    display: flex;
+  }
+
+  @media(max-width: "599px") {
+    .getStartedPlans-title {
+        font-size: 18px !important;
+        line-height: 22px !important;
+    }
+
+    .getStartedPlans-subtitle {
+        font-size: 14px !important;
+        line-height: 150% !important;
+    }
+
+    .plans-container {
+      color: #fff;
+      margin: 7% 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+  
+    .plans-item {
+      width: 72%;
+      height: 400px;
+      margin: 8% 2%;
+    }
+
+    .plans-item-center {
+      width: 72%;
+      height: 400px;
+      margin: 8% 2%;
+    }
+
+    .plans-content h2 { 
+      color: #759CCB;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 1.41px;
+      text-transform: uppercase;
+    }
+  
+    .plans-content h1 { 
+      padding-top: 20px;
+      color: #132E52;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 36px;
+      line-height: 44px;
+      letter-spacing: 1.41px;
+      opacity: 0.8;
+    }
+  
+    .plans-content p {
+      color: #132E52;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 1.41px;
+      opacity: 0.6;
+    }
+
+    .plans-button {
+      font-family: "Montserrat", sans-serif !important;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 20%;
+      &.bottom{
+        margin: 0;
+        transform: translateY(-50%);
+      }
+    }
+    
+    .plans-started-button {
+      display: block;
+      width: auto;
+    
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: #fff;
+      font-weight: 800;
+      font-style: normal;
+      line-height: 17px;
+    
+      background-color: #34D086;
+      border: none;
+      border-radius: 110px;
+      transition: all 0.3s linear;
+      &:hover {
+        background-color: #ffb43f;
+      }
+      &.top,&.bottom{
+        display: flex;
+        align-items: center;
+        padding: 3% 7%;
+      }
+      &.bottom {
+        font-size: 1.4rem;
+      }
+      &.blog-button {
+        padding: 20px 20px;
+        max-width: 360px;
+      }
+    }
+  }
+  
+  @media (max-width: 540px) {
+    .Description-Scroll {
+      margin-bottom: 0 !important;
+  
+      .tag {
+        font-size: 0.8rem;
+      }
+  
+      .extension-block h2 {
+        font-size: 1.3rem !important;
+      }
+  
+      .extension-block p {
+        font-size: 0.9rem !important;
+      }
+  
+      .extension-block {
+        margin-left: -30px;
+      }
+  
+      .icon {
+        width: 20px;
+      }
+  
+      .get-started-button-extension {
+        padding-right: 2% 5%;
+      }
+  
+      .content {
+        height: 380px !important;
+        margin: 3px;
+        width: 100% !important;
+      }
+    }
+    .scrolled-content-header {
+      font-size: 1.3rem;
+      line-height: 30px;
+    }
+  }
+  
+  

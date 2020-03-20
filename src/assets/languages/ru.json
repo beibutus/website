@@ -116,5 +116,12 @@
   "EightSlidePlayerHeader": "Список предложений",
   "EightSlidePlayerBody": "Благодаря списку легко ориентироваться по фильму. <br/><br/> И видеть те предложения где вы добавили слово для изучения.",
   "NinethSlidePlayerHeader": "Для повтора слов <br/> используйте наши игры",
-  "NinethSlidePlayerBody": "Для того чтобы открыть игры, просто отсканируйте QR код. "
+  "NinethSlidePlayerBody": "Для того чтобы открыть игры, просто отсканируйте QR код. ",
+
+
+  "PLANS_PAGE": "PLANS_PAGE",
+  "PlansTitle": "We are a free OpenSource startup that strives to help people!",
+  "PlansFirstSubtitle": "Our company has to buy services from Google. Consider supporting our efforts If you enjoy Easylang by choosing our premium-services!",
+  "PlansSecondSubtitle": "We do not limit our common user experience, but it comes at a cost of comfort."
+
 }

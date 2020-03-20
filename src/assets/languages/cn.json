@@ -114,5 +114,10 @@
       "EightSlidePlayerHeader": "Subtitles list",
       "EightSlidePlayerBody": "List on the side will help you navigate through the movie. <br/><br/> You will also be able to see what you added to your lessons.",
       "NinethSlidePlayerHeader": "Play our games to revise",
-      "NinethSlidePlayerBody": "In order to play scan the QR code."
+      "NinethSlidePlayerBody": "In order to play scan the QR code.",
+
+      "PLANS_PAGE": "PLANS_PAGE",
+      "PlansTitle": "We are a free OpenSource startup that strives to help people!",
+      "PlansFirstSubtitle": "Our company has to buy services from Google. Consider supporting our efforts If you enjoy Easylang by choosing our premium-services!",
+      "PlansSecondSubtitle": "We do not limit our common user experience, but it comes at a cost of comfort."
 }
