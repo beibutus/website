@@ -5,7 +5,6 @@ import Header from "../Header";
 import "./Plans.scss";
 
 import green_tick from '../../assets/images/Plans/green-tick.png';
-import red_dot from '../../assets/images/Plans/red-dot.png';
 
 export default class Plans extends Component {
 
@@ -39,13 +38,14 @@ export default class Plans extends Component {
                       <p>Full functionality</p>
                     </div>
                     <div className="advantages-item">
-                      <img src={red_dot} />
-                      <p>10 translations/day</p>
+                      <p>10 translations/day limit. <br/>
+                        <span style={{ fontWeight: "normal" }}>After whish we send you direct link to translation</span>
+                      </p>
                     </div>
                   </div>
                   <div className="plans-button">
                     <a
-                      className="plans-started-button top"
+                      className="plans-started-button top blue-button"
                       href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -56,9 +56,9 @@ export default class Plans extends Component {
                 </div>
               </div>
 
-              <div className="plans-item-center">
+              <div className="plans-item">
                 <div className="plans-content">
-                  <h2>Premium</h2>
+                  <h2 style={{ color: "#FF7C82" }}>Premium</h2>
                   <h1>$7.99</h1>
                   <p>For all time</p>
                   <div className="advantages-block">
@@ -67,7 +67,7 @@ export default class Plans extends Component {
                       <p>Full functionality</p>
                     </div>
                     <div className="advantages-item">
-                      <img src={red_dot} />
+                      <img src={green_tick} />
                       <p>10 translations/day</p>
                     </div>
                   </div>
@@ -86,16 +86,17 @@ export default class Plans extends Component {
 
               <div className="plans-item">
                 <div className="plans-content">
-                <h2>Premium</h2>
+                <h2 style={{ color: "#FF7C82" }}>Premium</h2>
                   <h1>$5.99</h1>
                   <p>For all time</p>
+                  <p>if you pay $59.88 for year</p>
                   <div className="advantages-block">
                     <div className="advantages-item">
                       <img src={green_tick} />
                       <p>Full functionality</p>
                     </div>
                     <div className="advantages-item">
-                      <img src={red_dot} />
+                      <img src={green_tick} />
                       <p>10 translations/day</p>
                     </div>
                   </div>
