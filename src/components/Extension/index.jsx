@@ -5,9 +5,12 @@ import Header from "../Header";
 
 import "./Extension.scss";
 
+import "./ExtensionHeader.jsx";
+import "./ExtensionFooter.jsx";
+
 import { extensionImages } from "../../assets/images/products/scroll-pages/ExtensionImagesStatic";
-import ExtensionLogo from "../../assets/images/ExtensionLogo.png";
-import devices_image from "../../assets/images/devices_image.png";
+import ExtensionHeader from "./ExtensionHeader.jsx";
+import ExtensionFooter from "./ExtensionFooter.jsx";
 
 
 export default class Extension extends Component {
@@ -25,7 +28,7 @@ export default class Extension extends Component {
 
   extensionContent = [
     {
-    header: <h2>{this.getLangText("FirstSlideExtensionHeader")}</h2>,
+      header: <h2>{this.getLangText("FirstSlideExtensionHeader")}</h2>,
       body: <p>{this.getLangText("FirstSlideExtensionBody")}</p>,
       img: extensionImages[0].src
     },
@@ -70,7 +73,7 @@ export default class Extension extends Component {
       img: extensionImages[8].src
     },
     {
-      header:  <h2>{this.getLangText("TenthSlideExtensionHeader")}</h2>,
+      header: <h2>{this.getLangText("TenthSlideExtensionHeader")}</h2>,
       body: <p>{this.getLangText("TenthSlideExtensionBody")}</p>,
       img: extensionImages[9].src
     }
@@ -105,31 +108,12 @@ export default class Extension extends Component {
   };
 
   render() {
+
     return (
       <Fragment style={{ fontFamily: "Montserrat" }}>
         <Header text={this.props.text} />
 
-        <header className="getStartedExt-header">
-          <div className="wrapper-getStarted">
-            <div>
-              <img src={ExtensionLogo} className="getStarted-logo" alt="Logo_image"></img>
-              <h1 className="getStarted-title">{this.getLangText("GetStartedText")}</h1>
-            </div>
-            <div className="getStarted-button">
-              <a
-                className="started-button top"
-                href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>{this.getLangText("GetStartedButton")}</span>
-              </a>
-            </div>
-            <div>
-              <p className="getStarted-subtitle">{this.getLangText("GetStartedBottomText")}</p>
-            </div>
-          </div>
-        </header>
+        <ExtensionHeader text={this.props.text} />
 
         <div className="scrolled-content-header">
           <h1>{this.getLangText("ScrolledContentHeader")}</h1>
@@ -191,23 +175,7 @@ export default class Extension extends Component {
           </div>
         </div>
 
-        <div className="description-devices">
-          <img src={devices_image} alt="Devices_image" />
-        </div>
-
-        <footer className="getStarted-footer">
-          <div className="getStarted-button">
-            <a
-              className="started-button top"
-              style={{ marginTop: "-20px"}}
-              href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span>{this.getLangText("GetStartedButton")}</span>
-            </a>
-          </div>
-        </footer>
+        <ExtensionFooter text={this.props.text} />
 
       </Fragment>
     );

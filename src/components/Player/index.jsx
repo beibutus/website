@@ -5,11 +5,14 @@ import Header from "../Header";
 
 import "./Player.scss";
 
+import "./PlayerHeader.jsx";
+import "./PlayerFooter.jsx";
+
 import { playerImages } from "../../assets/images/products/scroll-pages/PlayerImagesStatic";
-import PlayerLogo from "../../assets/images/PlayerLogo.png";
-import devices_player_image from "../../assets/images/devices_player_image.png";
 import repeat from '../../assets/scroll-content/repeat.png';
 import subtitles from '../../assets/scroll-content/subtitles.png';
+import PlayerHeader from "./PlayerHeader.jsx";
+import PlayerFooter from "./PlayerFooter.jsx";
 
 
 export default class Player extends Component {
@@ -116,37 +119,10 @@ export default class Player extends Component {
     return (
       <Fragment style={{ fontFamily: "Montserrat" }}>
         <Header text={this.props.text} />
+        <PlayerHeader text={this.props.text} />
 
-        <header className="getStartedPlayer-header">
-          <div className="wrapper-getStarted">
-            <div>
-              <img src={PlayerLogo} className="getStarted-logo" alt="Logo_image"></img>
-              <h1 className="getStarted-title">{this.getLangText("GetStartedPlayerText")}</h1>
-            </div>
-            <div className="getStartedPlayer-button">
-              <a
-                className="startedPlayer-button top"
-                href="https://github.com/easably/platform-player-extension/releases/latest/download/EasyLang.Player-Beta-mac.dmg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>{this.getLangText("GetPlayerButtonMac")}</span>
-              </a>
-              <a
-                className="startedPlayer-button top"
-                href="https://github.com/easably/platform-player-extension/releases/latest/download/EasyLang.Player-Beta-win.exe"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>{this.getLangText("GetPlayerButtonWindows")}</span>
-              </a>
-            </div>
-            <div>
-              <p className="getStarted-subtitle">{this.getLangText("GetStartedBottomText")}</p>
-            </div>
-          </div>
-        </header>
 
+        {/* Extension Scroll Content */}
         <div className="scrolled-content-header">
           <h1>{this.getLangText("ScrolledContentPlayerHeader")}</h1>
         </div>
@@ -207,31 +183,7 @@ export default class Player extends Component {
           </div>
         </div>
 
-        <div className="player-devices">
-          <img src={devices_player_image} alt="Devices_image" />
-        </div>
-
-        <footer className="getStarted-footer">
-          <div className="getStartedPlayer-button">
-            <a
-              className="startedPlayer-button top"
-              href="https://github.com/easably/platform-player-extension/releases/latest/download/EasyLang.Player-Beta-mac.dmg"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span>{this.getLangText("GetPlayerButtonMac")}</span>
-            </a>
-            <a
-              className="startedPlayer-button top"
-              href="https://github.com/easably/platform-player-extension/releases/latest/download/EasyLang.Player-Beta-win.exe"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span>{this.getLangText("GetPlayerButtonWindows")}</span>
-            </a>
-          </div>
-        </footer>
-
+        <PlayerFooter text={this.props.text} />
       </Fragment>
     );
   }
