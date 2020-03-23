@@ -24,7 +24,7 @@ export default class App extends React.Component {
       window.gtag("config", "UA-4027447-9", {
         page_title: document.title,
         page_location: this.props.location.href,
-        page_path: this.props.location.pathname + this.props.location.search
+        page_path: this.props.location.pathname + this.props.location.search.text
       });
     }
 

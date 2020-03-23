@@ -28,53 +28,53 @@ export default class Extension extends Component {
 
   extensionContent = [
     {
-      header: <h2>{this.getLangText("FirstSlideExtensionHeader")}</h2>,
-      body: <p>{this.getLangText("FirstSlideExtensionBody")}</p>,
+      header: <h2>{this.getLangText("1-SlideExtensionHeader")}</h2>,
+      body: <p>{this.getLangText("1-SlideExtensionBody")}</p>,
       img: extensionImages[0].src
     },
     {
-      header: <h2>{this.getLangText("SecondSlideExtensionHeader")}</h2>,
-      body: <p>{this.getLangText("SecondSlideExtensionBody")}</p>,
+      header: <h2>{this.getLangText("2-SlideExtensionHeader")}</h2>,
+      body: <p>{this.getLangText("2-SlideExtensionBody")}</p>,
       img: extensionImages[1].src
     },
     {
-      header: <h2>{this.getLangText("ThirdSlideExtensionHeader")}</h2>,
-      body: <p>{this.getLangText("ThirdSlideExtensionBody")}</p>,
+      header: <h2>{this.getLangText("3-SlideExtensionHeader")}</h2>,
+      body: <p>{this.getLangText("3-SlideExtensionBody")}</p>,
       img: extensionImages[2].src
     },
     {
-      header: <h2>{this.getLangText("FourthSlideExtensionHeader")}</h2>,
-      body: <p>{this.getLangText("FourthSlideExtensionBody")}</p>,
+      header: <h2>{this.getLangText("4-SlideExtensionHeader")}</h2>,
+      body: <p>{this.getLangText("4-SlideExtensionBody")}</p>,
       img: extensionImages[3].src
     },
     {
-      header: <h2>{this.getLangText("FifthSlideExtensionHeader")}</h2>,
-      body: <p>{this.getLangText("FifthSlideExtensionBody")}</p>,
+      header: <h2>{this.getLangText("5-SlideExtensionHeader")}</h2>,
+      body: <p>{this.getLangText("5-SlideExtensionBody")}</p>,
       img: extensionImages[4].src
     },
     {
-      header: <h2>{this.getLangText("SixthSlideExtensionHeader")}</h2>,
-      body: <p>{this.getLangText("SixthSlideExtensionBody")}</p>,
+      header: <h2>{this.getLangText("6-SlideExtensionHeader")}</h2>,
+      body: <p>{this.getLangText("6-SlideExtensionBody")}</p>,
       img: extensionImages[5].src
     },
     {
-      header: <h2>{this.getLangText("SeventhSlideExtensionHeader")}</h2>,
-      body: <p>{this.getLangText("SeventhSlideExtensionBody")}</p>,
+      header: <h2>{this.getLangText("7-SlideExtensionHeader")}</h2>,
+      body: <p>{this.getLangText("7-SlideExtensionBody")}</p>,
       img: extensionImages[6].src
     },
     {
-      header: <h2>{this.getLangText("EightSlideExtensionHeader")}</h2>,
-      body: <p>{this.getLangText("EightSlideExtensionBody")}</p>,
+      header: <h2>{this.getLangText("8-SlideExtensionHeader")}</h2>,
+      body: <p>{this.getLangText("8-SlideExtensionBody")}</p>,
       img: extensionImages[7].src
     },
     {
-      header: <h2>{this.getLangText("NinethSlideExtensionHeader")}</h2>,
-      body: <p>{this.getLangText("NinethSlideExtensionBody")}</p>,
+      header: <h2>{this.getLangText("9-SlideExtensionHeader")}</h2>,
+      body: <p>{this.getLangText("9-SlideExtensionBody")}</p>,
       img: extensionImages[8].src
     },
     {
-      header: <h2>{this.getLangText("TenthSlideExtensionHeader")}</h2>,
-      body: <p>{this.getLangText("TenthSlideExtensionBody")}</p>,
+      header: <h2>{this.getLangText("10-SlideExtensionHeader")}</h2>,
+      body: <p>{this.getLangText("10-SlideExtensionBody")}</p>,
       img: extensionImages[9].src
     }
   ];

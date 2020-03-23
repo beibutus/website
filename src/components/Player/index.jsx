@@ -30,62 +30,61 @@ export default class Player extends Component {
 
   playerContent = [
     {
-    header: <h2>{this.getLangText("FirstSlidePlayerHeader")}</h2>,
-      body: <p>{this.getLangText("FirstSlidePlayerBody")}</p>,
+    header: <h2>{this.getLangText("1-SlidePlayerHeader")}</h2>,
+      body: <p>{this.getLangText("1-SlidePlayerBody")}</p>,
       img: playerImages[0].src
     },
     {
-      header: <h2>{this.getLangText("SecondSlidePlayerHeader")}</h2>,
-      body: <p>{this.getLangText("SecondSlidePlayerBody")}</p>,
+      header: <h2>{this.getLangText("2-SlidePlayerHeader")}</h2>,
+      body: <p>{this.getLangText("2-SlidePlayerBody")}</p>,
       img: playerImages[1].src
     },
     {
-      header: <h2>{this.getLangText("ThirdSlidePlayerHeader")}</h2>,
-      body: <p>{this.getLangText("ThirdSlidePlayerBody")}</p>,
+      header: <h2>{this.getLangText("3-SlidePlayerHeader")}</h2>,
+      body: <p>{this.getLangText("3-SlidePlayerBody")}</p>,
       img: playerImages[2].src
     },
     {
-      header: <h2>{this.getLangText("FourthSlidePlayerHeader")}</h2>,
-      body: <p>{this.getLangText("FourthSlidePlayerBody")}</p>,
+      header: <h2>{this.getLangText("4-SlidePlayerHeader")}</h2>,
+      body: <p>{this.getLangText("4-SlidePlayerBody")}</p>,
       img: playerImages[3].src
     },
     {
-      header: <h2>{this.getLangText("FifthSlidePlayerHeader")}</h2>,
+      header: <h2>{this.getLangText("5-SlidePlayerHeader")}</h2>,
       body: (
         <>
-          <p>{this.getLangText("FifthSlidePlayerBody")}</p>
+          <p>{this.getLangText("5-SlidePlayerBody")}</p>
           <img src={subtitles} alt="subtitles_image" style={{ width: "50%" }}/>
         </>
       ),
       img: playerImages[4].src
     },
     {
-      header: <h2>{this.getLangText("SixthSlidePlayerHeader")}</h2>,
+      header: <h2>{this.getLangText("6-SlidePlayerHeader")}</h2>,
       body: (
               <>
-                <p>{this.getLangText("SixthSlidePlayerBody")}</p>
-                <img src={repeat} alt="subtitles_image" style={{ width: "50%", marginTop: "-16px" }}/>
+                <p>{this.getLangText("6-SlidePlayerBody")}</p>
+                <img src={repeat} alt="subtitles_image" style={{ width: "50%" }}/>
               </>
       ),
       img: playerImages[5].src
     },
     {
-      header: <h2>{this.getLangText("SeventhSlidePlayerHeader")}</h2>,
-      body: <p>{this.getLangText("SeventhSlidePlayerBody")}</p>,
+      header: <h2 style={{ marginTop: "50px" }}>{this.getLangText("7-SlidePlayerHeader")}</h2>,
+      body: <p>{this.getLangText("7-SlidePlayerBody")}</p>,
       img: playerImages[6].src
     },
     {
-      header: <h2>{this.getLangText("EightSlidePlayerHeader")}</h2>,
-      body: <p>{this.getLangText("EightSlidePlayerBody")}</p>,
+      header: <h2>{this.getLangText("8-SlidePlayerHeader")}</h2>,
+      body: <p>{this.getLangText("8-SlidePlayerBody")}</p>,
       img: playerImages[7].src
     },
     {
-      header: <h2>{this.getLangText("NinethSlidePlayerHeader")}</h2>,
-      body: <p>{this.getLangText("NinethSlidePlayerBody")}</p>,
+      header: <h2>{this.getLangText("9-SlidePlayerHeader")}</h2>,
+      body: <p>{this.getLangText("9-SlidePlayerBody")}</p>,
       img: playerImages[8].src
     }
   ];
-
 
   componentDidMount() {
     document.addEventListener("scroll", this.scrollPageView);
