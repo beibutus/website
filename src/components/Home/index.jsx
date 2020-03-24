@@ -116,7 +116,7 @@ export default class Home extends React.Component {
             <div className="button-started">
               <Link
                 className="get-started-button top"
-                to="products/"
+                to="extension/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -192,7 +192,7 @@ export default class Home extends React.Component {
                           alt="chrome-store"
                           className="icon button-chrome-icon"
                         />
-                        {this.getLangText("AddToChromeButton")}
+                        {this.getLangText("GetStartedButton")}
                       </span>
                     </a>
                     {/* <a
@@ -357,7 +357,7 @@ export default class Home extends React.Component {
           <div className="button-started bottom">
             <Link
               className="get-started-button bottom"
-              to="products/"
+              to="extension/"
               target="_blank"
               rel="noopener noreferrer"
             >

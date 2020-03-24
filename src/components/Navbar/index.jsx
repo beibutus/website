@@ -109,7 +109,7 @@ export default class Navbar extends React.Component {
                                     </li>
                                     <li className="menu-item">
                                         <Link
-                                            to="products/extension"
+                                            to="extension/"
                                             className="menu-nav__link"
                                             onClick={this.closeMenu}
                                         >
@@ -118,7 +118,7 @@ export default class Navbar extends React.Component {
                                     </li>
                                     <li className="menu-item">
                                         <Link
-                                            to="products/player"
+                                            to="player/"
                                             className="menu-nav__link"
                                             onClick={this.closeMenu}
                                         >
