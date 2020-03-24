@@ -2,7 +2,6 @@ import React from "react";
 import { Router } from "@reach/router";
 import Navbar from "../Navbar";
 import Home from "../Home";
-import Products from '../Products';
 import Privacy from '../Privacy';
 import Extension from "../Extension";
 import Player from "../Player";
@@ -12,7 +11,6 @@ import NotFound from '../NotFound';
 
 // import BtnTop from "../BtnTop";
 import ScrollToTop from "../ScrollToTop";
-// import NotFound from "../NotFound";
 import Helmet from "react-helmet";
 
 export default class App extends React.Component {
@@ -44,7 +42,6 @@ export default class App extends React.Component {
         <Router>
           <ScrollToTop path="/">
             <Home path="/" text={this.props.text}></Home>
-            <Products path="/products/" text={this.props.text}></Products>
             <Privacy path="/privacy" text={this.props.text}></Privacy>
             <Extension path="/products/extension/" text={this.props.text} />
             <Player path="/products/player/" text={this.props.text} />
