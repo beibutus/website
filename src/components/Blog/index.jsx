@@ -1,8 +1,7 @@
 import React from "react";
 import "./Blog.scss";
-import Header from "./Header";
+import BlogHeader from "./BlogHeader";
 import Article from "./Article";
-import Footer from "../Footer";
 import ArticlesList from './ArticlesList'
 import FullArticle from './FullArticle'
 import {Router} from"@reach/router"
@@ -66,12 +65,12 @@ export default class Blog extends React.Component {
     render() {
         return (
             <div className="Blog">
-                <Header
+                <BlogHeader
                     findArticleText={this.state.findArticleText}
                     handleFindText={this.handleFindText}
                     showSearch={this.state.showSearch}
                     parseQueryParam={this.parseQueryParam}
-                ></Header>
+                ></BlogHeader>
                 <div className="content">
                     <div className="container">
                         <Router>
@@ -80,7 +79,6 @@ export default class Blog extends React.Component {
                         </Router>
                     </div>
                 </div>
-                <Footer></Footer>
             </div>
         );
     }

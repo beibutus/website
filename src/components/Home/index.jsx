@@ -314,12 +314,12 @@ export default class Home extends React.Component {
                   <h2>{this.getLangText("headSource")}</h2>
                   <p>{this.getLangText("contentSource")}</p>
                 </div>
-                {/* <div className="blog">
+                <div className="blog">
                   <p>{this.getLangText("blog")}</p>
                   <Link to="blog" className="get-started-button blog-button">
                     {this.getLangText("Blog")}
                   </Link>
-                </div> */}
+                </div>
                 <div className="sources-block">
                   <div className="sources-block_row">
                     <div className="sources-paragraph">

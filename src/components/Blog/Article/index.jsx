@@ -4,6 +4,7 @@ import "./Article.scss";
 import { Link } from "@reach/router";
 
 export default class Article extends React.Component {
+    
 	render() {
         let article;
         let readMoreBtn;
