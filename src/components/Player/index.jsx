@@ -130,7 +130,7 @@ export default class Player extends Component {
 
           <div style={{ display: "flex" }}>
 
-            <div style={{ flex: "0 0 40%", paddingRight: "10%" }}>
+            <div style={{ flex: "0 0 35%", paddingRight: "6%" }}>
               {this.playerContent.map((content, i) => {
                 return (
                   <div
