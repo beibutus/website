@@ -54,7 +54,7 @@ export default class Player extends Component {
       body: (
         <>
           <p>{this.getLangText("5-SlidePlayerBody")}</p>
-          <img src={subtitles} alt="subtitles_image" style={{ width: "50%" }}/>
+          <img src={subtitles} alt="subtitles_image" style={{ width: "65%", paddingTop: "5%" }}/>
         </>
       ),
       img: playerImages[4].src
@@ -64,13 +64,13 @@ export default class Player extends Component {
       body: (
               <>
                 <p>{this.getLangText("6-SlidePlayerBody")}</p>
-                <img src={repeat} alt="subtitles_image" style={{ width: "50%" }}/>
+                <img src={repeat} alt="subtitles_image" style={{ width: "65%", paddingTop: "5%" }}/>
               </>
       ),
       img: playerImages[5].src
     },
     {
-      header: <h2 style={{ marginTop: "50px" }}>{this.getLangText("7-SlidePlayerHeader")}</h2>,
+      header: <h2 style={{ paddingTop: "75px" }}>{this.getLangText("7-SlidePlayerHeader")}</h2>,
       body: <p>{this.getLangText("7-SlidePlayerBody")}</p>,
       img: playerImages[6].src
     },
@@ -130,16 +130,16 @@ export default class Player extends Component {
 
           <div style={{ display: "flex" }}>
 
-            <div style={{ flex: "0 0 45%", paddingRight: "5%" }}>
+            <div style={{ flex: "0 0 40%", paddingRight: "10%" }}>
               {this.playerContent.map((content, i) => {
                 return (
                   <div
-                    className="extension-block"
+                    className="player-block"
                     ref={ref => content.parentRef = ref}
                     key={i}
                   >
-                    <div className="content">
-                      <div className="extension-header content">
+                    <div className="player-content">
+                      <div className="extension-header player-content">
                         <div>
                           <div className="content-header">
                             {content.header}
@@ -155,7 +155,7 @@ export default class Player extends Component {
               })}
             </div>
 
-            <div style={{ flex: "0 0 55%", position: "relative" }}>
+            <div style={{ flex: "0 0 60%", position: "relative" }}>
               <div
                 style={{
                   width: "100%",

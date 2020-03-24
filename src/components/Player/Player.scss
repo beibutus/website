@@ -28,7 +28,7 @@ body {
   }
   .startedPlayer-button {
     width: 90% !important;
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
     margin: 1% 2% !important;
     &.top,&.bottom{
       display: flex;
@@ -107,8 +107,8 @@ body {
   }
 }
 
-.content {
-  height: 270px !important;
+.player-content {
+  height: 310px;
 }
 
 .player-devices {
@@ -117,8 +117,8 @@ body {
 }
 
 .player-devices img {
-  margin-top: 30px;
-  width: 50%;
+  margin-top: 15rem;
+  width: 55%;
 }
 
 .Description-Scroll {
@@ -129,14 +129,15 @@ body {
 
   .content-header h2 {
     color: #232323 !important;
+    font-size: 1.5rem !important;
     font-family: "Montserrat", sans-serif !important;
-    margin-bottom: 4% !important;
+    margin-bottom: 10px !important;
   }
 
   .content-body p {
     color: rgba(46, 46, 46, 0.82) !important;
     font-family: "Montserrat", sans-serif !important;
-    font-size: 15px !important;
+    font-size: 1.1rem !important;
   }
 
   margin-bottom: 2vh;
@@ -171,7 +172,6 @@ body {
     font-size: 1.2rem;
     text-align: left;
     line-height: 2rem;
-    margin: 25px 0;
   }
 
   h1, h2, h3, h4, h5 {
@@ -227,7 +227,7 @@ body {
     margin-top: 30%;
   }
 
-  .extension-block {
+  .player-block {
     margin-bottom: 50px;
   }
 
@@ -339,15 +339,26 @@ body {
       font-size: 0.8rem;
     }
 
-    .extension-block h2 {
-      font-size: 1.3rem !important;
+    .player-block h2 {
+      font-size: 1.1rem !important;
     }
 
-    .extension-block p {
+    .player-block p {
       font-size: 0.9rem !important;
     }
 
-    .extension-block {
+    .content-body p {
+      color: rgba(46, 46, 46, 0.82) !important;
+      opacity: 0.82;
+      font-family: "Montserrat", sans-serif !important;
+      font-size: 0.9rem !important;
+    }
+
+    .content-header h2 {
+      font-size: 1.1rem !important;
+    }
+
+    .player-block {
       margin-left: -30px;
     }
 
@@ -355,9 +366,14 @@ body {
       width: 20px;
     }
 
-    .content {
-      height: 500px;
+    .player-content {
+      margin: 3px;
+      height: 450px;
       width: 100%;
+    }
+    
+    .scrolled-item img {
+      margin-right: 7px !important;
     }
   }
 }

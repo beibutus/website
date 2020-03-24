@@ -194,58 +194,12 @@ body {
   
   
   .Description-Scroll {
-  
-    .extension-header-top {
-      width: 100%;
-    }
-  
-    .content-header h2 {
-      color: #232323 !important;
-      font-size: 36px !important;
-      margin-bottom: 9%;
-    }
-  
-    .content-body p {
-      color: rgba(46, 46, 46, 0.82) !important;
-      opacity:  0.82;
-      font-size: 15px !important;
-    }
-  
-    .scrolled-item {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      z-index: 1;
-    }
-  
-    padding: 1% 8% 25% !important;
-    margin-bottom: 100px !important;
-  }
-  
-  .Description-Scroll-image {
-    padding-top: 40px;
-  
-    img {
-      width: 60%;
-      height: 100%;
-    }
-  }
-  
-  .Description-Scroll {
     img {
       display: block;
       margin: 0 auto;
   
       /* max-width: 100%; */
       max-height: 60rem;
-    }
-  
-    p {
-      font-size: 1.2rem;
-      text-align: left;
-      line-height: 2rem;
-      margin: 25px 0;
     }
   
     h1, h2, h3, h4, h5 {
@@ -300,68 +254,7 @@ body {
     .footer-button {
       margin-top: 30%;
     }
-  
-    .extension-block {
-      margin-bottom: 50px;
-    }
-  
-    .extension-header {
-      display: flex;
-    }
-  
-    .button-extension {
-      padding-top: 20px;
-      margin-left: 0 !important;
-      margin-bottom: 50px;
-    }
-  
-    .button-started-extension {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      margin-top: 2%;
-    }
-  
-    .get-started-button-extension {
-      display: block;
-      font-size: 1.2rem !important;
-      text-transform: capitalize;
-      color: #fff !important;
-      background: #1E4470 !important;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-      border-radius: 34.5px;
-      padding: 2% 8% !important;
-      transition: all 0.3s linear;
-      width: fit-content;
-  
-      &:hover {
-        background-color: #f26d6d;
-      }
-  
-      &.top, &.bottom {
-        display: flex;
-        align-items: center;
-      }
-  
-      &.top .icon, &.bottom .icon {
-        padding-right: 5%;
-        margin-bottom: 4%;
-        flex: 0 0 auto;
-        height: 2.5rem;
-      }
-  
-      &.top span {
-        flex: 0 0 auto;
-      }
-  
-      &.bottom {
-        span {
-          flex: 0 0 auto;
-        }
-  
-        font-size: 1.2rem;
-      }
-    }
+
   
     .get-started-button-extension-bottom {
       display: block;
@@ -530,18 +423,6 @@ body {
   
       .tag {
         font-size: 0.8rem;
-      }
-  
-      .extension-block h2 {
-        font-size: 1.3rem !important;
-      }
-  
-      .extension-block p {
-        font-size: 0.9rem !important;
-      }
-  
-      .extension-block {
-        margin-left: -30px;
       }
   
       .icon {

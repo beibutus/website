@@ -127,7 +127,7 @@ body {
 }
 
 .content {
-  height: 250px !important;
+  height: 270px !important;
 }
 
 .description-devices {
@@ -136,13 +136,14 @@ body {
 }
 
 .description-devices img {
+  margin-top: 10rem;
   width: 70%;
 }
 
 .getStarted-footer {
   background: url("../../assets/images/bottom_flowers.png") bottom/cover no-repeat;
   height: 27vw;
-  padding-top: 14%;
+  padding-top: 18%;
 }
 
 .Description-Scroll {
@@ -153,14 +154,14 @@ body {
 
   .content-header h2 {
     color: #232323 !important;
-    font-size: 36px !important;
-    margin-bottom: 4% !important;
+    font-size: 1.5rem !important;
+    margin-bottom: 10px !important;
   }
 
   .content-body p {
     color: rgba(46, 46, 46, 0.82) !important;
-    opacity:  0.82;
-    font-size: 15px !important;
+    opacity: 0.82;
+    font-size: 1.1rem !important;
   }
 
   .scrolled-item {
@@ -172,7 +173,7 @@ body {
   }
 
   padding: 1% 8% 25% !important;
-  margin-bottom: 100px !important;
+  margin-bottom: 10px !important;
 }
 
 .Description-Scroll-image {
@@ -197,7 +198,6 @@ body {
     font-size: 1.2rem;
     text-align: left;
     line-height: 2rem;
-    margin: 25px 0;
   }
 
   h1, h2, h3, h4, h5 {
@@ -364,11 +364,11 @@ body {
     }
 
     .extension-block h2 {
-      font-size: 1.3rem !important;
+      font-size: 1.15rem !important;
     }
 
     .extension-block p {
-      font-size: 0.9rem !important;
+      font-size: 1rem !important;
     }
 
     .extension-block {
