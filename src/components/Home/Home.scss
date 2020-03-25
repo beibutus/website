@@ -162,10 +162,10 @@
   .img-phone .img-phone-front {
     position: absolute;
     width: 50%;
-    left: -120%;
-    transition: all 0.8s ease-in-out;
+    transform: translateX(-200%);
+    transition: transform 0.8s ease-out;
     &.show {
-      left: 30%;
+      transform: translateX(10%);
     }
   }
   .img-phone .img-phone-back {
