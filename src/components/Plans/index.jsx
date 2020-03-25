@@ -4,7 +4,9 @@ import Header from "../Header";
 
 import "./Plans.scss";
 
-import green_tick from '../../assets/images/Plans/green-tick.png';
+import blue_dot from '../../assets/images/Plans/blue_dot.png';
+import green_dot from '../../assets/images/Plans/green_dot.png';
+import yellow_dot from '../../assets/images/Plans/yellow_dot.png';
 
 export default class Plans extends Component {
 
@@ -21,8 +23,9 @@ export default class Plans extends Component {
           <div className="wrapper-getStartedPlans">
             <div>
               <h1 className="getStartedPlans-title">{this.getLangText("PlansTitle")}</h1>
-              <p className="getStartedPlans-subtitle">{this.getLangText("PlansFirstSubtitle")}</p>
-              <p className="getStartedPlans-subtitle">{this.getLangText("PlansSecondSubtitle")}</p>
+              <p className="getStartedPlans-subtitle">{this.getLangText("1-PlansSubtitle")}</p>
+              <p className="getStartedPlans-subtitle">{this.getLangText("2-PlansSubtitle")}</p>
+              <p className="getStartedPlans-subtitle">{this.getLangText("3-PlansSubtitle")}</p>
             </div>
 
             <div className="plans-container">
@@ -31,21 +34,20 @@ export default class Plans extends Component {
                 <div className="plans-content">
                   <h2>{this.getLangText("Standart")}</h2>
                   <h1>{this.getLangText("Free")}</h1>
-                  <p>{this.getLangText("ForAllTime")}</p>
                   <div className="advantages-block">
                     <div className="advantages-item">
-                      <img src={green_tick} />
-                      <p>Full functionality</p>
+                      <img src={blue_dot} />
+                      <p>{this.getLangText("1-StandartPoint")}</p>
                     </div>
                     <div className="advantages-item">
-                      <p>10 translations/day limit.<br/>
-                        <span style={{ fontWeight: "normal" }}>After whish we send you direct link to translation</span>
-                      </p>
+                      <img src={blue_dot} />
+                      <p>{this.getLangText("2-StandartPoint")}</p>
                     </div>
                   </div>
                   <div className="plans-button">
                     <a
-                      className="plans-started-button top blue-button"
+                      className="plans-started-button top"
+                      style={{ backgroundColor: "#ECEFFF", color: "#195AA9" }}
                       href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -59,21 +61,21 @@ export default class Plans extends Component {
               <div className="plans-item">
                 <div className="plans-content">
                   <h2 style={{ color: "#FF7C82" }}>{this.getLangText("Premium")}</h2>
-                  <h1>$7.99</h1>
-                  <p>{this.getLangText("ForAllTime")}</p>
+                  <h1>$7.99/{this.getLangText("Month")}</h1>
                   <div className="advantages-block">
                     <div className="advantages-item">
-                      <img src={green_tick} />
-                      <p>Full functionality</p>
+                      <img src={green_dot} />
+                      <p>{this.getLangText("1-PremiumPoint")}</p>
                     </div>
                     <div className="advantages-item">
-                      <img src={green_tick} />
-                      <p>10 translations/day</p>
+                      <img src={green_dot} />
+                      <p>{this.getLangText("2-PremiumPoint")}</p>
                     </div>
                   </div>
                   <div className="plans-button">
                     <a
                       className="plans-started-button top"
+                      style={{ backgroundColor: "#34D086" }}
                       href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -87,22 +89,22 @@ export default class Plans extends Component {
               <div className="plans-item">
                 <div className="plans-content">
                 <h2 style={{ color: "#FF7C82" }}>{this.getLangText("Premium")}</h2>
-                  <h1>$5.99</h1>
-                  <p>{this.getLangText("ForAllTime")}</p>
-                  <p>if you pay $59.88 for year</p>
+                  <h1>$5.99/{this.getLangText("Month")}</h1>
+                  <p style={{ fontSize: "1.4rem" }}>{this.getLangText("PremiumSubtitle")}</p>
                   <div className="advantages-block">
                     <div className="advantages-item">
-                      <img src={green_tick} />
-                      <p>Full functionality</p>
+                      <img src={yellow_dot} />
+                      <p>{this.getLangText("1-PremiumProPoint")}</p>
                     </div>
                     <div className="advantages-item">
-                      <img src={green_tick} />
-                      <p>10 translations/day</p>
+                      <img src={yellow_dot} />
+                      <p>{this.getLangText("2-PremiumProPoint")}</p>
                     </div>
                   </div>
                   <div className="plans-button">
                     <a
                       className="plans-started-button top"
+                      style={{ backgroundColor: "#F2994A" }}
                       href="https://chrome.google.com/webstore/detail/lnjampkehdeoilenmkceiganjofpahbb"
                       target="_blank"
                       rel="noopener noreferrer"

@@ -4,6 +4,7 @@ body {
   margin: 0;
 }
 
+
 /* Header of the page */
 .getStartedExt-header {
   background: no-repeat bottom/cover url("../../assets/images/bcgTop.png");
@@ -172,9 +173,10 @@ body {
     z-index: 1;
   }
 
-  padding: 1% 8% 25% !important;
+  padding: 1% 8% 25% 10% !important;
   margin-bottom: 10px !important;
 }
+
 
 .Description-Scroll-image {
   padding-top: 40px;
