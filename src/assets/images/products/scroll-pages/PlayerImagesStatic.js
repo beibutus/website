@@ -8,6 +8,7 @@ import player_image_6 from '../player/6.png';
 import player_image_7 from '../player/7.png';
 import player_image_8 from '../player/8.png';
 import player_image_9 from '../player/9.png';
+import player_image_10 from '../player/10.png';
 
 
 //An array of objects to scroll (image src + coordinates to display)
@@ -39,6 +40,9 @@ export const playerImages = [
     {
         src: player_image_9,
     },
+    {
+        src: player_image_10,
+    }
 ];
 
 

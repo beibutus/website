@@ -115,13 +115,23 @@
     "7-SlidePlayerBody": "Любое слово, любую часть слова, любую фразу можно отправить в уроки для повтора.",
     "8-SlidePlayerHeader": "Список предложений",
     "8-SlidePlayerBody": "Благодаря списку легко ориентироваться по фильму. И видеть те предложения где вы добавили слово для изучения.",
-    "9-SlidePlayerHeader": "Для повтора слов <br/> используйте наши игры",
-    "9-SlidePlayerBody": "Для того чтобы открыть игры, просто отсканируйте QR код. ",
+    "9-SlidePlayerHeader": "Для повтора слов <br/> отсканируй QR, <br/> и переходи к играм",
+    "9-SlidePlayerBody": "Для того чтобы открыть игры, просто отсканируйте QR код.",
+    "10-SlidePlayerHeader": "Не нужно ничего устанавливать!",
+    "10-SlidePlayerBody": "Все в привычном для тебя браузере. Теперь повторять материал можно в любом удобном для Вас месте. А чтобы было не скучно мы создали несколько игр для процесса повторения слов.",
 
 
   "PLANS_PAGE": "PLANS_PAGE",
     "PlansTitle": "We are a free OpenSource startup that strives to help people!",
     "PlansFirstSubtitle": "Our company has to buy services from Google. Consider supporting our efforts If you enjoy Easylang by choosing our premium-services!",
-    "PlansSecondSubtitle": "We do not limit our common user experience, but it comes at a cost of comfort."
+    "PlansSecondSubtitle": "We do not limit our common user experience, but it comes at a cost of comfort.",
+    "Standart": "Стандарт",
+    "Premium": "Премиум",
+    "Free": "Бесплатно",
+    "ForAllTime": "на все время использования",
+    "Choose": "Выбрать"
+
+
+
 
 }

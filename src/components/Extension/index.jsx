@@ -5,10 +5,8 @@ import Header from "../Header";
 
 import "./Extension.scss";
 
-import "./ExtensionHeader.jsx";
-import "./ExtensionFooter.jsx";
-
 import { extensionImages } from "../../assets/images/products/scroll-pages/ExtensionImagesStatic";
+
 import ExtensionHeader from "./ExtensionHeader.jsx";
 import ExtensionFooter from "./ExtensionFooter.jsx";
 
@@ -162,7 +160,7 @@ export default class Extension extends Component {
                   src={extensionImages[this.state.bgImgId].src}
                   alt="Scrolled_Item"
                 />
-                <Fade spy={this.state.imgId}>
+                <Fade spy={this.state.imgId} duration={800}>
                   <img
                     className="scrolled-item"
                     style={{ zIndex: 2 }}

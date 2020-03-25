@@ -5,12 +5,10 @@ import Header from "../Header";
 
 import "./Player.scss";
 
-import "./PlayerHeader.jsx";
-import "./PlayerFooter.jsx";
-
 import { playerImages } from "../../assets/images/products/scroll-pages/PlayerImagesStatic";
 import repeat from '../../assets/scroll-content/repeat.png';
 import subtitles from '../../assets/scroll-content/subtitles.png';
+
 import PlayerHeader from "./PlayerHeader.jsx";
 import PlayerFooter from "./PlayerFooter.jsx";
 
@@ -83,6 +81,11 @@ export default class Player extends Component {
       header: <h2>{this.getLangText("9-SlidePlayerHeader")}</h2>,
       body: <p>{this.getLangText("9-SlidePlayerBody")}</p>,
       img: playerImages[8].src
+    },
+    {
+      header: <h2>{this.getLangText("10-SlidePlayerHeader")}</h2>,
+      body: <p>{this.getLangText("10-SlidePlayerBody")}</p>,
+      img: playerImages[9].src
     }
   ];
 
@@ -121,11 +124,12 @@ export default class Player extends Component {
         <PlayerHeader text={this.props.text} />
 
 
-        {/* Extension Scroll Content */}
+        {/* Player Scroll Content */}
         <div className="scrolled-content-header">
           <h1>{this.getLangText("ScrolledContentPlayerHeader")}</h1>
         </div>
 
+ 
         <div className="Description-Scroll">
 
           <div style={{ display: "flex" }}>
@@ -139,7 +143,7 @@ export default class Player extends Component {
                     key={i}
                   >
                     <div className="player-content">
-                      <div className="extension-header player-content">
+                      <div className="extension-header playercontent">
                         <div>
                           <div className="content-header">
                             {content.header}
@@ -155,7 +159,7 @@ export default class Player extends Component {
               })}
             </div>
 
-            <div style={{ flex: "0 0 60%", position: "relative" }}>
+            <div style={{ flex: "0 0 57%", position: "relative" }}>
               <div
                 style={{
                   width: "100%",
@@ -169,7 +173,7 @@ export default class Player extends Component {
                   src={playerImages[this.state.bgImgId].src}
                   alt="Scrolled_Item"
                 />
-                <Fade spy={this.state.imgId}>
+                <Fade spy={this.state.imgId} duration={800}>
                   <img
                     className="scrolled-item"
                     style={{ zIndex: 2 }}
@@ -187,3 +191,5 @@ export default class Player extends Component {
     );
   }
 }
+
+

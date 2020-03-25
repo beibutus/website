@@ -113,11 +113,18 @@
     "7-SlidePlayerBody": "You can choose any sentence, phrase or word and add them to your lessons for later.",
     "8-SlidePlayerHeader": "Subtitles list",
     "8-SlidePlayerBody": "List on the side will help you navigate through the movie. You will also be able to see what you added to your lessons.",
-    "9-SlidePlayerHeader": "Play our games to revise",
+    "9-SlidePlayerHeader": "To repeat words <br/> just scan QR code <br/> and go to games",
     "9-SlidePlayerBody": "In order to play scan the QR code.",
+    "10-SlidePlayerHeader": "Nothing to install!",
+    "10-SlidePlayerBody": "Everything is in your usual browser. Now you can revise material anywhere, with games we created for you it will be way more fun!",
 
   "PLANS_PAGE": "PLANS_PAGE",
     "PlansTitle": "We are a free OpenSource startup that strives to help people!",
     "PlansFirstSubtitle": "Our company has to buy services from Google. Consider supporting our efforts If you enjoy Easylang by choosing our premium-services!",
-    "PlansSecondSubtitle": "We do not limit our common user experience, but it comes at a cost of comfort."
+    "PlansSecondSubtitle": "We do not limit our common user experience, but it comes at a cost of comfort.",
+    "Standart": "Standart",
+    "Premium": "Premium",
+    "Free": "Free",
+    "For all time": "For all time",
+    "Choose": "Choose"
 }

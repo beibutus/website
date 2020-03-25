@@ -29,16 +29,16 @@ export default class Plans extends Component {
 
               <div className="plans-item">
                 <div className="plans-content">
-                  <h2>Standart</h2>
-                  <h1>Free</h1>
-                  <p>For all time</p>
+                  <h2>{this.getLangText("Standart")}</h2>
+                  <h1>{this.getLangText("Free")}</h1>
+                  <p>{this.getLangText("ForAllTime")}</p>
                   <div className="advantages-block">
                     <div className="advantages-item">
                       <img src={green_tick} />
                       <p>Full functionality</p>
                     </div>
                     <div className="advantages-item">
-                      <p>10 translations/day limit. <br/>
+                      <p>10 translations/day limit.<br/>
                         <span style={{ fontWeight: "normal" }}>After whish we send you direct link to translation</span>
                       </p>
                     </div>
@@ -50,7 +50,7 @@ export default class Plans extends Component {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <span>Choose</span>
+                      <span>{this.getLangText("Choose")}</span>
                     </a>
                   </div>
                 </div>
@@ -58,9 +58,9 @@ export default class Plans extends Component {
 
               <div className="plans-item">
                 <div className="plans-content">
-                  <h2 style={{ color: "#FF7C82" }}>Premium</h2>
+                  <h2 style={{ color: "#FF7C82" }}>{this.getLangText("Premium")}</h2>
                   <h1>$7.99</h1>
-                  <p>For all time</p>
+                  <p>{this.getLangText("ForAllTime")}</p>
                   <div className="advantages-block">
                     <div className="advantages-item">
                       <img src={green_tick} />
@@ -78,7 +78,7 @@ export default class Plans extends Component {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <span>Choose</span>
+                      <span>{this.getLangText("Choose")}</span>
                     </a>
                   </div>
                 </div>
@@ -86,9 +86,9 @@ export default class Plans extends Component {
 
               <div className="plans-item">
                 <div className="plans-content">
-                <h2 style={{ color: "#FF7C82" }}>Premium</h2>
+                <h2 style={{ color: "#FF7C82" }}>{this.getLangText("Premium")}</h2>
                   <h1>$5.99</h1>
-                  <p>For all time</p>
+                  <p>{this.getLangText("ForAllTime")}</p>
                   <p>if you pay $59.88 for year</p>
                   <div className="advantages-block">
                     <div className="advantages-item">
@@ -107,7 +107,7 @@ export default class Plans extends Component {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <span>Choose</span>
+                      <span>{this.getLangText("Choose")}</span>
                     </a>
                   </div>
                 </div>
