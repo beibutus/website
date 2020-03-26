@@ -231,11 +231,48 @@ a.menu-nav__link {
 /*menu button for mobile version*/
 @media (max-width: 1024px) {
     .lang {
-        padding-left: 110px;
+        padding-left: 33%;
     }
     .sticky-bar {
         padding-right: 100px;
     }
+
+    .start-button {
+        display: block;
+        width: auto !important;
+    
+        border-bottom: 0 !important;
+        transition: unset !important;
+      
+        font-size: 1.2rem;
+        margin: 10px auto !important;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #fff !important;
+        font-weight: bold;
+        font-style: normal;
+        padding: 1px 25px !important;
+      
+        background-color: #FF6A70;
+        border: none;
+        border-radius: 110px;
+        transition: all 0.3s linear;
+        &:hover {
+          background-color: #ffb43f;
+        }
+        &.top,&.bottom{
+          display: flex;
+          align-items: center;
+          padding: 5% 10px;
+        }
+        &.bottom {
+          font-size: 1.1rem;
+        }
+        &.blog-button {
+          padding: 20px 20px;
+          max-width: 360px;
+        }
+      }
 
     .menu-wrapper {
         position: absolute;

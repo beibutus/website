@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
 import ReactHtmlParser from "react-html-parser";
 import Header from "../Header";
@@ -119,7 +119,7 @@ export default class Player extends Component {
 
   render() {
     return (
-      <Fragment style={{ fontFamily: "Montserrat" }}>
+      <div style={{ fontFamily: "Montserrat" }}>
         <Header text={this.props.text} />
         <PlayerHeader text={this.props.text} />
 
@@ -187,7 +187,7 @@ export default class Player extends Component {
         </div>
 
         <PlayerFooter text={this.props.text} />
-      </Fragment>
+      </div>
     );
   }
 }
