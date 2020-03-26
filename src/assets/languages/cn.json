@@ -129,9 +129,10 @@
         "Premium": "Premium",
         "PremiumSubtitle": "if you pay $59.88 for year",
         "1-PremiumPoint": "30 translates/day to add into your lessons",
+        "SuperPremium": "Super Premium",
         "2-PremiumPoint": "Unlimited translations with convenient Google Translate window",
-        "1-PremiumProPoint": "Unlimited translates to add into your lessons",
-        "2-PremiumProPoint": "Unlimited translations with convenient Google Translate window",
+        "1-SuperPremiumPoint": "Unlimited translates to add into your lessons",
+        "2-SuperPremiumPoint": "Unlimited translations with convenient Google Translate window",
         "Free": "Free",
         "Month": "mo",
         "Choose": "Choose"
