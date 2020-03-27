@@ -61,7 +61,7 @@ export default class Plans extends Component {
               <div className="plans-item">
                 <div className="plans-content">
                   <h2 style={{ color: "#34D086" }}>{this.getLangText("Premium")}</h2>
-                  <h1>$7.99/{this.getLangText("Month")}</h1>
+                  <h1>$7.99<span style={{ color: "silver"}}>/{this.getLangText("Month")}</span></h1>
                   <div className="advantages-block">
                     <div className="advantages-item">
                       <img src={green_dot} />
@@ -89,10 +89,10 @@ export default class Plans extends Component {
               <div className="plans-item" style={{ border: "3.5px solid #F2994A"}}>
                 <div className="plans-content">
                 <h2 style={{ color: "#F2994A" }}>{this.getLangText("SuperPremium")}</h2>
-                  <h1>$4.99/{this.getLangText("Month")}</h1>
+                  <h1>$4.99<span style={{ color: "silver"}}>/{this.getLangText("Month")}</span></h1>
                   <p style={{ fontSize: "1.4rem" }}>{this.getLangText("PremiumSubtitle")}</p>
                   <div className="advantages-block">
-                    <div className="advantages-item">
+                    <div className="advantages-item" style={{ marginTop: "-6%" }}>
                       <img src={yellow_dot} />
                       <p>{this.getLangText("1-SuperPremiumPoint")}</p>
                     </div>
