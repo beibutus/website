@@ -86,7 +86,7 @@ export default class Plans extends Component {
                 </div>
               </div>
 
-              <div className="plans-item" style={{ border: "3.5px solid #F2994A"}}>
+              <div className="plans-item" style={{ border: "3.5px solid #F2C94C"}}>
                 <div className="plans-content">
                 <h2 style={{ color: "#F2994A" }}>{this.getLangText("SuperPremium")}</h2>
                   <h1>$4.99<span style={{ color: "silver"}}>/{this.getLangText("Month")}</span></h1>

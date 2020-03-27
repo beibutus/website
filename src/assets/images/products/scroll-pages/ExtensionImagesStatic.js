@@ -12,38 +12,37 @@ import image_8 from '../extension/8.png';
 import image_9 from '../extension/9.png';
 import image_10 from '../extension/10.png';
 
-
-//An array of objects to scroll (image src + coordinates to display)
+//An array of objects to scroll (image en + coordinates to display)
 export const extensionImages = [
     {
-        src: image_1,
+        en: image_1
     },
-	{
-        src: image_2,
+    {
+        en: image_2
     },
-	{
-        src: image_3,
+    {
+        en: image_3
     },
-	{
-        src: image_4,
+    {
+        en: image_4
     },
-	{
-        src: image_5,
+    {
+        en: image_5
     },
-	{
-        src: image_6,
+    {
+        en: image_6
     },
-	{
-        src: image_7,
+    {
+        en: image_7
     },
-	{
-        src: image_8,
+    {
+        en: image_8
     },
-	{
-        src: image_9,
+    {
+        en: image_9
     },
-	{
-        src: image_10,
+    {
+        en: image_10
     }
 ];
 
