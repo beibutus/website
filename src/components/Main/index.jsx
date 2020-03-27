@@ -5,7 +5,7 @@ import Home from "../Home";
 import Privacy from '../Privacy';
 import Extension from "../Extension";
 import Player from "../Player";
-import Plans from "../Plans";
+import Prices from "../Prices";
 import Blog from "../Blog";
 import NotFound from '../NotFound';
 
@@ -45,7 +45,7 @@ export default class App extends React.Component {
             <Privacy path="/privacy" text={this.props.text}></Privacy>
             <Extension path="/extension/" text={this.props.text} lang={this.props.language}/>
             <Player path="/player/" text={this.props.text} />
-            <Plans path="/tariff-plans/" text={this.props.text} />
+            <Prices path="/prices/" text={this.props.text} />
             <Blog path="/blog/*"></Blog>
             <NotFound path="*" text={this.props.text}></NotFound>
             {/* <Redirect from="/" to="/" default noThrow></Redirect> */}

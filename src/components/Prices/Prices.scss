@@ -3,6 +3,13 @@ body {
     padding: 0;
     margin: 0;
   }
+
+@media (min-width: 1640px) {
+  .plans-container {
+    width: 65% !important;
+    margin: 5% 16% !important;
+  }
+}
   
   /* Desctop tariff-plans styles */
   .getStartedPlans-header {

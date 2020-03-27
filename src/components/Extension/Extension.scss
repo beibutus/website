@@ -5,6 +5,16 @@ body {
 }
 
 
+@media (min-width: 1760px) {
+  .Description-Scroll {
+    margin: 4% 8% !important;
+  }
+  .scrolled-content-header h1 {
+    margin: 4% 16% !important;
+  }
+}
+
+
 /* Header of the page */
 .getStartedExt-header {
   background: no-repeat bottom/cover url("../../assets/images/bcgTop.png");
@@ -128,7 +138,7 @@ body {
 }
 
 .content {
-  height: 300px !important;
+  height: 310px !important;
 }
 
 .description-devices {

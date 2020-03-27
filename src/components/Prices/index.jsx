@@ -1,14 +1,14 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import ReactHtmlParser from "react-html-parser";
 import Header from "../Header";
 
-import "./Plans.scss";
+import "./Prices.scss";
 
 import blue_dot from '../../assets/images/Plans/blue_dot.png';
 import green_dot from '../../assets/images/Plans/green_dot.png';
 import yellow_dot from '../../assets/images/Plans/yellow_dot.png';
 
-export default class Plans extends Component {
+export default class Prices extends Component {
 
   getLangText(text) {
     return ReactHtmlParser(this.props.text[text]);
@@ -16,7 +16,7 @@ export default class Plans extends Component {
 
   render() {
     return (
-      <Fragment style={{ fontFamily: "Montserrat" }}>
+      <div style={{ fontFamily: "Montserrat" }}>
         <Header text={this.props.text} />
 
         <header className="getStartedPlans-header">
@@ -116,9 +116,9 @@ export default class Plans extends Component {
               </div>
             </div>
           </div>
-        </header>
 
-      </Fragment>
+        </header>
+      </div>
     );
   }
 }
