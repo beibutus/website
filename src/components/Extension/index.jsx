@@ -9,6 +9,7 @@ import ExtensionHeader from "./ExtensionHeader.jsx";
 import ExtensionFooter from "./ExtensionFooter.jsx";
 
 import extensionContent from "../../assets/scroll-content/extension";
+import { extensionImages } from "../../assets/images/products/scroll-pages/ExtensionImagesStatic";
 
 
 export default class Extension extends Component {
@@ -53,6 +54,9 @@ export default class Extension extends Component {
   };
 
   render() {
+
+    console.log(extensionImages);
+    console.log(extensionContent);
 
     return (
       <div style={{ fontFamily: "Montserrat" }}>
