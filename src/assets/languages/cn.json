@@ -6,6 +6,7 @@
       "ourBlog": "博客",
       "extension": "Read & Learn",
       "player": "Watch & Learn",
+      "test": "Test",
       "ourApp": "EasyLang应用",
       "HowItWork": "怎么运作",
       "learningSources": "学习的来源",
@@ -117,6 +118,15 @@
         "9-SlidePlayerBody": "In order to play scan the QR code.",
         "10-SlidePlayerHeader": "Nothing to install!",
         "10-SlidePlayerBody": "Everything is in your usual browser. Now you can revise material anywhere, with games we created for you it will be way more fun!",
+
+
+        "TEST_PAGE": "TEST_PAGE",
+          "1-SlideTestHeader": "Test Header",
+          "1-SlideTestBody": "test test test test test test test test test test",
+          "2-SlideTestHeader": "Test Header",
+          "2-SlideTestBody": "test test test test test test test test test test",
+          "3-SlideTestHeader": "Test Header",
+          "3-SlideTestBody": "test test test test test test test test test test",
 
         "PLANS_PAGE": "PLANS_PAGE",
         "PlansTitle": "We are a free OpenSource startup that strives to help people!",
